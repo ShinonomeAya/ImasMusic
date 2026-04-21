@@ -1,0 +1,295 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Claude Design System — Global Styles
+   Inspired by Anthropic's warm, editorial aesthetic.
+   ============================================================ */
+
+@layer base {
+  :root {
+    /* Surfaces */
+    --color-parchment: #f5f4ed;
+    --color-ivory: #faf9f5;
+    --color-warm-sand: #e8e6dc;
+    --color-dark-surface: #30302e;
+    --color-deep-dark: #141413;
+
+    /* Neutrals & Text */
+    --color-near-black: #141413;
+    --color-charcoal-warm: #4d4c48;
+    --color-olive-gray: #5e5d59;
+    --color-stone-gray: #87867f;
+    --color-dark-warm: #3d3d3a;
+    --color-warm-silver: #b0aea5;
+
+    /* Brand & Accents */
+    --color-terracotta: #c96442;
+    --color-coral: #d97757;
+    --color-error-crimson: #b53333;
+    --color-focus-blue: #3898ec;
+
+    /* Borders & Rings */
+    --color-border-cream: #f0eee6;
+    --color-border-warm: #e8e6dc;
+    --color-border-dark: #30302e;
+    --color-ring-warm: #d1cfc5;
+    --color-ring-subtle: #dedcd1;
+    --color-ring-deep: #c2c0b6;
+
+    /* Semantic tokens */
+    --bg-page: var(--color-parchment);
+    --bg-surface: var(--color-ivory);
+    --bg-elevated: #ffffff;
+    --bg-interactive: var(--color-warm-sand);
+    --bg-inverse: var(--color-deep-dark);
+
+    --text-primary: var(--color-near-black);
+    --text-secondary: var(--color-olive-gray);
+    --text-tertiary: var(--color-stone-gray);
+    --text-link: var(--color-dark-warm);
+    --text-on-dark: var(--color-warm-silver);
+    --text-on-inverse: var(--color-ivory);
+
+    --border-default: var(--color-border-cream);
+    --border-prominent: var(--color-border-warm);
+    --border-inverse: var(--color-border-dark);
+
+    --shadow-ring: 0px 0px 0px 1px var(--color-ring-warm);
+    --shadow-ring-subtle: 0px 0px 0px 1px var(--color-ring-subtle);
+    --shadow-ring-deep: 0px 0px 0px 1px var(--color-ring-deep);
+    --shadow-whisper: rgba(0, 0, 0, 0.05) 0px 4px 24px;
+    --shadow-inset: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  .dark {
+    --bg-page: var(--color-deep-dark);
+    --bg-surface: var(--color-dark-surface);
+    --bg-elevated: #3d3d3a;
+    --bg-interactive: #3d3d3a;
+    --bg-inverse: var(--color-parchment);
+
+    --text-primary: var(--color-ivory);
+    --text-secondary: var(--color-warm-silver);
+    --text-tertiary: var(--color-stone-gray);
+    --text-link: var(--color-warm-silver);
+    --text-on-dark: var(--color-near-black);
+    --text-on-inverse: var(--color-near-black);
+
+    --border-default: var(--color-border-dark);
+    --border-prominent: #4d4c48;
+    --border-inverse: var(--color-border-cream);
+
+    --shadow-ring: 0px 0px 0px 1px #4d4c48;
+    --shadow-ring-subtle: 0px 0px 0px 1px #5e5d59;
+    --shadow-ring-deep: 0px 0px 0px 1px #3d3d3a;
+    --shadow-whisper: rgba(0, 0, 0, 0.25) 0px 4px 24px;
+    --shadow-inset: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+  }
+
+  /* Base typography */
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.60;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Serif hierarchy: all headlines use Georgia at weight 500 */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+
+  h1 { font-size: 4rem; line-height: 1.10; }
+  h2 { font-size: 3.25rem; line-height: 1.20; }
+  h3 { font-size: 2.3rem; line-height: 1.30; }
+  h4 { font-size: 2rem; line-height: 1.10; }
+  h5 { font-size: 1.6rem; line-height: 1.20; }
+  h6 { font-size: 1.3rem; line-height: 1.20; }
+
+  /* Body text: generous line-height for literary reading */
+  p { line-height: 1.60; }
+
+  /* Links */
+  a {
+    color: var(--text-link);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  a:hover { color: var(--text-primary); }
+
+  /* Selection: warm terracotta tint */
+  ::selection {
+    background-color: rgba(201, 100, 66, 0.2);
+    color: var(--text-primary);
+  }
+
+  /* Focus rings: the only cool color moment, for accessibility */
+  :focus-visible {
+    outline: 2px solid var(--color-focus-blue);
+    outline-offset: 2px;
+  }
+
+  /* Scrollbar: warm toned */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: var(--bg-page); }
+  ::-webkit-scrollbar-thumb { background: var(--color-ring-warm); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-stone-gray); }
+}
+
+@layer components {
+  /* Container: max 1200px, centered */
+  .container-claude {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  /* Section spacing: generous editorial pacing */
+  .section-claude { padding-top: 5rem; padding-bottom: 5rem; }
+  .section-claude-lg { padding-top: 7.5rem; padding-bottom: 7.5rem; }
+
+  /* Cards & Containers */
+  .card-claude {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  .card-claude:hover { box-shadow: var(--shadow-ring); }
+
+  .card-claude-featured {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-default);
+    border-radius: 16px;
+    box-shadow: var(--shadow-whisper);
+  }
+
+  /* Buttons */
+  .btn-sand {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background-color: var(--color-warm-sand); color: var(--color-charcoal-warm);
+    padding: 0px 12px 0px 8px; border-radius: 8px;
+    font-size: 15px; font-weight: 400; line-height: 1.60;
+    box-shadow: 0px 0px 0px 0px var(--color-warm-sand), var(--shadow-ring);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn-sand:hover {
+    background-color: var(--color-border-warm);
+    box-shadow: 0px 0px 0px 0px var(--color-border-warm), var(--shadow-ring-deep);
+  }
+
+  .btn-white {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background-color: #ffffff; color: var(--color-near-black);
+    padding: 8px 16px 8px 12px; border-radius: 12px;
+    font-size: 15px; font-weight: 400; line-height: 1.60;
+    transition: background-color 0.2s ease;
+  }
+  .btn-white:hover { background-color: var(--color-warm-sand); }
+
+  .btn-dark {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background-color: var(--color-dark-surface); color: var(--color-ivory);
+    padding: 0px 12px 0px 8px; border-radius: 8px;
+    font-size: 15px; font-weight: 400; line-height: 1.60;
+    box-shadow: 0px 0px 0px 0px var(--color-dark-surface), 0px 0px 0px 1px var(--color-ring-warm);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn-dark:hover {
+    background-color: var(--color-deep-dark);
+    box-shadow: 0px 0px 0px 0px var(--color-deep-dark), 0px 0px 0px 1px var(--color-ring-deep);
+  }
+
+  .btn-terracotta {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background-color: var(--color-terracotta); color: var(--color-ivory);
+    padding: 8px 16px; border-radius: 12px;
+    font-size: 15px; font-weight: 400; line-height: 1.60;
+    box-shadow: 0px 0px 0px 0px var(--color-terracotta), 0px 0px 0px 1px var(--color-terracotta);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn-terracotta:hover {
+    background-color: var(--color-coral);
+    box-shadow: 0px 0px 0px 0px var(--color-coral), 0px 0px 0px 1px var(--color-coral);
+  }
+
+  .btn-dark-primary {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background-color: var(--color-near-black); color: var(--color-warm-silver);
+    padding: 9.6px 16.8px; border-radius: 12px;
+    font-size: 15px; font-weight: 400; line-height: 1.60;
+    border: 1px solid var(--color-dark-surface);
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .btn-dark-primary:hover {
+    color: var(--color-ivory);
+    border-color: var(--color-ring-warm);
+  }
+
+  /* Dark section */
+  .section-dark {
+    background-color: var(--color-deep-dark);
+    color: var(--color-warm-silver);
+  }
+  .section-dark h1, .section-dark h2, .section-dark h3,
+  .section-dark h4, .section-dark h5, .section-dark h6 {
+    color: var(--color-ivory);
+  }
+
+  /* Light/Dark section alternation rhythm */
+  .section-light { background-color: var(--color-parchment); color: var(--color-near-black); }
+  .section-ivory { background-color: var(--color-ivory); color: var(--color-near-black); }
+
+  /* Inputs */
+  .input-claude {
+    background-color: var(--bg-elevated); color: var(--text-primary);
+    padding: 1.6px 12px; border: 1px solid var(--border-default); border-radius: 12px;
+    font-size: 16px; line-height: 1.60;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .input-claude:focus {
+    border-color: var(--color-focus-blue);
+    box-shadow: 0px 0px 0px 3px rgba(56, 152, 236, 0.15);
+    outline: none;
+  }
+
+  /* Navigation */
+  .nav-claude {
+    position: sticky; top: 0; z-index: 50;
+    background-color: rgba(245, 244, 237, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--color-border-cream);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  .dark .nav-claude {
+    background-color: rgba(20, 20, 19, 0.85);
+    border-bottom-color: var(--color-border-dark);
+  }
+
+  /* Typography utilities */
+  .text-serif { font-family: Georgia, Cambria, 'Times New Roman', Times, serif; }
+  .text-sans { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; }
+  .text-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; }
+}
+
+@layer utilities {
+  .ring-warm { box-shadow: var(--shadow-ring); }
+  .ring-subtle { box-shadow: var(--shadow-ring-subtle); }
+  .ring-deep { box-shadow: var(--shadow-ring-deep); }
+  .whisper { box-shadow: var(--shadow-whisper); }
+  .inset-ring { box-shadow: var(--shadow-inset); }
+}
