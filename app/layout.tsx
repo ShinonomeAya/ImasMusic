@@ -4,6 +4,7 @@ import { ThemeProvider } from '@/components/layout/ThemeProvider'
 import Sidebar from '@/components/layout/Sidebar'
 import TopAppBar from '@/components/layout/TopAppBar'
 import BottomPlayer from '@/components/layout/BottomPlayer'
+import KeyboardShortcuts from '@/components/KeyboardShortcuts'
 
 export const metadata: Metadata = {
   title: 'iM@S Archive — 偶像大师音乐数据库',
@@ -71,6 +72,9 @@ export default function RootLayout({
 
           {/* 底部播放条 */}
           <BottomPlayer />
+
+          {/* 全局键盘快捷键 */}
+          <KeyboardShortcuts />
         </ThemeProvider>
       </body>
     </html>

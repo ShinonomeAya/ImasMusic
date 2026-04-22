@@ -6,7 +6,10 @@
     "series": "765",
     "releaseDate": "2014-01-29T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/da/fc/d4/dafcd4b2-2792-ded2-e37d-74ea5cc40bb3/4540774159369.jpg/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1718496906",
+      "track-1718496914"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718496905"
   },
@@ -17,7 +20,9 @@
     "series": "765",
     "releaseDate": "2022-12-07T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/5c/f3/e7/5cf3e7fb-45c1-90d3-3e7a-dfa68ab48f28/4540774241941.jpg/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1731760816"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760812"
   },
@@ -28,7 +33,9 @@
     "series": "765",
     "releaseDate": "2013-09-18T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9e/37/0b/9e370bf4-b073-c6f9-18b1-dc4c6a4160e6/COCX-38070.jpg/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1659357823"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1659357818"
   },
@@ -39,7 +46,9 @@
     "series": "765",
     "releaseDate": "2015-10-21T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/96/05/83/960583ad-39ef-7fe6-cc60-b17ee4b40891/4540774143269.jpg/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1731760695"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760693"
   },
@@ -50,7 +59,9 @@
     "series": "765",
     "releaseDate": "2021-09-28T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8f/48/84/8f4884d4-17f1-2fe8-eddb-7101280dacf0/4540774159161.jpg/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1718903542"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718903541"
   },
@@ -61,7 +72,9 @@
     "series": "765",
     "releaseDate": "2025-11-17T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/92/44/6292441c-7aab-7b51-e444-1dac97a9ce1f/4540774248216.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1856531494"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1856531493"
   },
@@ -72,7 +85,9 @@
     "series": "765",
     "releaseDate": "2023-09-23T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/a1/ad/9d/a1ad9d61-d08b-5a59-83d3-77149b66f0cf/4540774243686.jpg/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1734552413"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552412"
   },
@@ -83,7 +98,9 @@
     "series": "765",
     "releaseDate": "2014-07-30T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c7/f2/8e/c7f28eae-25b0-d908-2b37-f56d42df175f/4540774154319.jpg/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1718503192"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718503190"
   },
@@ -94,7 +111,9 @@
     "series": "shinycolors",
     "releaseDate": "2023-01-18T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/aa/2f/c0/aa2fc074-0f15-9933-b351-08397872152a/4540774734344.jpg/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1734551413"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551412"
   },
@@ -105,7 +124,9 @@
     "series": "shinycolors",
     "releaseDate": "2019-08-21T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/06/42/0c/06420ce2-4e0c-2927-2165-9fc40ee02bc4/4540774148653.jpg/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1734551238"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551173"
   },
@@ -116,7 +137,9 @@
     "series": "shinycolors",
     "releaseDate": "2025-08-06T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a4/d7/9b/a4d79b56-f3da-9845-1bde-88f0f7ca2a8f/195533021148.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1825101867"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1825101865"
   },
@@ -127,7 +150,9 @@
     "series": "shinycolors",
     "releaseDate": "2023-01-18T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e0/68/ea/e068ead6-e891-9a72-2224-ecb45a3adff1/4540774734412.jpg/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1734552713"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552712"
   },
@@ -138,7 +163,9 @@
     "series": "million",
     "releaseDate": "2019-06-26T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/54/7e/39/547e39b7-8297-ec94-cf3f-11955a4ca09c/4540774148288.jpg/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1717730440"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730438"
   },
@@ -149,7 +176,9 @@
     "series": "million",
     "releaseDate": "2007-01-18T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6e/76/86/6e768676-23e9-443e-d3a5-bc1b4687cf94/190295515805.jpg/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1441818367"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1441818303"
   },
@@ -160,7 +189,10 @@
     "series": "million",
     "releaseDate": "2023-06-28T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e1/1a/3d/e11a3d5d-2e8e-5d8e-39be-3860e56935d1/4540774909896.jpg/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1718675570",
+      "track-1718675571"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718675404"
   },
@@ -171,8 +203,186 @@
     "series": "million",
     "releaseDate": "2024-12-11T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6b/49/c1/6b49c13f-7535-9299-c309-bacb2a8bc249/PA00167883_0_207313_jacket.jpg/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1780445246"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1780445241"
+  },
+  {
+    "id": "release-1676897794",
+    "type": "ALBUM",
+    "titleJa": "THE IDOLM@STER CINDERELLA MASTER SERIES GAME VERSION SONG COLLECTION Vol. 1",
+    "series": "cinderella",
+    "releaseDate": "2023-03-31T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4d/d5/d9/4dd5d9e3-c386-2f30-6feb-e436176c2294/COKM-44335.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1676897794"
+  },
+  {
+    "id": "release-1794066812",
+    "type": "ALBUM",
+    "titleJa": "とくべチュ、して - Single",
+    "series": "cinderella",
+    "releaseDate": "2025-02-10T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/64/7f/83/647f8398-9ac9-21f6-49cc-bec4e9723637/4547366732757.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1794066812"
+  },
+  {
+    "id": "release-1031840065",
+    "type": "ALBUM",
+    "titleJa": "オルゴール アニメソングス!Vol.44 「銀魂゜」 「がっこうぐらし!」 「アイドルマスター シンデレラガールズ」 他、特集! - EP",
+    "series": "cinderella",
+    "releaseDate": "2015-08-10T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music60/v4/23/90/02/239002b6-dc21-fd3f-eb4f-865fae0c27da/mzm.edmmasko.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1031840065"
+  },
+  {
+    "id": "release-1655784315",
+    "type": "ALBUM",
+    "titleJa": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT MASTER 21〜30 GAME VERSION",
+    "series": "cinderella",
+    "releaseDate": "2019-07-17T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/f6/92/7e/f6927eef-5c20-c895-d97f-b532ca6ae01f/COKM-44139.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1655784315"
+  },
+  {
+    "id": "release-1656343486",
+    "type": "ALBUM",
+    "titleJa": "ダンシング・デッド (GAME VERSION) - Single",
+    "series": "cinderella",
+    "releaseDate": "2022-12-07T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/14/2a/a9/142aa9b1-ac89-315c-0a60-d86c0570b057/COKM-44190.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1656343486"
+  },
+  {
+    "id": "release-1709240925",
+    "type": "ALBUM",
+    "titleJa": "THE IDOLM@STER SideM F@NTASTIC COMBINATION～BRAINPOWER!!～ DRAMATIC STARS - EP",
+    "series": "sidem",
+    "releaseDate": "2023-10-04T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/8a/01/12/8a0112f5-83a6-21d2-7698-d06905acd4ce/4540774244614.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1709240925"
+  },
+  {
+    "id": "release-1732192872",
+    "type": "ALBUM",
+    "titleJa": "Reason!! (DRAMATIC STARS & S.E.M Ver.) - Single",
+    "series": "sidem",
+    "releaseDate": "2024-03-06T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e9/59/19/e95919dc-5ffc-fc95-72fc-50fda4b4ed48/4540774739592.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1732192872"
+  },
+  {
+    "id": "release-1731761043",
+    "type": "ALBUM",
+    "titleJa": "THE IDOLM@STER SideM ANIMATION PROJECT 08 オリジナルサウンドトラック「GLORIOUS RO@D」",
+    "series": "sidem",
+    "releaseDate": "2018-01-31T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0d/b5/95/0db595e2-8d9d-0bff-8e5f-e02e8f260be5/4540774905713.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1731761043"
+  },
+  {
+    "id": "release-1709236163",
+    "type": "ALBUM",
+    "titleJa": "THE IDOLM@STER SideM F@NTASTIC COMBINATION～BRAINPOWER!!～ S.E.M - EP",
+    "series": "sidem",
+    "releaseDate": "2023-10-04T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/64/16/eb/6416eb13-6b87-9854-8fd8-49cdf8ae7900/4540774244621.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1709236163"
+  },
+  {
+    "id": "release-1810150734",
+    "type": "ALBUM",
+    "titleJa": "THE IDOLM@STER SideM 5th ANNIVERSARY UNIT COLLECTION -PRIDE STAR-",
+    "series": "sidem",
+    "releaseDate": "2020-03-06T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/36/06/13/3606134d-2858-dd32-1205-1d1f65a0ebce/195533020967.png/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1810150734"
+  },
+  {
+    "id": "release-1297877177",
+    "type": "ALBUM",
+    "titleJa": "THE GUERRiLLA BiSH",
+    "series": "sidem",
+    "releaseDate": "2017-11-06T08:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/54/73/fe/5473fe11-1ec5-f0f6-3dd8-6f621034b6b5/ANTCD-25514.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1297877177"
+  },
+  {
+    "id": "release-1749006685",
+    "type": "ALBUM",
+    "titleJa": "Campus mode!! - Single",
+    "series": "gakuen",
+    "releaseDate": "2024-06-10T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/43/37/02/4337024f-e5fd-79ca-87ec-5dc1c7523e4d/PA00155503_0_193627_jacket.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1749006685"
+  },
+  {
+    "id": "release-1769305460",
+    "type": "ALBUM",
+    "titleJa": "仮装狂騒曲 - Single",
+    "series": "gakuen",
+    "releaseDate": "2024-10-01T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2c/02/a7/2c02a73a-6953-3802-d897-fcb13025b133/PA00164491_0_202834_jacket.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1769305460"
+  },
+  {
+    "id": "release-1744083630",
+    "type": "ALBUM",
+    "titleJa": "Luna say maybe - Single",
+    "series": "gakuen",
+    "releaseDate": "2024-05-16T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/4b/54/684b54e8-6ffd-58e3-52c1-ce42caea9f95/PA00153097_0_191082_jacket.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1744083630"
+  },
+  {
+    "id": "release-1744085101",
+    "type": "ALBUM",
+    "titleJa": "白線 - Single",
+    "series": "gakuen",
+    "releaseDate": "2024-05-16T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/87/1e/05/871e057c-25e3-9b8d-3a37-7477c13aab9c/PA00153100_0_191074_jacket.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1744085101"
+  },
+  {
+    "id": "release-980248279",
+    "type": "ALBUM",
+    "titleJa": "EXIT TUENS PRESENTS Vocalospace (feat.初音ミク) [feat. 初音ミク]",
+    "series": "gakuen",
+    "releaseDate": "2012-11-07T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/8a/0d/a8/8a0da89d-0954-b694-0ccb-bb727a56ff3a/QWCE_00366_itunes.png/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/980248279"
   }
 ]

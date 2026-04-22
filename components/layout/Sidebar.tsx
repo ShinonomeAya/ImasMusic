@@ -247,9 +247,19 @@ function SidebarItem({
         color: active ? 'var(--color-terracotta)' : 'var(--text-secondary)',
         backgroundColor: active ? 'rgba(201,100,66,0.08)' : 'transparent',
       }}
+      onMouseEnter={(e) => {
+        if (!active) {
+          e.currentTarget.style.backgroundColor = 'var(--bg-interactive)'
+        }
+      }}
+      onMouseLeave={(e) => {
+        if (!active) {
+          e.currentTarget.style.backgroundColor = 'transparent'
+        }
+      }}
     >
       <span
-        className="flex items-center justify-center w-7 h-7 rounded-subtle text-xs"
+        className="flex items-center justify-center w-7 h-7 rounded-subtle text-xs transition-colors duration-200"
         style={{
           backgroundColor: active ? 'rgba(201,100,66,0.15)' : 'var(--bg-interactive)',
           color: active ? 'var(--color-terracotta)' : 'var(--text-tertiary)',

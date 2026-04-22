@@ -63,6 +63,8 @@ export interface Track {
   spotifyId?: string
   /** 歌词 */
   lyrics?: string
+  /** 乐评/音乐分析文本 */
+  description?: string
 }
 
 /** 曲目创作者 Credit */

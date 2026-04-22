@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { getAllTracks, getAllReleases, getSeriesStats } from '@/lib/data'
 import { SERIES_CONFIG } from '@/lib/series'
 import { Play } from 'lucide-react'
+import TrackPlayButton from '@/components/TrackPlayButton'
+import FavoriteButton from '@/components/FavoriteButton'
 
 export const revalidate = 86400
 
@@ -24,17 +26,17 @@ export default async function HomePage() {
   return (
     <div className="px-8 py-12 max-w-7xl mx-auto">
       {/* ── Hero ── */}
-      <section className="mb-20">
+      <section className="mb-20 text-center">
         <h1 className="text-display font-serif font-medium mb-6" style={{ color: 'var(--text-primary)' }}>
           THE IDOLM@STER
           <br />
           <span style={{ color: 'var(--color-terracotta)' }}>音乐数据库</span>
         </h1>
-        <p className="text-body-lg max-w-2xl mb-8" style={{ color: 'var(--text-secondary)' }}>
+        <p className="text-body-lg max-w-2xl mb-8 mx-auto" style={{ color: 'var(--text-secondary)' }}>
           探索偶像大师全系列的歌曲、专辑、艺人与创作者。
           从 765PRO 到学园偶像大师，收录六大企划的完整音乐档案。
         </p>
-        <div className="flex gap-4">
+        <div className="flex gap-4 justify-center">
           <Link
             href="/releases"
             className="btn-terracotta gap-2"
@@ -109,12 +111,17 @@ export default async function HomePage() {
         </section>
       )}
 
-      {/* ── 可试听曲目 ── */}
+      {/* ── 热门单曲 ── */}
       {playableTracks.length > 0 && (
         <section className="mb-20">
-          <h2 className="text-section font-serif font-medium mb-8" style={{ color: 'var(--text-primary)' }}>
-            可试听曲目
-          </h2>
+          <div className="flex items-end justify-between mb-8">
+            <h2 className="text-section font-serif font-medium" style={{ color: 'var(--text-primary)' }}>
+              热门单曲
+            </h2>
+            <span className="text-sm" style={{ color: 'var(--text-tertiary)' }}>
+              {playableTracks.length} 首可试听
+            </span>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {playableTracks.map((track) => (
               <div
@@ -122,12 +129,7 @@ export default async function HomePage() {
                 className="flex items-center gap-4 p-3 rounded-very transition-all duration-200 hover:bg-opacity-50 cursor-pointer group"
                 style={{ backgroundColor: 'var(--bg-surface)', border: '1px solid var(--border-default)' }}
               >
-                <button
-                  className="w-10 h-10 rounded-comfortable flex items-center justify-center shrink-0 transition-all group-hover:scale-105"
-                  style={{ backgroundColor: 'var(--color-terracotta)', color: 'var(--color-ivory)' }}
-                >
-                  <Play size={16} fill="currentColor" />
-                </button>
+                <TrackPlayButton track={track} coverUrl={releases.find((r) => r.id === track.releaseId)?.coverUrl} />
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-medium truncate group-hover:text-terracotta transition-colors" style={{ color: 'var(--text-primary)' }}>
                     {track.titleJa}
@@ -136,9 +138,20 @@ export default async function HomePage() {
                     {track.artistIds.join(', ')}
                   </p>
                 </div>
-                <span className="text-xs font-mono shrink-0" style={{ color: 'var(--text-tertiary)' }}>
-                  {track.durationSec ? formatTime(track.durationSec) : '--:--'}
-                </span>
+                <div className="flex items-center gap-2 shrink-0">
+                  <FavoriteButton
+                    item={{
+                      id: track.id,
+                      type: 'track',
+                      title: track.titleJa,
+                      subtitle: track.artistIds.join(', '),
+                    }}
+                    size="sm"
+                  />
+                  <span className="text-xs font-mono" style={{ color: 'var(--text-tertiary)' }}>
+                    {track.durationSec ? formatTime(track.durationSec) : '--:--'}
+                  </span>
+                </div>
               </div>
             ))}
           </div>

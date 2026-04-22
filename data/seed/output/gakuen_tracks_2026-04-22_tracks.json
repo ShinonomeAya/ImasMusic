@@ -1,0 +1,74 @@
+[
+  {
+    "id": "track-1749006701",
+    "titleJa": "Campus mode!!",
+    "releaseId": "release-1749006685",
+    "artistIds": [
+      "初星学園"
+    ],
+    "credits": [],
+    "trackNumber": 1,
+    "durationSec": 260,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/74/0f/64/740f640d-0bb4-1e05-ee90-e2fd33ef83da/mzaf_1072410409796745476.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1769305461",
+    "titleJa": "仮装狂騒曲",
+    "releaseId": "release-1769305460",
+    "artistIds": [
+      "初星学園, 倉本千奈, 篠澤 広 & 月村手毬"
+    ],
+    "credits": [],
+    "trackNumber": 2,
+    "durationSec": 194,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/ff/80/99ff80b7-20e0-53f5-cb35-75c92c8ef943/mzaf_8151848394726934198.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1744083898",
+    "titleJa": "Luna say maybe",
+    "releaseId": "release-1744083630",
+    "artistIds": [
+      "初星学園 & 月村手毬"
+    ],
+    "credits": [],
+    "trackNumber": 3,
+    "durationSec": 265,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/87/3d/48/873d4825-626c-2805-742b-8dcb917124d0/mzaf_18011333032027688450.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1744085109",
+    "titleJa": "白線",
+    "releaseId": "release-1744085101",
+    "artistIds": [
+      "初星学園 & 葛城リーリヤ"
+    ],
+    "credits": [],
+    "trackNumber": 5,
+    "durationSec": 220,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/82/ef/9e/82ef9ee9-224c-22c4-f966-8768496a9009/mzaf_8502415789185162242.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-980248410",
+    "titleJa": "脳漿炸裂ガール feat.初音ミク、GUMI (feat. 初音ミク & GUMI)",
+    "releaseId": "release-980248279",
+    "artistIds": [
+      "れるりり"
+    ],
+    "credits": [],
+    "trackNumber": 6,
+    "durationSec": 193,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fc/81/0c/fc810ca2-9ed4-88d1-c3e6-bd775a8bf9ca/mzaf_2867746174862588297.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1780445246",
+    "titleJa": "アイ NEED YOU(FOR WONDERFUL STORY)",
+    "releaseId": "release-1780445241",
+    "artistIds": [
+      "THE IDOLM@STER BRILLIANT STARS"
+    ],
+    "credits": [],
+    "trackNumber": 7,
+    "durationSec": 446,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/74/b2/1574b206-800a-0584-15c9-b60ad10027c2/mzaf_16535145697119680650.plus.aac.p.m4a"
+  }
+]

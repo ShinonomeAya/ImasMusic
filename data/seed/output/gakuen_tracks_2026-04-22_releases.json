@@ -1,0 +1,68 @@
+[
+  {
+    "id": "release-1749006685",
+    "type": "ALBUM",
+    "titleJa": "Campus mode!! - Single",
+    "series": "gakuen",
+    "releaseDate": "2024-06-10T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/43/37/02/4337024f-e5fd-79ca-87ec-5dc1c7523e4d/PA00155503_0_193627_jacket.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1749006685"
+  },
+  {
+    "id": "release-1769305460",
+    "type": "ALBUM",
+    "titleJa": "仮装狂騒曲 - Single",
+    "series": "gakuen",
+    "releaseDate": "2024-10-01T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2c/02/a7/2c02a73a-6953-3802-d897-fcb13025b133/PA00164491_0_202834_jacket.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1769305460"
+  },
+  {
+    "id": "release-1744083630",
+    "type": "ALBUM",
+    "titleJa": "Luna say maybe - Single",
+    "series": "gakuen",
+    "releaseDate": "2024-05-16T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/4b/54/684b54e8-6ffd-58e3-52c1-ce42caea9f95/PA00153097_0_191082_jacket.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1744083630"
+  },
+  {
+    "id": "release-1744085101",
+    "type": "ALBUM",
+    "titleJa": "白線 - Single",
+    "series": "gakuen",
+    "releaseDate": "2024-05-16T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/87/1e/05/871e057c-25e3-9b8d-3a37-7477c13aab9c/PA00153100_0_191074_jacket.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1744085101"
+  },
+  {
+    "id": "release-980248279",
+    "type": "ALBUM",
+    "titleJa": "EXIT TUENS PRESENTS Vocalospace (feat.初音ミク) [feat. 初音ミク]",
+    "series": "gakuen",
+    "releaseDate": "2012-11-07T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/8a/0d/a8/8a0da89d-0954-b694-0ccb-bb727a56ff3a/QWCE_00366_itunes.png/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/980248279"
+  },
+  {
+    "id": "release-1780445241",
+    "type": "ALBUM",
+    "titleJa": "アイ NEED YOU(FOR WONDERFUL STORY) - Single",
+    "series": "gakuen",
+    "releaseDate": "2024-12-11T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6b/49/c1/6b49c13f-7535-9299-c309-bacb2a8bc249/PA00167883_0_207313_jacket.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1780445241"
+  }
+]

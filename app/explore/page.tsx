@@ -10,7 +10,7 @@ const EXPLORE_ITEMS = [
     href: '/explore/map',
     icon: Map,
     color: '#c96442',
-    available: false,
+    available: true,
   },
   {
     title: '发行时间线',

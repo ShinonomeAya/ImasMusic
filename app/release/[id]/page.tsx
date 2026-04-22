@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getReleaseById, getTracksByRelease, getReleasesBySeries } from '@/lib/data'
 import { SERIES_CONFIG } from '@/lib/series'
+import TrackPlayButton from '@/components/TrackPlayButton'
+import FavoriteButton from '@/components/FavoriteButton'
 import { Disc, Calendar, Barcode, Building2, Music, Clock } from 'lucide-react'
 
 export const revalidate = 86400
@@ -111,27 +113,43 @@ export default async function ReleasePage({ params }: { params: Promise<{ id: st
             {tracks.map((track, idx) => (
               <div
                 key={track.id}
-                className="flex items-center gap-4 px-4 py-3 rounded-comfortable transition-colors hover:bg-opacity-50"
+                className="flex items-center gap-3 px-4 py-3 rounded-comfortable transition-colors hover:bg-opacity-50 group"
                 style={{ backgroundColor: 'var(--bg-surface)', border: '1px solid var(--border-default)' }}
               >
-                <span className="w-6 text-center text-sm font-mono" style={{ color: 'var(--text-tertiary)' }}>
+                <span className="w-6 text-center text-sm font-mono shrink-0" style={{ color: 'var(--text-tertiary)' }}>
                   {idx + 1}
                 </span>
+                {track.previewUrl && (
+                  <TrackPlayButton track={track} size="sm" coverUrl={release.coverUrl} />
+                )}
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium truncate" style={{ color: 'var(--text-primary)' }}>
+                  <Link
+                    href={`/track/${track.id}`}
+                    className="text-sm font-medium truncate hover:text-terracotta transition-colors"
+                    style={{ color: 'var(--text-primary)' }}
+                  >
                     {track.titleJa}
-                  </p>
+                  </Link>
                   <p className="text-xs truncate" style={{ color: 'var(--text-tertiary)' }}>
                     {track.artistIds.join(', ')}
                   </p>
                 </div>
+                <FavoriteButton
+                  item={{
+                    id: track.id,
+                    type: 'track',
+                    title: track.titleJa,
+                    subtitle: track.artistIds.join(', '),
+                  }}
+                  size="sm"
+                />
                 {track.bpm && (
-                  <span className="text-xs font-mono px-2 py-1 rounded-sharp" style={{ backgroundColor: 'var(--bg-interactive)', color: 'var(--text-secondary)' }}>
+                  <span className="text-xs font-mono px-2 py-1 rounded-sharp shrink-0" style={{ backgroundColor: 'var(--bg-interactive)', color: 'var(--text-secondary)' }}>
                     {track.bpm} BPM
                   </span>
                 )}
                 {track.durationSec && (
-                  <span className="text-xs font-mono flex items-center gap-1" style={{ color: 'var(--text-tertiary)' }}>
+                  <span className="text-xs font-mono flex items-center gap-1 shrink-0" style={{ color: 'var(--text-tertiary)' }}>
                     <Clock size={12} />
                     {formatTime(track.durationSec)}
                   </span>

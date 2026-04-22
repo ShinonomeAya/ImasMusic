@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { getArtistById, getTracksByArtist, getReleaseById } from '@/lib/data'
+import { getArtistById, getTracksByArtist, getTrackById } from '@/lib/data'
 import { SERIES_CONFIG } from '@/lib/series'
 import { Star, Users, Mic2, PenTool, Music, Disc } from 'lucide-react'
 
@@ -26,7 +26,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
   if (!artist) notFound()
 
   const tracks = artist.trackIds?.length
-    ? await Promise.all(artist.trackIds.map((tid) => getReleaseById(tid))) // 简化处理
+    ? await Promise.all(artist.trackIds.map((tid) => getTrackById(tid)))
     : []
 
   const Icon = ROLE_ICONS[artist.role] || Star

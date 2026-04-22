@@ -1,189 +1,406 @@
-# 偶像大师音乐数据库 (ImasMusic)
+# iM@S Archive — 偶像大师音乐数据库
 
-> Next.js + TypeScript + Tailwind CSS 构建的 THE IDOLM@STER 系列音乐数据库。
+> Next.js 15 + TypeScript + Tailwind CSS 构建的 THE IDOLM@STER 系列音乐数据库。暖色编辑风格（Warm Editorial），支持真实音频试听、多企划数据、移动端响应式。
 
----
-
-## 1. 项目概述
-
-这是一个面向 THE IDOLM@STER（偶像大师）全系列的音乐数据库 Web 应用，收录各子系列的歌曲、偶像、创作者信息，提供多维度检索、数据可视化和曲风探索功能。
-
-- **当前数据覆盖**：765AS、Shiny Colors（其他系列已配置但无数据）
-- **设计方向**：warm editorial（暖色编辑风格），参考 `docs/DESIGN-claude.md`
+**当前版本：v0.2**
 
 ---
 
-## 2. 技术栈
+## 🚀 快速上手（写给恢复上下文的我）
 
-| 层 | 技术 |
-|---|---|
-| 框架 | Next.js 15 (App Router) |
-| 语言 | TypeScript 5 |
-| 样式 | Tailwind CSS 3.4 |
-| 图标 | Lucide React |
-| 图表 | Recharts |
-| 搜索 | Fuse.js (模糊搜索) |
+```bash
+# 1. 安装依赖（如未安装）
+npm install
 
-### 关键配置
-- `next.config.js` — 极简配置，`images.unoptimized: true`
-- `tsconfig.json` — strict 模式，路径别名 `@/*` 映射到 `./*`
-- `tailwind.config.js` — 大量自定义 design tokens（颜色、字体、间距、阴影）
-- `postcss.config.js` — 标准 Tailwind + autoprefixer
+# 2. 开发模式
+npm run dev
+# → http://localhost:3000
+
+# 3. 类型检查
+npm run type-check
+
+# 4. 生产构建
+npm run build
+```
+
+**当前数据状态**：35 tracks + 32 releases + 344 artists（765AS + Cinderella + Million Live + SideM + Shiny Colors + Gakuen）
 
 ---
 
-## 3. 项目结构
+## 📋 项目阶段总览
+
+| 阶段 | 状态 | 核心交付 | 文档 |
+|---|---|---|---|
+| **Phase 1** | ✅ | 设计系统、全局布局壳子、Zustand 状态、类型定义 | [docs/phase1.md](docs/phase1.md) |
+| **Phase 2** | ✅ | iTunes API 封装、数据导入脚手架、统一数据层 | [docs/phase2.md](docs/phase2.md) |
+| **Phase 3** | ✅ | 发行物/艺人/搜索/探索/收藏页面 | [docs/phase3.md](docs/phase3.md) |
+| **Phase 4** | ✅ | 真实音频播放器、多企划数据导入、移动端适配 | [docs/phase4.md](docs/phase4.md) |
+| **Phase 5** | ✅ | 单曲详情页、艺人筛选、播放修复、艺人数据导入 | [docs/phase5.md](docs/phase5.md) |
+| **Phase 6** | 🚧 进行中 | 数据层扩展、功能增强、交互优化 | [docs/phase6.md](docs/phase6.md) |
+
+---
+
+## 🏗️ 架构决策（必读，防止失忆）
+
+### 技术栈
+| 层 | 技术 | 用途 |
+|---|---|---|
+| 框架 | Next.js 15 (App Router) | SSR/SSG/ISR |
+| 语言 | TypeScript 5 (strict) | 类型安全 |
+| 样式 | Tailwind CSS 3.4 | 原子化样式 |
+| 图标 | Lucide React | 图标系统 |
+| 状态 | Zustand + persist | 播放器状态持久化 |
+| 主题 | next-themes | 亮色/暗色切换 |
+| 图表 | Recharts | 数据可视化（已启用） |
+| 动画 | Framer Motion | 播放器展开/页面过渡 |
+| 搜索 | 客户端过滤 | 实时过滤（暂用原生） |
+
+### 关键决策记录
+1. **数据存储**：JSON 文件（`data/*.json`）→ 阶段二可迁移到数据库
+2. **图片源**：iTunes/Apple Music CDN（`is*-ssl.mzstatic.com`）→ 已配置 remotePatterns
+3. **音频源**：iTunes 30秒试听（`previewUrl`）→ HTML5 Audio API
+4. **Spotify API**：⏸️ 搁置中（待 Client ID/Secret）→ energy/valence/BPM 字段预留，当前用 BPM+调性估算 mock
+5. **旧页面**：归档至 `app/_archive/`（`tsconfig.json` 已排除）
+6. **暗色模式**：默认亮色，暗色 Tone-matching（非纯黑，深暖灰 `#1a1a18`）
+
+---
+
+## 📁 目录结构（当前实际状态）
 
 ```
 ImasMusic/
 ├── app/                          # Next.js App Router
-│   ├── page.tsx                  # 首页：系列卡片、曲风饼图、标签云
-│   ├── layout.tsx                # 根布局：SiteNav + footer
-│   ├── globals.css               # 全局样式 + Tailwind + Claude Design System
-│   ├── series/[id]/              # 系列详情页：筛选表格
-│   ├── song/[id]/                # 歌曲详情页：元数据、推荐
-│   ├── genre/[slug]/             # 曲风详情页：描述、歌曲列表、系列分布饼图
-│   ├── idol/[id]/                # 偶像详情页：曲风饼图、编曲人统计
-│   ├── arranger/[id]/            # 编曲人详情页：曲风柱状图、系列分布
-│   ├── search/                   # 搜索页：Fuse.js 模糊搜索 + 多维度筛选
-│   ├── map/                      # 曲风地图：散点图（energy × valence）
-│   ├── timeline/                 # 发行时间线：堆叠面积图
-│   ├── compare/                  # 系列对比：雷达图
-│   └── favorites/                # 收藏页：localStorage 持久化
+│   ├── layout.tsx                # 根布局: Sidebar + TopAppBar + BottomPlayer + Footer
+│   ├── page.tsx                  # 首页: 统计数据 + 最新发行 + 可试听 + 企划卡片
+│   ├── globals.css               # Claude Design System + 暗色变量
+│   ├── template.tsx              # 页面过渡动画模板
+│   ├── releases/
+│   │   ├── page.tsx              # 发行物列表页（服务端）
+│   │   └── ReleaseList.tsx       # 客户端：Grid/List/Table 三视图 + 筛选排序
+│   ├── release/[id]/
+│   │   ├── page.tsx              # 发行物详情: Hero + Tracklist + Credits + 推荐
+│   │   └── loading.tsx           # Skeleton 加载态
+│   ├── tracks/
+│   │   ├── page.tsx              # 单曲列表页（服务端）
+│   │   ├── TrackListClient.tsx   # 客户端：卡片网格 + 筛选排序
+│   │   └── loading.tsx           # Skeleton 加载态
+│   ├── track/[id]/
+│   │   ├── page.tsx              # 单曲详情: Hero + Credits + BPM/时长/调性 + 相似曲目
+│   │   └── loading.tsx           # Skeleton 加载态
+│   ├── artists/
+│   │   └── page.tsx              # 艺人目录: 角色筛选 + 卡片网格
+│   ├── artist/[id]/
+│   │   ├── page.tsx              # 艺人详情: 头像 + 统计 + 作品列表
+│   │   └── loading.tsx           # Skeleton 加载态
+│   ├── series/[id]/
+│   │   └── page.tsx              # 企划详情页
+│   ├── search/
+│   │   ├── page.tsx              # 搜索页（服务端加载数据）
+│   │   └── SearchClient.tsx      # 客户端: 实时过滤 + 分类 Tab
+│   ├── explore/
+│   │   ├── page.tsx              # 探索入口: 曲风地图/时间线/对比收拢
+│   │   └── map/
+│   │       ├── page.tsx          # 曲风地图: Energy × Valence 散点图
+│   │       └── GenreMapClient.tsx # Recharts ScatterChart 客户端
+│   ├── favorites/
+│   │   └── page.tsx              # 收藏页: localStorage 持久化
+│   └── _archive/                 # 旧页面归档（不参与构建）
+│       ├── series/, song/, genre/, idol/, arranger/
+│       ├── map/, timeline/, compare/
+│       └── search/               # 旧搜索实现
 │
-├── components/                   # 共享组件
-│   ├── SiteNav.tsx               # 全局粘性导航
-│   ├── GenreDecorator.tsx        # 曲风页面 SVG 背景装饰
-│   ├── GenrePageWrapper.tsx      # 曲风页面布局包裹器
-│   ├── LoadingSkeleton.tsx       # 加载骨架屏
-│   └── ErrorFallback.tsx         # 错误回退 UI
+├── components/
+│   ├── layout/
+│   │   ├── Sidebar.tsx           # 侧边栏: 6企划 + 探索/全部/收藏 + 主题切换
+│   │   ├── TopAppBar.tsx         # 顶栏: 主导航 + 搜索/关闭按钮
+│   │   ├── BottomPlayer.tsx      # 底部播放器: MINI/EXPANDED/HIDDEN + 队列浮层
+│   │   └── ThemeProvider.tsx     # next-themes wrapper
+│   ├── ui/
+│   │   └── Skeleton.tsx          # 统一 Skeleton 组件
+│   ├── FavoriteButton.tsx        # ♥ 收藏按钮（全局复用）
+│   ├── TrackPlayButton.tsx       # ▶ 播放按钮（接入 playerStore）
+│   ├── KeyboardShortcuts.tsx     # 全局键盘快捷键
+│   ├── LoadingSkeleton.tsx       # 通用加载占位
+│   └── GenreDecorator.tsx        # 曲风装饰组件
 │
-├── lib/                          # 工具层
-│   ├── data.ts                   # 数据聚合 + 所有查询函数
-│   └── hooks.ts                  # useLocalStorage（含 hydration 安全）
+├── lib/
+│   ├── utils.ts                  # cn() 工具函数
+│   ├── data.ts                   # 统一数据查询层（异步 + 缓存）
+│   ├── series.ts                 # 6企划配置（品牌色/名称/图标）
+│   ├── color.ts                  # Canvas 封面主色提取
+│   ├── hooks.ts                  # useFavorites 等自定义 hooks
+│   ├── api/
+│   │   ├── itunes.ts             # iTunes Search API 封装
+│   │   └── audio.ts              # 音频工具（验证/时长解析）
+│   └── store/
+│       └── playerStore.ts        # Zustand: 播放状态 + 队列 + 循环/随机
 │
 ├── types/
-│   └── song.ts                   # 核心 TypeScript 类型定义
+│   └── index.ts                  # 核心类型: Track/Release/Artist/PlayerState
 │
-├── data/                         # 静态歌曲数据（按系列分文件）
-│   ├── 765/sample.ts             # 765AS 数据
-│   └── shinycolors/sample.ts     # Shiny Colors 数据
+├── data/                         # 静态 JSON 数据
+│   ├── tracks.json               # 曲目数据（35 条）
+│   ├── releases.json             # 发行物数据（32 条）
+│   ├── artists.json              # 艺人数据（344 条）
+│   └── seed/                     # 数据导入脚手架
+│       ├── input/                # 输入文件（每行一个查询词）
+│       ├── output/               # 脚手架输出（tracks/releases/errors）
+│       └── wiki-dumps/           # Wiki 页面 dump（待录入）
 │
-├── styles/                       # 主题配置
-│   ├── genres.config.ts          # 9 大曲风定义 + 配色
-│   └── series.config.ts          # 5 系列定义 + 品牌色
+├── scripts/
+│   ├── seed-cli.ts               # CLI 数据导入工具（iTunes）
+│   ├── seed-idols.ts             # imasparql 艺人抓取
+│   ├── merge-wiki-supplement.ts  # Wiki dump 合并到 tracks.json
+│   └── parse-wiki-dump.ts        # Wiki dump 文本解析器
 │
 ├── docs/
-│   └── DESIGN-claude.md          # 设计系统文档
+│   ├── DESIGN-claude.md          # 设计系统文档
+│   ├── phase1.md ~ phase6.md     # 各阶段实施记录
 │
-└── plan.md                       # 实现计划（中文）
+├── styles/                       # 旧配置（保留参考）
+│   ├── genres.config.ts
+│   └── series.config.ts
+│
+├── next.config.js                # iTunes CDN + ISR 配置
+├── tailwind.config.js            # Design System tokens + 6企划品牌色
+└── tsconfig.json                 # strict + app/_archive 排除
 ```
 
 ---
 
-## 4. 数据模型
+## 🎯 当前已实现的功能
 
-核心类型定义在 `types/song.ts`：
+### 页面（12 个路由）
+| 路由 | 类型 | 功能亮点 |
+|---|---|---|
+| `/` | Static (ISR) | 数据概览、最新发行网格、热门单曲、6企划卡片 |
+| `/releases` | Static (ISR) | Grid/List/Table 三视图、类型筛选、排序、实时搜索 |
+| `/releases?series=x` | Static | 按企划筛选发行物 |
+| `/release/[id]` | Dynamic | 大封面 Hero、Tracklist（BPM+时长+收藏）、Apple Music 外链、同企划推荐 |
+| `/tracks` | Static (ISR) | 单曲卡片网格、企划/BPM/可试听标签、关键词搜索、企划筛选、排序 |
+| `/track/[id]` | Dynamic | 封面 Hero、Credits、BPM/时长/调性、播放按钮、收藏、相似曲目 |
+| `/artists` | Static (ISR) | 角色筛选（偶像/组合/声优/创作者）、卡片网格 |
+| `/artist/[id]` | Dynamic | 头像、角色/企划标签、曲目/专辑统计 |
+| `/search` | Static (ISR) | 大搜索框 autoFocus、分类 Tab、实时过滤 |
+| `/explore` | Static (ISR) | 可视化功能收拢入口（曲风地图/时间线/对比/收藏） |
+| `/explore/map` | Static (ISR) | Energy × Valence 散点图、企划色区分、Tooltip |
+| `/favorites` | Client | localStorage 持久化、悬停删除 |
 
-### Song（歌曲）
-- 多语言标题：`titleJa`、`titleZh`、`titleRomaji`
-- 系列归属：`series`（`765` | `cinderella` | `million` | `shinycolors` | `sidem`）
-- 表演偶像：`idols: Idol[]`
-- 创作者：`composer`、`lyricist`、`arranger`
-- 曲风分类：`primaryGenre`（PrimaryGenre）+ `subGenres[]`
-- 情感指标：`energy: 0-10`、`valence: 0-10`
-- 发行历史：`releases[]`（album / year / type）
-- 标签、翻唱标识、外部链接、跨系列引用
+### 播放器
+- [x] iTunes 30秒试听真实播放
+- [x] 播放/暂停/进度条拖动
+- [x] 音量调节 + 静音切换
+- [x] 上一首/下一首
+- [x] MINI 底部条 + EXPANDED 全屏抽屉（Framer Motion 动画）
+- [x] 播放队列 UI（浮层、删除、清空）
+- [x] 循环模式（顺序/列表/单曲）
+- [x] 随机播放模式
+- [x] 专辑封面主色提取（Canvas API）
+- [x] 浏览器自动播放策略兼容
 
-### PrimaryGenre（9 大曲风）
-`idol-pop`、`mature-pop`、`rock-energy`、`electronic`、`jazz-soul`、`classical`、`wafuu`、`stage-drama`、`ambient-ballad`
+### 收藏
+- [x] 首页热门单曲 ♥ 收藏
+- [x] 单曲详情页 ♥ 收藏
+- [x] 相似曲目 ♥ 收藏
+- [x] 专辑 tracklist 每行 ♥ 收藏
+- [x] `/favorites` 管理页（读取/删除）
 
-### Series（5 系列）
-`765`、`cinderella`、`million`、`shinycolors`、`sidem`
+### 交互优化
+- [x] 全局键盘快捷键（Space/←→/↑↓/M/F）
+- [x] Skeleton 加载态（track/release/artist 动态路由）
+- [x] 播放器展开/收起 Framer Motion 动画
+
+### 响应式
+- [x] 桌面端：固定 Sidebar + 顶栏 + 底部播放器
+- [x] 移动端（< 768px）：汉堡菜单抽屉、全宽布局、播放器适配
 
 ---
 
-## 5. 页面路由
+## 🗂️ 数据模型速查
 
-| 路由 | 功能 | 亮点 |
-|---|---|---|
-| `/` | 首页 | 系列卡片、曲风环形图、标签云、随机发现 |
-| `/series/[id]` | 系列详情 | 6 维度筛选（专辑/年代/曲风/作曲/作词/编曲）、可排序曲目表格 |
-| `/song/[id]` | 歌曲详情 | 元数据、翻唱信息、创作者、相似歌曲推荐 |
-| `/genre/[slug]` | 曲风详情 | 描述、歌曲列表、系列分布饼图、Top 编曲人 |
-| `/idol/[id]` | 偶像详情 | 曲风饼图、Top 编曲人、带系列徽章的歌曲列表 |
-| `/arranger/[id]` | 编曲人详情 | 曲风偏好柱状图、系列分布、全部作品 |
-| `/search` | 搜索 | Fuse.js 模糊搜索、多维度筛选、列表/网格切换、排序 |
-| `/map` | 曲风地图 | 散点图 X=energy, Y=valence，支持系列/曲风筛选 |
-| `/timeline` | 时间线 | 堆叠面积图展示每年各曲风发行量 |
-| `/compare` | 系列对比 | 雷达图对比两系列曲风占比、独有曲风列表 |
-| `/favorites` | 收藏 | localStorage 持久化、导出文本 |
+### Track（曲目）
+```typescript
+interface Track {
+  id: string
+  titleJa: string          // 主要展示语言
+  titleZh?: string
+  titleRomaji?: string
+  releaseId: string
+  artistIds: string[]
+  credits: { artistId: string; role: 'VOCALS'|'COMPOSER'|'LYRICIST'|'ARRANGER' }[]
+  trackNumber: number
+  durationSec?: number
+  bpm?: number             // ⏸️ 待 Wiki 数据录入
+  energy?: number          // 基于 BPM+调性的估算值
+  valence?: number         // 同上
+  key?: number             // Spotify API 标准 (0-11)
+  mode?: number            // 0=minor, 1=major
+  previewUrl?: string      // iTunes 30s 试听
+  spotifyId?: string
+  lyrics?: string
+  description?: string
+}
+```
+
+### Release（发行物）
+```typescript
+interface Release {
+  id: string
+  type: 'SINGLE' | 'ALBUM' | 'COMPILATION' | 'EP'
+  titleJa: string
+  series: '765'|'cinderella'|'million'|'sidem'|'shinycolors'|'gakuen'
+  releaseDate?: string     // ISO 8601
+  coverUrl?: string        // iTunes 600x600
+  dominantColor?: string   // Canvas 提取（运行时）
+  trackIds: string[]
+  catalogNumber?: string
+  label?: string
+  format?: string
+  appleMusicUrl?: string
+}
+```
+
+### Artist（艺人）
+```typescript
+interface Artist {
+  id: string
+  nameJa: string
+  role: 'IDOL' | 'UNIT' | 'CV' | 'CREATOR'
+  series?: string[]
+  portraitUrl?: string
+  trackIds?: string[]
+  releaseIds?: string[]
+}
+```
 
 ---
 
-## 6. 设计系统
+## 🎨 设计系统速查
 
-项目使用 **Claude Design System**，定义在 `globals.css` 和 `tailwind.config.js` 中：
+### 核心色板
+| Token | 亮色 | 暗色 | 用途 |
+|---|---|---|---|
+| `--bg-page` | `#f5f4ed` | `#1a1a18` | 页面背景 |
+| `--bg-surface` | `#faf9f5` | `#242422` | 卡片背景 |
+| `--text-primary` | `#141413` | `#f0eee6` | 主文字 |
+| `--text-secondary` | `#5e5d59` | `#b0aea5` | 次要文字 |
+| `--color-terracotta` | `#c96442` | `#c96442` | 品牌强调 |
+| `--border-default` | `#f0eee6` | `#3d3d3a` | 边框 |
 
-### 核心色板（暖色编辑风格）
-| Token | 色值 | 用途 |
-|---|---|---|
-| `parchment` | `#f5f4ed` | 页面背景 |
-| `ivory` | `#faf9f5` | 卡片/表层背景 |
-| `terracotta` | `#c96442` | 品牌主色、强调 |
-| `near-black` | `#141413` | 主文字 |
-| `olive-gray` | `#5e5d59` | 次要文字 |
-| `stone-gray` | `#87867f` | 辅助文字 |
-| `border-cream` | `#f0eee6` | 卡片边框 |
-| `border-warm` | `#e8e6dc` | 分割线 |
+### 企划品牌色
+```
+765AS:        #F34F6D  (粉红)
+Cinderella:   #2681C8  (蓝)
+Million Live: #FFC30B  (黄)
+SideM:        #0FBE94  (青绿)
+Shiny Colors: #8DBBFF  (浅蓝)
+Gakuen:       #FF7F27  (橘)
+```
 
 ### 字体
-- 标题：`Georgia, Cambria, serif`（weight 500）
+- 标题：`Georgia, Cambria, serif`（weight 500，绝不用 bold）
 - 正文：`system-ui, -apple-system, sans-serif`
-
-### 暗色模式
-通过 Tailwind `dark:` 类 + CSS 变量实现。
-
-### 曲风主题
-每个曲风页面通过 `GenreDecorator.tsx` 渲染独特的 SVG 几何背景图案，颜色来源于 `genres.config.ts`。
+- 行高：body 1.60，heading 1.10-1.30
 
 ---
 
-## 7. 关键文件速查
+## 🔧 数据导入指南
 
-| 文件 | 职责 | 修改前必读 |
-|---|---|---|
-| `types/song.ts` | 核心数据模型 | 所有数据结构的来源 |
-| `lib/data.ts` | 数据聚合 + 查询 API | 添加新系列数据后需在此注册 |
-| `styles/series.config.ts` | 5 系列配置（品牌色、名称等） | 系列卡片、饼图、徽章颜色来源 |
-| `styles/genres.config.ts` | 9 曲风配置（配色、字体、描述） | 曲风页面、标签、背景图案颜色来源 |
-| `app/globals.css` | Design System tokens + 组件类 | 全局样式变更 |
-| `components/SiteNav.tsx` | 全局导航 | 新增页面路由时需更新 |
-| `components/GenreDecorator.tsx` | 曲风 SVG 背景装饰 | 曲风视觉风格 |
-| `lib/hooks.ts` | `useLocalStorage` | 新增持久化状态时参考 |
-
----
-
-## 8. 运行项目
-
-```bash
-# 安装依赖
-npm install
-
-# 开发模式
-npm run dev
-# → http://localhost:3000
-
-# 生产构建
-npm run build
+### 1. 准备输入文件
+创建 `data/seed/input/{series}-sample.txt`，每行一个曲目名：
+```
+# 注释以 # 开头
+M@STERPIECE
+READY!!
+GO MY WAY!!
 ```
 
+### 2. 运行脚手架
+```bash
+# 单曲模式
+npx tsx scripts/seed-cli.ts \
+  --input data/seed/input/765-sample.txt \
+  --series 765 \
+  --type track \
+  --output data/seed/output/
+
+# 专辑模式
+npx tsx scripts/seed-cli.ts \
+  --input data/seed/input/765-albums.txt \
+  --series 765 \
+  --type album
+```
+
+参数：
+- `--input` 输入文件路径（必填）
+- `--series` 企划 ID: 765|cinderella|million|sidem|shinycolors|gakuen（必填）
+- `--type` track|album（默认 track）
+- `--output` 输出目录（默认 data/seed/output/）
+- `--delay` 请求间隔 ms（默认 1500）
+- `--limit` 每词返回结果数（默认 5）
+
+### 3. Wiki 数据合并
+```bash
+# 1. 把 Wiki 页面 Ctrl+A 保存到 data/seed/wiki-dumps/{曲名}.txt
+# 2. 运行合并脚本
+npx tsx scripts/merge-wiki-supplement.ts
+```
+
+### 4. 已知问题
+- 部分歌名在 iTunes 上不存在 → 会写入 `_errors.json`
+- 搜索可能匹配到非偶像大师歌曲 → 需人工校对
+- 建议查询词包含 `THE IDOLM@STER` 前缀（CLI 已自动追加）
+
 ---
 
-## 9. 当前状态与注意事项
+## 📝 待办清单（下次继续开发时参考）
 
-- **数据完整度**：765AS 和 Shiny Colors 有示例数据；Cinderella、Million、SideM 已配置但无歌曲数据。
-- **曲风颜色**：9 大曲风已统一为 warm editorial 低饱和暖色调（见 `styles/genres.config.ts`），与整体设计风格一致。
-- **系列品牌色**：`series.config.ts` 中的系列色（765AS 橙、百万黄、闪耀色彩紫等）保持原品牌色，独立于曲风系统。
-- **localStorage 前缀**：所有持久化键使用 `imas-db-` 前缀。
-- **Client 组件**：大多数页面使用 `'use client'` 指令，配合 React state 管理筛选、排序和视图模式。
+> 详细规划见 [docs/phase6.md](docs/phase6.md)
+
+### Phase 6 — 数据层扩展与深度功能（当前阶段）
+
+#### P1 — 歌曲档案数据补充（人工 + 半自动）
+- [ ] **Wiki / 萌娘百科 数据录入** — 人工复制 BPM/作词/作曲/编曲到 `wiki-dumps/`，脚本自动合并
+- [ ] **更多数据导入** — Cinderella Girls / SideM / Gakuen（iTunes 脚手架）
+- [ ] **数据质量修复** — release `series` 标注错误、track `artistIds` 文本化问题
+
+#### P2 — 功能增强（大部分已完成 ✅）
+- [x] **播放队列 UI** — 队列浮层、删除、清空
+- [x] **收藏功能完整化** — 单曲详情/专辑 tracklist/首页/相似曲目
+- [x] **曲风可视化** — `/explore/map`（mock 数据）
+- [x] **Framer Motion 动画** — 播放器展开/收起
+- [x] **Skeleton 加载态** — 动态路由 loading.tsx
+- [x] **专辑主色提取** — Canvas API
+- [ ] **页面切换过渡动画** — 待实现
+- [ ] **列表过滤动画** — 待实现
+
+#### P3 — 交互优化（已完成 ✅）
+- [x] **键盘快捷键** — Space/←→/↑↓/M/F
+- [x] **循环/随机播放模式**
+
+#### 长期（Phase 7+）
+- [ ] **PWA 支持**
+- [ ] **多语言切换** — 日/中/英展示切换
+- [ ] **用户账号系统** — 替换 localStorage 收藏为云端
+- [ ] **评论/笔记** — 用户对单曲的个人笔记
+- [ ] **数据统计面板** — 个人听歌统计、收藏分析
+
+---
+
+## 🔗 关键外部依赖
+
+- **iTunes Search API**: https://itunes.apple.com/search（无需认证）
+- **imasparql**: https://sparql.crssnky.xyz/spql/imas/query（偶像档案数据源）
+- **Project iM@S Wiki**: https://project-imas.wiki（歌曲档案数据源，人工录入）
+- **图片 CDN**: `is1-ssl.mzstatic.com` ~ `is5-ssl.mzstatic.com`
+
+---
+
+## 📜 设计文档
+
+- [docs/DESIGN-claude.md](docs/DESIGN-claude.md) — Claude Design System 完整规范
+- [docs/phase1.md](docs/phase1.md) ~ [docs/phase6.md](docs/phase6.md) — 各阶段实施记录
+
+---
+
+*最后更新: 2026-04-22 | v0.2 — Phase 6 功能增强完成，UI 修复完成*

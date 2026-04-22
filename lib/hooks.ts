@@ -1,38 +1,65 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
-export function useLocalStorage<T>(key: string, initialValue: T): [T, (value: T | ((val: T) => T)) => void] {
-  const prefixedKey = `imas-db-${key}`
+export interface FavoriteItem {
+  id: string
+  type: 'track' | 'release'
+  title: string
+  subtitle: string
+  coverUrl?: string
+}
 
-  const [storedValue, setStoredValue] = useState<T>(initialValue)
-  const [isHydrated, setIsHydrated] = useState(false)
+const STORAGE_KEY = 'imas-favorites'
+
+export function useFavorites() {
+  const [favorites, setFavorites] = useState<FavoriteItem[]>([])
+  const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    const raw = localStorage.getItem(STORAGE_KEY)
+    if (raw) {
       try {
-        const item = window.localStorage.getItem(prefixedKey)
-        if (item) {
-          setStoredValue(JSON.parse(item))
-        }
-      } catch (error) {
-        console.error('Error reading localStorage:', error)
+        setFavorites(JSON.parse(raw))
+      } catch {
+        setFavorites([])
       }
-      setIsHydrated(true)
     }
-  }, [prefixedKey])
+    setLoaded(true)
+  }, [])
 
-  const setValue = (value: T | ((val: T) => T)) => {
-    try {
-      const valueToStore = value instanceof Function ? value(storedValue) : value
-      setStoredValue(valueToStore)
-      if (typeof window !== 'undefined') {
-        window.localStorage.setItem(prefixedKey, JSON.stringify(valueToStore))
+  const isFavorite = useCallback(
+    (id: string) => favorites.some((f) => f.id === id),
+    [favorites]
+  )
+
+  const addFavorite = useCallback((item: FavoriteItem) => {
+    setFavorites((prev) => {
+      if (prev.some((f) => f.id === item.id)) return prev
+      const next = [...prev, item]
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(next))
+      return next
+    })
+  }, [])
+
+  const removeFavorite = useCallback((id: string) => {
+    setFavorites((prev) => {
+      const next = prev.filter((f) => f.id !== id)
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(next))
+      return next
+    })
+  }, [])
+
+  const toggleFavorite = useCallback(
+    (item: FavoriteItem) => {
+      if (isFavorite(item.id)) {
+        removeFavorite(item.id)
+      } else {
+        addFavorite(item)
       }
-    } catch (error) {
-      console.error('Error saving to localStorage:', error)
-    }
-  }
+    },
+    [isFavorite, addFavorite, removeFavorite]
+  )
 
-  return [isHydrated ? storedValue : initialValue, setValue]
+  return { favorites, loaded, isFavorite, addFavorite, removeFavorite, toggleFavorite }
 }
