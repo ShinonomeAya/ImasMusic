@@ -78,10 +78,8 @@ export function getHighResArtwork(
   size: number = 600
 ): string | undefined {
   if (!url) return undefined
-  // iTunes URL pattern: .../image.jpg 或 .../image.{w}x{h}bb.jpg
-  return url
-    .replace(/\.\d+x\d+bb\.jpg$/, `.${size}x${size}bb.jpg`)
-    .replace(/\/\d+x\d+bb\//, `/${size}x${size}bb/`)
+  // iTunes URL pattern: .../image.jpg/{w}x{h}bb.jpg
+  return url.replace(/\/\d+x\d+bb\.jpg$/, `/${size}x${size}bb.jpg`)
 }
 
 /**

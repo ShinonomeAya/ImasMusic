@@ -123,8 +123,23 @@ async function main() {
     try {
       console.log(`${progress} 🔍 搜索: "${query}"`)
 
+      // 为查询词追加企划前缀以提高匹配精度
+      const searchTerm = opts.series === '765'
+        ? `THE IDOLM@STER ${query}`
+        : opts.series === 'cinderella'
+        ? `アイドルマスター シンデレラガールズ ${query}`
+        : opts.series === 'million'
+        ? `アイドルマスター ミリオンライブ ${query}`
+        : opts.series === 'sidem'
+        ? `アイドルマスター SideM ${query}`
+        : opts.series === 'shinycolors'
+        ? `アイドルマスター シャイニーカラーズ ${query}`
+        : opts.series === 'gakuen'
+        ? `学園アイドルマスター ${query}`
+        : query
+
       const res = await searchItunes({
-        term: query,
+        term: searchTerm,
         entity: opts.type === 'track' ? 'song' : 'album',
         country: 'jp',
         limit: opts.limit,
