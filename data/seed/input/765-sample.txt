@@ -1,0 +1,13 @@
+# 765PRO ALLSTARS 示例曲目列表
+# 每行一个查询词，# 开头为注释
+# 运行: npx tsx scripts/seed-cli.ts --input data/seed/input/765-sample.txt --series 765 --type track
+
+M@STERPIECE
+READY!!
+CHANGE!!!!
+GO MY WAY!!
+僕たちのResistance
+ダイヤモンド・クラリティ
+ふるさとジンガ
+自主独立道
+レジェンド・デイズ

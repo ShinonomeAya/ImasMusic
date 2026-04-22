@@ -1,221 +1,199 @@
-// 数据工具库 - 聚合所有数据源
-import { Song, SongSummary, Series, PrimaryGenre } from '@/types/song'
-import { sampleSongs765 } from '@/data/765/sample'
-import { sampleSongsShinycolors, getShinycolorsStats } from '@/data/shinycolors/sample'
+/**
+ * 数据聚合层 —— ImasMusic Rebuilt
+ * 从 JSON 文件加载 Tracks / Releases / Artists
+ * 提供所有查询函数
+ */
 
-// 聚合所有歌曲数据
-export const allSongs: Song[] = [
-  ...sampleSongs765,
-  ...sampleSongsShinycolors,
-]
+import { promises as fs } from 'fs'
+import path from 'path'
+import type { Track, Release, Artist, SeriesBrand, ReleaseType, ArtistRole } from '@/types'
 
-// 获取所有歌曲
-export function getAllSongs(): Song[] {
-  return allSongs
+// ============================================================
+// 数据加载 (服务端运行，构建时读取)
+// ============================================================
+
+let _tracks: Track[] | null = null
+let _releases: Release[] | null = null
+let _artists: Artist[] | null = null
+
+async function loadTracks(): Promise<Track[]> {
+  if (_tracks) return _tracks
+  try {
+    const file = await fs.readFile(path.join(process.cwd(), 'data', 'tracks.json'), 'utf-8')
+    _tracks = JSON.parse(file) as Track[]
+  } catch {
+    _tracks = []
+  }
+  return _tracks
 }
 
-// 根据ID获取歌曲
-export function getSongById(id: string): Song | undefined {
-  return allSongs.find(song => song.id === id)
+async function loadReleases(): Promise<Release[]> {
+  if (_releases) return _releases
+  try {
+    const file = await fs.readFile(path.join(process.cwd(), 'data', 'releases.json'), 'utf-8')
+    _releases = JSON.parse(file) as Release[]
+  } catch {
+    _releases = []
+  }
+  return _releases
 }
 
-// 根据系列获取歌曲
-export function getSongsBySeries(series: Series): Song[] {
-  return allSongs.filter(song => song.series === series)
+async function loadArtists(): Promise<Artist[]> {
+  if (_artists) return _artists
+  try {
+    const file = await fs.readFile(path.join(process.cwd(), 'data', 'artists.json'), 'utf-8')
+    _artists = JSON.parse(file) as Artist[]
+  } catch {
+    _artists = []
+  }
+  return _artists
 }
 
-// 根据风格获取歌曲
-export function getSongsByGenre(genre: PrimaryGenre): Song[] {
-  return allSongs.filter(song => song.primaryGenre === genre)
+/** 强制刷新缓存（开发时有用） */
+export function clearDataCache() {
+  _tracks = null
+  _releases = null
+  _artists = null
 }
 
-// 获取简化版歌曲列表
-export function getAllSongSummaries(): SongSummary[] {
-  return allSongs.map(song => ({
-    id: song.id,
-    titleJa: song.titleJa,
-    titleZh: song.titleZh,
-    series: song.series,
-    primaryGenre: song.primaryGenre,
-    energy: song.energy,
-    valence: song.valence,
-    isCover: song.isCover,
-    firstYear: song.firstYear,
-  }))
+// ============================================================
+// Track 查询
+// ============================================================
+
+export async function getAllTracks(): Promise<Track[]> {
+  return loadTracks()
 }
 
-// 按系列统计
-export function getStatsBySeries(series: Series) {
-  const songs = getSongsBySeries(series)
-  const genreCounts = songs.reduce((acc, song) => {
-    acc[song.primaryGenre] = (acc[song.primaryGenre] || 0) + 1
-    return acc
-  }, {} as Record<PrimaryGenre, number>)
+export async function getTrackById(id: string): Promise<Track | undefined> {
+  const tracks = await loadTracks()
+  return tracks.find((t) => t.id === id)
+}
 
-  const arrangerCounts = songs.reduce((acc, song) => {
-    acc[song.arranger] = (acc[song.arranger] || 0) + 1
+export async function getTracksByRelease(releaseId: string): Promise<Track[]> {
+  const tracks = await loadTracks()
+  return tracks.filter((t) => t.releaseId === releaseId)
+}
+
+export async function getTracksByArtist(artistId: string): Promise<Track[]> {
+  const tracks = await loadTracks()
+  return tracks.filter((t) => t.artistIds.includes(artistId))
+}
+
+export async function getTracksBySeries(series: SeriesBrand): Promise<Track[]> {
+  const releases = await loadReleases()
+  const releaseIds = new Set(releases.filter((r) => r.series === series).map((r) => r.id))
+  const tracks = await loadTracks()
+  return tracks.filter((t) => releaseIds.has(t.releaseId))
+}
+
+export async function searchTracks(query: string): Promise<Track[]> {
+  const q = query.toLowerCase()
+  const tracks = await loadTracks()
+  return tracks.filter(
+    (t) =>
+      t.titleJa.toLowerCase().includes(q) ||
+      t.titleRomaji?.toLowerCase().includes(q) ||
+      t.titleZh?.toLowerCase().includes(q)
+  )
+}
+
+// ============================================================
+// Release 查询
+// ============================================================
+
+export async function getAllReleases(): Promise<Release[]> {
+  return loadReleases()
+}
+
+export async function getReleaseById(id: string): Promise<Release | undefined> {
+  const releases = await loadReleases()
+  return releases.find((r) => r.id === id)
+}
+
+export async function getReleasesBySeries(series: SeriesBrand): Promise<Release[]> {
+  const releases = await loadReleases()
+  return releases.filter((r) => r.series === series)
+}
+
+export async function getReleasesByType(type: ReleaseType): Promise<Release[]> {
+  const releases = await loadReleases()
+  return releases.filter((r) => r.type === type)
+}
+
+export async function searchReleases(query: string): Promise<Release[]> {
+  const q = query.toLowerCase()
+  const releases = await loadReleases()
+  return releases.filter(
+    (r) =>
+      r.titleJa.toLowerCase().includes(q) ||
+      r.titleRomaji?.toLowerCase().includes(q) ||
+      r.titleZh?.toLowerCase().includes(q)
+  )
+}
+
+// ============================================================
+// Artist 查询
+// ============================================================
+
+export async function getAllArtists(): Promise<Artist[]> {
+  return loadArtists()
+}
+
+export async function getArtistById(id: string): Promise<Artist | undefined> {
+  const artists = await loadArtists()
+  return artists.find((a) => a.id === id)
+}
+
+export async function getArtistsByRole(role: ArtistRole): Promise<Artist[]> {
+  const artists = await loadArtists()
+  return artists.filter((a) => a.role === role)
+}
+
+export async function getArtistsBySeries(series: SeriesBrand): Promise<Artist[]> {
+  const artists = await loadArtists()
+  return artists.filter((a) => a.series?.includes(series))
+}
+
+// ============================================================
+// 统计与聚合
+// ============================================================
+
+export async function getSeriesStats(series: SeriesBrand) {
+  const [releases, tracks] = await Promise.all([loadReleases(), loadTracks()])
+
+  const seriesReleases = releases.filter((r) => r.series === series)
+  const releaseIds = new Set(seriesReleases.map((r) => r.id))
+  const seriesTracks = tracks.filter((t) => releaseIds.has(t.releaseId))
+
+  // 按类型统计发行物
+  const typeCounts = seriesReleases.reduce((acc, r) => {
+    acc[r.type] = (acc[r.type] || 0) + 1
     return acc
   }, {} as Record<string, number>)
 
-  const topArrangers = Object.entries(arrangerCounts)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 3)
+  // 按年份统计
+  const yearCounts = seriesReleases.reduce((acc, r) => {
+    if (r.releaseDate) {
+      const year = new Date(r.releaseDate).getFullYear()
+      acc[year] = (acc[year] || 0) + 1
+    }
+    return acc
+  }, {} as Record<number, number>)
+
+  // BPM 范围
+  const bpms = seriesTracks.map((t) => t.bpm).filter((b): b is number => b !== undefined)
 
   return {
-    totalSongs: songs.length,
-    covers: songs.filter(s => s.isCover).length,
-    originals: songs.filter(s => !s.isCover).length,
-    genreCounts,
-    topArrangers,
-    yearRange: {
-      min: songs.length > 0 ? Math.min(...songs.map(s => s.firstYear)) : 0,
-      max: songs.length > 0 ? Math.max(...songs.map(s => s.firstYear)) : 0,
-    },
+    totalReleases: seriesReleases.length,
+    totalTracks: seriesTracks.length,
+    typeCounts,
+    yearCounts,
+    bpmRange: bpms.length > 0 ? { min: Math.min(...bpms), max: Math.max(...bpms) } : null,
   }
 }
 
-// 按风格统计
-export function getStatsByGenre(genre: PrimaryGenre) {
-  const songs = getSongsByGenre(genre)
-
-  const seriesCounts = songs.reduce((acc, song) => {
-    acc[song.series] = (acc[song.series] || 0) + 1
-    return acc
-  }, {} as Record<Series, number>)
-
-  const arrangerCounts = songs.reduce((acc, song) => {
-    acc[song.arranger] = (acc[song.arranger] || 0) + 1
-    return acc
-  }, {} as Record<string, number>)
-
-  const topArrangers = Object.entries(arrangerCounts)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 3)
-
-  return {
-    totalSongs: songs.length,
-    seriesCounts,
-    topArrangers,
-    yearRange: {
-      min: songs.length > 0 ? Math.min(...songs.map(s => s.firstYear)) : 0,
-      max: songs.length > 0 ? Math.max(...songs.map(s => s.firstYear)) : 0,
-    },
-  }
-}
-
-// 获取相似推荐
-export function getSimilarSongs(songId: string, limit: number = 6): SongSummary[] {
-  const targetSong = getSongById(songId)
-  if (!targetSong) return []
-
-  const candidates = allSongs
-    .filter(s => s.id !== songId && s.primaryGenre === targetSong.primaryGenre)
-    .map(s => ({
-      ...s,
-      distance: Math.abs(s.energy - targetSong.energy) + Math.abs(s.valence - targetSong.valence),
-    }))
-    .sort((a, b) => a.distance - b.distance)
-    .slice(0, limit)
-
-  return candidates.map(({ distance, ...song }) => ({
-    id: song.id,
-    titleJa: song.titleJa,
-    titleZh: song.titleZh,
-    series: song.series,
-    primaryGenre: song.primaryGenre,
-    energy: song.energy,
-    valence: song.valence,
-    isCover: song.isCover,
-    firstYear: song.firstYear,
-  }))
-}
-
-// 获取所有唯一标签
-export function getAllTags(): string[] {
-  const tags = new Set<string>()
-  allSongs.forEach(song => {
-    song.tags.forEach(tag => tags.add(tag))
-  })
-  return Array.from(tags).sort()
-}
-
-// 获取所有唯一年份
-export function getAllYears(): number[] {
-  const years = new Set<number>()
-  allSongs.forEach(song => {
-    years.add(song.firstYear)
-  })
-  return Array.from(years).sort((a, b) => a - b)
-}
-
-// 获取所有偶像（去重）
-export function getAllIdols() {
-  const idolMap = new Map<string, { id: string; nameJa: string; nameZh: string; series: Series[] }>()
-  allSongs.forEach(song => {
-    song.idols.forEach(idol => {
-      if (idolMap.has(idol.id)) {
-        const existing = idolMap.get(idol.id)!
-        if (!existing.series.includes(song.series)) existing.series.push(song.series)
-      } else {
-        idolMap.set(idol.id, { ...idol, series: [song.series] })
-      }
-    })
-  })
-  return Array.from(idolMap.values())
-}
-
-// 根据偶像ID获取其所有歌曲
-export function getSongsByIdol(idolId: string): Song[] {
-  return allSongs.filter(song => song.idols.some(idol => idol.id === idolId))
-}
-
-// 获取偶像信息
-export function getIdolById(idolId: string) {
-  for (const song of allSongs) {
-    const idol = song.idols.find(i => i.id === idolId)
-    if (idol) return idol
-  }
-  return undefined
-}
-
-// 获取所有编曲人（去重）
-export function getAllArrangers(): string[] {
-  const arrangers = new Set<string>()
-  allSongs.forEach(song => arrangers.add(song.arranger))
-  return Array.from(arrangers).sort()
-}
-
-// 根据编曲人名获取其所有歌曲
-export function getSongsByArranger(arranger: string): Song[] {
-  return allSongs.filter(song => song.arranger === arranger)
-}
-
-// 时间线数据：按年份和风格统计曲目数
-export function getTimelineData(seriesFilter?: Series) {
-  const songs = seriesFilter ? getSongsBySeries(seriesFilter) : allSongs
-  const years = Array.from(new Set(songs.map(s => s.firstYear))).sort((a, b) => a - b)
-  const genres = Array.from(new Set(songs.map(s => s.primaryGenre)))
-  return years.map(year => {
-    const yearSongs = songs.filter(s => s.firstYear === year)
-    const entry: Record<string, number | string> = { year }
-    genres.forEach(genre => {
-      entry[genre] = yearSongs.filter(s => s.primaryGenre === genre).length
-    })
-    return entry
-  })
-}
-
-// 系列风格比例（用于雷达图）
-export function getSeriesGenreRatio(series: Series) {
-  const songs = getSongsBySeries(series)
-  if (songs.length === 0) return {}
-  const counts = songs.reduce((acc, song) => {
-    acc[song.primaryGenre] = (acc[song.primaryGenre] || 0) + 1
-    return acc
-  }, {} as Record<string, number>)
-  const ratio: Record<string, number> = {}
-  Object.entries(counts).forEach(([genre, count]) => {
-    ratio[genre] = Math.round((count / songs.length) * 100)
-  })
-  return ratio
+/** 获取带有 audio features 的曲目（用于曲风地图等可视化） */
+export async function getTracksWithAudioFeatures(series?: SeriesBrand): Promise<Track[]> {
+  const tracks = series ? await getTracksBySeries(series) : await loadTracks()
+  return tracks.filter((t) => t.energy !== undefined && t.valence !== undefined)
 }
