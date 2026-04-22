@@ -23,7 +23,7 @@ export default function TopAppBar() {
 
   return (
     <header
-      className="sticky top-0 z-30 w-full h-16 flex items-center justify-between px-8 transition-colors duration-300"
+      className="sticky top-0 z-30 w-full h-16 flex items-center justify-between px-4 md:px-8 transition-colors duration-300"
       style={{
         backgroundColor: 'rgba(var(--bg-page-rgb), 0.85)',
         borderBottom: '1px solid var(--border-default)',
@@ -31,9 +31,9 @@ export default function TopAppBar() {
       }}
     >
       {/* ── 左侧: 页面标题 ── */}
-      <div className="flex items-center gap-8">
+      <div className="flex items-center gap-8 ml-12 md:ml-0">
         <h2
-          className="text-serif text-xl font-medium italic tracking-tight hidden md:block"
+          className="text-serif text-xl font-medium italic tracking-tight"
           style={{ color: 'var(--text-primary)' }}
         >
           Discography

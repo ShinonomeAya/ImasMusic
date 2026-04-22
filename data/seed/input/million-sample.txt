@@ -1,0 +1,11 @@
+# Million Live! 示例曲目列表
+# 运行: npx tsx scripts/seed-cli.ts --input data/seed/input/million-sample.txt --series million --type track
+
+Brand New Theater!
+Dreaming!
+UNION!!
+Flyers!!!
+Glow Map
+Diamond Clarity
+Shine Purity
+Fairy Tales

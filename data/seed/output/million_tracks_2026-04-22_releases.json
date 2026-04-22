@@ -1,0 +1,46 @@
+[
+  {
+    "id": "release-1717730438",
+    "type": "ALBUM",
+    "titleJa": "THE IDOLM@STER MILLION THE@TER GENERATION 18 765PRO ALLSTARS - Single",
+    "series": "million",
+    "releaseDate": "2019-06-26T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/54/7e/39/547e39b7-8297-ec94-cf3f-11955a4ca09c/4540774148288.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1717730438"
+  },
+  {
+    "id": "release-1441818303",
+    "type": "ALBUM",
+    "titleJa": "ALL TIME BEST 1998-2018",
+    "series": "million",
+    "releaseDate": "2007-01-18T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6e/76/86/6e768676-23e9-443e-d3a5-bc1b4687cf94/190295515805.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1441818303"
+  },
+  {
+    "id": "release-1718675404",
+    "type": "ALBUM",
+    "titleJa": "THE IDOLM@STER 765PRO LIVE THE@TER COLLECTION Vol.2",
+    "series": "million",
+    "releaseDate": "2023-06-28T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e1/1a/3d/e11a3d5d-2e8e-5d8e-39be-3860e56935d1/4540774909896.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1718675404"
+  },
+  {
+    "id": "release-1780445241",
+    "type": "ALBUM",
+    "titleJa": "アイ NEED YOU(FOR WONDERFUL STORY) - Single",
+    "series": "million",
+    "releaseDate": "2024-12-11T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6b/49/c1/6b49c13f-7535-9299-c309-bacb2a8bc249/PA00167883_0_207313_jacket.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1780445241"
+  }
+]

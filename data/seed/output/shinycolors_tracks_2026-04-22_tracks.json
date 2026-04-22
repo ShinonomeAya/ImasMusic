@@ -1,0 +1,50 @@
+[
+  {
+    "id": "track-1734551413",
+    "titleJa": "バベルシティ・グレイス (2023 Ver.)",
+    "releaseId": "release-1734551412",
+    "artistIds": [
+      "アンティーカ"
+    ],
+    "credits": [],
+    "trackNumber": 3,
+    "durationSec": 256,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/bb/ce/c2/bbcec2b5-8943-0a7c-8306-c8ffacb253b1/mzaf_8723000298926521545.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1734551238",
+    "titleJa": "Ambitious Eve (アルストロメリア Ver.)",
+    "releaseId": "release-1734551173",
+    "artistIds": [
+      "アルストロメリア"
+    ],
+    "credits": [],
+    "trackNumber": 4,
+    "durationSec": 236,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/8a/2d/06/8a2d062c-efad-7898-852e-1497db77d7e5/mzaf_15242028826848706077.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1825101867",
+    "titleJa": "ルピラ",
+    "releaseId": "release-1825101865",
+    "artistIds": [
+      "アルストロメリア"
+    ],
+    "credits": [],
+    "trackNumber": 5,
+    "durationSec": 227,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/88/7b/12887b38-cfba-a9bb-2ace-2ac88ab54677/mzaf_10474953119460325458.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1734552713",
+    "titleJa": "abyss of conflict (2023 Ver.)",
+    "releaseId": "release-1734552712",
+    "artistIds": [
+      "アンティーカ"
+    ],
+    "credits": [],
+    "trackNumber": 6,
+    "durationSec": 250,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/a5/3f/42/a53f42b0-56b6-9cd0-20b7-742d0849c4aa/mzaf_14366899185731037539.plus.aac.p.m4a"
+  }
+]

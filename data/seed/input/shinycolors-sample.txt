@@ -1,0 +1,11 @@
+# Shiny Colors 示例曲目列表
+# 运行: npx tsx scripts/seed-cli.ts --input data/seed/input/shinycolors-sample.txt --series shinycolors --type track
+
+Spread the Wings!!
+シャイニーカラーズ
+バベルシティ・グレイス
+Ambitious Eve
+リフレクトサイン
+ヒカリのdestination
+ドリームトラベラー
+Shine Purity

@@ -2,13 +2,13 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useState, useEffect } from 'react'
 import { cn } from '@/lib/utils'
 import { SERIES_CONFIG } from '@/lib/series'
 import {
   Compass,
   Home,
   Heart,
-  Settings,
   Sun,
   Moon,
   Star,
@@ -17,9 +17,10 @@ import {
   Users,
   Diamond,
   GraduationCap,
+  Menu,
+  X,
 } from 'lucide-react'
 import { useTheme } from 'next-themes'
-import { useEffect, useState } from 'react'
 
 const SERIES_ICONS: Record<string, React.ElementType> = {
   Star,
@@ -34,17 +35,21 @@ export default function Sidebar() {
   const pathname = usePathname()
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
 
   useEffect(() => {
     setMounted(true)
   }, [])
 
-  // 从 URL 提取当前企划参数
+  // 关闭移动端菜单当路由变化
+  useEffect(() => {
+    setMobileOpen(false)
+  }, [pathname])
+
   const activeSeries = pathname.startsWith('/series/')
     ? pathname.split('/')[2]
     : null
 
-  // 设置全局企划色变量（用于平滑过渡高亮色）
   useEffect(() => {
     if (activeSeries) {
       const cfg = SERIES_CONFIG.find((s) => s.id === activeSeries)
@@ -58,16 +63,11 @@ export default function Sidebar() {
 
   const isActive = (href: string) => pathname === href || pathname.startsWith(href + '/')
 
-  return (
-    <aside className="fixed left-0 top-0 h-screen w-64 z-40 flex flex-col border-r transition-colors duration-300"
-      style={{
-        backgroundColor: 'var(--bg-surface)',
-        borderColor: 'var(--border-default)',
-      }}
-    >
-      {/* ── Logo ── */}
+  const SidebarContent = () => (
+    <>
+      {/* Logo */}
       <div className="px-5 pt-6 pb-4">
-        <Link href="/" className="block">
+        <Link href="/" className="block" onClick={() => setMobileOpen(false)}>
           <h1 className="text-serif text-xl font-medium tracking-tight" style={{ color: 'var(--text-primary)' }}>
             iM@S Archive
           </h1>
@@ -77,35 +77,27 @@ export default function Sidebar() {
         </Link>
       </div>
 
-      {/* ── 顶部导航 ── */}
+      {/* Top Nav */}
       <nav className="flex flex-col gap-1 px-3 mb-2">
-        <SidebarItem
-          href="/explore"
-          icon={Compass}
-          label="探索"
-          active={isActive('/explore')}
-        />
-        <SidebarItem
-          href="/"
-          icon={Home}
-          label="全部系列"
-          active={pathname === '/'}
-        />
+        <SidebarItem href="/explore" icon={Compass} label="探索" active={isActive('/explore')} />
+        <SidebarItem href="/" icon={Home} label="全部系列" active={pathname === '/'} />
       </nav>
 
-      {/* ── 分割线 ── */}
+      {/* Divider */}
       <div className="mx-4 my-2 h-px" style={{ backgroundColor: 'var(--border-default)' }} />
 
-      {/* ── 企划列表 ── */}
+      {/* Series Label */}
       <div className="px-3 mb-1">
         <p className="text-label uppercase tracking-wider px-3 py-2" style={{ color: 'var(--text-tertiary)' }}>
           企划
         </p>
       </div>
+
+      {/* Series List */}
       <nav className="flex flex-col gap-0.5 px-3 flex-1 overflow-y-auto">
         {SERIES_CONFIG.map((series) => {
           const Icon = SERIES_ICONS[series.icon] || Star
-          const seriesHref = `/series/${series.id}`
+          const seriesHref = `/releases?series=${series.id}`
           const active = activeSeries === series.id
 
           return (
@@ -114,9 +106,7 @@ export default function Sidebar() {
               href={seriesHref}
               className={cn(
                 'flex items-center gap-3 px-3 py-2.5 rounded-generous text-sm font-medium transition-all duration-300',
-                active
-                  ? 'bg-opacity-10'
-                  : 'hover:bg-opacity-5'
+                active ? 'bg-opacity-10' : 'hover:bg-opacity-5'
               )}
               style={{
                 color: active ? series.brandColor : 'var(--text-secondary)',
@@ -146,25 +136,17 @@ export default function Sidebar() {
               </span>
               <span className="truncate">{series.nameJa}</span>
               {active && (
-                <span
-                  className="ml-auto w-1 h-5 rounded-full"
-                  style={{ backgroundColor: series.brandColor }}
-                />
+                <span className="ml-auto w-1 h-5 rounded-full" style={{ backgroundColor: series.brandColor }} />
               )}
             </Link>
           )
         })}
       </nav>
 
-      {/* ── 底部 ── */}
+      {/* Bottom */}
       <div className="px-3 pb-4 pt-2">
         <div className="mx-1 mb-2 h-px" style={{ backgroundColor: 'var(--border-default)' }} />
-        <SidebarItem
-          href="/favorites"
-          icon={Heart}
-          label="收藏"
-          active={isActive('/favorites')}
-        />
+        <SidebarItem href="/favorites" icon={Heart} label="收藏" active={isActive('/favorites')} />
         <button
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           className="flex items-center gap-3 px-3 py-2.5 rounded-generous text-sm font-medium w-full transition-colors duration-200 hover:bg-opacity-5"
@@ -176,11 +158,73 @@ export default function Sidebar() {
           <span>{mounted && theme === 'dark' ? '亮色模式' : '暗色模式'}</span>
         </button>
       </div>
-    </aside>
+    </>
+  )
+
+  return (
+    <>
+      {/* ── Desktop Sidebar ── */}
+      <aside
+        className="fixed left-0 top-0 h-screen w-64 z-40 hidden md:flex flex-col border-r transition-colors duration-300"
+        style={{
+          backgroundColor: 'var(--bg-surface)',
+          borderColor: 'var(--border-default)',
+        }}
+      >
+        <SidebarContent />
+      </aside>
+
+      {/* ── Mobile Hamburger ── */}
+      <button
+        onClick={() => setMobileOpen(true)}
+        className="md:hidden fixed top-4 left-4 z-50 p-2 rounded-comfortable transition-colors"
+        style={{
+          backgroundColor: 'var(--bg-surface)',
+          border: '1px solid var(--border-default)',
+          color: 'var(--text-primary)',
+        }}
+      >
+        <Menu size={20} />
+      </button>
+
+      {/* ── Mobile Drawer ── */}
+      {mobileOpen && (
+        <>
+          {/* Backdrop */}
+          <div
+            className="md:hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm animate-fade-in"
+            onClick={() => setMobileOpen(false)}
+          />
+          {/* Drawer */}
+          <aside
+            className="md:hidden fixed left-0 top-0 h-screen w-72 z-50 flex flex-col animate-slide-up"
+            style={{
+              backgroundColor: 'var(--bg-surface)',
+              borderRight: '1px solid var(--border-default)',
+            }}
+          >
+            <div className="flex items-center justify-between px-5 pt-5 pb-2">
+              <h1 className="text-serif text-lg font-medium" style={{ color: 'var(--text-primary)' }}>
+                iM@S Archive
+              </h1>
+              <button
+                onClick={() => setMobileOpen(false)}
+                className="p-2 rounded-full transition-colors"
+                style={{ color: 'var(--text-tertiary)' }}
+              >
+                <X size={20} />
+              </button>
+            </div>
+            <div className="flex-1 overflow-y-auto">
+              <SidebarContent />
+            </div>
+          </aside>
+        </>
+      )}
+    </>
   )
 }
 
-/* ── Sidebar Item 子组件 ── */
 function SidebarItem({
   href,
   icon: Icon,
@@ -197,9 +241,7 @@ function SidebarItem({
       href={href}
       className={cn(
         'flex items-center gap-3 px-3 py-2.5 rounded-generous text-sm font-medium transition-all duration-200',
-        active
-          ? 'text-terracotta'
-          : 'hover:text-primary'
+        active ? 'text-terracotta' : 'hover:text-primary'
       )}
       style={{
         color: active ? 'var(--color-terracotta)' : 'var(--text-secondary)',
@@ -216,9 +258,7 @@ function SidebarItem({
         <Icon size={14} strokeWidth={2} />
       </span>
       <span>{label}</span>
-      {active && (
-        <span className="ml-auto w-1 h-5 rounded-full bg-terracotta" />
-      )}
+      {active && <span className="ml-auto w-1 h-5 rounded-full bg-terracotta" />}
     </Link>
   )
 }

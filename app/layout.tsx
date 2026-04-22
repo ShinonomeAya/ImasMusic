@@ -28,7 +28,7 @@ export default function RootLayout({
           <Sidebar />
 
           {/* 主内容区 */}
-          <div className="ml-64 flex flex-col min-h-screen">
+          <div className="md:ml-64 flex flex-col min-h-screen">
             {/* 顶栏 */}
             <TopAppBar />
 

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "release-1734551412",
+    "type": "ALBUM",
+    "titleJa": "THE IDOLM@STER SHINY COLORS BRILLI@NT WING 03 バベルシティ・グレイス (2023 Ver.) - Single",
+    "series": "shinycolors",
+    "releaseDate": "2023-01-18T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/aa/2f/c0/aa2fc074-0f15-9933-b351-08397872152a/4540774734344.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1734551412"
+  },
+  {
+    "id": "release-1734551173",
+    "type": "ALBUM",
+    "titleJa": "THE IDOLM@STER SHINY COLORS FR@GMENT WING 05 - Single",
+    "series": "shinycolors",
+    "releaseDate": "2019-08-21T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/06/42/0c/06420ce2-4e0c-2927-2165-9fc40ee02bc4/4540774148653.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1734551173"
+  },
+  {
+    "id": "release-1825101865",
+    "type": "ALBUM",
+    "titleJa": "THE IDOLM@STER SHINY COLORS \"円環 -Halo around-\" 03 - EP",
+    "series": "shinycolors",
+    "releaseDate": "2025-08-06T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a4/d7/9b/a4d79b56-f3da-9845-1bde-88f0f7ca2a8f/195533021148.png/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1825101865"
+  },
+  {
+    "id": "release-1734552712",
+    "type": "ALBUM",
+    "titleJa": "THE IDOLM@STER SHINY COLORS L@YERED WING 03 (2023 Ver.) - EP",
+    "series": "shinycolors",
+    "releaseDate": "2023-01-18T12:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e0/68/ea/e068ead6-e891-9a72-2224-ecb45a3adff1/4540774734412.jpg/600x600bb.jpg",
+    "trackIds": [],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1734552712"
+  }
+]

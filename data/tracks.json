@@ -106,5 +106,113 @@
     "trackNumber": 9,
     "durationSec": 307,
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/44/f6/9b/44f69bc2-8628-8ba5-a588-1d3f75de2ba9/mzaf_15628945665441295268.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1734551413",
+    "titleJa": "バベルシティ・グレイス (2023 Ver.)",
+    "releaseId": "release-1734551412",
+    "artistIds": [
+      "アンティーカ"
+    ],
+    "credits": [],
+    "trackNumber": 3,
+    "durationSec": 256,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/bb/ce/c2/bbcec2b5-8943-0a7c-8306-c8ffacb253b1/mzaf_8723000298926521545.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1734551238",
+    "titleJa": "Ambitious Eve (アルストロメリア Ver.)",
+    "releaseId": "release-1734551173",
+    "artistIds": [
+      "アルストロメリア"
+    ],
+    "credits": [],
+    "trackNumber": 4,
+    "durationSec": 236,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/8a/2d/06/8a2d062c-efad-7898-852e-1497db77d7e5/mzaf_15242028826848706077.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1825101867",
+    "titleJa": "ルピラ",
+    "releaseId": "release-1825101865",
+    "artistIds": [
+      "アルストロメリア"
+    ],
+    "credits": [],
+    "trackNumber": 5,
+    "durationSec": 227,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/88/7b/12887b38-cfba-a9bb-2ace-2ac88ab54677/mzaf_10474953119460325458.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1734552713",
+    "titleJa": "abyss of conflict (2023 Ver.)",
+    "releaseId": "release-1734552712",
+    "artistIds": [
+      "アンティーカ"
+    ],
+    "credits": [],
+    "trackNumber": 6,
+    "durationSec": 250,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/a5/3f/42/a53f42b0-56b6-9cd0-20b7-742d0849c4aa/mzaf_14366899185731037539.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1717730440",
+    "titleJa": "Brand New Theater! (765PRO ALLSTARS ver.)",
+    "releaseId": "release-1717730438",
+    "artistIds": [
+      "765PRO ALLSTARS"
+    ],
+    "credits": [],
+    "trackNumber": 1,
+    "durationSec": 309,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/79/57/fa/7957fac4-42d2-4b7a-e459-d94e478a22d8/mzaf_11103768167915614999.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1441818367",
+    "titleJa": "WINDING ROAD",
+    "releaseId": "release-1441818303",
+    "artistIds": [
+      "絢香×コブクロ"
+    ],
+    "credits": [],
+    "trackNumber": 2,
+    "durationSec": 300,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/30/8e/04308e03-d48b-1227-daba-4826e6157980/mzaf_2444185932617765311.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1718675570",
+    "titleJa": "UNION!!",
+    "releaseId": "release-1718675404",
+    "artistIds": [
+      "765PRO ALLSTARS"
+    ],
+    "credits": [],
+    "trackNumber": 3,
+    "durationSec": 332,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/9e/60/6d/9e606d61-c7d9-cc86-498a-426d3639d002/mzaf_5165444240470202904.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1718675571",
+    "titleJa": "Flyers!!!",
+    "releaseId": "release-1718675404",
+    "artistIds": [
+      "765PRO ALLSTARS"
+    ],
+    "credits": [],
+    "trackNumber": 4,
+    "durationSec": 331,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d9/a6/c9/d9a6c997-70a1-951c-5924-7875c3e3920a/mzaf_9688213039865614957.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1780445246",
+    "titleJa": "アイ NEED YOU(FOR WONDERFUL STORY)",
+    "releaseId": "release-1780445241",
+    "artistIds": [
+      "THE IDOLM@STER BRILLIANT STARS"
+    ],
+    "credits": [],
+    "trackNumber": 8,
+    "durationSec": 446,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/74/b2/1574b206-800a-0584-15c9-b60ad10027c2/mzaf_16535145697119680650.plus.aac.p.m4a"
   }
 ]
