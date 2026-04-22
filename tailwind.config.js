@@ -4,18 +4,19 @@ module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './lib/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       colors: {
-        // Claude Design System — Surfaces
+        // ── Claude Design System — Surfaces ──
         parchment: '#f5f4ed',
         ivory: '#faf9f5',
         'warm-sand': '#e8e6dc',
         'dark-surface': '#30302e',
         'deep-dark': '#141413',
 
-        // Claude Design System — Neutrals & Text
+        // ── Claude Design System — Neutrals & Text ──
         'near-black': '#141413',
         'charcoal-warm': '#4d4c48',
         'olive-gray': '#5e5d59',
@@ -23,13 +24,13 @@ module.exports = {
         'dark-warm': '#3d3d3a',
         'warm-silver': '#b0aea5',
 
-        // Claude Design System — Brand & Accents
+        // ── Claude Design System — Brand & Accents ──
         terracotta: '#c96442',
         coral: '#d97757',
         'error-crimson': '#b53333',
         'focus-blue': '#3898ec',
 
-        // Claude Design System — Borders & Rings
+        // ── Claude Design System — Borders & Rings ──
         'border-cream': '#f0eee6',
         'border-warm': '#e8e6dc',
         'border-dark': '#30302e',
@@ -37,31 +38,14 @@ module.exports = {
         'ring-subtle': '#dedcd1',
         'ring-deep': '#c2c0b6',
 
-        // 系列颜色（保留原有）
-        '765': {
-          light: '#FF6B35',
-          dark: '#FF8F6B',
-          accent: '#FFE4DC',
-        },
-        cinderella: {
-          light: '#00A0E9',
-          dark: '#4DC4FF',
-          accent: '#DCF4FF',
-        },
-        million: {
-          light: '#FFC30B',
-          dark: '#FFD966',
-          accent: '#FFF4D6',
-        },
-        shinycolors: {
-          light: '#8E6BC9',
-          dark: '#B8A0E0',
-          accent: '#EDE8F7',
-        },
-        sidem: {
-          light: '#00B2B2',
-          dark: '#4DD9D9',
-          accent: '#D6F4F4',
+        // ── Series Brand Colors (Official / Fan Consensus) ──
+        brand: {
+          '765': '#F34F6D',
+          cinderella: '#2681C8',
+          million: '#FFC30B',
+          sidem: '#0FBE94',
+          shinycolors: '#8DBBFF',
+          gakuen: '#FF7F27',
         },
       },
       fontFamily: {
@@ -115,6 +99,20 @@ module.exports = {
       },
       lineHeight: {
         'relaxed-body': '1.60',
+      },
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0', transform: 'translateY(8px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'slide-up': {
+          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-in': 'fade-in 0.4s ease-out',
+        'slide-up': 'slide-up 0.3s ease-out',
       },
     },
   },

@@ -4,19 +4,19 @@
 
 /* ============================================================
    Claude Design System — Global Styles
-   Inspired by Anthropic's warm, editorial aesthetic.
+   Warm Editorial (light default) + Dark Tone-matching
    ============================================================ */
 
 @layer base {
   :root {
-    /* Surfaces */
+    /* ── Surfaces ── */
     --color-parchment: #f5f4ed;
     --color-ivory: #faf9f5;
     --color-warm-sand: #e8e6dc;
     --color-dark-surface: #30302e;
     --color-deep-dark: #141413;
 
-    /* Neutrals & Text */
+    /* ── Neutrals & Text ── */
     --color-near-black: #141413;
     --color-charcoal-warm: #4d4c48;
     --color-olive-gray: #5e5d59;
@@ -24,13 +24,13 @@
     --color-dark-warm: #3d3d3a;
     --color-warm-silver: #b0aea5;
 
-    /* Brand & Accents */
+    /* ── Brand & Accents ── */
     --color-terracotta: #c96442;
     --color-coral: #d97757;
     --color-error-crimson: #b53333;
     --color-focus-blue: #3898ec;
 
-    /* Borders & Rings */
+    /* ── Borders & Rings ── */
     --color-border-cream: #f0eee6;
     --color-border-warm: #e8e6dc;
     --color-border-dark: #30302e;
@@ -38,8 +38,17 @@
     --color-ring-subtle: #dedcd1;
     --color-ring-deep: #c2c0b6;
 
-    /* Semantic tokens */
+    /* ── Series Brand Colors ── */
+    --brand-765: #F34F6D;
+    --brand-cinderella: #2681C8;
+    --brand-million: #FFC30B;
+    --brand-sidem: #0FBE94;
+    --brand-shinycolors: #8DBBFF;
+    --brand-gakuen: #FF7F27;
+
+    /* ── Semantic tokens (Light) ── */
     --bg-page: var(--color-parchment);
+    --bg-page-rgb: 245, 244, 237;
     --bg-surface: var(--color-ivory);
     --bg-elevated: #ffffff;
     --bg-interactive: var(--color-warm-sand);
@@ -63,32 +72,34 @@
     --shadow-inset: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
   }
 
+  /* ── Dark Mode: Tone-matching ── */
   .dark {
-    --bg-page: var(--color-deep-dark);
-    --bg-surface: var(--color-dark-surface);
-    --bg-elevated: #3d3d3a;
+    --bg-page: #1a1a18;
+    --bg-page-rgb: 26, 26, 24;
+    --bg-surface: #242422;
+    --bg-elevated: #2e2e2c;
     --bg-interactive: #3d3d3a;
     --bg-inverse: var(--color-parchment);
 
-    --text-primary: var(--color-ivory);
-    --text-secondary: var(--color-warm-silver);
-    --text-tertiary: var(--color-stone-gray);
-    --text-link: var(--color-warm-silver);
+    --text-primary: #f0eee6;
+    --text-secondary: #b0aea5;
+    --text-tertiary: #87867f;
+    --text-link: #d1cfc5;
     --text-on-dark: var(--color-near-black);
     --text-on-inverse: var(--color-near-black);
 
-    --border-default: var(--color-border-dark);
+    --border-default: #3d3d3a;
     --border-prominent: #4d4c48;
     --border-inverse: var(--color-border-cream);
 
     --shadow-ring: 0px 0px 0px 1px #4d4c48;
     --shadow-ring-subtle: 0px 0px 0px 1px #5e5d59;
     --shadow-ring-deep: 0px 0px 0px 1px #3d3d3a;
-    --shadow-whisper: rgba(0, 0, 0, 0.25) 0px 4px 24px;
-    --shadow-inset: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+    --shadow-whisper: rgba(0, 0, 0, 0.35) 0px 4px 24px;
+    --shadow-inset: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.08);
   }
 
-  /* Base typography */
+  /* ── Base typography ── */
   html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -276,7 +287,7 @@
     transition: background-color 0.3s ease, border-color 0.3s ease;
   }
   .dark .nav-claude {
-    background-color: rgba(20, 20, 19, 0.85);
+    background-color: rgba(26, 26, 24, 0.85);
     border-bottom-color: var(--color-border-dark);
   }
 

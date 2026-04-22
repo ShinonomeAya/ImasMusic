@@ -34,3 +34,12 @@ Thumbs.db
 # Temp files
 *.tmp
 .cache/
+
+# Build cache
+.build/
+
+# Prototype designs (user assets)
+yuanxing/
+
+# Old page backups
+**/old_page.tsx
