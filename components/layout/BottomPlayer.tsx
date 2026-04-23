@@ -49,8 +49,7 @@ export default function BottomPlayer() {
     setView,
     playNext,
     playPrev,
-    setRepeatMode,
-    setShuffle,
+    cyclePlayMode,
     removeFromQueue,
     clearQueue,
   } = usePlayerStore()
@@ -151,12 +150,6 @@ export default function BottomPlayer() {
     },
     [setVolume]
   )
-
-  const cycleRepeatMode = () => {
-    const modes: Array<'none' | 'all' | 'one'> = ['none', 'all', 'one']
-    const next = modes[(modes.indexOf(repeatMode) + 1) % modes.length]
-    setRepeatMode(next)
-  }
 
   if (view === 'HIDDEN' || !currentTrack) return null
 
@@ -295,23 +288,16 @@ export default function BottomPlayer() {
 
             <div className="hidden md:flex items-center gap-1">
               <button
-                onClick={cycleRepeatMode}
-                className={cn(
-                  'p-2 rounded-full transition-colors',
-                  repeatMode !== 'none' ? 'text-terracotta' : ''
-                )}
-                style={{ color: repeatMode !== 'none' ? 'var(--color-terracotta)' : 'var(--text-tertiary)' }}
-                title={repeatMode === 'none' ? '顺序播放' : repeatMode === 'all' ? '列表循环' : '单曲循环'}
-              >
-                {repeatMode === 'one' ? <Repeat1 size={16} /> : <Repeat size={16} />}
-              </button>
-              <button
-                onClick={() => setShuffle(!shuffle)}
+                onClick={cyclePlayMode}
                 className="p-2 rounded-full transition-colors"
-                style={{ color: shuffle ? 'var(--color-terracotta)' : 'var(--text-tertiary)' }}
-                title={shuffle ? '随机播放' : '顺序播放'}
+                style={{
+                  color: (shuffle || repeatMode !== 'none')
+                    ? 'var(--color-terracotta)'
+                    : 'var(--text-tertiary)',
+                }}
+                title={shuffle ? '随机播放' : repeatMode === 'all' ? '列表循环' : repeatMode === 'one' ? '单曲循环' : '顺序播放'}
               >
-                <Shuffle size={16} />
+                {shuffle ? <Shuffle size={16} /> : repeatMode === 'one' ? <Repeat1 size={16} /> : <Repeat size={16} />}
               </button>
               <button
                 onClick={() => setQueueOpen(!queueOpen)}
@@ -437,10 +423,15 @@ export default function BottomPlayer() {
               {/* 右侧: 信息与控制 */}
               <div className="flex flex-col gap-8 w-full max-w-md">
                 {/* 曲目信息 */}
-                <div className="text-center lg:text-left">
-                  <h2 className="text-serif text-subheading font-medium" style={{ color: 'var(--text-primary)' }}>
-                    {currentTrack.titleJa}
-                  </h2>
+                <div className="text-center lg:text-left w-full">
+                  {/* Marquee 标题 */}
+                  <div className="overflow-hidden w-full">
+                    <div className="whitespace-nowrap animate-marquee inline-block">
+                      <span className="text-serif text-subheading font-medium" style={{ color: 'var(--text-primary)' }}>
+                        {currentTrack.titleJa}&nbsp;&nbsp;&nbsp;&nbsp;{currentTrack.titleJa}
+                      </span>
+                    </div>
+                  </div>
                   <p className="text-body-lg mt-2" style={{ color: 'var(--text-secondary)' }}>
                     {currentTrack.artistIds.join(', ')}
                   </p>
@@ -472,22 +463,18 @@ export default function BottomPlayer() {
                 </div>
 
                 {/* 控制区 */}
-                <div className="flex items-center justify-center gap-6">
+                <div className="flex items-center justify-center gap-4 md:gap-6">
                   <button
-                    onClick={cycleRepeatMode}
+                    onClick={cyclePlayMode}
                     className="p-2 rounded-full transition-colors"
-                    style={{ color: repeatMode !== 'none' ? 'var(--color-terracotta)' : 'var(--text-tertiary)' }}
-                    title={repeatMode === 'none' ? '顺序播放' : repeatMode === 'all' ? '列表循环' : '单曲循环'}
+                    style={{
+                      color: (shuffle || repeatMode !== 'none')
+                        ? 'var(--color-terracotta)'
+                        : 'var(--text-tertiary)',
+                    }}
+                    title={shuffle ? '随机播放' : repeatMode === 'all' ? '列表循环' : repeatMode === 'one' ? '单曲循环' : '顺序播放'}
                   >
-                    {repeatMode === 'one' ? <Repeat1 size={20} /> : <Repeat size={20} />}
-                  </button>
-                  <button
-                    onClick={() => setShuffle(!shuffle)}
-                    className="p-2 rounded-full transition-colors"
-                    style={{ color: shuffle ? 'var(--color-terracotta)' : 'var(--text-tertiary)' }}
-                    title={shuffle ? '随机播放' : '顺序播放'}
-                  >
-                    <Shuffle size={20} />
+                    {shuffle ? <Shuffle size={20} /> : repeatMode === 'one' ? <Repeat1 size={20} /> : <Repeat size={20} />}
                   </button>
                   <button
                     onClick={playPrev}

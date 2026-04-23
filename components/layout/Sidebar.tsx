@@ -186,7 +186,7 @@ export default function Sidebar() {
         <>
           {/* Backdrop */}
           <div
-            className="md:hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm animate-fade-in"
+            className="md:hidden fixed inset-0 z-[55] bg-black/50 backdrop-blur-sm animate-fade-in"
             onClick={() => setMobileOpen(false)}
           />
           {/* Drawer */}
@@ -198,10 +198,7 @@ export default function Sidebar() {
               paddingBottom: 'env(safe-area-inset-bottom)',
             }}
           >
-            <div className="flex items-center justify-between px-5 pt-5 pb-2">
-              <h1 className="text-serif text-lg font-medium" style={{ color: 'var(--text-primary)' }}>
-                iM@S Archive
-              </h1>
+            <div className="flex items-center justify-end px-5 pt-5 pb-2">
               <button
                 onClick={() => setMobileOpen(false)}
                 className="p-2 rounded-full transition-colors"

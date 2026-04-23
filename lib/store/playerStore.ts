@@ -34,6 +34,7 @@ interface PlayerStore {
   clearQueue: () => void
   setRepeatMode: (mode: RepeatMode) => void
   setShuffle: (shuffle: boolean) => void
+  cyclePlayMode: () => void
 }
 
 function shuffleArray<T>(array: T[]): T[] {
@@ -232,6 +233,26 @@ export const usePlayerStore = create<PlayerStore>()(
             ? buildShuffledQueue(s.queue, s.queueIndex)
             : [],
         })),
+
+      cyclePlayMode: () =>
+        set((s) => {
+          // 顺序 → 列表循环 → 单曲循环 → 随机 → 顺序
+          if (s.shuffle) {
+            return { shuffle: false, repeatMode: 'none' as RepeatMode }
+          }
+          if (s.repeatMode === 'none') {
+            return { repeatMode: 'all' as RepeatMode }
+          }
+          if (s.repeatMode === 'all') {
+            return { repeatMode: 'one' as RepeatMode }
+          }
+          // repeatMode === 'one' → 随机
+          return {
+            repeatMode: 'none' as RepeatMode,
+            shuffle: true,
+            shuffledQueue: buildShuffledQueue(s.queue, s.queueIndex),
+          }
+        }),
     }),
     {
       name: 'imas-player-state',

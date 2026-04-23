@@ -130,12 +130,12 @@ export default async function ReleasePage({ params }: { params: Promise<{ id: st
                 <div className="flex-1 min-w-0">
                   <Link
                     href={`/track/${track.id}`}
-                    className="text-sm font-medium truncate hover:text-terracotta transition-colors"
+                    className="text-sm font-medium truncate block hover:text-terracotta transition-colors"
                     style={{ color: 'var(--text-primary)' }}
                   >
                     {track.titleJa}
                   </Link>
-                  <p className="text-xs truncate" style={{ color: 'var(--text-tertiary)' }}>
+                  <p className="text-xs truncate block" style={{ color: 'var(--text-tertiary)' }}>
                     {track.artistIds.join(', ')}
                   </p>
                 </div>
