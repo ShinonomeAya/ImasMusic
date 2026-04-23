@@ -2,7 +2,9 @@
 
 > Next.js 15 + TypeScript + Tailwind CSS 构建的 THE IDOLM@STER 系列音乐数据库。暖色编辑风格（Warm Editorial），支持真实音频试听、多企划数据、移动端响应式。
 
-**当前版本：v0.3**
+**当前版本：v0.3.1**
+
+**在线地址**：https://master.imas-music.pages.dev（Cloudflare Pages）
 
 ---
 
@@ -21,9 +23,55 @@ npm run type-check
 
 # 4. 生产构建
 npm run build
+# → 输出到 dist/（静态导出，4,498 页面）
 ```
 
 **当前数据状态**：3,403 tracks + 734 releases + 344 artists（765AS + Cinderella + Million Live + SideM + Shiny Colors + Gakuen）
+
+---
+
+## 🤖 AI 助手接手速查（必读）
+
+> 下次打开此项目时，先读这一节恢复上下文。
+
+### 项目当前状态
+- **已部署**：https://master.imas-music.pages.dev（Cloudflare Pages）
+- **自动部署**：`git push origin master` → GitHub Actions → Cloudflare Pages
+- **构建模式**：Next.js **静态导出**（`output: 'export'`，非 SSR/ISR）
+
+### 静态导出关键约束（违反会导致构建失败）
+| 约束 | 正确做法 | 错误做法 |
+|------|---------|---------|
+| 动态路由 | 必须实现 `generateStaticParams` | 直接访问 `params` 不预生成 |
+| URL 查询参数 | 客户端 `useSearchParams` + `Suspense` | 服务端 `await searchParams` |
+| 图片 | `images.unoptimized: true` | 使用 Next.js Image 优化 |
+| 数据 | 构建时从 JSON 加载 | 运行时 API 调用 |
+
+### 需要修改动态路由时
+如果新增 `[id]` 路由，必须在 `page.tsx` 中：
+```tsx
+import { getAllXxx } from '@/lib/data'
+
+export async function generateStaticParams() {
+  const items = await getAllXxx()
+  return items.map((item) => ({ id: item.id }))
+}
+```
+
+### 数据更新流程
+1. 修改 `data/tracks.json` / `data/releases.json` / `data/artists.json`
+2. `npm run build` 验证无报错
+3. `git add . && git commit -m "..." && git push origin master`
+4. GitHub Actions 自动部署（约 3 分钟）
+
+### 当前活跃 TODO（Phase 6）
+- [ ] Wiki / 萌娘百科 数据录入（BPM/作词/作曲/编曲）
+- [ ] 页面切换过渡动画
+- [ ] 列表过滤动画
+- [ ] PWA 支持
+- [ ] 多语言切换
+
+详细规划见 [docs/phase6.md](docs/phase6.md)
 
 ---
 
@@ -45,7 +93,7 @@ npm run build
 ### 技术栈
 | 层 | 技术 | 用途 |
 |---|---|---|
-| 框架 | Next.js 15 (App Router) | SSR/SSG/ISR |
+| 框架 | Next.js 15 (App Router) | 静态导出（`output: 'export'`） |
 | 语言 | TypeScript 5 (strict) | 类型安全 |
 | 样式 | Tailwind CSS 3.4 | 原子化样式 |
 | 图标 | Lucide React | 图标系统 |
@@ -53,15 +101,21 @@ npm run build
 | 主题 | next-themes | 亮色/暗色切换 |
 | 图表 | Recharts | 数据可视化（已启用） |
 | 动画 | Framer Motion | 播放器展开/页面过渡 |
-| 搜索 | 客户端过滤 | 实时过滤（暂用原生） |
+| 搜索 | 客户端过滤 | `useSearchParams` + `Suspense` |
+| 部署 | Cloudflare Pages | GitHub Actions 自动部署 |
 
 ### 关键决策记录
 1. **数据存储**：JSON 文件（`data/*.json`）→ 阶段二可迁移到数据库
-2. **图片源**：iTunes/Apple Music CDN（`is*-ssl.mzstatic.com`）→ 已配置 remotePatterns
-3. **音频源**：iTunes 30秒试听（`previewUrl`）→ HTML5 Audio API
-4. **Spotify API**：⏸️ 搁置中（待 Client ID/Secret）→ energy/valence/BPM 字段预留，当前用 BPM+调性估算 mock
-5. **旧页面**：归档至 `app/_archive/`（`tsconfig.json` 已排除）
-6. **暗色模式**：默认亮色，暗色 Tone-matching（非纯黑，深暖灰 `#1a1a18`）
+2. **部署方式**：Cloudflare Pages 静态导出 → `next.config.js` 设置 `output: 'export'`, `distDir: 'dist'`, `images.unoptimized: true`
+3. **图片源**：iTunes/Apple Music CDN（`is*-ssl.mzstatic.com`）→ 已配置 remotePatterns
+4. **音频源**：iTunes 30秒试听（`previewUrl`）→ HTML5 Audio API
+5. **Spotify API**：⏸️ 搁置中（待 Client ID/Secret）→ energy/valence/BPM 字段预留，当前用 BPM+调性估算 mock
+6. **旧页面**：归档至 `app/_archive/`（`tsconfig.json` 已排除）
+7. **暗色模式**：默认亮色，暗色 Tone-matching（非纯黑，深暖灰 `#1a1a18`）
+8. **静态导出约束**：
+   - 动态路由必须实现 `generateStaticParams`
+   - 服务端组件不能使用 `await searchParams` → 需通过客户端 `useSearchParams` + `Suspense` 处理
+   - 不支持 ISR/`revalidate`（构建时一次性生成所有页面）
 
 ---
 
@@ -161,7 +215,9 @@ ImasMusic/
 │   ├── genres.config.ts
 │   └── series.config.ts
 │
-├── next.config.js                # iTunes CDN + ISR 配置
+├── next.config.js                # 静态导出配置（Cloudflare Pages）
+├── .github/workflows/deploy.yml  # GitHub Actions 自动部署
+├── DEPLOY.md                     # 部署指南（三种方案）
 ├── tailwind.config.js            # Design System tokens + 6企划品牌色
 └── tsconfig.json                 # strict + app/_archive 排除
 ```
@@ -174,10 +230,10 @@ ImasMusic/
 | 路由 | 类型 | 功能亮点 |
 |---|---|---|
 | `/` | Static (ISR) | 数据概览、最新发行网格、热门单曲、6企划卡片 |
-| `/releases` | Static (ISR) | Grid/List/Table 三视图、类型筛选、排序、实时搜索 |
-| `/releases?series=x` | Static | 按企划筛选发行物 |
+| `/releases` | Static | Grid/List/Table 三视图、类型筛选、排序、实时搜索 |
+| `/releases?series=x` | Static | 客户端按企划筛选（`useSearchParams`） |
 | `/release/[id]` | Dynamic | 大封面 Hero、Tracklist（BPM+时长+收藏）、Apple Music 外链、同企划推荐 |
-| `/tracks` | Static (ISR) | 单曲卡片网格、企划/BPM/可试听标签、关键词搜索、企划筛选、排序 |
+| `/tracks` | Static | 单曲卡片网格、企划/BPM/可试听标签、关键词搜索、客户端企划筛选、排序 |
 | `/track/[id]` | Dynamic | 封面 Hero、Credits、BPM/时长/调性、播放按钮、收藏、相似曲目 |
 | `/artists` | Static (ISR) | 角色筛选（偶像/组合/声优/创作者）、卡片网格 |
 | `/artist/[id]` | Dynamic | 头像、角色/企划标签、曲目/专辑统计 |
@@ -304,6 +360,25 @@ Gakuen:       #FF7F27  (橘)
 
 ---
 
+## 🚀 部署指南
+
+### 快速部署（已配置 GitHub Actions）
+每次 `git push origin master` 自动构建并部署到 Cloudflare Pages。
+
+Secrets 已配置：
+- `CLOUDFLARE_API_TOKEN` ✅
+- `CLOUDFLARE_ACCOUNT_ID` ✅
+
+### 手动部署
+```bash
+npm run build
+npx wrangler pages deploy dist --project-name=imas-music
+```
+
+详细指南见 [DEPLOY.md](DEPLOY.md)。
+
+---
+
 ## 🔧 数据导入指南
 
 ### 1. 准备输入文件
@@ -403,4 +478,4 @@ npx tsx scripts/merge-wiki-supplement.ts
 
 ---
 
-*最后更新: 2026-04-23 | v0.3 — 数据大规模扩充（734 发行物 / 3403 曲目），播放器交互修复*
+*最后更新: 2026-04-23 | v0.3.1 — 静态导出 + Cloudflare Pages 部署（4,498 页面），GitHub Actions 自动部署配置完成*
