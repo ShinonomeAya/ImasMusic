@@ -52,7 +52,7 @@ export default async function TrackPage({ params }: { params: Promise<{ id: stri
   }
 
   return (
-    <div className="px-8 py-10 max-w-7xl mx-auto">
+    <div className="px-4 md:px-8 py-10 max-w-7xl mx-auto">
       {/* ── Back Link ── */}
       <div className="mb-6">
         <Link
@@ -111,7 +111,7 @@ export default async function TrackPage({ params }: { params: Promise<{ id: stri
           </div>
 
           {/* Title */}
-          <h1 className="text-subheading-lg font-serif font-medium mb-3" style={{ color: 'var(--text-primary)' }}>
+          <h1 className="text-2xl md:text-subheading-lg font-serif font-medium mb-3" style={{ color: 'var(--text-primary)' }}>
             {track.titleJa}
           </h1>
 
@@ -274,7 +274,7 @@ export default async function TrackPage({ params }: { params: Promise<{ id: stri
                     size="sm"
                   />
                   {t.durationSec && (
-                    <span className="text-xs font-mono" style={{ color: 'var(--text-tertiary)' }}>
+                    <span className="hidden sm:inline text-xs font-mono" style={{ color: 'var(--text-tertiary)' }}>
                       {formatTime(t.durationSec)}
                     </span>
                   )}

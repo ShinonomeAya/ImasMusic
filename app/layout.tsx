@@ -4,6 +4,7 @@ import { ThemeProvider } from '@/components/layout/ThemeProvider'
 import Sidebar from '@/components/layout/Sidebar'
 import TopAppBar from '@/components/layout/TopAppBar'
 import BottomPlayer from '@/components/layout/BottomPlayer'
+import BottomNav from '@/components/layout/BottomNav'
 import KeyboardShortcuts from '@/components/KeyboardShortcuts'
 
 export const metadata: Metadata = {
@@ -34,13 +35,13 @@ export default function RootLayout({
             <TopAppBar />
 
             {/* 页面内容 */}
-            <main className="flex-1">
+            <main className="flex-1 pb-28 md:pb-0">
               {children}
             </main>
 
             {/* 页脚 */}
             <footer
-              className="py-10 px-8 border-t transition-colors duration-300"
+              className="py-10 px-4 md:px-8 border-t transition-colors duration-300"
               style={{
                 borderColor: 'var(--border-default)',
                 backgroundColor: 'var(--bg-surface)',
@@ -72,6 +73,9 @@ export default function RootLayout({
 
           {/* 底部播放条 */}
           <BottomPlayer />
+
+          {/* 移动端底部导航 */}
+          <BottomNav />
 
           {/* 全局键盘快捷键 */}
           <KeyboardShortcuts />

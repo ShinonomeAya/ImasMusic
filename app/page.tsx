@@ -27,7 +27,7 @@ export default async function HomePage() {
     <div className="px-8 py-12 max-w-7xl mx-auto">
       {/* ── Hero ── */}
       <section className="mb-20 text-center">
-        <h1 className="text-display font-serif font-medium mb-6" style={{ color: 'var(--text-primary)' }}>
+        <h1 className="text-3xl sm:text-4xl md:text-display font-serif font-medium mb-6" style={{ color: 'var(--text-primary)' }}>
           THE IDOLM@STER
           <br />
           <span style={{ color: 'var(--color-terracotta)' }}>音乐数据库</span>
@@ -36,7 +36,7 @@ export default async function HomePage() {
           探索偶像大师全系列的歌曲、专辑、艺人与创作者。
           从 765PRO 到学园偶像大师，收录六大企划的完整音乐档案。
         </p>
-        <div className="flex gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/releases"
             className="btn-terracotta gap-2"
@@ -75,7 +75,7 @@ export default async function HomePage() {
               查看全部 →
             </Link>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-5">
             {featuredReleases.map((release) => (
               <Link
                 key={release.id}

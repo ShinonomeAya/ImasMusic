@@ -27,6 +27,7 @@ export default function BottomPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const [queueOpen, setQueueOpen] = useState(false)
   const [dominantColor, setDominantColor] = useState<string>('var(--color-terracotta)')
+  const [touchStartY, setTouchStartY] = useState<number | null>(null)
 
   const {
     currentTrack,
@@ -172,7 +173,7 @@ export default function BottomPlayer() {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 80, opacity: 0 }}
             transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-            className="fixed bottom-0 left-0 right-0 z-50 h-16 flex items-center px-4 gap-3 md:left-64"
+            className="fixed bottom-14 md:bottom-0 left-0 right-0 z-50 h-14 md:h-16 flex items-center px-4 gap-3 md:left-64"
             style={{
               backgroundColor: 'var(--bg-surface)',
               borderTop: '1px solid var(--border-default)',
@@ -214,7 +215,7 @@ export default function BottomPlayer() {
             <div className="flex items-center gap-1">
               <button
                 onClick={playPrev}
-                className="p-2 rounded-full transition-colors hover:bg-opacity-10 hidden sm:block"
+                className="p-2 rounded-full transition-colors hover:bg-opacity-10"
                 style={{ color: 'var(--text-secondary)' }}
               >
                 <SkipBack size={18} />
@@ -231,14 +232,22 @@ export default function BottomPlayer() {
               </button>
               <button
                 onClick={playNext}
-                className="p-2 rounded-full transition-colors hover:bg-opacity-10 hidden sm:block"
+                className="p-2 rounded-full transition-colors hover:bg-opacity-10"
                 style={{ color: 'var(--text-secondary)' }}
               >
                 <SkipForward size={18} />
               </button>
+              {/* 手机端展开按钮 */}
+              <button
+                onClick={() => setView('EXPANDED')}
+                className="md:hidden p-2 rounded-full transition-colors"
+                style={{ color: 'var(--text-tertiary)' }}
+              >
+                <Maximize2 size={18} />
+              </button>
             </div>
 
-            {/* 进度条 */}
+            {/* 进度条（桌面端） */}
             <div className="hidden md:flex items-center gap-3 w-40 lg:w-56">
               <span className="text-micro font-mono w-8 text-right" style={{ color: 'var(--text-tertiary)' }}>
                 {formatTime(currentTime)}
@@ -261,6 +270,7 @@ export default function BottomPlayer() {
             </div>
 
             {/* 音量 + 队列 + 展开 */}
+            {/* 音量 + 控制（桌面端） */}
             <div className="hidden lg:flex items-center gap-2">
               <button
                 onClick={() => setVolume(volume === 0 ? 0.8 : 0)}
@@ -283,11 +293,11 @@ export default function BottomPlayer() {
               />
             </div>
 
-            <div className="flex items-center gap-1">
+            <div className="hidden md:flex items-center gap-1">
               <button
                 onClick={cycleRepeatMode}
                 className={cn(
-                  'p-2 rounded-full transition-colors hidden sm:block',
+                  'p-2 rounded-full transition-colors',
                   repeatMode !== 'none' ? 'text-terracotta' : ''
                 )}
                 style={{ color: repeatMode !== 'none' ? 'var(--color-terracotta)' : 'var(--text-tertiary)' }}
@@ -297,7 +307,7 @@ export default function BottomPlayer() {
               </button>
               <button
                 onClick={() => setShuffle(!shuffle)}
-                className="p-2 rounded-full transition-colors hidden sm:block"
+                className="p-2 rounded-full transition-colors"
                 style={{ color: shuffle ? 'var(--color-terracotta)' : 'var(--text-tertiary)' }}
                 title={shuffle ? '随机播放' : '顺序播放'}
               >
@@ -336,10 +346,20 @@ export default function BottomPlayer() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.96 }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-            className="fixed inset-0 z-50 flex flex-col"
+            className="fixed inset-0 z-50 flex flex-col touch-highlight-none"
             style={{
               backgroundColor: 'var(--bg-page)',
             }}
+            onTouchStart={(e) => setTouchStartY(e.touches[0].clientY)}
+            onTouchMove={(e) => {
+              if (touchStartY === null) return
+              const diff = e.touches[0].clientY - touchStartY
+              if (diff > 120) {
+                setView('MINI')
+                setTouchStartY(null)
+              }
+            }}
+            onTouchEnd={() => setTouchStartY(null)}
           >
             {/* 氛围背景光 */}
             <div
@@ -348,24 +368,42 @@ export default function BottomPlayer() {
             />
 
             {/* 顶部工具栏 */}
-            <div className="flex items-center justify-between px-6 py-4 relative">
+            <div className="flex items-center justify-between px-4 md:px-6 py-3 md:py-4 relative">
+              {/* 桌面端收起按钮 */}
               <button
                 onClick={() => setView('MINI')}
-                className="p-2 rounded-full transition-colors hover:bg-opacity-10"
+                className="hidden md:block p-2 rounded-full transition-colors hover:bg-opacity-10"
                 style={{ color: 'var(--text-secondary)' }}
               >
                 <Minimize2 size={20} />
               </button>
+              {/* 手机端拖拽指示器 + 关闭 */}
+              <div className="md:hidden flex items-center gap-2">
+                <button
+                  onClick={() => setView('MINI')}
+                  className="p-2 rounded-full transition-colors"
+                  style={{ color: 'var(--text-tertiary)' }}
+                >
+                  <X size={20} />
+                </button>
+              </div>
               <p className="text-label uppercase tracking-wider" style={{ color: 'var(--text-tertiary)' }}>
                 Now Playing
               </p>
               <button
                 onClick={() => setView('MINI')}
-                className="p-2 rounded-full transition-colors hover:bg-opacity-10"
+                className="hidden md:block p-2 rounded-full transition-colors hover:bg-opacity-10"
                 style={{ color: 'var(--text-tertiary)' }}
               >
                 <X size={20} />
               </button>
+              {/* 手机端占位 */}
+              <div className="md:hidden w-10" />
+            </div>
+
+            {/* 手机端拖拽指示器 */}
+            <div className="md:hidden flex justify-center pb-2">
+              <div className="w-10 h-1 rounded-full" style={{ backgroundColor: 'var(--border-prominent)' }} />
             </div>
 
             {/* 主内容 */}
@@ -553,15 +591,19 @@ export default function BottomPlayer() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.97 }}
             transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-            className="fixed z-[60] rounded-very shadow-whisper overflow-hidden flex flex-col"
+            className="fixed z-[60] overflow-hidden flex flex-col md:rounded-very md:shadow-whisper queue-sheet"
             style={{
               backgroundColor: 'var(--bg-surface)',
               border: '1px solid var(--border-default)',
-              bottom: view === 'MINI' ? '72px' : '24px',
-              right: '16px',
-              width: 'min(380px, calc(100vw - 32px))',
-              maxHeight: 'min(480px, calc(100vh - 120px))',
-            }}
+              bottom: '0',
+              left: '0',
+              right: '0',
+              maxHeight: '60vh',
+              borderTopLeftRadius: '16px',
+              borderTopRightRadius: '16px',
+              paddingBottom: 'env(safe-area-inset-bottom)',
+              '--queue-bottom': view === 'MINI' ? '72px' : '24px',
+            } as React.CSSProperties}
           >
             {/* 队列头部 */}
             <div className="flex items-center justify-between px-4 py-3 border-b" style={{ borderColor: 'var(--border-default)' }}>

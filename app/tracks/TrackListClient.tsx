@@ -87,7 +87,7 @@ export default function TrackListClient({ tracks, releases }: TrackListClientPro
     : undefined
 
   return (
-    <div className="px-8 py-10 max-w-7xl mx-auto">
+    <div className="px-4 md:px-8 py-10 max-w-7xl mx-auto">
       {/* Header */}
       <div className="mb-10">
         <h1 className="text-section font-serif font-medium mb-2" style={{ color: 'var(--text-primary)' }}>

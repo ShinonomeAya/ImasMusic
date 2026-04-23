@@ -57,7 +57,7 @@ export default async function GenreMapPage() {
     })
 
   return (
-    <div className="px-8 py-10 max-w-7xl mx-auto">
+    <div className="px-4 md:px-8 py-10 max-w-7xl mx-auto">
       {/* Back */}
       <div className="mb-6">
         <Link

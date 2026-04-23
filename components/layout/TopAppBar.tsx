@@ -2,9 +2,9 @@
 
 import Link from 'next/link'
 import { usePathname, useSearchParams } from 'next/navigation'
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import { cn } from '@/lib/utils'
-import { Search, X } from 'lucide-react'
+import { Search, X, Menu } from 'lucide-react'
 
 const TOP_NAV_ITEMS = [
   { label: '发现', href: '/' },
@@ -112,22 +112,50 @@ function SearchButton() {
 }
 
 export default function TopAppBar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
     <header
-      className="sticky top-0 z-30 w-full h-16 flex items-center justify-between px-4 md:px-8 transition-colors duration-300"
+      className="sticky top-0 z-30 w-full h-14 md:h-16 flex items-center justify-between px-4 md:px-8 transition-colors duration-300"
       style={{
         backgroundColor: 'rgba(var(--bg-page-rgb), 0.85)',
         borderBottom: '1px solid var(--border-default)',
         backdropFilter: 'blur(12px)',
       }}
     >
-      <Suspense fallback={<div className="hidden lg:block ml-12 md:ml-0 h-8 w-64 animate-pulse rounded-comfortable" style={{ backgroundColor: 'var(--bg-interactive)' }} />}>
-        <NavLinks />
-      </Suspense>
+      {/* 左侧：汉堡菜单（手机）+ 导航链接（桌面） */}
+      <div className="flex items-center gap-3 flex-1 min-w-0">
+        {/* 手机汉堡按钮 */}
+        <button
+          onClick={() => {
+            // 触发 Sidebar 抽屉打开
+            const event = new CustomEvent('toggle-sidebar')
+            window.dispatchEvent(event)
+          }}
+          className="md:hidden p-2 rounded-comfortable transition-colors"
+          style={{
+            color: 'var(--text-primary)',
+          }}
+          aria-label="打开菜单"
+        >
+          <Menu size={20} />
+        </button>
 
-      {/* 占位，保持右侧搜索框位置 */}
-      <div className="lg:hidden" />
+        {/* 手机 Logo（当导航隐藏时显示） */}
+        <Link
+          href="/"
+          className="md:hidden text-serif text-base font-medium truncate"
+          style={{ color: 'var(--text-primary)' }}
+        >
+          iM@S Archive
+        </Link>
 
+        <Suspense fallback={<div className="hidden lg:block ml-12 md:ml-0 h-8 w-64 animate-pulse rounded-comfortable" style={{ backgroundColor: 'var(--bg-interactive)' }} />}>
+          <NavLinks />
+        </Suspense>
+      </div>
+
+      {/* 右侧搜索 */}
       <Suspense fallback={<div className="h-10 w-40 animate-pulse rounded-generous" style={{ backgroundColor: 'var(--bg-interactive)' }} />}>
         <SearchButton />
       </Suspense>

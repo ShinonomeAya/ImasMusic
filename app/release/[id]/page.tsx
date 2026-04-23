@@ -29,7 +29,7 @@ export default async function ReleasePage({ params }: { params: Promise<{ id: st
     .slice(0, 4)
 
   return (
-    <div className="px-8 py-10 max-w-7xl mx-auto">
+    <div className="px-4 md:px-8 py-10 max-w-7xl mx-auto">
       {/* ── Hero ── */}
       <section className="flex flex-col md:flex-row gap-10 mb-16">
         {/* Cover */}
@@ -74,7 +74,7 @@ export default async function ReleasePage({ params }: { params: Promise<{ id: st
           </h1>
 
           {/* Meta Grid */}
-          <div className="grid grid-cols-2 gap-x-8 gap-y-4 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 mb-8">
             {release.releaseDate && (
               <MetaItem icon={Calendar} label="发行日期" value={release.releaseDate.slice(0, 10)} />
             )}
@@ -149,12 +149,12 @@ export default async function ReleasePage({ params }: { params: Promise<{ id: st
                   size="sm"
                 />
                 {track.bpm && (
-                  <span className="text-xs font-mono px-2 py-1 rounded-subtle shrink-0" style={{ backgroundColor: 'var(--bg-interactive)', color: 'var(--text-secondary)' }}>
+                  <span className="hidden sm:block text-xs font-mono px-2 py-1 rounded-subtle shrink-0" style={{ backgroundColor: 'var(--bg-interactive)', color: 'var(--text-secondary)' }}>
                     {track.bpm} BPM
                   </span>
                 )}
                 {track.durationSec && (
-                  <span className="text-xs font-mono flex items-center gap-1 shrink-0" style={{ color: 'var(--text-tertiary)' }}>
+                  <span className="hidden sm:flex text-xs font-mono items-center gap-1 shrink-0" style={{ color: 'var(--text-tertiary)' }}>
                     <Clock size={12} />
                     {formatTime(track.durationSec)}
                   </span>
@@ -171,7 +171,7 @@ export default async function ReleasePage({ params }: { params: Promise<{ id: st
           <h2 className="text-subheading font-serif font-medium mb-6 pb-3" style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--border-default)' }}>
             同企划推荐
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-5">
             {related.map((r) => (
               <Link key={r.id} href={`/release/${r.id}`} className="group flex flex-col gap-3">
                 <div className="relative aspect-square rounded-very overflow-hidden shadow-whisper group-hover:shadow-whisper group-hover:-translate-y-0.5 transition-all">

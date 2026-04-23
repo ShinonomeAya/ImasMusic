@@ -50,7 +50,7 @@ export default function SearchClient({ tracks, releases }: SearchClientProps) {
   const showReleases = activeTab === 'all' || activeTab === 'releases'
 
   return (
-    <div className="px-8 py-10 max-w-4xl mx-auto">
+    <div className="px-4 md:px-8 py-10 max-w-4xl mx-auto">
       {/* Search Input */}
       <div className="relative mb-8">
         <Search size={20} className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: 'var(--text-tertiary)' }} />

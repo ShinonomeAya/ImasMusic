@@ -46,6 +46,13 @@ export default function Sidebar() {
     setMobileOpen(false)
   }, [pathname])
 
+  // 监听外部 toggle-sidebar 事件（来自 TopAppBar 汉堡按钮）
+  useEffect(() => {
+    const handleToggle = () => setMobileOpen((prev) => !prev)
+    window.addEventListener('toggle-sidebar', handleToggle)
+    return () => window.removeEventListener('toggle-sidebar', handleToggle)
+  }, [])
+
   const activeSeries = pathname.startsWith('/series/')
     ? pathname.split('/')[2]
     : null
@@ -174,19 +181,6 @@ export default function Sidebar() {
         <SidebarContent />
       </aside>
 
-      {/* ── Mobile Hamburger ── */}
-      <button
-        onClick={() => setMobileOpen(true)}
-        className="md:hidden fixed top-4 left-4 z-50 p-2 rounded-comfortable transition-colors"
-        style={{
-          backgroundColor: 'var(--bg-surface)',
-          border: '1px solid var(--border-default)',
-          color: 'var(--text-primary)',
-        }}
-      >
-        <Menu size={20} />
-      </button>
-
       {/* ── Mobile Drawer ── */}
       {mobileOpen && (
         <>
@@ -197,10 +191,11 @@ export default function Sidebar() {
           />
           {/* Drawer */}
           <aside
-            className="md:hidden fixed left-0 top-0 h-screen w-72 z-50 flex flex-col animate-slide-up"
+            className="md:hidden fixed left-0 top-0 h-screen w-80 z-50 flex flex-col animate-slide-in-left"
             style={{
               backgroundColor: 'var(--bg-surface)',
               borderRight: '1px solid var(--border-default)',
+              paddingBottom: 'env(safe-area-inset-bottom)',
             }}
           >
             <div className="flex items-center justify-between px-5 pt-5 pb-2">

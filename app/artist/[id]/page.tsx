@@ -40,7 +40,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
     .filter(Boolean) || []
 
   return (
-    <div className="px-8 py-10 max-w-7xl mx-auto">
+    <div className="px-4 md:px-8 py-10 max-w-7xl mx-auto">
       {/* Hero */}
       <section className="flex flex-col md:flex-row gap-8 mb-16 items-start">
         {/* Portrait */}
@@ -74,7 +74,7 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
             ))}
           </div>
 
-          <h1 className="text-subheading-lg font-serif font-medium mb-4" style={{ color: 'var(--text-primary)' }}>
+          <h1 className="text-2xl md:text-subheading-lg font-serif font-medium mb-4" style={{ color: 'var(--text-primary)' }}>
             {artist.nameJa}
           </h1>
 

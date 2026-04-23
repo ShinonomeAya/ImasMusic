@@ -37,7 +37,7 @@ export default function FavoritesPage() {
 
   if (!loaded) {
     return (
-      <div className="px-8 py-10 max-w-7xl mx-auto">
+      <div className="px-4 md:px-8 py-10 max-w-7xl mx-auto">
         <div className="animate-pulse h-8 w-48 rounded" style={{ backgroundColor: 'var(--bg-interactive)' }} />
       </div>
     )

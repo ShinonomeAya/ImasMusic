@@ -85,7 +85,7 @@ export default function ReleaseList({
     : undefined
 
   return (
-    <div className="px-8 py-10 max-w-7xl mx-auto">
+    <div className="px-4 md:px-8 py-10 max-w-7xl mx-auto">
       {/* Header */}
       <div className="mb-10">
         <h1 className="text-section font-serif font-medium mb-2" style={{ color: 'var(--text-primary)' }}>
@@ -155,7 +155,9 @@ export default function ReleaseList({
         <div className="flex gap-1 rounded-comfortable p-1" style={{ backgroundColor: 'var(--bg-surface)', border: '1px solid var(--border-default)' }}>
           <ViewBtn mode="grid" current={view} set={setView} icon={Grid3X3} />
           <ViewBtn mode="list" current={view} set={setView} icon={List} />
-          <ViewBtn mode="table" current={view} set={setView} icon={Table2} />
+          <span className="hidden md:block">
+            <ViewBtn mode="table" current={view} set={setView} icon={Table2} />
+          </span>
         </div>
       </div>
 

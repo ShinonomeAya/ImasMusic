@@ -25,7 +25,7 @@ export default async function SeriesPage({ params }: { params: Promise<{ id: str
   ])
 
   return (
-    <div className="px-8 py-10 max-w-7xl mx-auto">
+    <div className="px-4 md:px-8 py-10 max-w-7xl mx-auto">
       {/* ── Hero ── */}
       <section className="mb-16">
         <div
