@@ -103,6 +103,7 @@ export async function generateStaticParams() {
 | 图表 | Recharts | 数据可视化（已启用） |
 | 动画 | Framer Motion | 播放器展开/页面过渡 |
 | 搜索 | 客户端过滤 | `useSearchParams` + `Suspense` |
+| 测试 | Playwright | E2E 自动化测试（移动端+桌面端） |
 | 部署 | Cloudflare Pages | GitHub Actions 自动部署 |
 
 ### 关键决策记录
@@ -361,6 +362,36 @@ Gakuen:       #FF7F27  (橘)
 
 ---
 
+## 🧪 E2E 测试（Playwright）
+
+```bash
+# 首次安装浏览器
+npx playwright install
+
+# 运行全部测试（需先 npm run build）
+npx playwright test
+
+# 仅移动端
+npx playwright test --project="Mobile iPhone SE"
+
+# 查看 HTML 报告
+npx playwright show-report
+```
+
+### 测试覆盖
+| 场景 | iPhone SE | iPhone 14 Pro | Desktop |
+|---|---|---|---|
+| 首页加载 + 统计数据 | ✅ | ✅ | ✅ |
+| 底部导航栏可见 | ✅ | ✅ | — |
+| 侧边栏打开/关闭 | ✅ | ✅ | — |
+| 专辑详情页 + 曲目列表 | ✅ | ✅ | ✅ |
+| 曲目详情页 + Credits | ✅ | ✅ | ✅ |
+| 底部导航 Tab 切换 | ✅ | ✅ | — |
+
+> 注：Desktop 端自动 skip 移动端专属测试（`isMobile` 条件）。测试数据使用静态导出中的真实 ID，若数据更新导致 ID 变化需同步更新 `e2e/mobile.spec.ts`。
+
+---
+
 ## 🚀 部署指南
 
 ### 快速部署（已配置 GitHub Actions）
@@ -479,4 +510,4 @@ npx tsx scripts/merge-wiki-supplement.ts
 
 ---
 
-*最后更新: 2026-04-23 | v0.3.1 — 静态导出 + Cloudflare Pages 部署（4,498 页面），GitHub Actions 自动部署配置完成*
+*最后更新: 2026-04-23 | v0.3.1 — 静态导出 + Cloudflare Pages 部署（4,498 页面），Playwright E2E 测试（移动端+桌面端）配置完成*

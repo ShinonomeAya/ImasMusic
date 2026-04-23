@@ -42,3 +42,7 @@ yuanxing/
 
 # Old page backups
 **/old_page.tsx
+
+# Playwright
+playwright-report/
+test-results/
