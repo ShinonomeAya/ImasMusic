@@ -28,6 +28,7 @@ export default function BottomPlayer() {
   const [queueOpen, setQueueOpen] = useState(false)
   const [dominantColor, setDominantColor] = useState<string>('var(--color-terracotta)')
   const [touchStartY, setTouchStartY] = useState<number | null>(null)
+  const [showAllArtists, setShowAllArtists] = useState(false)
 
   const {
     currentTrack,
@@ -432,9 +433,21 @@ export default function BottomPlayer() {
                       </span>
                     </div>
                   </div>
-                  <p className="text-body-lg mt-2" style={{ color: 'var(--text-secondary)' }}>
+                  <p
+                    className={cn('text-body-lg mt-2', !showAllArtists && 'line-clamp-2')}
+                    style={{ color: 'var(--text-secondary)' }}
+                  >
                     {currentTrack.artistIds.join(', ')}
                   </p>
+                  {currentTrack.artistIds.length > 2 && (
+                    <button
+                      onClick={() => setShowAllArtists(!showAllArtists)}
+                      className="text-xs mt-1 transition-colors hover:text-terracotta"
+                      style={{ color: 'var(--text-tertiary)' }}
+                    >
+                      {showAllArtists ? '收起' : `展开全部 ${currentTrack.artistIds.length} 位艺人`}
+                    </button>
+                  )}
                   {currentTrack.bpm && (
                     <p className="text-sm mt-1 font-mono" style={{ color: 'var(--text-tertiary)' }}>
                       {currentTrack.bpm} BPM
