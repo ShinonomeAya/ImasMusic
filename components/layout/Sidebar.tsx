@@ -191,7 +191,7 @@ export default function Sidebar() {
           />
           {/* Drawer */}
           <aside
-            className="md:hidden fixed left-0 top-0 h-screen w-80 z-50 flex flex-col animate-slide-in-left"
+            className="md:hidden fixed left-0 top-0 h-screen w-80 z-[60] flex flex-col animate-slide-in-left"
             style={{
               backgroundColor: 'var(--bg-surface)',
               borderRight: '1px solid var(--border-default)',
