@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useSearchParams } from 'next/navigation'
 import { SERIES_CONFIG } from '@/lib/series'
 import type { Release, SeriesBrand } from '@/types'
 import { Grid3X3, List, Table2, Search, Disc, Music, Layers } from 'lucide-react'
@@ -27,17 +28,23 @@ const TYPE_ICONS: Record<string, React.ElementType> = {
 
 export default function ReleaseList({
   releases,
-  seriesFilter,
 }: {
   releases: Release[]
-  seriesFilter?: SeriesBrand
 }) {
+  const searchParams = useSearchParams()
+  const seriesFilter = searchParams.get('series') as SeriesBrand | undefined
+
   const [view, setView] = useState<ViewMode>('grid')
   const [sort, setSort] = useState<SortMode>('newest')
   const [filterType, setFilterType] = useState<FilterType>('ALL')
   const [searchQuery, setSearchQuery] = useState('')
   const filtered = useMemo(() => {
     let result = [...releases]
+
+    // 系列筛选
+    if (seriesFilter) {
+      result = result.filter((r) => r.series === seriesFilter)
+    }
 
     // 类型筛选
     if (filterType !== 'ALL') {
@@ -71,7 +78,7 @@ export default function ReleaseList({
     })
 
     return result
-  }, [releases, filterType, searchQuery, sort])
+  }, [releases, seriesFilter, filterType, searchQuery, sort])
 
   const seriesColor = seriesFilter
     ? SERIES_CONFIG.find((s) => s.id === seriesFilter)?.brandColor

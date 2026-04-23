@@ -1,10 +1,15 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { getArtistById, getTracksByArtist, getTrackById } from '@/lib/data'
+import { getArtistById, getTracksByArtist, getTrackById, getAllArtists } from '@/lib/data'
 import { SERIES_CONFIG } from '@/lib/series'
 import { Star, Users, Mic2, PenTool, Music, Disc } from 'lucide-react'
 
 export const revalidate = 86400
+
+export async function generateStaticParams() {
+  const artists = await getAllArtists()
+  return artists.map((a) => ({ id: a.id }))
+}
 
 const ROLE_ICONS: Record<string, React.ElementType> = {
   IDOL: Star,

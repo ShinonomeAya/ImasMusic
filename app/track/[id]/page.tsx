@@ -1,13 +1,18 @@
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
-import { getTrackById, getReleaseById, getTracksBySeries } from '@/lib/data'
+import { getTrackById, getReleaseById, getTracksBySeries, getAllTracks } from '@/lib/data'
 import { SERIES_CONFIG } from '@/lib/series'
 import TrackPlayButton from '@/components/TrackPlayButton'
 import FavoriteButton from '@/components/FavoriteButton'
 import { Clock, Music, Disc, ArrowLeft } from 'lucide-react'
 
 export const revalidate = 86400
+
+export async function generateStaticParams() {
+  const tracks = await getAllTracks()
+  return tracks.map((t) => ({ id: t.id }))
+}
 
 export default async function TrackPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params

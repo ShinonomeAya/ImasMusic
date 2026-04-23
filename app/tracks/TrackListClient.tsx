@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useSearchParams } from 'next/navigation'
 import { SERIES_CONFIG } from '@/lib/series'
 import type { Track, Release, SeriesBrand } from '@/types'
 import { Grid3X3, List, Table2, Search, Music, Clock } from 'lucide-react'
@@ -14,10 +15,12 @@ type PlayableFilter = 'ALL' | 'PLAYABLE'
 interface TrackListClientProps {
   tracks: Track[]
   releases: Release[]
-  seriesFilter?: SeriesBrand
 }
 
-export default function TrackListClient({ tracks, releases, seriesFilter }: TrackListClientProps) {
+export default function TrackListClient({ tracks, releases }: TrackListClientProps) {
+  const searchParams = useSearchParams()
+  const seriesFilter = searchParams.get('series') as SeriesBrand | undefined
+
   const [view, setView] = useState<ViewMode>('grid')
   const [sort, setSort] = useState<SortMode>('newest')
   const [playableFilter, setPlayableFilter] = useState<PlayableFilter>('ALL')
@@ -37,6 +40,11 @@ export default function TrackListClient({ tracks, releases, seriesFilter }: Trac
 
   const filtered = useMemo(() => {
     let result = [...tracks]
+
+    // 系列筛选
+    if (seriesFilter) {
+      result = result.filter((t) => releaseMap.get(t.releaseId)?.series === seriesFilter)
+    }
 
     // 可试听筛选
     if (playableFilter === 'PLAYABLE') {
@@ -72,7 +80,7 @@ export default function TrackListClient({ tracks, releases, seriesFilter }: Trac
     })
 
     return result
-  }, [tracks, playableFilter, searchQuery, sort, releaseMap])
+  }, [tracks, seriesFilter, playableFilter, searchQuery, sort, releaseMap])
 
   const seriesColor = seriesFilter
     ? SERIES_CONFIG.find((s) => s.id === seriesFilter)?.brandColor

@@ -1,13 +1,12 @@
-import { getAllReleases, getReleasesBySeries } from '@/lib/data'
-import type { SeriesBrand } from '@/types'
+import { Suspense } from 'react'
+import { getAllReleases } from '@/lib/data'
 import ReleaseList from './ReleaseList'
 
-export const revalidate = 86400
-
-export default async function ReleasesPage({ searchParams }: { searchParams: Promise<{ series?: string }> }) {
-  const { series } = await searchParams
-  const seriesBrand = series as SeriesBrand | undefined
-  const releases = seriesBrand ? await getReleasesBySeries(seriesBrand) : await getAllReleases()
-
-  return <ReleaseList releases={releases} seriesFilter={seriesBrand} />
+export default async function ReleasesPage() {
+  const releases = await getAllReleases()
+  return (
+    <Suspense fallback={<div className="px-8 py-10 max-w-7xl mx-auto text-center text-tertiary">加载中...</div>}>
+      <ReleaseList releases={releases} />
+    </Suspense>
+  )
 }

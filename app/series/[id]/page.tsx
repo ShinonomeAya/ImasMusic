@@ -8,6 +8,10 @@ import { Disc, Music, Calendar, BarChart3 } from 'lucide-react'
 
 export const revalidate = 86400
 
+export async function generateStaticParams() {
+  return SERIES_CONFIG.map((s) => ({ id: s.id }))
+}
+
 export default async function SeriesPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const series = SERIES_CONFIG.find((s) => s.id === id)

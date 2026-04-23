@@ -1,16 +1,16 @@
-import { getAllTracks, getTracksBySeries, getAllReleases } from '@/lib/data'
-import type { SeriesBrand } from '@/types'
+import { Suspense } from 'react'
+import { getAllTracks, getAllReleases } from '@/lib/data'
 import TrackListClient from './TrackListClient'
 
-export const revalidate = 86400
-
-export default async function TracksPage({ searchParams }: { searchParams: Promise<{ series?: string }> }) {
-  const { series } = await searchParams
-  const seriesBrand = series as SeriesBrand | undefined
+export default async function TracksPage() {
   const [tracks, releases] = await Promise.all([
-    seriesBrand ? getTracksBySeries(seriesBrand) : getAllTracks(),
+    getAllTracks(),
     getAllReleases(),
   ])
 
-  return <TrackListClient tracks={tracks} releases={releases} seriesFilter={seriesBrand} />
+  return (
+    <Suspense fallback={<div className="px-8 py-10 max-w-7xl mx-auto text-center text-tertiary">加载中...</div>}>
+      <TrackListClient tracks={tracks} releases={releases} />
+    </Suspense>
+  )
 }
