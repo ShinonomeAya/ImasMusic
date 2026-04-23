@@ -141,15 +141,6 @@ export default function TopAppBar() {
           <Menu size={20} />
         </button>
 
-        {/* 手机 Logo（当导航隐藏时显示） */}
-        <Link
-          href="/"
-          className="md:hidden text-serif text-base font-medium truncate"
-          style={{ color: 'var(--text-primary)' }}
-        >
-          iM@S Archive
-        </Link>
-
         <Suspense fallback={<div className="hidden lg:block ml-12 md:ml-0 h-8 w-64 animate-pulse rounded-comfortable" style={{ backgroundColor: 'var(--bg-interactive)' }} />}>
           <NavLinks />
         </Suspense>

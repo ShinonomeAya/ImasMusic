@@ -36,7 +36,7 @@ export default async function HomePage() {
           探索偶像大师全系列的歌曲、专辑、艺人与创作者。
           从 765PRO 到学园偶像大师，收录六大企划的完整音乐档案。
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-row flex-wrap gap-3 justify-center">
           <Link
             href="/releases"
             className="btn-terracotta gap-2"

@@ -407,9 +407,9 @@ export default function BottomPlayer() {
             </div>
 
             {/* 主内容 */}
-            <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-12 px-8 pb-8 max-w-6xl mx-auto w-full overflow-y-auto relative">
+            <div className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-8 md:gap-12 px-4 md:px-8 pb-8 max-w-6xl mx-auto w-full overflow-y-auto relative">
               {/* 左侧: 大封面 */}
-              <div className="w-full max-w-sm lg:max-w-md aspect-square relative">
+              <div className="w-full max-w-xs md:max-w-sm lg:max-w-md aspect-square relative">
                 <div
                   className="absolute inset-0 rounded-very blur-3xl opacity-25 scale-90 transition-colors duration-1000"
                   style={{ backgroundColor: dominantColor }}
@@ -529,8 +529,8 @@ export default function BottomPlayer() {
                   </button>
                 </div>
 
-                {/* 音量 */}
-                <div className="flex items-center justify-center gap-3">
+                {/* 音量（桌面端） */}
+                <div className="hidden md:flex items-center justify-center gap-3">
                   <button
                     onClick={() => setVolume(volume === 0 ? 0.8 : 0)}
                     style={{ color: 'var(--text-tertiary)' }}
@@ -551,9 +551,9 @@ export default function BottomPlayer() {
                   />
                 </div>
 
-                {/* Credits 预览 */}
+                {/* Credits 预览（桌面端） */}
                 <div
-                  className="rounded-very p-5"
+                  className="hidden md:block rounded-very p-5"
                   style={{
                     backgroundColor: 'var(--bg-surface)',
                     border: '1px solid var(--border-default)',

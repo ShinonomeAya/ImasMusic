@@ -118,7 +118,7 @@ export default async function ReleasePage({ params }: { params: Promise<{ id: st
             {tracks.map((track, idx) => (
               <div
                 key={track.id}
-                className="flex items-center gap-3 px-4 py-3 rounded-comfortable transition-colors hover:bg-opacity-50 group"
+                className="flex items-center gap-3 px-4 py-3 rounded-comfortable transition-colors hover:bg-opacity-50 group min-w-0"
                 style={{ backgroundColor: 'var(--bg-surface)', border: '1px solid var(--border-default)' }}
               >
                 <span className="w-6 text-center text-sm font-mono shrink-0" style={{ color: 'var(--text-tertiary)' }}>
