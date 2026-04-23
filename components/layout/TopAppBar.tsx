@@ -97,7 +97,7 @@ function SearchButton() {
           <span className="hidden sm:inline">搜索曲目、专辑、艺人...</span>
           <span className="sm:hidden">搜索</span>
           <kbd
-            className="hidden md:inline-flex items-center gap-1 px-1.5 py-0.5 rounded-sharp text-micro font-mono ml-2"
+            className="hidden md:inline-flex items-center gap-1 px-1.5 py-0.5 rounded-subtle text-micro font-mono ml-2"
             style={{
               backgroundColor: 'var(--bg-interactive)',
               color: 'var(--text-tertiary)',

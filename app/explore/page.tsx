@@ -74,7 +74,7 @@ export default function ExplorePage() {
                   </h3>
                   {!item.available && (
                     <span
-                      className="px-2 py-0.5 rounded-sharp text-micro font-medium"
+                      className="px-2 py-0.5 rounded-subtle text-micro font-medium"
                       style={{ backgroundColor: 'var(--bg-interactive)', color: 'var(--text-tertiary)' }}
                     >
                       开发中

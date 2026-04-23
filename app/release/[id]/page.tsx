@@ -144,7 +144,7 @@ export default async function ReleasePage({ params }: { params: Promise<{ id: st
                   size="sm"
                 />
                 {track.bpm && (
-                  <span className="text-xs font-mono px-2 py-1 rounded-sharp shrink-0" style={{ backgroundColor: 'var(--bg-interactive)', color: 'var(--text-secondary)' }}>
+                  <span className="text-xs font-mono px-2 py-1 rounded-subtle shrink-0" style={{ backgroundColor: 'var(--bg-interactive)', color: 'var(--text-secondary)' }}>
                     {track.bpm} BPM
                   </span>
                 )}
@@ -169,7 +169,7 @@ export default async function ReleasePage({ params }: { params: Promise<{ id: st
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             {related.map((r) => (
               <Link key={r.id} href={`/release/${r.id}`} className="group flex flex-col gap-3">
-                <div className="relative aspect-square rounded-very overflow-hidden shadow-whisper group-hover:shadow-lg transition-all">
+                <div className="relative aspect-square rounded-very overflow-hidden shadow-whisper group-hover:shadow-whisper group-hover:-translate-y-0.5 transition-all">
                   {r.coverUrl ? (
                     <Image
                       src={r.coverUrl}

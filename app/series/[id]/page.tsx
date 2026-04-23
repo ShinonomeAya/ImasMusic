@@ -25,7 +25,7 @@ export default async function SeriesPage({ params }: { params: Promise<{ id: str
       {/* ── Hero ── */}
       <section className="mb-16">
         <div
-          className="w-16 h-16 rounded-generous mb-6 flex items-center justify-center text-white text-2xl font-bold"
+          className="w-16 h-16 rounded-generous mb-6 flex items-center justify-center text-white text-2xl font-medium"
           style={{ backgroundColor: series.brandColor }}
         >
           {series.nameJa.charAt(0)}
@@ -92,7 +92,7 @@ export default async function SeriesPage({ params }: { params: Promise<{ id: str
                 href={`/release/${release.id}`}
                 className="group flex flex-col gap-3"
               >
-                <div className="relative aspect-square rounded-very overflow-hidden shadow-whisper group-hover:shadow-lg transition-all">
+                <div className="relative aspect-square rounded-very overflow-hidden shadow-whisper group-hover:shadow-whisper group-hover:-translate-y-0.5 transition-all">
                   {release.coverUrl ? (
                     <Image
                       src={release.coverUrl}

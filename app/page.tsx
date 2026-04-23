@@ -82,7 +82,7 @@ export default async function HomePage() {
                 href={`/release/${release.id}`}
                 className="group flex flex-col gap-3"
               >
-                <div className="relative aspect-square rounded-very overflow-hidden bg-neutral-100 shadow-whisper group-hover:shadow-lg transition-all duration-300">
+                <div className="relative aspect-square rounded-very overflow-hidden bg-warm-sand shadow-whisper group-hover:shadow-whisper group-hover:-translate-y-0.5 transition-all duration-300">
                   {release.coverUrl ? (
                     <Image
                       src={release.coverUrl}
@@ -171,7 +171,7 @@ export default async function HomePage() {
               className="card-claude-featured p-6 cursor-pointer group transition-all duration-300 hover:-translate-y-1"
             >
               <div
-                className="w-10 h-10 rounded-generous mb-4 flex items-center justify-center text-white text-sm font-bold"
+                className="w-10 h-10 rounded-generous mb-4 flex items-center justify-center text-white text-sm font-medium"
                 style={{ backgroundColor: series.brandColor }}
               >
                 {series.nameJa.charAt(0)}

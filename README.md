@@ -2,7 +2,7 @@
 
 > Next.js 15 + TypeScript + Tailwind CSS 构建的 THE IDOLM@STER 系列音乐数据库。暖色编辑风格（Warm Editorial），支持真实音频试听、多企划数据、移动端响应式。
 
-**当前版本：v0.2**
+**当前版本：v0.3**
 
 ---
 
@@ -23,7 +23,7 @@ npm run type-check
 npm run build
 ```
 
-**当前数据状态**：35 tracks + 32 releases + 344 artists（765AS + Cinderella + Million Live + SideM + Shiny Colors + Gakuen）
+**当前数据状态**：3,403 tracks + 734 releases + 344 artists（765AS + Cinderella + Million Live + SideM + Shiny Colors + Gakuen）
 
 ---
 
@@ -403,4 +403,4 @@ npx tsx scripts/merge-wiki-supplement.ts
 
 ---
 
-*最后更新: 2026-04-22 | v0.2 — Phase 6 功能增强完成，UI 修复完成*
+*最后更新: 2026-04-23 | v0.3 — 数据大规模扩充（734 发行物 / 3403 曲目），播放器交互修复*

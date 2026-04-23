@@ -207,7 +207,7 @@ function GridView({ releases, seriesColor }: { releases: Release[]; seriesColor?
             href={`/release/${release.id}`}
             className="group flex flex-col gap-3"
           >
-            <div className="relative aspect-square rounded-very overflow-hidden shadow-whisper group-hover:shadow-lg transition-all duration-300">
+            <div className="relative aspect-square rounded-very overflow-hidden shadow-whisper group-hover:shadow-whisper group-hover:-translate-y-0.5 transition-all duration-300">
               {release.coverUrl ? (
                 <Image
                   src={release.coverUrl}
@@ -223,7 +223,7 @@ function GridView({ releases, seriesColor }: { releases: Release[]; seriesColor?
               )}
               <div className="absolute top-2 left-2">
                 <span
-                  className="px-2 py-0.5 rounded-sharp text-micro font-medium uppercase tracking-wider"
+                  className="px-2 py-0.5 rounded-subtle text-micro font-medium uppercase tracking-wider"
                   style={{
                     backgroundColor: seriesColor || 'var(--color-terracotta)',
                     color: '#fff',
@@ -279,7 +279,7 @@ function ListView({ releases, seriesColor }: { releases: Release[]; seriesColor?
               </p>
             </div>
             <span
-              className="px-2 py-1 rounded-sharp text-micro font-medium uppercase tracking-wider shrink-0"
+              className="px-2 py-1 rounded-subtle text-micro font-medium uppercase tracking-wider shrink-0"
               style={{
                 backgroundColor: seriesColor || 'var(--color-terracotta)',
                 color: '#fff',

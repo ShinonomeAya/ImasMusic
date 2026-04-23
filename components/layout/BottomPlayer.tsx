@@ -360,7 +360,7 @@ export default function BottomPlayer() {
                 Now Playing
               </p>
               <button
-                onClick={() => setView('HIDDEN')}
+                onClick={() => setView('MINI')}
                 className="p-2 rounded-full transition-colors hover:bg-opacity-10"
                 style={{ color: 'var(--text-tertiary)' }}
               >

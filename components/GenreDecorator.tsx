@@ -145,12 +145,16 @@ export function GenreDecorator({ genreSlug }: GenreDecoratorProps) {
     'ambient-ballad': (
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <div
-          className="absolute inset-0 opacity-[0.06]"
-          style={{
-            background: `radial-gradient(ellipse at 30% 40%, ${color} 0%, transparent 60%),
-                         radial-gradient(ellipse at 70% 60%, ${secondary} 0%, transparent 50%),
-                         radial-gradient(ellipse at 50% 80%, ${color} 0%, transparent 70%)`,
-          }}
+          className="absolute w-[80%] h-[80%] rounded-full blur-[100px] opacity-[0.06]"
+          style={{ top: '5%', left: '10%', backgroundColor: color }}
+        />
+        <div
+          className="absolute w-[70%] h-[70%] rounded-full blur-[100px] opacity-[0.06]"
+          style={{ top: '40%', left: '50%', backgroundColor: secondary }}
+        />
+        <div
+          className="absolute w-[75%] h-[75%] rounded-full blur-[100px] opacity-[0.06]"
+          style={{ top: '55%', left: '25%', backgroundColor: color }}
         />
       </div>
     ),
