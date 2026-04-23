@@ -84,7 +84,8 @@ export async function generateStaticParams() {
 | **Phase 3** | ✅ | 发行物/艺人/搜索/探索/收藏页面 | [docs/phase3.md](docs/phase3.md) |
 | **Phase 4** | ✅ | 真实音频播放器、多企划数据导入、移动端适配 | [docs/phase4.md](docs/phase4.md) |
 | **Phase 5** | ✅ | 单曲详情页、艺人筛选、播放修复、艺人数据导入 | [docs/phase5.md](docs/phase5.md) |
-| **Phase 6** | 🚧 进行中 | 数据层扩展、功能增强、交互优化 | [docs/phase6.md](docs/phase6.md) |
+| **Phase 6** | ✅ | 数据层扩展、功能增强、交互优化 | [docs/phase6.md](docs/phase6.md) |
+| **Phase 7** | 🚧 进行中 | 移动端适配（Bottom Nav + 全屏播放器 + 触控优化） | [docs/phase7.md](docs/phase7.md) |
 
 ---
 
