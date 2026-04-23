@@ -215,7 +215,7 @@
   .btn-sand {
     display: inline-flex; align-items: center; gap: 0.5rem;
     background-color: var(--color-warm-sand); color: var(--color-charcoal-warm);
-    padding: 0px 12px 0px 8px; border-radius: 8px;
+    padding: 8px 16px; border-radius: 8px;
     font-size: 15px; font-weight: 400; line-height: 1.60;
     box-shadow: 0px 0px 0px 0px var(--color-warm-sand), var(--shadow-ring);
     transition: background-color 0.2s ease, box-shadow 0.2s ease;
