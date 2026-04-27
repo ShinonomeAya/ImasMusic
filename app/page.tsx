@@ -124,9 +124,10 @@ export default async function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {playableTracks.map((track) => (
-              <div
+              <Link
                 key={track.id}
-                className="flex items-center gap-4 p-3 rounded-very transition-all duration-200 hover:bg-opacity-50 cursor-pointer group"
+                href={`/track/${track.id}`}
+                className="flex items-center gap-4 p-3 rounded-very transition-colors duration-200 hover:bg-opacity-50 cursor-pointer group"
                 style={{ backgroundColor: 'var(--bg-surface)', border: '1px solid var(--border-default)' }}
               >
                 <TrackPlayButton track={track} coverUrl={releases.find((r) => r.id === track.releaseId)?.coverUrl} />
@@ -152,7 +153,7 @@ export default async function HomePage() {
                     {track.durationSec ? formatTime(track.durationSec) : '--:--'}
                   </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>

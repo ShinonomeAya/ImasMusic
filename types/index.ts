@@ -65,6 +65,8 @@ export interface Track {
   lyrics?: string
   /** 乐评/音乐分析文本 */
   description?: string
+  /** 封面图 URL（从所属 Release 继承，便于播放器直接读取） */
+  coverUrl?: string
 }
 
 /** 曲目创作者 Credit */

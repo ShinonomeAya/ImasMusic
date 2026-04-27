@@ -91,14 +91,14 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
           )}
 
           {/* Stats */}
-          <div className="flex gap-6 mt-6">
-            <div className="text-center">
+          <div className="flex flex-col md:flex-row gap-4 md:gap-6 mt-6">
+            <div className="text-center md:text-left">
               <p className="text-2xl font-serif font-medium" style={{ color: 'var(--text-primary)' }}>
                 {artist.trackIds?.length || 0}
               </p>
               <p className="text-micro uppercase tracking-wider" style={{ color: 'var(--text-tertiary)' }}>曲目</p>
             </div>
-            <div className="text-center">
+            <div className="text-center md:text-left">
               <p className="text-2xl font-serif font-medium" style={{ color: 'var(--text-primary)' }}>
                 {artist.releaseIds?.length || 0}
               </p>

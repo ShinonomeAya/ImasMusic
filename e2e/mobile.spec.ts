@@ -128,3 +128,39 @@ test.describe('底部导航栏切换', () => {
     await expect(page).toHaveURL(/\/$/)
   })
 })
+
+test.describe('MobilePlayerSheet 展开与收起', () => {
+  test('播放后展开全屏播放器并正确收起', async ({ page, isMobile }) => {
+    test.skip(!isMobile, '仅测试移动端播放器交互')
+    await page.goto('/')
+
+    // 点击第一首可试听曲目的播放按钮
+    const playBtn = page.locator('section button[title="播放"]').first()
+    await expect(playBtn).toBeVisible()
+    await playBtn.click()
+
+    // 验证 Mini Player 出现
+    const miniPlayer = page.locator('div.fixed.bottom-14')
+    await expect(miniPlayer).toBeVisible()
+
+    // 点击展开按钮进入全屏 Sheet
+    await page.getByTitle('展开播放器').click()
+    await expect(page.getByText('Now Playing')).toBeVisible()
+
+    // 点击关闭按钮收起
+    await page.getByTitle('关闭播放器').first().click()
+    await expect(page.getByText('Now Playing')).not.toBeVisible()
+
+    // 再次展开，验证 History API 侧滑返回拦截
+    await page.getByTitle('展开播放器').click()
+    await expect(page.getByText('Now Playing')).toBeVisible()
+
+    // 模拟系统返回手势（history.back）
+    await page.evaluate(() => history.back())
+    await page.waitForTimeout(600)
+    await expect(page.getByText('Now Playing')).not.toBeVisible()
+
+    // Mini Player 仍应保持显示
+    await expect(miniPlayer).toBeVisible()
+  })
+})

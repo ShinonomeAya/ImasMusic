@@ -20,7 +20,14 @@ async function loadTracks(): Promise<Track[]> {
   if (_tracks) return _tracks
   try {
     const file = await fs.readFile(path.join(process.cwd(), 'data', 'tracks.json'), 'utf-8')
-    _tracks = JSON.parse(file) as Track[]
+    const tracks = JSON.parse(file) as Track[]
+    // 从对应 Release 注入 coverUrl，使播放器切歌时可直接读取
+    const releases = await loadReleases()
+    const releaseMap = new Map(releases.map((r) => [r.id, r.coverUrl]))
+    _tracks = tracks.map((t) => ({
+      ...t,
+      coverUrl: releaseMap.get(t.releaseId) || undefined,
+    }))
   } catch {
     _tracks = []
   }

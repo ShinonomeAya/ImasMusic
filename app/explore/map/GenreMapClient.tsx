@@ -63,7 +63,7 @@ export default function GenreMapClient({ data }: GenreMapClientProps) {
         </span>
       </div>
 
-      <div className="w-full" style={{ height: 'min(60vh, 520px)' }}>
+      <div className="w-full h-[50vh] min-h-[400px] md:h-[600px]">
         <ResponsiveContainer width="100%" height="100%">
           <ScatterChart margin={{ top: 10, right: 20, bottom: 10, left: 0 }}>
             <CartesianGrid
@@ -118,13 +118,13 @@ export default function GenreMapClient({ data }: GenreMapClientProps) {
                       border: '1px solid var(--border-default)',
                     }}
                   >
-                    <p className="text-sm font-medium mb-1" style={{ color: 'var(--text-primary)' }}>
+                    <p className="text-sm md:text-base font-medium mb-1" style={{ color: 'var(--text-primary)' }}>
                       {point.title}
                     </p>
-                    <p className="text-xs mb-2" style={{ color: 'var(--text-tertiary)' }}>
+                    <p className="text-xs md:text-sm mb-2" style={{ color: 'var(--text-tertiary)' }}>
                       {point.artist}
                     </p>
-                    <div className="flex gap-3 text-xs font-mono">
+                    <div className="flex gap-3 text-xs md:text-sm font-mono">
                       <span style={{ color: 'var(--text-secondary)' }}>
                         E: {point.energy.toFixed(2)}
                       </span>

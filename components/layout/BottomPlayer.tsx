@@ -4,7 +4,7 @@ import { useEffect, useRef, useCallback, useState } from 'react'
 import { cn } from '@/lib/utils'
 import { usePlayerStore } from '@/lib/store/playerStore'
 import { extractDominantColor } from '@/lib/color'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, useDragControls } from 'framer-motion'
 import {
   Play,
   Pause,
@@ -29,6 +29,8 @@ export default function BottomPlayer() {
   const [dominantColor, setDominantColor] = useState<string>('var(--color-terracotta)')
   const [touchStartY, setTouchStartY] = useState<number | null>(null)
   const [showAllArtists, setShowAllArtists] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+  const queueDragControls = useDragControls()
 
   const {
     currentTrack,
@@ -54,6 +56,31 @@ export default function BottomPlayer() {
     removeFromQueue,
     clearQueue,
   } = usePlayerStore()
+
+  // 监听窗口大小判断移动端
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768)
+    check()
+    window.addEventListener('resize', check)
+    return () => window.removeEventListener('resize', check)
+  }, [])
+
+  // History API：展开播放器时压入状态，拦截系统返回手势
+  useEffect(() => {
+    if (view === 'EXPANDED' && isMobile) {
+      history.pushState({ player: true }, '')
+    }
+  }, [view, isMobile])
+
+  useEffect(() => {
+    const handlePopState = (e: PopStateEvent) => {
+      if (e.state?.player) {
+        usePlayerStore.getState().setView('MINI')
+      }
+    }
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
+  }, [])
 
   // 提取封面主色
   useEffect(() => {
@@ -158,7 +185,7 @@ export default function BottomPlayer() {
 
   return (
     <>
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         {/* ── MINI 播放器 ── */}
         {view === 'MINI' && (
           <motion.div
@@ -176,7 +203,7 @@ export default function BottomPlayer() {
             {/* 封面 */}
             <motion.button
               onClick={() => setView('EXPANDED')}
-              className="relative w-10 h-10 rounded-subtle overflow-hidden shrink-0 ring-warm hover:ring-terracotta transition-all"
+              className="relative w-10 h-10 rounded-subtle overflow-hidden shrink-0 ring-warm hover:ring-terracotta transition-[box-shadow]"
               layoutId="player-cover"
             >
               {currentCoverUrl ? (
@@ -211,6 +238,8 @@ export default function BottomPlayer() {
                 onClick={playPrev}
                 className="p-2 rounded-full transition-colors hover:bg-opacity-10"
                 style={{ color: 'var(--text-secondary)' }}
+                title="上一首"
+                aria-label="上一首"
               >
                 <SkipBack size={18} />
               </button>
@@ -228,6 +257,8 @@ export default function BottomPlayer() {
                 onClick={playNext}
                 className="p-2 rounded-full transition-colors hover:bg-opacity-10"
                 style={{ color: 'var(--text-secondary)' }}
+                title="下一首"
+                aria-label="下一首"
               >
                 <SkipForward size={18} />
               </button>
@@ -236,6 +267,8 @@ export default function BottomPlayer() {
                 onClick={() => setView('EXPANDED')}
                 className="md:hidden p-2 rounded-full transition-colors"
                 style={{ color: 'var(--text-tertiary)' }}
+                title="展开播放器"
+                aria-label="展开播放器"
               >
                 <Maximize2 size={18} />
               </button>
@@ -329,24 +362,26 @@ export default function BottomPlayer() {
         {view === 'EXPANDED' && (
           <motion.div
             key="expanded"
-            initial={{ opacity: 0, scale: 0.96 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.96 }}
+            initial={isMobile ? { y: '100%' } : { opacity: 0, scale: 0.96 }}
+            animate={isMobile ? { y: 0 } : { opacity: 1, scale: 1 }}
+            exit={isMobile ? { y: '100%' } : { opacity: 0, scale: 0.96 }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
             className="fixed inset-0 z-50 flex flex-col touch-highlight-none"
             style={{
               backgroundColor: 'var(--bg-page)',
+              touchAction: 'pan-y',
+              overscrollBehaviorX: 'none',
+              paddingBottom: 'env(safe-area-inset-bottom)',
             }}
-            onTouchStart={(e) => setTouchStartY(e.touches[0].clientY)}
-            onTouchMove={(e) => {
-              if (touchStartY === null) return
-              const diff = e.touches[0].clientY - touchStartY
-              if (diff > 120) {
+            drag={isMobile ? 'y' : false}
+            dragConstraints={{ top: 0, bottom: 0 }}
+            dragElastic={0.2}
+            onDragEnd={(_, info) => {
+              if (isMobile && (info.offset.y > 80 || info.velocity.y > 500)) {
                 setView('MINI')
-                setTouchStartY(null)
+                history.back()
               }
             }}
-            onTouchEnd={() => setTouchStartY(null)}
           >
             {/* 氛围背景光 */}
             <div
@@ -370,6 +405,8 @@ export default function BottomPlayer() {
                   onClick={() => setView('MINI')}
                   className="p-2 rounded-full transition-colors"
                   style={{ color: 'var(--text-tertiary)' }}
+                  title="关闭播放器"
+                  aria-label="关闭播放器"
                 >
                   <X size={20} />
                 </button>
@@ -381,6 +418,8 @@ export default function BottomPlayer() {
                 onClick={() => setView('MINI')}
                 className="hidden md:block p-2 rounded-full transition-colors hover:bg-opacity-10"
                 style={{ color: 'var(--text-tertiary)' }}
+                title="关闭播放器"
+                aria-label="关闭播放器"
               >
                 <X size={20} />
               </button>
@@ -405,6 +444,14 @@ export default function BottomPlayer() {
                   layoutId="player-cover"
                   className="relative w-full h-full rounded-very overflow-hidden shadow-whisper flex items-center justify-center"
                   style={{ backgroundColor: 'var(--bg-surface)' }}
+                  drag={isMobile ? 'x' : false}
+                  dragConstraints={{ left: 0, right: 0 }}
+                  dragElastic={0.2}
+                  onDragEnd={(_, info) => {
+                    if (!isMobile) return
+                    if (info.offset.x < -50) playNext()
+                    if (info.offset.x > 50) playPrev()
+                  }}
                 >
                   {currentCoverUrl ? (
                     <Image
@@ -493,6 +540,8 @@ export default function BottomPlayer() {
                     onClick={playPrev}
                     className="p-3 rounded-full transition-colors hover:bg-opacity-10"
                     style={{ color: 'var(--text-secondary)' }}
+                    title="上一首"
+                    aria-label="上一首"
                   >
                     <SkipBack size={24} />
                   </button>
@@ -510,6 +559,8 @@ export default function BottomPlayer() {
                     onClick={playNext}
                     className="p-3 rounded-full transition-colors hover:bg-opacity-10"
                     style={{ color: 'var(--text-secondary)' }}
+                    title="下一首"
+                    aria-label="下一首"
                   >
                     <SkipForward size={24} />
                   </button>
@@ -587,24 +638,42 @@ export default function BottomPlayer() {
       <AnimatePresence>
         {queueOpen && (
           <motion.div
-            initial={{ opacity: 0, y: 10, scale: 0.97 }}
+            initial={{ opacity: 0, y: isMobile ? '100%' : 10, scale: isMobile ? 1 : 0.97 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 10, scale: 0.97 }}
+            exit={{ opacity: 0, y: isMobile ? '100%' : 10, scale: isMobile ? 1 : 0.97 }}
             transition={{ type: 'spring', stiffness: 400, damping: 30 }}
             className="fixed z-[60] overflow-hidden flex flex-col md:rounded-very md:shadow-whisper queue-sheet"
             style={{
               backgroundColor: 'var(--bg-surface)',
               border: '1px solid var(--border-default)',
-              bottom: '0',
+              bottom: isMobile ? '0' : (view === 'MINI' ? '3.5rem' : '0'),
               left: '0',
               right: '0',
-              maxHeight: '60vh',
+              maxHeight: isMobile ? '70vh' : '60vh',
               borderTopLeftRadius: '16px',
               borderTopRightRadius: '16px',
               paddingBottom: 'env(safe-area-inset-bottom)',
               '--queue-bottom': view === 'MINI' ? '72px' : '24px',
             } as React.CSSProperties}
+            drag="y"
+            dragControls={queueDragControls}
+            dragListener={false}
+            dragConstraints={{ top: 0, bottom: 0 }}
+            dragElastic={0.2}
+            onDragEnd={(_, info) => {
+              if (info.offset.y > 80 || info.velocity.y > 500) {
+                setQueueOpen(false)
+              }
+            }}
           >
+            {/* 移动端顶部拖拽指示器（drag handle） */}
+            <div
+              className="md:hidden flex justify-center pt-3 pb-1 cursor-grab active:cursor-grabbing"
+              onPointerDown={(e) => queueDragControls.start(e)}
+            >
+              <div className="w-10 h-1 rounded-full" style={{ backgroundColor: 'var(--border-prominent)' }} />
+            </div>
+
             {/* 队列头部 */}
             <div className="flex items-center justify-between px-4 py-3 border-b" style={{ borderColor: 'var(--border-default)' }}>
               <h3 className="text-sm font-medium" style={{ color: 'var(--text-primary)' }}>
@@ -625,6 +694,8 @@ export default function BottomPlayer() {
                   onClick={() => setQueueOpen(false)}
                   className="p-1.5 rounded-full transition-colors"
                   style={{ color: 'var(--text-tertiary)' }}
+                  title="关闭队列"
+                  aria-label="关闭队列"
                 >
                   <X size={14} />
                 </button>

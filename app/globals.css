@@ -179,6 +179,15 @@
   ::-webkit-scrollbar-track { background: var(--bg-page); }
   ::-webkit-scrollbar-thumb { background: var(--color-ring-warm); border-radius: 4px; }
   ::-webkit-scrollbar-thumb:hover { background: var(--color-stone-gray); }
+
+  /* Hide scrollbar utility */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @layer components {

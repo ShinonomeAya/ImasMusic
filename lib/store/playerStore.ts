@@ -27,6 +27,7 @@ interface PlayerStore {
   setDuration: (duration: number) => void
   setVolume: (volume: number) => void
   setView: (view: 'HIDDEN' | 'MINI' | 'EXPANDED') => void
+  setCurrentCoverUrl: (url: string | null) => void
   playNext: () => void
   playPrev: () => void
   addToQueue: (track: Track) => void
@@ -121,6 +122,8 @@ export const usePlayerStore = create<PlayerStore>()(
 
       setView: (view) => set({ view }),
 
+      setCurrentCoverUrl: (url) => set({ currentCoverUrl: url }),
+
       playNext: () => {
         const { queue, queueIndex, shuffledQueue, shuffle, repeatMode } = get()
         const activeQueue = shuffle && shuffledQueue.length > 0 ? shuffledQueue : queue
@@ -140,6 +143,7 @@ export const usePlayerStore = create<PlayerStore>()(
           set({
             queueIndex: realIndex >= 0 ? realIndex : nextIndex,
             currentTrack: nextTrack,
+            currentCoverUrl: nextTrack.coverUrl ?? '',
             currentTime: 0,
             isPlaying: true,
           })
@@ -150,6 +154,7 @@ export const usePlayerStore = create<PlayerStore>()(
           set({
             queueIndex: realIndex >= 0 ? realIndex : 0,
             currentTrack: firstTrack,
+            currentCoverUrl: firstTrack.coverUrl ?? '',
             currentTime: 0,
             isPlaying: true,
           })
@@ -170,6 +175,7 @@ export const usePlayerStore = create<PlayerStore>()(
           set({
             queueIndex: realIndex >= 0 ? realIndex : prevIndex,
             currentTrack: prevTrack,
+            currentCoverUrl: prevTrack.coverUrl ?? '',
             currentTime: 0,
             isPlaying: true,
           })
@@ -258,7 +264,6 @@ export const usePlayerStore = create<PlayerStore>()(
       name: 'imas-player-state',
       partialize: (state) => ({
         volume: state.volume,
-        view: state.view,
         repeatMode: state.repeatMode,
         shuffle: state.shuffle,
       }),

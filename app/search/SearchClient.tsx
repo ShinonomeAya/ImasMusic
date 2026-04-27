@@ -4,7 +4,8 @@ import { useState, useMemo, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import type { Track, Release } from '@/types'
-import { Search, Disc, Music, User, X } from 'lucide-react'
+import { Search, Disc, Music, X } from 'lucide-react'
+import MobileTracklist from '@/components/MobileTracklist'
 
 interface SearchClientProps {
   tracks: Track[]
@@ -80,7 +81,7 @@ export default function SearchClient({ tracks, releases }: SearchClientProps) {
 
       {/* Tabs */}
       {normalizedQuery && (
-        <div className="flex gap-2 mb-6">
+        <div className="flex overflow-x-auto whitespace-nowrap gap-2 pb-2 -mx-4 px-4 md:mx-0 md:px-0 md:pb-0 scrollbar-hide mb-6 border-b" style={{ borderColor: 'var(--border-default)' }}>
           {[
             { key: 'all', label: `全部 (${filteredTracks.length + filteredReleases.length})` },
             { key: 'tracks', label: `曲目 (${filteredTracks.length})` },
@@ -89,11 +90,11 @@ export default function SearchClient({ tracks, releases }: SearchClientProps) {
             <button
               key={tab.key}
               onClick={() => setActiveTab(tab.key as any)}
-              className="px-4 py-2 rounded-comfortable text-sm font-medium transition-all"
+              className="px-4 py-2 rounded-t-comfortable text-sm font-medium transition-all shrink-0"
               style={{
-                backgroundColor: activeTab === tab.key ? 'var(--color-terracotta)' : 'var(--bg-surface)',
+                backgroundColor: activeTab === tab.key ? 'var(--color-terracotta)' : 'transparent',
                 color: activeTab === tab.key ? '#fff' : 'var(--text-secondary)',
-                border: '1px solid var(--border-default)',
+                borderBottom: activeTab === tab.key ? '2px solid var(--color-terracotta)' : '2px solid transparent',
               }}
             >
               {tab.label}
@@ -128,7 +129,8 @@ export default function SearchClient({ tracks, releases }: SearchClientProps) {
                 <Music size={18} />
                 曲目
               </h2>
-              <div className="flex flex-col gap-2">
+              {/* 桌面端：原有列表 */}
+              <div className="hidden md:flex flex-col gap-2">
                 {filteredTracks.map((track) => (
                   <Link
                     key={track.id}
@@ -154,6 +156,10 @@ export default function SearchClient({ tracks, releases }: SearchClientProps) {
                     )}
                   </Link>
                 ))}
+              </div>
+              {/* 移动端：MobileTracklist */}
+              <div className="md:hidden -mx-4">
+                <MobileTracklist tracks={filteredTracks} showCover={true} />
               </div>
             </section>
           )}

@@ -2,7 +2,7 @@
 
 > Next.js 15 + TypeScript + Tailwind CSS 构建的 THE IDOLM@STER 系列音乐数据库。暖色编辑风格（Warm Editorial），支持真实音频试听、多企划数据、移动端响应式。
 
-**当前版本：v0.3.1**
+**当前版本：v0.4.0**
 
 **在线地址**：https://master.imas-music.pages.dev（Cloudflare Pages）
 
@@ -64,14 +64,12 @@ export async function generateStaticParams() {
 3. `git add . && git commit -m "..." && git push origin master`
 4. GitHub Actions 自动部署（约 3 分钟）
 
-### 当前活跃 TODO（Phase 6）
-- [ ] Wiki / 萌娘百科 数据录入（BPM/作词/作曲/编曲）
-- [ ] 页面切换过渡动画
-- [ ] 列表过滤动画
-- [ ] PWA 支持
-- [ ] 多语言切换
+### 当前活跃任务
 
-详细规划见 [docs/phase6.md](docs/phase6.md)
+📋 **详细路线图与待办**：见 [`docs/roadmap.md`](docs/roadmap.md)
+
+> 活跃阶段：**Phase 8 — 远期规划与数据补全**（🚧 进行中）
+> 已归档阶段：Phase 1~6 见 [`docs/`](docs/)
 
 ---
 
@@ -85,7 +83,7 @@ export async function generateStaticParams() {
 | **Phase 4** | ✅ | 真实音频播放器、多企划数据导入、移动端适配 | [docs/phase4.md](docs/phase4.md) |
 | **Phase 5** | ✅ | 单曲详情页、艺人筛选、播放修复、艺人数据导入 | [docs/phase5.md](docs/phase5.md) |
 | **Phase 6** | ✅ | 数据层扩展、功能增强、交互优化 | [docs/phase6.md](docs/phase6.md) |
-| **Phase 7** | 🚧 进行中 | 移动端适配（Bottom Nav + 全屏播放器 + 触控优化） | [docs/phase7.md](docs/phase7.md) |
+| **Phase 7** | ✅ | 移动端全屏播放器、Swipe 手势、全局列表移动端适配与交互闭环 | [docs/phase7.md](docs/phase7.md) |
 
 ---
 
@@ -100,7 +98,7 @@ export async function generateStaticParams() {
 | 图标 | Lucide React | 图标系统 |
 | 状态 | Zustand + persist | 播放器状态持久化 |
 | 主题 | next-themes | 亮色/暗色切换 |
-| 图表 | Recharts | 数据可视化（已启用） |
+| 图表 | Recharts | Energy × Valence 散点图、时间线 |
 | 动画 | Framer Motion | 播放器展开/页面过渡 |
 | 搜索 | 客户端过滤 | `useSearchParams` + `Suspense` |
 | 测试 | Playwright | E2E 自动化测试（移动端+桌面端） |
@@ -169,15 +167,20 @@ ImasMusic/
 │   ├── layout/
 │   │   ├── Sidebar.tsx           # 侧边栏: 6企划 + 探索/全部/收藏 + 主题切换
 │   │   ├── TopAppBar.tsx         # 顶栏: 主导航 + 搜索/关闭按钮
-│   │   ├── BottomPlayer.tsx      # 底部播放器: MINI/EXPANDED/HIDDEN + 队列浮层
+│   │   ├── BottomPlayer.tsx      # 底部播放器: MINI/EXPANDED/HIDDEN + 队列浮层 + Swipe 手势
+│   │   ├── BottomNav.tsx         # 移动端底部导航栏（4 Tab）
 │   │   └── ThemeProvider.tsx     # next-themes wrapper
 │   ├── ui/
 │   │   └── Skeleton.tsx          # 统一 Skeleton 组件
+│   ├── MobileTracklist.tsx       # 移动端曲目列表（卡片式）
 │   ├── FavoriteButton.tsx        # ♥ 收藏按钮（全局复用）
 │   ├── TrackPlayButton.tsx       # ▶ 播放按钮（接入 playerStore）
 │   ├── KeyboardShortcuts.tsx     # 全局键盘快捷键
 │   ├── LoadingSkeleton.tsx       # 通用加载占位
-│   └── GenreDecorator.tsx        # 曲风装饰组件
+│   ├── GenreDecorator.tsx        # 曲风装饰组件
+│   ├── GenrePageWrapper.tsx      # 曲风页面包装器
+│   ├── ErrorFallback.tsx         # 错误边界回退 UI
+│   └── SiteNav.tsx               # 站点导航（SSR 安全）
 │
 ├── lib/
 │   ├── utils.ts                  # cn() 工具函数
@@ -268,9 +271,18 @@ ImasMusic/
 - [x] Skeleton 加载态（track/release/artist 动态路由）
 - [x] 播放器展开/收起 Framer Motion 动画
 
+### 移动端体验（Phase 7 核心交付）
+- [x] BottomNav 底部导航栏（4 Tab：首页/曲库/探索/收藏）
+- [x] MobilePlayerSheet（全屏 Bottom Sheet，`y: 100% → 0%` 动画）
+- [x] Swipe 手势：下拉关闭播放器、左右滑动切歌、队列拖拽关闭
+- [x] History API `pushState`/`popstate` 拦截系统返回键
+- [x] MobileTracklist 卡片式列表（release/favorites/artist 页面）
+- [x] 筛选栏横向滚动、统计信息垂直堆叠（artists/search 页面）
+- [x] 全局列表移动端适配与交互闭环
+
 ### 响应式
 - [x] 桌面端：固定 Sidebar + 顶栏 + 底部播放器
-- [x] 移动端（< 768px）：汉堡菜单抽屉、全宽布局、播放器适配
+- [x] 移动端（< 768px）：BottomNav + 汉堡菜单 + 全宽布局 + 触控优化
 
 ---
 
@@ -387,8 +399,13 @@ npx playwright show-report
 | 专辑详情页 + 曲目列表 | ✅ | ✅ | ✅ |
 | 曲目详情页 + Credits | ✅ | ✅ | ✅ |
 | 底部导航 Tab 切换 | ✅ | ✅ | — |
+| MobilePlayerSheet 展开/收起 | ✅ | ✅ | — |
+| 播放器 Swipe 手势（下拉/左右） | ✅ | ✅ | — |
+| 队列打开/关闭 | ✅ | ✅ | — |
+| 切歌后封面更新（Bug A1） | ✅ | ✅ | — |
+| 首页热门单曲可点击（Bug A2） | ✅ | ✅ | ✅ |
 
-> 注：Desktop 端自动 skip 移动端专属测试（`isMobile` 条件）。测试数据使用静态导出中的真实 ID，若数据更新导致 ID 变化需同步更新 `e2e/mobile.spec.ts`。
+> 注：Desktop 端自动 skip 移动端专属测试（`isMobile` 条件）。测试数据使用静态导出中的真实 ID，若数据更新导致 ID 变化需同步更新 `e2e/*.spec.ts`。
 
 ---
 
@@ -460,37 +477,13 @@ npx tsx scripts/merge-wiki-supplement.ts
 
 ---
 
-## 📝 待办清单（下次继续开发时参考）
+## 📝 待办清单
 
-> 详细规划见 [docs/phase6.md](docs/phase6.md)
-
-### Phase 6 — 数据层扩展与深度功能（当前阶段）
-
-#### P1 — 歌曲档案数据补充（人工 + 半自动）
-- [ ] **Wiki / 萌娘百科 数据录入** — 人工复制 BPM/作词/作曲/编曲到 `wiki-dumps/`，脚本自动合并
-- [ ] **更多数据导入** — Cinderella Girls / SideM / Gakuen（iTunes 脚手架）
-- [ ] **数据质量修复** — release `series` 标注错误、track `artistIds` 文本化问题
-
-#### P2 — 功能增强（大部分已完成 ✅）
-- [x] **播放队列 UI** — 队列浮层、删除、清空
-- [x] **收藏功能完整化** — 单曲详情/专辑 tracklist/首页/相似曲目
-- [x] **曲风可视化** — `/explore/map`（mock 数据）
-- [x] **Framer Motion 动画** — 播放器展开/收起
-- [x] **Skeleton 加载态** — 动态路由 loading.tsx
-- [x] **专辑主色提取** — Canvas API
-- [ ] **页面切换过渡动画** — 待实现
-- [ ] **列表过滤动画** — 待实现
-
-#### P3 — 交互优化（已完成 ✅）
-- [x] **键盘快捷键** — Space/←→/↑↓/M/F
-- [x] **循环/随机播放模式**
-
-#### 长期（Phase 7+）
-- [ ] **PWA 支持**
-- [ ] **多语言切换** — 日/中/英展示切换
-- [ ] **用户账号系统** — 替换 localStorage 收藏为云端
-- [ ] **评论/笔记** — 用户对单曲的个人笔记
-- [ ] **数据统计面板** — 个人听歌统计、收藏分析
+> **活跃任务与 Bug 修复已统一迁移至 [`docs/roadmap.md`](docs/roadmap.md)。本文档不再维护详细 TODO，请直接查阅路线图。**
+>
+> 活跃阶段：**Phase 8 — 远期规划与数据补全**（🚧 进行中）
+>
+> 已归档阶段：Phase 1~7 详见 `docs/phase1.md` ~ `docs/phase7.md`
 
 ---
 
@@ -510,4 +503,4 @@ npx tsx scripts/merge-wiki-supplement.ts
 
 ---
 
-*最后更新: 2026-04-23 | v0.3.1 — 静态导出 + Cloudflare Pages 部署（4,498 页面），Playwright E2E 测试（移动端+桌面端）配置完成*
+*最后更新: 2026-04-27 | v0.4.0 — Phase 7 移动端体验完成，13 项 Playwright E2E 全通过（含 MobilePlayerSheet + Swipe 手势），Cloudflare Pages 自动部署*
