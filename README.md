@@ -69,7 +69,7 @@ export async function generateStaticParams() {
 📋 **详细路线图与待办**：见 [`docs/roadmap.md`](docs/roadmap.md)
 
 > 活跃阶段：**Phase 8 — 远期规划与数据补全**（🚧 进行中）
-> 已归档阶段：Phase 1~6 见 [`docs/`](docs/)
+> 已归档阶段：Phase 1~7 见 [`docs/`](docs/)
 
 ---
 
@@ -84,6 +84,7 @@ export async function generateStaticParams() {
 | **Phase 5** | ✅ | 单曲详情页、艺人筛选、播放修复、艺人数据导入 | [docs/phase5.md](docs/phase5.md) |
 | **Phase 6** | ✅ | 数据层扩展、功能增强、交互优化 | [docs/phase6.md](docs/phase6.md) |
 | **Phase 7** | ✅ | 移动端全屏播放器、Swipe 手势、全局列表移动端适配与交互闭环 | [docs/phase7.md](docs/phase7.md) |
+| **Phase 8** | 🚧 准备中 | 自动化数据丰满（MusicBrainz/VGMdb/imasparql v2）| [docs/phase8-planning.md](docs/phase8-planning.md) |
 
 ---
 
@@ -208,9 +209,16 @@ ImasMusic/
 │
 ├── scripts/
 │   ├── seed-cli.ts               # CLI 数据导入工具（iTunes）
+│   ├── batch-fetch-albums.ts     # 6 企划批量专辑抓取
 │   ├── seed-idols.ts             # imasparql 艺人抓取
 │   ├── merge-wiki-supplement.ts  # Wiki dump 合并到 tracks.json
-│   └── parse-wiki-dump.ts        # Wiki dump 文本解析器
+│   ├── parse-wiki-dump.ts        # Wiki dump 文本解析器
+│   └── pipeline/                 # Phase 8 自动化流水线模块
+│       ├── musicbrainz.ts        # MusicBrainz API 客户端
+│       ├── vgmdb.ts              # VGMdb 数据抓取
+│       ├── imasparql-v2.ts       # 偶像关系图谱深化
+│       ├── spotify.ts            # Spotify Web API 客户端
+│       └── merge-engine.ts       # 多源数据融合引擎
 │
 ├── docs/
 │   ├── DESIGN-claude.md          # 设计系统文档
@@ -470,10 +478,33 @@ npx tsx scripts/seed-cli.ts \
 npx tsx scripts/merge-wiki-supplement.ts
 ```
 
-### 4. 已知问题
+### 4. Phase 8 自动化流水线
+```bash
+# 4.1 MusicBrainz Credits + Catalog/Label 抓取（两级：release → recording）
+npx tsx scripts/pipeline-musicbrainz.ts --level=release
+npx tsx scripts/pipeline-musicbrainz.ts --level=recording
+
+# 4.2 VGMdb Credits 补充（MusicBrainz 缺失 Arranger 时触发）
+npx tsx scripts/pipeline-vgmdb.ts
+
+# 4.3 萌娘百科歌词批量抓取
+npx tsx scripts/pipeline-lyrics-moegirl.ts
+
+# 4.4 Wiki 歌词提取（需先准备 wiki-dumps）
+npx tsx scripts/pipeline-lyrics-wiki.ts
+
+# 4.5 偶像关系图谱深化
+npx tsx scripts/pipeline-imasparql-v2.ts
+
+# 4.6 最终合并（生成备份并写入主数据）
+npx tsx scripts/pipeline-merge.ts
+```
+
+### 5. 已知问题
 - 部分歌名在 iTunes 上不存在 → 会写入 `_errors.json`
 - 搜索可能匹配到非偶像大师歌曲 → 需人工校对
 - 建议查询词包含 `THE IDOLM@STER` 前缀（CLI 已自动追加）
+- 歌词抓取涉及外部网站，需遵守各站点的 robots.txt 和访问频率限制
 
 ---
 
@@ -491,6 +522,8 @@ npx tsx scripts/merge-wiki-supplement.ts
 
 - **iTunes Search API**: https://itunes.apple.com/search（无需认证）
 - **imasparql**: https://sparql.crssnky.xyz/spql/imas/query（偶像档案数据源）
+- **MusicBrainz**: https://musicbrainz.org/doc/MusicBrainz_API（开源音乐元数据库，Rate Limit 1 req/sec）
+- **VGMdb**: https://vgmdb.net（日本游戏/动画音乐数据库，HTML 抓取）
 - **Project iM@S Wiki**: https://project-imas.wiki（歌曲档案数据源，人工录入）
 - **图片 CDN**: `is1-ssl.mzstatic.com` ~ `is5-ssl.mzstatic.com`
 
@@ -499,7 +532,8 @@ npx tsx scripts/merge-wiki-supplement.ts
 ## 📜 设计文档
 
 - [docs/DESIGN-claude.md](docs/DESIGN-claude.md) — Claude Design System 完整规范
-- [docs/phase1.md](docs/phase1.md) ~ [docs/phase6.md](docs/phase6.md) — 各阶段实施记录
+- [docs/phase1.md](docs/phase1.md) ~ [docs/phase7.md](docs/phase7.md) — 各阶段实施记录
+- [docs/phase8-planning.md](docs/phase8-planning.md) — Phase 8 自动化数据丰满规划书
 
 ---
 
