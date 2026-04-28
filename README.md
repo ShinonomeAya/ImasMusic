@@ -64,12 +64,59 @@ export async function generateStaticParams() {
 3. `git add . && git commit -m "..." && git push origin master`
 4. GitHub Actions 自动部署（约 3 分钟）
 
-### 当前活跃任务
+### Phase 8 已完成成果（v0.5.0，2026-04-28）
 
-📋 **详细路线图与待办**：见 [`docs/roadmap.md`](docs/roadmap.md)
+| 数据项 | 覆盖率 | 说明 |
+|---|---|---|
+| **Credits（作词/作曲/编曲）** | 71% (2,426/3,403) | MusicBrainz 自动抓取，695 CREATOR 已入库 |
+| **歌词** | 47% (1,604/3,403) | Uta-Net 抓取，保留人工数据优先 |
+| **Catalog Number** | 57% (421/734) | MusicBrainz Release 级别 |
+| **Label** | 68% (499/734) | MusicBrainz Release 级别 |
+| **头像（本地）** | 74% (255/344 IDOL) | `public/images/idols/` 静态分发，已脱离外链 |
+| **汉字 nameJa** | 86% (296/344 IDOL) | 从 `imas.gamedbs.jp` 抓取修复 |
 
-> 活跃阶段：**Phase 8 — 远期规划与数据补全**（🚧 进行中）
-> 已归档阶段：Phase 1~7 见 [`docs/`](docs/)
+**关键脚本位置**（`scripts/pipeline/`）：
+- `musicbrainz.ts` — MusicBrainz API 底层客户端
+- `mb-release-batch.ts` / `mb-track-batch.ts` — 批量抓取
+- `apply-mb-patches.ts` — 合并引擎（自动创建 CREATOR）
+- `scrape-lyrics-utanet.ts` / `apply-lyrics-patches.ts` — 歌词流水线
+- `download-portraits.ts` — 外链头像批量下载到 `public/images/idols/`
+- `sync-local-portraits.ts` — 扫描本地图片自动绑定 `artists.json`（**幂等，可反复运行**）
+
+### 待办 / 已知问题（下次接手入口）
+
+#### 🔴 高优
+1. **SideM + 学园偶像大师头像** — 共 61 人无数据源（`imas.gamedbs.jp` 无这两个系列）
+   - 方案：手工收集图片放入 `public/images/idols/${artist.id}.jpg`，然后运行 `npx tsx scripts/pipeline/sync-local-portraits.ts`
+   - 缺失清单：运行 sync 脚本会自动打印
+2. **歌词覆盖率 47% → 目标 80%+** — Uta-Net 剩余未匹配曲目需换源（日语维基/Project iM@S Wiki）
+3. **萌娘百科/Wiki 抓取被封** — Cloudflare IUAM 防护，需换 Playwright 浏览器自动化或放弃
+
+#### 🟡 中优
+4. **CREATOR 头像缺失** — 695 位创作者无头像，低优先级
+5. **每月新 CD 更新流程** — 待设计半自动化增量更新（新专辑 → iTunes → MusicBrainz → 合并）
+6. **Spotify 声学特征** — energy/valence/BPM 精确值，需 Client ID/Secret（Phase 9 候选）
+
+#### 🟢 低优 / 技术债
+7. **`next.config.js` `cleanDistDir: false`** — Windows 下 Next.js 15 `dist/trace` 自锁问题的 workaround，升级 Next.js 后可能修复
+8. **Playwright 预存问题** — 3 个移动端测试失败（播放器手势/底部导航），与 Phase 8 修改无关
+
+### 头像管理工作流（重要）
+
+```bash
+# 1. 批量下载 gamedbs 头像（首次运行）
+npx tsx scripts/pipeline/download-portraits.ts
+
+# 2. 手工补全：将新图片放入 public/images/idols/
+#    文件名格式：${artist.id}.jpg / .png / .webp
+
+# 3. 双向同步：扫描本地图片 → 自动绑定 artists.json
+npx tsx scripts/pipeline/sync-local-portraits.ts
+#    输出会打印：已关联数 / 无头像清单
+```
+
+📋 **详细路线图**：见 [`docs/roadmap.md`](docs/roadmap.md)
+> 已归档阶段：Phase 1~7 见 `docs/phase1.md` ~ `docs/phase7.md`
 
 ---
 
@@ -544,4 +591,4 @@ npx tsx scripts/pipeline-merge.ts
 
 ---
 
-*最后更新: 2026-04-28 | v0.5.0 — Phase 8 数据管道完成：Credits 71% / 歌词 47% / Catalog 57% / 头像 74%，5,193 静态页面，Cloudflare Pages 自动部署*
+*最后更新: 2026-04-28 | v0.5.0 — Phase 8 数据管道 + 头像本地化完成。255 张头像已静态分发，89 位 IDOL 待手工补全。5,193 静态页面零错误，Cloudflare Pages 自动部署*
