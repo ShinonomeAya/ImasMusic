@@ -1,8 +1,20 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { getArtistById, getTracksByArtist, getTrackById, getAllArtists } from '@/lib/data'
+import Image from 'next/image'
+import {
+  getArtistById,
+  getTracksByArtist,
+  getAllTracks,
+  getReleaseById,
+  getAllArtists,
+} from '@/lib/data'
 import { SERIES_CONFIG } from '@/lib/series'
-import { Star, Users, Mic2, PenTool, Music, Disc } from 'lucide-react'
+import MobileTracklist from '@/components/MobileTracklist'
+import ArtistCreditedTracklist from '@/components/ArtistCreditedTracklist'
+import AvatarPlaceholder from '@/components/AvatarPlaceholder'
+import TrackPlayButton from '@/components/TrackPlayButton'
+import FavoriteButton from '@/components/FavoriteButton'
+import { Star, Users, Mic2, PenTool, Music, Clock } from 'lucide-react'
 
 export const revalidate = 86400
 
@@ -23,6 +35,10 @@ const ROLE_LABELS: Record<string, string> = {
   UNIT: '组合',
   CV: '声优',
   CREATOR: '创作者',
+  VOCALS: '演唱',
+  COMPOSER: '作曲',
+  LYRICIST: '作词',
+  ARRANGER: '编曲',
 }
 
 export default async function ArtistPage({ params }: { params: Promise<{ id: string }> }) {
@@ -30,29 +46,57 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
   const artist = await getArtistById(id)
   if (!artist) notFound()
 
-  const tracks = artist.trackIds?.length
-    ? await Promise.all(artist.trackIds.map((tid) => getTrackById(tid)))
-    : []
-
   const Icon = ROLE_ICONS[artist.role] || Star
   const seriesList = artist.series
     ?.map((sid) => SERIES_CONFIG.find((s) => s.id === sid))
     .filter(Boolean) || []
 
+  // ── 演唱曲目 ──
+  const vocalTracks = await getTracksByArtist(artist.id)
+
+  // ── 创作曲目 ──
+  const allTracks = await getAllTracks()
+  const creditedEntries = allTracks
+    .filter((t) => t.credits.some((c) => c.artistId === artist.id))
+    .map((t) => {
+      const roles = [
+        ...new Set(
+          t.credits
+            .filter((c) => c.artistId === artist.id)
+            .map((c) => ROLE_LABELS[c.role] || c.role)
+        ),
+      ]
+      return { track: t, roles }
+    })
+
+  // ── 预加载封面 ──
+  const allRelatedTracks = [...vocalTracks, ...creditedEntries.map((e) => e.track)]
+  const relatedReleases = await Promise.all(
+    allRelatedTracks.map((t) => getReleaseById(t.releaseId))
+  )
+  const releaseMap = new Map(relatedReleases.filter(Boolean).map((r) => [r!.id, r!]))
+
+  const tracksWithCover = (tracks: typeof vocalTracks) =>
+    tracks.map((t) => ({
+      ...t,
+      coverUrl: releaseMap.get(t.releaseId)?.coverUrl,
+    }))
+
+  const vocalTracksWithCover = tracksWithCover(vocalTracks)
+  const creditedTracksWithCover = tracksWithCover(creditedEntries.map((e) => e.track))
+
   return (
     <div className="px-4 md:px-8 py-10 max-w-7xl mx-auto">
-      {/* Hero */}
+      {/* ── Hero ── */}
       <section className="flex flex-col md:flex-row gap-8 mb-16 items-start">
         {/* Portrait */}
-        <div className="w-32 h-32 md:w-40 md:h-40 rounded-highly overflow-hidden shrink-0" style={{ backgroundColor: 'var(--bg-interactive)' }}>
-          {artist.portraitUrl ? (
+        {artist.portraitUrl ? (
+          <div className="w-32 h-32 md:w-40 md:h-40 rounded-highly overflow-hidden shrink-0">
             <img src={artist.portraitUrl} alt={artist.nameJa} className="w-full h-full object-cover" />
-          ) : (
-            <div className="w-full h-full flex items-center justify-center">
-              <Icon size={48} style={{ color: 'var(--text-tertiary)' }} />
-            </div>
-          )}
-        </div>
+          </div>
+        ) : (
+          <AvatarPlaceholder name={artist.nameJa} series={artist.series} size="lg" className="rounded-highly" />
+        )}
 
         {/* Info */}
         <div className="flex-1">
@@ -94,9 +138,15 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 mt-6">
             <div className="text-center md:text-left">
               <p className="text-2xl font-serif font-medium" style={{ color: 'var(--text-primary)' }}>
-                {artist.trackIds?.length || 0}
+                {vocalTracks.length}
               </p>
-              <p className="text-micro uppercase tracking-wider" style={{ color: 'var(--text-tertiary)' }}>曲目</p>
+              <p className="text-micro uppercase tracking-wider" style={{ color: 'var(--text-tertiary)' }}>演唱曲目</p>
+            </div>
+            <div className="text-center md:text-left">
+              <p className="text-2xl font-serif font-medium" style={{ color: 'var(--text-primary)' }}>
+                {creditedEntries.length}
+              </p>
+              <p className="text-micro uppercase tracking-wider" style={{ color: 'var(--text-tertiary)' }}>创作曲目</p>
             </div>
             <div className="text-center md:text-left">
               <p className="text-2xl font-serif font-medium" style={{ color: 'var(--text-primary)' }}>
@@ -108,28 +158,147 @@ export default async function ArtistPage({ params }: { params: Promise<{ id: str
         </div>
       </section>
 
-      {/* Discography */}
-      <section>
-        <h2 className="text-subheading font-serif font-medium mb-6 pb-3" style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--border-default)' }}>
-          作品列表
-        </h2>
+      {/* ── Vocal Tracks ── */}
+      {vocalTracks.length > 0 && (
+        <section className="mb-16">
+          <h2
+            className="text-subheading font-serif font-medium mb-6 pb-3"
+            style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--border-default)' }}
+          >
+            演唱曲目
+          </h2>
 
-        {(artist.trackIds?.length || 0) === 0 ? (
-          <div className="text-center py-12">
-            <Music size={32} className="mx-auto mb-3" style={{ color: 'var(--text-tertiary)' }} />
-            <p className="text-sm" style={{ color: 'var(--text-tertiary)' }}>
-              暂无作品数据
-            </p>
+          {/* Mobile */}
+          <div className="md:hidden">
+            <MobileTracklist tracks={vocalTracksWithCover as any} />
           </div>
-        ) : (
-          <div className="flex flex-col gap-2">
-            {/* 实际实现需要从 trackIds 反查曲目详情 */}
-            <p className="text-sm" style={{ color: 'var(--text-tertiary)' }}>
-              数据加载中...
-            </p>
+
+          {/* Desktop */}
+          <div className="hidden md:flex flex-col gap-1">
+            {vocalTracks.map((track) => (
+              <DesktopTrackRow
+                key={track.id}
+                track={track}
+                release={releaseMap.get(track.releaseId)}
+              />
+            ))}
           </div>
-        )}
-      </section>
+        </section>
+      )}
+
+      {/* ── Credited Tracks ── */}
+      {creditedEntries.length > 0 && (
+        <section className="mb-16">
+          <h2
+            className="text-subheading font-serif font-medium mb-6 pb-3"
+            style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--border-default)' }}
+          >
+            创作曲目
+          </h2>
+
+          {/* Mobile */}
+          <div className="md:hidden">
+            <ArtistCreditedTracklist
+              tracks={creditedTracksWithCover}
+              roleMap={Object.fromEntries(creditedEntries.map((e) => [e.track.id, e.roles.join(' / ')]))}
+            />
+          </div>
+
+          {/* Desktop */}
+          <div className="hidden md:flex flex-col gap-1">
+            {creditedEntries.map(({ track, roles }) => (
+              <DesktopTrackRow
+                key={track.id}
+                track={track}
+                release={releaseMap.get(track.releaseId)}
+                badge={roles.join(' / ')}
+              />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Empty State */}
+      {vocalTracks.length === 0 && creditedEntries.length === 0 && (
+        <div className="text-center py-20">
+          <Music size={48} className="mx-auto mb-4" style={{ color: 'var(--text-tertiary)' }} />
+          <p className="text-body-lg mb-2" style={{ color: 'var(--text-secondary)' }}>
+            暂无作品数据
+          </p>
+          <p className="text-sm" style={{ color: 'var(--text-tertiary)' }}>
+            该艺人尚未收录曲目或创作记录
+          </p>
+        </div>
+      )}
     </div>
   )
+}
+
+// ── Desktop Track Row ──
+function DesktopTrackRow({
+  track,
+  release,
+  badge,
+}: {
+  track: Awaited<ReturnType<typeof getAllTracks>>[number]
+  release?: Awaited<ReturnType<typeof getReleaseById>>
+  badge?: string
+}) {
+  return (
+    <div
+      className="flex items-center gap-3 px-4 py-3 rounded-comfortable transition-colors hover:bg-opacity-50 group"
+      style={{ backgroundColor: 'var(--bg-surface)', border: '1px solid var(--border-default)' }}
+    >
+      {track.previewUrl && (
+        <TrackPlayButton track={track} size="sm" coverUrl={release?.coverUrl} />
+      )}
+
+      {release?.coverUrl && (
+        <Link href={`/release/${release.id}`} className="shrink-0">
+          <div className="relative w-10 h-10 rounded-subtle overflow-hidden">
+            <Image src={release.coverUrl} alt={release.titleJa} fill className="object-cover" sizes="40px" />
+          </div>
+        </Link>
+      )}
+
+      <div className="flex-1 min-w-0">
+        <Link
+          href={`/track/${track.id}`}
+          className="text-sm font-medium truncate block hover:text-terracotta transition-colors"
+          style={{ color: 'var(--text-primary)' }}
+        >
+          {track.titleJa}
+        </Link>
+        <p className="text-xs truncate" style={{ color: 'var(--text-tertiary)' }}>
+          {badge ? `${badge} · ` : ''}
+          {track.artistIds.slice(0, 3).join(', ')}
+          {track.artistIds.length > 3 && '...'}
+        </p>
+      </div>
+
+      <FavoriteButton
+        item={{
+          id: track.id,
+          type: 'track',
+          title: track.titleJa,
+          subtitle: track.artistIds.join(', '),
+          coverUrl: release?.coverUrl,
+        }}
+        size="sm"
+      />
+
+      {track.durationSec && (
+        <span className="hidden sm:flex text-xs font-mono items-center gap-1 shrink-0" style={{ color: 'var(--text-tertiary)' }}>
+          <Clock size={12} />
+          {formatTime(track.durationSec)}
+        </span>
+      )}
+    </div>
+  )
+}
+
+function formatTime(seconds: number): string {
+  const mins = Math.floor(seconds / 60)
+  const secs = Math.floor(seconds % 60)
+  return `${mins}:${secs.toString().padStart(2, '0')}`
 }

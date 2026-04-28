@@ -2,7 +2,7 @@
 
 > Next.js 15 + TypeScript + Tailwind CSS 构建的 THE IDOLM@STER 系列音乐数据库。暖色编辑风格（Warm Editorial），支持真实音频试听、多企划数据、移动端响应式。
 
-**当前版本：v0.4.0**
+**当前版本：v0.5.0**
 
 **在线地址**：https://master.imas-music.pages.dev（Cloudflare Pages）
 
@@ -23,10 +23,10 @@ npm run type-check
 
 # 4. 生产构建
 npm run build
-# → 输出到 dist/（静态导出，4,498 页面）
+# → 输出到 dist/（静态导出，5,193 页面）
 ```
 
-**当前数据状态**：3,403 tracks + 734 releases + 344 artists（765AS + Cinderella + Million Live + SideM + Shiny Colors + Gakuen）
+**当前数据状态**：3,403 tracks + 734 releases + 1,039 artists（344 IDOL + 695 CREATOR，覆盖 765AS / Cinderella / Million Live / SideM / Shiny Colors / Gakuen）
 
 ---
 
@@ -84,7 +84,7 @@ export async function generateStaticParams() {
 | **Phase 5** | ✅ | 单曲详情页、艺人筛选、播放修复、艺人数据导入 | [docs/phase5.md](docs/phase5.md) |
 | **Phase 6** | ✅ | 数据层扩展、功能增强、交互优化 | [docs/phase6.md](docs/phase6.md) |
 | **Phase 7** | ✅ | 移动端全屏播放器、Swipe 手势、全局列表移动端适配与交互闭环 | [docs/phase7.md](docs/phase7.md) |
-| **Phase 8** | 🚧 准备中 | 自动化数据丰满（MusicBrainz/VGMdb/imasparql v2）| [docs/phase8-planning.md](docs/phase8-planning.md) |
+| **Phase 8** | ✅ 已完成 | MusicBrainz Credits/Catalog/Label + Uta-Net 歌词 + 艺人头像/名字修复 | [docs/phase8-planning.md](docs/phase8-planning.md) |
 
 ---
 
@@ -199,12 +199,15 @@ ImasMusic/
 │   └── index.ts                  # 核心类型: Track/Release/Artist/PlayerState
 │
 ├── data/                         # 静态 JSON 数据
-│   ├── tracks.json               # 曲目数据（35 条）
-│   ├── releases.json             # 发行物数据（32 条）
-│   ├── artists.json              # 艺人数据（344 条）
+│   ├── tracks.json               # 曲目数据（3,403 条）
+│   ├── releases.json             # 发行物数据（734 条）
+│   ├── artists.json              # 艺人数据（1,039 条：344 IDOL + 695 CREATOR）
 │   └── seed/                     # 数据导入脚手架
 │       ├── input/                # 输入文件（每行一个查询词）
-│       ├── output/               # 脚手架输出（tracks/releases/errors）
+│       ├── output/               # 脚手架输出 + 流水线补丁
+│       │   ├── mb_track_patches.json     # MusicBrainz Credits 补丁
+│       │   ├── mb_release_patches.json   # MusicBrainz Catalog/Label 补丁
+│       │   └── lyrics_patches.json       # Uta-Net 歌词补丁
 │       └── wiki-dumps/           # Wiki 页面 dump（待录入）
 │
 ├── scripts/
@@ -214,11 +217,13 @@ ImasMusic/
 │   ├── merge-wiki-supplement.ts  # Wiki dump 合并到 tracks.json
 │   ├── parse-wiki-dump.ts        # Wiki dump 文本解析器
 │   └── pipeline/                 # Phase 8 自动化流水线模块
-│       ├── musicbrainz.ts        # MusicBrainz API 客户端
-│       ├── vgmdb.ts              # VGMdb 数据抓取
-│       ├── imasparql-v2.ts       # 偶像关系图谱深化
-│       ├── spotify.ts            # Spotify Web API 客户端
-│       └── merge-engine.ts       # 多源数据融合引擎
+│       ├── musicbrainz.ts              # MusicBrainz API 客户端（1 req/sec 限流 + 重试）
+│       ├── mb-release-batch.ts         # Release Catalog/Label/Barcode 批量抓取
+│       ├── mb-track-batch.ts           # Recording Credits（作词/作曲/编曲）批量抓取
+│       ├── apply-mb-patches.ts         # 多源合并引擎（自动创建 CREATOR Artist）
+│       ├── scrape-lyrics-utanet.ts     # Uta-Net 日文歌词抓取（cheerio）
+│       ├── apply-lyrics-patches.ts     # 歌词合并引擎（保留人工数据）
+│       └── fetch-portraits-gamedbs.ts  # imas.gamedbs.jp 官方头像抓取
 │
 ├── docs/
 │   ├── DESIGN-claude.md          # 设计系统文档
@@ -245,11 +250,11 @@ ImasMusic/
 | `/` | Static (ISR) | 数据概览、最新发行网格、热门单曲、6企划卡片 |
 | `/releases` | Static | Grid/List/Table 三视图、类型筛选、排序、实时搜索 |
 | `/releases?series=x` | Static | 客户端按企划筛选（`useSearchParams`） |
-| `/release/[id]` | Dynamic | 大封面 Hero、Tracklist（BPM+时长+收藏）、Apple Music 外链、同企划推荐 |
+| `/release/[id]` | Dynamic | 大封面 Hero、紧凑元数据行（ALBUM·Label·Catalog·Year）、Tracklist（BPM+时长+收藏）、Apple Music 外链、同企划推荐 |
 | `/tracks` | Static | 单曲卡片网格、企划/BPM/可试听标签、关键词搜索、客户端企划筛选、排序 |
-| `/track/[id]` | Dynamic | 封面 Hero、Credits、BPM/时长/调性、播放按钮、收藏、相似曲目 |
+| `/track/[id]` | Dynamic | 封面 Hero、Credits（含艺人名解析 + 跳转链接）、歌词区块、BPM/时长/调性、播放按钮、收藏、相似曲目 |
 | `/artists` | Static (ISR) | 角色筛选（偶像/组合/声优/创作者）、卡片网格 |
-| `/artist/[id]` | Dynamic | 头像、角色/企划标签、曲目/专辑统计 |
+| `/artist/[id]` | Dynamic | 头像（官方图片/占位）、角色/企划标签、英文名、演唱曲目 + 创作曲目（含 Credits role 标签）、曲目/专辑统计 |
 | `/search` | Static (ISR) | 大搜索框 autoFocus、分类 Tab、实时过滤 |
 | `/explore` | Static (ISR) | 可视化功能收拢入口（曲风地图/时间线/对比/收藏） |
 | `/explore/map` | Static (ISR) | Energy × Valence 散点图、企划色区分、Tooltip |
@@ -342,10 +347,11 @@ interface Release {
 ```typescript
 interface Artist {
   id: string
-  nameJa: string
+  nameJa: string          // 日文名（汉字为主）
+  nameEn?: string         // 英文全名（西方顺序：名 姓）
   role: 'IDOL' | 'UNIT' | 'CV' | 'CREATOR'
   series?: string[]
-  portraitUrl?: string
+  portraitUrl?: string    // 官方头像（imas.gamedbs.jp）
   trackIds?: string[]
   releaseIds?: string[]
 }
@@ -412,6 +418,7 @@ npx playwright show-report
 | 队列打开/关闭 | ✅ | ✅ | — |
 | 切歌后封面更新（Bug A1） | ✅ | ✅ | — |
 | 首页热门单曲可点击（Bug A2） | ✅ | ✅ | ✅ |
+| **Phase 8 数据展示**（歌词/Credits/专辑元数据/艺人头像） | ✅ | ✅ | ✅ |
 
 > 注：Desktop 端自动 skip 移动端专属测试（`isMobile` 条件）。测试数据使用静态导出中的真实 ID，若数据更新导致 ID 变化需同步更新 `e2e/*.spec.ts`。
 
@@ -537,4 +544,4 @@ npx tsx scripts/pipeline-merge.ts
 
 ---
 
-*最后更新: 2026-04-27 | v0.4.0 — Phase 7 移动端体验完成，13 项 Playwright E2E 全通过（含 MobilePlayerSheet + Swipe 手势），Cloudflare Pages 自动部署*
+*最后更新: 2026-04-28 | v0.5.0 — Phase 8 数据管道完成：Credits 71% / 歌词 47% / Catalog 57% / 头像 74%，5,193 静态页面，Cloudflare Pages 自动部署*

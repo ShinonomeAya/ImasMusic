@@ -10,6 +10,7 @@ import { Clock } from 'lucide-react'
 interface MobileTracklistProps {
   tracks: Track[]
   showCover?: boolean
+  getSubtitle?: (track: Track) => string
 }
 
 function formatTime(seconds: number): string {
@@ -18,7 +19,7 @@ function formatTime(seconds: number): string {
   return `${mins}:${secs.toString().padStart(2, '0')}`
 }
 
-export default function MobileTracklist({ tracks, showCover = true }: MobileTracklistProps) {
+export default function MobileTracklist({ tracks, showCover = true, getSubtitle }: MobileTracklistProps) {
   if (tracks.length === 0) return null
 
   return (
@@ -57,8 +58,7 @@ export default function MobileTracklist({ tracks, showCover = true }: MobileTrac
               {track.titleJa}
             </p>
             <p className="text-xs truncate" style={{ color: 'var(--text-tertiary)' }}>
-              {track.artistIds.slice(0, 2).join(', ')}
-              {track.artistIds.length > 2 && '...'}
+              {getSubtitle ? getSubtitle(track) : `${track.artistIds.slice(0, 2).join(', ')}${track.artistIds.length > 2 ? '...' : ''}`}
             </p>
           </div>
 

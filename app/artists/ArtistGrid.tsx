@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { SERIES_CONFIG } from '@/lib/series'
 import type { Artist } from '@/types'
 import { Users, Mic2, PenTool, Star } from 'lucide-react'
+import AvatarPlaceholder from '@/components/AvatarPlaceholder'
 
 const ROLE_ICONS: Record<string, React.ElementType> = {
   IDOL: Star,
@@ -78,16 +79,13 @@ export default function ArtistGrid({ artists }: { artists: Artist[] }) {
                 href={`/artist/${artist.id}`}
                 className="card-claude-featured p-5 flex flex-col items-center text-center gap-3 group transition-all hover:-translate-y-1"
               >
-                <div
-                  className="relative w-20 h-20 rounded-full overflow-hidden flex items-center justify-center"
-                  style={{ backgroundColor: 'var(--bg-interactive)' }}
-                >
-                  {artist.portraitUrl ? (
+                {artist.portraitUrl ? (
+                  <div className="relative w-20 h-20 rounded-full overflow-hidden">
                     <img src={artist.portraitUrl} alt={artist.nameJa} className="w-full h-full object-cover" />
-                  ) : (
-                    <Icon size={28} style={{ color: 'var(--text-tertiary)' }} />
-                  )}
-                </div>
+                  </div>
+                ) : (
+                  <AvatarPlaceholder name={artist.nameJa} series={artist.series} size="md" />
+                )}
                 <div>
                   <h3 className="text-sm font-medium group-hover:text-terracotta transition-colors" style={{ color: 'var(--text-primary)' }}>
                     {artist.nameJa}

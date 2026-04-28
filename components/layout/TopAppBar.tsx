@@ -11,7 +11,6 @@ const TOP_NAV_ITEMS = [
   { label: '专辑', href: '/releases' },
   { label: '单曲', href: '/tracks' },
   { label: '艺人', href: '/artists' },
-  { label: '创作者', href: '/artists?role=CREATOR' },
 ]
 
 function NavLinks() {

@@ -12,7 +12,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718496905",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760812",
@@ -26,7 +27,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760812",
-    "artistName": "DRAMATIC STARS"
+    "artistName": "DRAMATIC STARS",
+    "catalogNumber": "LACM-24194",
+    "label": "Lantis"
   },
   {
     "id": "release-1659357818",
@@ -40,7 +43,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1659357818",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCX-38070",
+    "label": "Columbia"
   },
   {
     "id": "release-1731760693",
@@ -54,7 +59,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760693",
-    "artistName": "S.E.M"
+    "artistName": "S.E.M",
+    "catalogNumber": "LACM-14326",
+    "label": "Lantis"
   },
   {
     "id": "release-1718903541",
@@ -68,7 +75,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718903541",
-    "artistName": "BRIGHT DIAMOND"
+    "artistName": "BRIGHT DIAMOND",
+    "catalogNumber": "LACA-15916",
+    "label": "Lantis"
   },
   {
     "id": "release-1856531493",
@@ -82,7 +91,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1856531493",
-    "artistName": "I'm a Cutie Finder"
+    "artistName": "I'm a Cutie Finder",
+    "catalogNumber": "LACM-24821",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552412",
@@ -96,7 +107,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552412",
-    "artistName": "コメティック"
+    "artistName": "コメティック",
+    "catalogNumber": "LACM-24368",
+    "label": "Lantis"
   },
   {
     "id": "release-1718503190",
@@ -109,7 +122,9 @@
       "track-1718503192"
     ],
     "format": "CD",
-    "appleMusicUrl": "https://music.apple.com/jp/album/1718503190"
+    "appleMusicUrl": "https://music.apple.com/jp/album/1718503190",
+    "catalogNumber": "LACA-15431",
+    "label": "Lantis"
   },
   {
     "id": "release-1734551412",
@@ -123,7 +138,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551412",
-    "artistName": "アンティーカ"
+    "artistName": "アンティーカ",
+    "catalogNumber": "LACM-14783",
+    "label": "Lantis"
   },
   {
     "id": "release-1734551173",
@@ -137,7 +154,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551173",
-    "artistName": "アルストロメリア"
+    "artistName": "アルストロメリア",
+    "catalogNumber": "LACM-14865",
+    "label": "Lantis"
   },
   {
     "id": "release-1825101865",
@@ -151,7 +170,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1825101865",
-    "artistName": "アルストロメリア & コメティック"
+    "artistName": "アルストロメリア & コメティック",
+    "catalogNumber": "LACM-24703",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552712",
@@ -165,7 +186,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552712",
-    "artistName": "アンティーカ"
+    "artistName": "アンティーカ",
+    "catalogNumber": "LACM-24113",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730438",
@@ -179,7 +202,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730438",
-    "artistName": "765PRO ALLSTARS"
+    "artistName": "765PRO ALLSTARS",
+    "catalogNumber": "LACM-14828",
+    "label": "Lantis"
   },
   {
     "id": "release-1718675404",
@@ -194,7 +219,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718675404",
-    "artistName": "765PRO ALLSTARS"
+    "artistName": "765PRO ALLSTARS",
+    "catalogNumber": "LACA-9989",
+    "label": "Lantis"
   },
   {
     "id": "release-1676897794",
@@ -217,7 +244,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1676897794",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COKM-44335",
+    "label": "Columbia"
   },
   {
     "id": "release-1794066812",
@@ -230,7 +259,9 @@
       "track-1794066813"
     ],
     "format": "CD",
-    "appleMusicUrl": "https://music.apple.com/jp/album/1794066812"
+    "appleMusicUrl": "https://music.apple.com/jp/album/1794066812",
+    "catalogNumber": "VVXX01751B00Z",
+    "label": "Sony Music Labels Inc."
   },
   {
     "id": "release-1031840065",
@@ -270,7 +301,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1655784315",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "label": "Columbia"
   },
   {
     "id": "release-1656343486",
@@ -283,7 +315,8 @@
       "track-1656343489"
     ],
     "format": "CD",
-    "appleMusicUrl": "https://music.apple.com/jp/album/1656343486"
+    "appleMusicUrl": "https://music.apple.com/jp/album/1656343486",
+    "label": "Columbia"
   },
   {
     "id": "release-1709240925",
@@ -300,7 +333,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1709240925",
-    "artistName": "DRAMATIC STARS & S.E.M"
+    "artistName": "DRAMATIC STARS & S.E.M",
+    "catalogNumber": "LACM-24461",
+    "label": "Lantis"
   },
   {
     "id": "release-1732192872",
@@ -313,7 +348,9 @@
       "track-1732192876"
     ],
     "format": "CD",
-    "appleMusicUrl": "https://music.apple.com/jp/album/1732192872"
+    "appleMusicUrl": "https://music.apple.com/jp/album/1732192872",
+    "catalogNumber": "ATV 9",
+    "label": "Active Records"
   },
   {
     "id": "release-1731761043",
@@ -404,7 +441,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1709236163",
-    "artistName": "DRAMATIC STARS & S.E.M"
+    "artistName": "DRAMATIC STARS & S.E.M",
+    "catalogNumber": "LAXX24462B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1810150734",
@@ -416,7 +455,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1810150734",
-    "artistName": "315 ALLSTARS"
+    "artistName": "315 ALLSTARS",
+    "catalogNumber": "LACZ-10026",
+    "label": "Lantis"
   },
   {
     "id": "release-1749006685",
@@ -431,7 +472,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1749006685",
-    "artistName": "初星学園"
+    "artistName": "初星学園",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1769305460",
@@ -476,7 +518,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1744085101",
-    "artistName": "初星学園 & 葛城リーリヤ"
+    "artistName": "初星学園 & 葛城リーリヤ",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1659369256",
@@ -580,7 +624,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1881491326",
-    "artistName": "Σ Desire"
+    "artistName": "Σ Desire",
+    "catalogNumber": "LACM-24824",
+    "label": "Lantis"
   },
   {
     "id": "release-1659368274",
@@ -672,7 +718,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1655789051",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCX-39035",
+    "label": "Columbia"
   },
   {
     "id": "release-1734552458",
@@ -691,7 +739,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552458",
-    "artistName": "アルストロメリア"
+    "artistName": "アルストロメリア",
+    "label": "Lantis"
   },
   {
     "id": "release-1718903430",
@@ -709,7 +758,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718903430",
-    "artistName": "SHADE OF SPADE"
+    "artistName": "SHADE OF SPADE",
+    "catalogNumber": "LACA-25019",
+    "label": "Lantis"
   },
   {
     "id": "release-1734551272",
@@ -724,7 +775,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551272",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552092",
@@ -743,7 +795,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552092",
-    "artistName": "ストレイライト"
+    "artistName": "ストレイライト",
+    "catalogNumber": "LACM-24365",
+    "label": "Lantis"
   },
   {
     "id": "release-1734550532",
@@ -762,7 +816,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734550532",
-    "artistName": "シーズ"
+    "artistName": "シーズ",
+    "label": "Lantis"
   },
   {
     "id": "release-1655784851",
@@ -804,7 +859,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551676",
-    "artistName": "ノクチル"
+    "artistName": "ノクチル",
+    "catalogNumber": "LACM-24366",
+    "label": "Lantis"
   },
   {
     "id": "release-1778169036",
@@ -823,7 +880,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1778169036",
-    "artistName": "コメティック"
+    "artistName": "コメティック",
+    "label": "Lantis"
   },
   {
     "id": "release-1734563895",
@@ -845,7 +903,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734563895",
-    "artistName": "Team.Sol"
+    "artistName": "Team.Sol",
+    "catalogNumber": "LACA-15863",
+    "label": "Lantis"
   },
   {
     "id": "release-1734553272",
@@ -886,7 +946,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734553272",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "catalogNumber": "LACA-9946",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730236",
@@ -901,7 +963,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730236",
-    "artistName": "4 Luxury"
+    "artistName": "4 Luxury",
+    "catalogNumber": "LACM14639B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1734550996",
@@ -920,7 +984,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734550996",
-    "artistName": "アンティーカ"
+    "artistName": "アンティーカ",
+    "catalogNumber": "LACM-24362",
+    "label": "Lantis"
   },
   {
     "id": "release-1718674769",
@@ -943,7 +1009,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718674769",
-    "artistName": "765 MILLION ALLSTARS"
+    "artistName": "765 MILLION ALLSTARS",
+    "catalogNumber": "LACA-25043",
+    "label": "Lantis"
   },
   {
     "id": "release-1773459010",
@@ -955,7 +1023,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1773459010",
-    "artistName": "シーズ"
+    "artistName": "シーズ",
+    "catalogNumber": "LACM-24547",
+    "label": "Lantis"
   },
   {
     "id": "release-1775167771",
@@ -977,7 +1047,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1775167771",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "catalogNumber": "LACA-25133",
+    "label": "Lantis"
   },
   {
     "id": "release-1779614258",
@@ -989,7 +1061,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1779614258",
-    "artistName": "コメティック"
+    "artistName": "コメティック",
+    "catalogNumber": "LACM-24548",
+    "label": "Lantis"
   },
   {
     "id": "release-1811957892",
@@ -1001,7 +1075,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1811957892",
-    "artistName": "アンティーカ & シーズ"
+    "artistName": "アンティーカ & シーズ",
+    "catalogNumber": "LACM-24701",
+    "label": "Lantis"
   },
   {
     "id": "release-1779611008",
@@ -1031,7 +1107,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734550952",
-    "artistName": "シーズ"
+    "artistName": "シーズ",
+    "catalogNumber": "LACM-24258",
+    "label": "Lantis"
   },
   {
     "id": "release-1829877808",
@@ -1056,7 +1134,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1829877808",
-    "artistName": "ノクチル, シーズ, ストレイライト & イルミネーションスターズ"
+    "artistName": "ノクチル, シーズ, ストレイライト & イルミネーションスターズ",
+    "catalogNumber": "LACA-25155",
+    "label": "Lantis"
   },
   {
     "id": "release-1734555460",
@@ -1077,7 +1157,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734555460",
-    "artistName": "Team.Stella"
+    "artistName": "Team.Stella",
+    "catalogNumber": "LACA-15861",
+    "label": "Lantis"
   },
   {
     "id": "release-1782814357",
@@ -1120,7 +1202,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731762630",
-    "artistName": "C.FIRST"
+    "artistName": "C.FIRST",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552848",
@@ -1139,7 +1222,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552848",
-    "artistName": "イルミネーションスターズ"
+    "artistName": "イルミネーションスターズ",
+    "label": "Lantis"
   },
   {
     "id": "release-1770957566",
@@ -1151,7 +1235,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1770957566",
-    "artistName": "DRAMATIC STARS"
+    "artistName": "DRAMATIC STARS",
+    "catalogNumber": "LACA-19091",
+    "label": "Lantis"
   },
   {
     "id": "release-1718726097",
@@ -1169,7 +1255,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718726097",
-    "artistName": "星井美希 (CV.長谷川明子), 伊吹 翼 (CV.Machico), 北上麗花 (CV.平山笑美) & ジュリア (CV.愛美)"
+    "artistName": "星井美希 (CV.長谷川明子), 伊吹 翼 (CV.Machico), 北上麗花 (CV.平山笑美) & ジュリア (CV.愛美)",
+    "catalogNumber": "LAXX15316B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1862692640",
@@ -1194,7 +1282,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1862692640",
-    "artistName": "アンティーカ, 放課後クライマックスガールズ, アルストロメリア & コメティック"
+    "artistName": "アンティーカ, 放課後クライマックスガールズ, アルストロメリア & コメティック",
+    "catalogNumber": "LACA-25234",
+    "label": "Lantis"
   },
   {
     "id": "release-1734553065",
@@ -1235,7 +1325,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734553065",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "catalogNumber": "LACA-9948",
+    "label": "Lantis"
   },
   {
     "id": "release-1718903191",
@@ -1253,7 +1345,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718903191",
-    "artistName": "LOVERS HEART"
+    "artistName": "LOVERS HEART",
+    "catalogNumber": "LACA-15978",
+    "label": "Lantis"
   },
   {
     "id": "release-1810150976",
@@ -1299,7 +1393,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551773",
-    "artistName": "Team.Luna"
+    "artistName": "Team.Luna",
+    "catalogNumber": "LACA-15862",
+    "label": "Lantis"
   },
   {
     "id": "release-1761313720",
@@ -1311,7 +1407,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1761313720",
-    "artistName": "ストレイライト"
+    "artistName": "ストレイライト",
+    "catalogNumber": "LACM-24545",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760958",
@@ -1332,7 +1430,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760958",
-    "artistName": "S.E.M"
+    "artistName": "S.E.M",
+    "catalogNumber": "LACA-15994",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760744",
@@ -1349,7 +1449,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760744",
-    "artistName": "FRAME, S.E.M & Legenders"
+    "artistName": "FRAME, S.E.M & Legenders",
+    "label": "Lantis"
   },
   {
     "id": "release-1718903407",
@@ -1367,7 +1468,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718903407",
-    "artistName": "CLEVER CLOVER"
+    "artistName": "CLEVER CLOVER",
+    "catalogNumber": "LACA-15935",
+    "label": "Lantis"
   },
   {
     "id": "release-1749225310",
@@ -1386,7 +1489,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1749225310",
-    "artistName": "アンティーカ"
+    "artistName": "アンティーカ",
+    "catalogNumber": "LACM-24542",
+    "label": "Lantis"
   },
   {
     "id": "release-1734556303",
@@ -1405,7 +1510,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734556303",
-    "artistName": "放課後クライマックスガールズ"
+    "artistName": "放課後クライマックスガールズ",
+    "label": "Lantis"
   },
   {
     "id": "release-1818073109",
@@ -1417,7 +1523,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1818073109",
-    "artistName": "放課後クライマックスガールズ & ストレイライト"
+    "artistName": "放課後クライマックスガールズ & ストレイライト",
+    "catalogNumber": "LACM-24702",
+    "label": "Lantis"
   },
   {
     "id": "release-1224072470",
@@ -1434,7 +1542,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1224072470",
-    "artistName": "Real Girls Project(R.G.P)"
+    "artistName": "Real Girls Project(R.G.P)",
+    "catalogNumber": "IMXC-064"
   },
   {
     "id": "release-1731761112",
@@ -1455,7 +1564,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761112",
-    "artistName": "DRAMATIC STARS"
+    "artistName": "DRAMATIC STARS",
+    "catalogNumber": "LACA-15996",
+    "label": "Lantis"
   },
   {
     "id": "release-1734556468",
@@ -1479,7 +1590,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734556468",
-    "artistName": "放課後クライマックスガールズ & ノクチル"
+    "artistName": "放課後クライマックスガールズ & ノクチル",
+    "label": "Lantis"
   },
   {
     "id": "release-1773460170",
@@ -1491,7 +1603,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1773460170",
-    "artistName": "Jupiter"
+    "artistName": "Jupiter",
+    "catalogNumber": "LACA-19093",
+    "label": "Lantis"
   },
   {
     "id": "release-1807462395",
@@ -1515,7 +1629,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1830421551",
-    "artistName": "イルミネーションスターズ & ノクチル"
+    "artistName": "イルミネーションスターズ & ノクチル",
+    "catalogNumber": "LACM-24704",
+    "label": "Lantis"
   },
   {
     "id": "release-1755675670",
@@ -1527,7 +1643,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1755675670",
-    "artistName": "アルストロメリア"
+    "artistName": "アルストロメリア",
+    "catalogNumber": "LACM-24544",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760710",
@@ -1548,7 +1666,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760710",
-    "artistName": "Legenders"
+    "artistName": "Legenders",
+    "catalogNumber": "LACA-15991",
+    "label": "Lantis"
   },
   {
     "id": "release-1655788552",
@@ -1598,7 +1718,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1836353222",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "catalogNumber": "LACA-19134",
+    "label": "Lantis"
   },
   {
     "id": "release-1718903267",
@@ -1616,7 +1738,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718903267",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15910",
+    "label": "Lantis"
   },
   {
     "id": "release-1731761028",
@@ -1649,7 +1773,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718502089",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "label": "Lantis"
   },
   {
     "id": "release-1676894324",
@@ -1675,7 +1800,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1676894324",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COKM-44339",
+    "label": "Nippon Columbia Co., Ltd./NIPPONOPHONE"
   },
   {
     "id": "release-1731761160",
@@ -1696,7 +1823,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761160",
-    "artistName": "Beit"
+    "artistName": "Beit",
+    "label": "Lantis"
   },
   {
     "id": "release-1734550590",
@@ -1714,7 +1842,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734550590",
-    "artistName": "アルストロメリア"
+    "artistName": "アルストロメリア",
+    "label": "Lantis"
   },
   {
     "id": "release-1854333470",
@@ -1736,7 +1865,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1854333470",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "catalogNumber": "LACA-25180",
+    "label": "Lantis"
   },
   {
     "id": "release-1766923294",
@@ -1748,7 +1879,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1766923294",
-    "artistName": "ノクチル"
+    "artistName": "ノクチル",
+    "catalogNumber": "LACM-24256",
+    "label": "Lantis"
   },
   {
     "id": "release-1734555968",
@@ -1771,7 +1904,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734555968",
-    "artistName": "イルミネーションスターズ, アルストロメリア & シーズ"
+    "artistName": "イルミネーションスターズ, アルストロメリア & シーズ",
+    "label": "Lantis"
   },
   {
     "id": "release-1655783858",
@@ -1810,7 +1944,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792915",
-    "artistName": "Beit & S.E.M"
+    "artistName": "Beit & S.E.M",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759376",
@@ -1827,7 +1962,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759376",
-    "artistName": "FRAME, もふもふえん & F-LAGS"
+    "artistName": "FRAME, もふもふえん & F-LAGS",
+    "label": "Lantis"
   },
   {
     "id": "release-1656345681",
@@ -1856,7 +1992,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1656345681",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COKM-44180",
+    "label": "Columbia"
   },
   {
     "id": "release-1734552134",
@@ -1874,7 +2012,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552134",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "label": "Lantis"
   },
   {
     "id": "release-1734551901",
@@ -1890,7 +2029,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551901",
-    "artistName": "アルストロメリア"
+    "artistName": "アルストロメリア",
+    "catalogNumber": "LACM-14986",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792667",
@@ -1909,7 +2050,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792667",
-    "artistName": "315 ALLSTARS"
+    "artistName": "315 ALLSTARS",
+    "label": "Lantis"
   },
   {
     "id": "release-1731763016",
@@ -1930,7 +2072,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731763016",
-    "artistName": "FRAME"
+    "artistName": "FRAME",
+    "catalogNumber": "LACA-15989",
+    "label": "Lantis"
   },
   {
     "id": "release-1731767129",
@@ -1955,7 +2099,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731767129",
-    "artistName": "Café Parade"
+    "artistName": "Café Parade",
+    "catalogNumber": "LACA-15988",
+    "label": "Lantis"
   },
   {
     "id": "release-1802595961",
@@ -1983,7 +2129,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1710326715",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "catalogNumber": "LACM24437B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1776862279",
@@ -2039,7 +2187,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760666",
-    "artistName": "THE 虎牙道"
+    "artistName": "THE 虎牙道",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552685",
@@ -2057,7 +2206,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552685",
-    "artistName": "シーズ"
+    "artistName": "シーズ",
+    "catalogNumber": "LACM-24118",
+    "label": "Lantis"
   },
   {
     "id": "release-1718674377",
@@ -2075,7 +2226,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718674377",
-    "artistName": "如月千早 (CV.今井麻美), 北沢志保 (CV.雨宮 天), 田中琴葉 (CV.種田梨沙) & 所 恵美 (CV.藤井ゆきよ)"
+    "artistName": "如月千早 (CV.今井麻美), 北沢志保 (CV.雨宮 天), 田中琴葉 (CV.種田梨沙) & 所 恵美 (CV.藤井ゆきよ)",
+    "catalogNumber": "LAXX15314B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1731761125",
@@ -2118,7 +2271,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761125",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "label": "Lantis"
   },
   {
     "id": "release-1717753981",
@@ -2133,7 +2287,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717753981",
-    "artistName": "≡君彩≡"
+    "artistName": "≡君彩≡",
+    "catalogNumber": "LACM-24106",
+    "label": "Lantis"
   },
   {
     "id": "release-1735684916",
@@ -2150,7 +2306,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1735684916",
-    "artistName": "F-LAGS"
+    "artistName": "F-LAGS",
+    "catalogNumber": "LACM-24487",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759556",
@@ -2167,7 +2325,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759556",
-    "artistName": "W, Café Parade & もふもふえん"
+    "artistName": "W, Café Parade & もふもふえん",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759399",
@@ -2184,7 +2343,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759399",
-    "artistName": "Jupiter, Beit & THE 虎牙道"
+    "artistName": "Jupiter, Beit & THE 虎牙道",
+    "label": "Lantis"
   },
   {
     "id": "release-1785014673",
@@ -2196,7 +2356,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1785014673",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "catalogNumber": "LACA-25115",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759747",
@@ -2213,7 +2375,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759747",
-    "artistName": "Café Parade, Altessimo & Legenders"
+    "artistName": "Café Parade, Altessimo & Legenders",
+    "label": "Lantis"
   },
   {
     "id": "release-1728576113",
@@ -2230,7 +2393,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1728576113",
-    "artistName": "MILLIONSTARS"
+    "artistName": "MILLIONSTARS",
+    "catalogNumber": "LACM-24420",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759263",
@@ -2246,7 +2411,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759263",
-    "artistName": "315 STARS"
+    "artistName": "315 STARS",
+    "catalogNumber": "LACM-14671",
+    "label": "Lantis"
   },
   {
     "id": "release-1751451017",
@@ -2258,7 +2425,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1751451017",
-    "artistName": "放課後クライマックスガールズ"
+    "artistName": "放課後クライマックスガールズ",
+    "catalogNumber": "LACM-24543",
+    "label": "Lantis"
   },
   {
     "id": "release-1734551807",
@@ -2274,7 +2443,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551807",
-    "artistName": "ストレイライト"
+    "artistName": "ストレイライト",
+    "catalogNumber": "LACM-14866",
+    "label": "Lantis"
   },
   {
     "id": "release-1726312303",
@@ -2291,7 +2462,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1726312303",
-    "artistName": "もふもふえん"
+    "artistName": "もふもふえん",
+    "catalogNumber": "LACM24484B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552151",
@@ -2307,7 +2480,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552151",
-    "artistName": "ノクチル"
+    "artistName": "ノクチル",
+    "catalogNumber": "LACM-24005",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792986",
@@ -2323,7 +2498,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792986",
-    "artistName": "DRAMATIC STARS & High×Joker"
+    "artistName": "DRAMATIC STARS & High×Joker",
+    "label": "Lantis"
   },
   {
     "id": "release-1734550784",
@@ -2341,7 +2517,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734550784",
-    "artistName": "ノクチル"
+    "artistName": "ノクチル",
+    "catalogNumber": "LACM-24257",
+    "label": "Lantis"
   },
   {
     "id": "release-1783510569",
@@ -2374,7 +2552,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761148",
-    "artistName": "もふもふえん"
+    "artistName": "もふもふえん",
+    "catalogNumber": "LACA-15993",
+    "label": "Lantis"
   },
   {
     "id": "release-1814018209",
@@ -2401,7 +2581,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717732967",
-    "artistName": "Chrono-Lexica"
+    "artistName": "Chrono-Lexica",
+    "catalogNumber": "LACM-14892",
+    "label": "Lantis"
   },
   {
     "id": "release-1734551848",
@@ -2418,7 +2600,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551848",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "catalogNumber": "LACM-24111",
+    "label": "Lantis"
   },
   {
     "id": "release-1731762459",
@@ -2437,7 +2621,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731762459",
-    "artistName": "Altessimo"
+    "artistName": "Altessimo",
+    "label": "Lantis"
   },
   {
     "id": "release-1659362017",
@@ -2452,7 +2637,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1659362017",
-    "artistName": "ももいろクローバーZ & THE IDOLM@STER CINDERELLA GIRLS"
+    "artistName": "ももいろクローバーZ & THE IDOLM@STER CINDERELLA GIRLS",
+    "catalogNumber": "COKM-44195",
+    "label": "Columbia"
   },
   {
     "id": "release-1731760923",
@@ -2473,7 +2660,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760923",
-    "artistName": "315 ALLSTARS"
+    "artistName": "315 ALLSTARS",
+    "catalogNumber": "LACM-24181",
+    "label": "Lantis"
   },
   {
     "id": "release-1731761182",
@@ -2494,7 +2683,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761182",
-    "artistName": "Jupiter"
+    "artistName": "Jupiter",
+    "catalogNumber": "LACA-15985",
+    "label": "Lantis"
   },
   {
     "id": "release-1718493148",
@@ -2511,7 +2702,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718493148",
-    "artistName": "765 MILLION ALLSTARS"
+    "artistName": "765 MILLION ALLSTARS",
+    "catalogNumber": "LACM-14900",
+    "label": "Lantis"
   },
   {
     "id": "release-1734550711",
@@ -2529,7 +2722,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734550711",
-    "artistName": "ストレイライト"
+    "artistName": "ストレイライト",
+    "catalogNumber": "LACM-24256",
+    "label": "Lantis"
   },
   {
     "id": "release-1728576269",
@@ -2548,7 +2743,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1728576269",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACM-24435",
+    "label": "Lantis"
   },
   {
     "id": "release-1718881235",
@@ -2566,7 +2763,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718881235",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15907",
+    "label": "Lantis"
   },
   {
     "id": "release-1785014635",
@@ -2578,7 +2777,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1785014635",
-    "artistName": "イルミネーションスターズ"
+    "artistName": "イルミネーションスターズ",
+    "catalogNumber": "LACM-24541",
+    "label": "Lantis"
   },
   {
     "id": "release-1737148955",
@@ -2618,7 +2819,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718493703",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15878",
+    "label": "Lantis"
   },
   {
     "id": "release-1718493381",
@@ -2636,7 +2839,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718493381",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15905",
+    "label": "Lantis"
   },
   {
     "id": "release-1734551755",
@@ -2652,7 +2857,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551755",
-    "artistName": "放課後クライマックスガールズ"
+    "artistName": "放課後クライマックスガールズ",
+    "catalogNumber": "LACM-14784",
+    "label": "Lantis"
   },
   {
     "id": "release-1718502825",
@@ -2671,7 +2878,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718502825",
-    "artistName": "765 MILLION ALLSTARS"
+    "artistName": "765 MILLION ALLSTARS",
+    "catalogNumber": "LACA-25057",
+    "label": "Lantis"
   },
   {
     "id": "release-1731761744",
@@ -2688,7 +2897,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761744",
-    "artistName": "彩, 神速一魂 & THE 虎牙道"
+    "artistName": "彩, 神速一魂 & THE 虎牙道",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552349",
@@ -2703,7 +2913,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552349",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "catalogNumber": "LACM-14861",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552827",
@@ -2720,7 +2932,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552827",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "catalogNumber": "LACM-24251",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760152",
@@ -2736,7 +2950,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760152",
-    "artistName": "DRAMATIC STARS"
+    "artistName": "DRAMATIC STARS",
+    "label": "Lantis"
   },
   {
     "id": "release-1731761246",
@@ -2761,7 +2976,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761246",
-    "artistName": "High×Joker"
+    "artistName": "High×Joker",
+    "catalogNumber": "LACA-15981",
+    "label": "Lantis"
   },
   {
     "id": "release-1741876333",
@@ -2799,7 +3016,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717754059",
-    "artistName": "Jus-2-Mint"
+    "artistName": "Jus-2-Mint",
+    "catalogNumber": "LACM-14897",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760838",
@@ -2818,7 +3037,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760838",
-    "artistName": "C.FIRST"
+    "artistName": "C.FIRST",
+    "catalogNumber": "LACM-24182",
+    "label": "Lantis"
   },
   {
     "id": "release-1793304178",
@@ -2830,7 +3051,8 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1793304178",
-    "artistName": "Café Parade"
+    "artistName": "Café Parade",
+    "label": "Lantis"
   },
   {
     "id": "release-1866491107",
@@ -2849,7 +3071,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1866491107",
-    "artistName": "Fumage"
+    "artistName": "Fumage",
+    "catalogNumber": "LZC-3429",
+    "label": "Lantis"
   },
   {
     "id": "release-1718502489",
@@ -2868,7 +3092,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718502489",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15523",
+    "label": "Lantis"
   },
   {
     "id": "release-1734557139",
@@ -2891,7 +3117,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734557139",
-    "artistName": "アンティーカ & ストレイライト"
+    "artistName": "アンティーカ & ストレイライト",
+    "catalogNumber": "LACM-24244",
+    "label": "Lantis"
   },
   {
     "id": "release-1734550603",
@@ -2907,7 +3135,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734550603",
-    "artistName": "イルミネーションスターズ"
+    "artistName": "イルミネーションスターズ",
+    "catalogNumber": "LACM-14983",
+    "label": "Lantis"
   },
   {
     "id": "release-1734554436",
@@ -2923,7 +3153,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734554436",
-    "artistName": "アンティーカ"
+    "artistName": "アンティーカ",
+    "catalogNumber": "LACM-14984",
+    "label": "Lantis"
   },
   {
     "id": "release-1718903133",
@@ -2941,7 +3173,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718903133",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15909",
+    "label": "Lantis"
   },
   {
     "id": "release-1796804142",
@@ -2969,7 +3203,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551533",
-    "artistName": "ストレイライト"
+    "artistName": "ストレイライト",
+    "catalogNumber": "LACM-14987",
+    "label": "Lantis"
   },
   {
     "id": "release-1729566044",
@@ -3005,7 +3241,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1729566044",
-    "artistName": "765 MILLIONSTARS"
+    "artistName": "765 MILLIONSTARS",
+    "catalogNumber": "LAXX19020B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1734551259",
@@ -3021,7 +3259,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551259",
-    "artistName": "放課後クライマックスガールズ"
+    "artistName": "放課後クライマックスガールズ",
+    "catalogNumber": "LACM-14985",
+    "label": "Lantis"
   },
   {
     "id": "release-1718493236",
@@ -3039,7 +3279,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718493236",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15904",
+    "label": "Lantis"
   },
   {
     "id": "release-1731793043",
@@ -3057,7 +3299,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731793043",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15604",
+    "label": "Lantis"
   },
   {
     "id": "release-1739526457",
@@ -3075,7 +3319,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1739526457",
-    "artistName": "大崎甘奈 (CV.黒木ほの香), 市川雛菜 (CV.岡咲美保) & 田中摩美々 (CV.菅沼千紗)"
+    "artistName": "大崎甘奈 (CV.黒木ほの香), 市川雛菜 (CV.岡咲美保) & 田中摩美々 (CV.菅沼千紗)",
+    "catalogNumber": "LACM-24531",
+    "label": "Lantis"
   },
   {
     "id": "release-1718881468",
@@ -3093,7 +3339,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718881468",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15908",
+    "label": "Lantis"
   },
   {
     "id": "release-1782022224",
@@ -3123,7 +3371,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1739526583",
-    "artistName": "芹沢あさひ (CV.田中有紀), 八宮めぐる (CV.峯田茉優) & 西城樹里 (CV.永井真里子)"
+    "artistName": "芹沢あさひ (CV.田中有紀), 八宮めぐる (CV.峯田茉優) & 西城樹里 (CV.永井真里子)",
+    "catalogNumber": "LACM-24533",
+    "label": "Lantis"
   },
   {
     "id": "release-1670044208",
@@ -3146,7 +3396,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1670044208",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COKM-44253",
+    "label": "Columbia"
   },
   {
     "id": "release-1731760940",
@@ -3164,7 +3416,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760940",
-    "artistName": "315 ALLSTARS"
+    "artistName": "315 ALLSTARS",
+    "label": "Lantis"
   },
   {
     "id": "release-1655788071",
@@ -3227,7 +3480,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1732185597",
-    "artistName": "Altessimo & 彩"
+    "artistName": "Altessimo & 彩",
+    "catalogNumber": "LACM24515B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552060",
@@ -3243,7 +3498,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552060",
-    "artistName": "イルミネーションスターズ"
+    "artistName": "イルミネーションスターズ",
+    "catalogNumber": "LACM-14862",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760352",
@@ -3259,7 +3516,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760352",
-    "artistName": "Beit"
+    "artistName": "Beit",
+    "catalogNumber": "LACM-14323",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730230",
@@ -3274,7 +3533,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730230",
-    "artistName": "D/Zeal"
+    "artistName": "D/Zeal",
+    "catalogNumber": "LACM-14642",
+    "label": "Lantis"
   },
   {
     "id": "release-1718726348",
@@ -3292,7 +3553,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718726348",
-    "artistName": "四条貴音 (CV: 原 由実), 高坂海美 (CV.上田麗奈), 徳川まつり (CV.諏訪彩花) & 宮尾美也 (CV.桐谷蝶々)"
+    "artistName": "四条貴音 (CV: 原 由実), 高坂海美 (CV.上田麗奈), 徳川まつり (CV.諏訪彩花) & 宮尾美也 (CV.桐谷蝶々)",
+    "catalogNumber": "LAXX15320B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1718502107",
@@ -3309,7 +3572,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718502107",
-    "artistName": "765 MILLION ALLSTARS"
+    "artistName": "765 MILLION ALLSTARS",
+    "catalogNumber": "LACM-14641",
+    "label": "Lantis"
   },
   {
     "id": "release-1734551408",
@@ -3325,7 +3590,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551408",
-    "artistName": "アルストロメリア"
+    "artistName": "アルストロメリア",
+    "catalogNumber": "LACM-14785",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552359",
@@ -3343,7 +3610,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552359",
-    "artistName": "ストレイライト"
+    "artistName": "ストレイライト",
+    "catalogNumber": "LACM-24116",
+    "label": "Lantis"
   },
   {
     "id": "release-1655784554",
@@ -3383,7 +3652,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760863",
-    "artistName": "S.E.M"
+    "artistName": "S.E.M",
+    "label": "Lantis"
   },
   {
     "id": "release-1655784960",
@@ -3418,7 +3688,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1823808551",
-    "artistName": "765 MILLION ALLSTARS"
+    "artistName": "765 MILLION ALLSTARS",
+    "catalogNumber": "LACA-25167",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760721",
@@ -3433,7 +3705,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760721",
-    "artistName": "S.E.M"
+    "artistName": "S.E.M",
+    "catalogNumber": "LACM-24043",
+    "label": "Lantis"
   },
   {
     "id": "release-1731761237",
@@ -3454,7 +3728,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761237",
-    "artistName": "彩"
+    "artistName": "彩",
+    "catalogNumber": "LACA-15995",
+    "label": "Lantis"
   },
   {
     "id": "release-1718881055",
@@ -3472,7 +3748,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718881055",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA15671B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1731761060",
@@ -3487,7 +3765,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761060",
-    "artistName": "DRAMATIC STARS"
+    "artistName": "DRAMATIC STARS",
+    "catalogNumber": "LACM-24042",
+    "label": "Lantis"
   },
   {
     "id": "release-1776583127",
@@ -3522,7 +3802,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792942",
-    "artistName": "Jupiter & W"
+    "artistName": "Jupiter & W",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552402",
@@ -3538,7 +3819,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552402",
-    "artistName": "アンティーカ"
+    "artistName": "アンティーカ",
+    "catalogNumber": "LACM-14863",
+    "label": "Lantis"
   },
   {
     "id": "release-1731793001",
@@ -3556,7 +3839,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731793001",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15605",
+    "label": "Lantis"
   },
   {
     "id": "release-1731761104",
@@ -3575,7 +3860,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761104",
-    "artistName": "W"
+    "artistName": "W",
+    "catalogNumber": "LACA-15984",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730396",
@@ -3591,7 +3878,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730396",
-    "artistName": "765 MILLION ALLSTARS"
+    "artistName": "765 MILLION ALLSTARS",
+    "catalogNumber": "LACM-14631",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760795",
@@ -3609,7 +3898,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760795",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "label": "Lantis"
   },
   {
     "id": "release-1676896285",
@@ -3630,7 +3920,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1676896285",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COKM-44338",
+    "label": "Columbia"
   },
   {
     "id": "release-1717753335",
@@ -3645,7 +3937,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717753335",
-    "artistName": "オペラセリア・煌輝座"
+    "artistName": "オペラセリア・煌輝座",
+    "catalogNumber": "LACM-14901",
+    "label": "Lantis"
   },
   {
     "id": "release-1717732677",
@@ -3661,7 +3955,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717732677",
-    "artistName": "765 MILLION ALLSTARS"
+    "artistName": "765 MILLION ALLSTARS",
+    "catalogNumber": "LACM-14891",
+    "label": "Lantis"
   },
   {
     "id": "release-1731762840",
@@ -3682,7 +3978,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731762840",
-    "artistName": "F-LAGS"
+    "artistName": "F-LAGS",
+    "label": "Lantis"
   },
   {
     "id": "release-1734551580",
@@ -3697,7 +3994,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551580",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "catalogNumber": "LACM-14781",
+    "label": "Lantis"
   },
   {
     "id": "release-1655784258",
@@ -3787,7 +4086,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718881029",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15672",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759594",
@@ -3802,7 +4103,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759594",
-    "artistName": "Beit"
+    "artistName": "Beit",
+    "catalogNumber": "LACM-24035",
+    "label": "Lantis"
   },
   {
     "id": "release-1718726142",
@@ -3820,7 +4123,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718726142",
-    "artistName": "水瀬伊織 (CV.釘宮理恵), エミリー スチュアート (CV.郁原ゆう), 真壁瑞希 (CV.阿部里果) & 百瀬莉緒 (CV.山口立花子)"
+    "artistName": "水瀬伊織 (CV.釘宮理恵), エミリー スチュアート (CV.郁原ゆう), 真壁瑞希 (CV.阿部里果) & 百瀬莉緒 (CV.山口立花子)",
+    "catalogNumber": "LAXX15315B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1789045405",
@@ -3874,7 +4179,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1732185461",
-    "artistName": "Legenders & C.FIRST"
+    "artistName": "Legenders & C.FIRST",
+    "catalogNumber": "LACM-24517",
+    "label": "Lantis"
   },
   {
     "id": "release-714819322",
@@ -3917,7 +4224,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1682153879",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-18121",
+    "label": "Columbia"
   },
   {
     "id": "release-1658912287",
@@ -4057,7 +4366,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718493640",
-    "artistName": "765PRO ALLSTARS"
+    "artistName": "765PRO ALLSTARS",
+    "label": "Lantis"
   },
   {
     "id": "release-1748998911",
@@ -4082,7 +4392,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1748998911",
-    "artistName": "THE IDOLM@STER CINDERELLA GIRLS"
+    "artistName": "THE IDOLM@STER CINDERELLA GIRLS",
+    "catalogNumber": "COKM-45202",
+    "label": "Columbia"
   },
   {
     "id": "release-1670048671",
@@ -4109,7 +4421,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1670048671",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COKM-44254",
+    "label": "Columbia"
   },
   {
     "id": "release-1794973816",
@@ -4178,7 +4492,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1676894028",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COKM-44344",
+    "label": "Columbia"
   },
   {
     "id": "release-1676894510",
@@ -4232,7 +4548,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1670047724",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COKM-44258",
+    "label": "Columbia"
   },
   {
     "id": "release-1670044132",
@@ -4260,7 +4578,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1670044132",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "label": "Columbia"
   },
   {
     "id": "release-1748985761",
@@ -4306,7 +4625,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1738377470",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-18175",
+    "label": "Columbia"
   },
   {
     "id": "release-1741877819",
@@ -4327,7 +4648,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1741877819",
-    "artistName": "小日向美穂 (CV: 津田美波), 渋谷凛 (CV: 福原綾香), 本田未央 (CV: 原 紗友里) & 片桐早苗 (CV: 和氣あず未)"
+    "artistName": "小日向美穂 (CV: 津田美波), 渋谷凛 (CV: 福原綾香), 本田未央 (CV: 原 紗友里) & 片桐早苗 (CV: 和氣あず未)",
+    "catalogNumber": "COCC-18176",
+    "label": "Columbia"
   },
   {
     "id": "release-1834710445",
@@ -4339,7 +4662,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1834710445",
-    "artistName": "百瀬莉緒 (CV.山口立花子), 宮尾美也 (CV.桐谷蝶々), 星井美希 (CV.長谷川明子) & ジュリア (CV.愛美)"
+    "artistName": "百瀬莉緒 (CV.山口立花子), 宮尾美也 (CV.桐谷蝶々), 星井美希 (CV.長谷川明子) & ジュリア (CV.愛美)",
+    "catalogNumber": "LACM-24712",
+    "label": "Lantis"
   },
   {
     "id": "release-1670045478",
@@ -4360,7 +4685,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1670045478",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COKM-44255",
+    "label": "Columbia"
   },
   {
     "id": "release-1619245553",
@@ -4473,7 +4800,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1676893330",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COKM-44336",
+    "label": "Columbia"
   },
   {
     "id": "release-1676894524",
@@ -4562,7 +4891,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1837321510",
-    "artistName": "大石泉 (CV: 大木咲絵子), 八神マキノ (CV: 二ノ宮ゆい), 浅利七海 (CV: 井上ほの花) & 塩見周子 (CV: ルゥティン)"
+    "artistName": "大石泉 (CV: 大木咲絵子), 八神マキノ (CV: 二ノ宮ゆい), 浅利七海 (CV: 井上ほの花) & 塩見周子 (CV: ルゥティン)",
+    "catalogNumber": "COCC-18249",
+    "label": "Columbia"
   },
   {
     "id": "release-1766631632",
@@ -4587,7 +4918,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1766631632",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-18241",
+    "label": "Columbia"
   },
   {
     "id": "release-1440570921",
@@ -4677,7 +5010,8 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1848034188",
-    "artistName": "望月杏奈 (CV.夏川椎菜), 七尾百合子 (CV.伊藤美来), 双海亜美 (CV: 下田麻美) & 春日未来 (CV.山崎はるか)"
+    "artistName": "望月杏奈 (CV.夏川椎菜), 七尾百合子 (CV.伊藤美来), 双海亜美 (CV: 下田麻美) & 春日未来 (CV.山崎はるか)",
+    "label": "Lantis"
   },
   {
     "id": "release-1689182647",
@@ -4886,7 +5220,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734137944",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-18174",
+    "label": "Columbia"
   },
   {
     "id": "release-1463022058",
@@ -4951,7 +5287,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1730876278",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-18173",
+    "label": "Columbia"
   },
   {
     "id": "release-1052632020",
@@ -4974,7 +5312,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1052632020",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COKM-33125",
+    "label": "Columbia"
   },
   {
     "id": "release-1871344199",
@@ -4986,7 +5326,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1871344199",
-    "artistName": "高山紗代子 (CV.駒形友梨), 野々原 茜 (CV.小笠原早紀) & 所 恵美 (CV.藤井ゆきよ)"
+    "artistName": "高山紗代子 (CV.駒形友梨), 野々原 茜 (CV.小笠原早紀) & 所 恵美 (CV.藤井ゆきよ)",
+    "catalogNumber": "LACM-24715",
+    "label": "Lantis"
   },
   {
     "id": "release-1805103864",
@@ -5006,7 +5348,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1805103864",
-    "artistName": "望月聖 (CV: 原 涼子), イヴ・サンタクロース (CV: 松永あかね) & 城ヶ崎美嘉 (CV: 佳村はるか)"
+    "artistName": "望月聖 (CV: 原 涼子), イヴ・サンタクロース (CV: 松永あかね) & 城ヶ崎美嘉 (CV: 佳村はるか)",
+    "catalogNumber": "COCC-18244",
+    "label": "Columbia"
   },
   {
     "id": "release-1874475201",
@@ -5242,7 +5586,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1052624277",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COKM-33126",
+    "label": "Columbia"
   },
   {
     "id": "release-1440569903",
@@ -5276,7 +5622,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/962734378",
-    "artistName": "CINDERELLA PROJECT"
+    "artistName": "CINDERELLA PROJECT",
+    "catalogNumber": "COCC-16994",
+    "label": "Columbia"
   },
   {
     "id": "release-1024417865",
@@ -5294,7 +5642,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1024417865",
-    "artistName": "CINDERELLA PROJECT"
+    "artistName": "CINDERELLA PROJECT",
+    "catalogNumber": "COCC-17061",
+    "label": "Columbia"
   },
   {
     "id": "release-1824577487",
@@ -5365,7 +5715,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1530753292",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17831",
+    "label": "Columbia"
   },
   {
     "id": "release-1440571559",
@@ -5396,7 +5748,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1491288121",
-    "artistName": "速水奏 (CV: 飯田友子) & 新田美波 (CV: 洲崎 綾)"
+    "artistName": "速水奏 (CV: 飯田友子) & 新田美波 (CV: 洲崎 綾)",
+    "catalogNumber": "COCC-17704",
+    "label": "Columbia"
   },
   {
     "id": "release-1440571723",
@@ -5478,7 +5832,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1488408325",
-    "artistName": "大槻唯 (CV: 山下七海), 藤本里奈 (CV: 金子真由美) & 城ヶ崎美嘉 (CV: 佳村はるか)"
+    "artistName": "大槻唯 (CV: 山下七海), 藤本里奈 (CV: 金子真由美) & 城ヶ崎美嘉 (CV: 佳村はるか)",
+    "catalogNumber": "COCC-17703",
+    "label": "Columbia"
   },
   {
     "id": "release-1813794484",
@@ -5668,7 +6024,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1068101217",
-    "artistName": "速水奏 (CV: 飯田友子)"
+    "artistName": "速水奏 (CV: 飯田友子)",
+    "catalogNumber": "COKM-33168",
+    "label": "Columbia"
   },
   {
     "id": "release-1874476158",
@@ -5767,7 +6125,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1488408435",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17741",
+    "label": "Columbia"
   },
   {
     "id": "release-1874475150",
@@ -5832,7 +6192,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1601584535",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17971",
+    "label": "Columbia"
   },
   {
     "id": "release-1440570432",
@@ -5880,7 +6242,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1475725635",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17521",
+    "label": "Columbia"
   },
   {
     "id": "release-1609865021",
@@ -5894,7 +6258,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1609865021",
-    "artistName": "渋谷凛 (CV: 福原綾香), 白雪千夜 (CV: 関口理咲) & 松永涼 (CV: 千菅春香)"
+    "artistName": "渋谷凛 (CV: 福原綾香), 白雪千夜 (CV: 関口理咲) & 松永涼 (CV: 千菅春香)",
+    "catalogNumber": "COCC-17972",
+    "label": "Columbia"
   },
   {
     "id": "release-1888119183",
@@ -5933,7 +6299,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1483894402",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17332",
+    "label": "Columbia"
   },
   {
     "id": "release-1463529198",
@@ -5947,7 +6315,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1463529198",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17612",
+    "label": "Columbia"
   },
   {
     "id": "release-1440570165",
@@ -5978,7 +6348,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1466905007",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17613",
+    "label": "Columbia"
   },
   {
     "id": "release-1543658330",
@@ -5992,7 +6364,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1543658330",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17393",
+    "label": "Columbia"
   },
   {
     "id": "release-1874476105",
@@ -6081,7 +6455,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1456226187",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17334",
+    "label": "Columbia"
   },
   {
     "id": "release-1459094604",
@@ -6095,7 +6471,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1459094604",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17611",
+    "label": "Columbia"
   },
   {
     "id": "release-1874474802",
@@ -6126,7 +6504,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1485837480",
-    "artistName": "関裕美 (CV: 会沢紗弥), 白菊ほたる (CV: 天野聡美) & 森久保乃々 (CV: 高橋花林)"
+    "artistName": "関裕美 (CV: 会沢紗弥), 白菊ほたる (CV: 天野聡美) & 森久保乃々 (CV: 高橋花林)",
+    "catalogNumber": "COCC-17702",
+    "label": "Columbia"
   },
   {
     "id": "release-1733598067",
@@ -6160,7 +6540,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1431640812",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17149",
+    "label": "Columbia"
   },
   {
     "id": "release-1431646588",
@@ -6174,7 +6556,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1431646588",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17151",
+    "label": "Columbia"
   },
   {
     "id": "release-1484036567",
@@ -6188,7 +6572,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1484036567",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17701",
+    "label": "Columbia"
   },
   {
     "id": "release-1489693904",
@@ -6202,7 +6588,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1489693904",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17524",
+    "label": "Columbia"
   },
   {
     "id": "release-1595452013",
@@ -6216,7 +6604,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1595452013",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17842",
+    "label": "Columbia"
   },
   {
     "id": "release-1431647844",
@@ -6230,7 +6620,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1431647844",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17160",
+    "label": "Columbia"
   },
   {
     "id": "release-1496099328",
@@ -6244,7 +6636,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1496099328",
-    "artistName": "佐久間まゆ (CV: 牧野由依) & 喜多日菜子 (CV: 深川芹亜)"
+    "artistName": "佐久間まゆ (CV: 牧野由依) & 喜多日菜子 (CV: 深川芹亜)",
+    "catalogNumber": "COCC-17705",
+    "label": "Columbia"
   },
   {
     "id": "release-1550895060",
@@ -6261,7 +6655,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1550895060",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17803",
+    "label": "Columbia"
   },
   {
     "id": "release-1495620263",
@@ -6276,7 +6672,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1495620263",
-    "artistName": "THE IDOLM@STER CINDERELLA GIRLS!!"
+    "artistName": "THE IDOLM@STER CINDERELLA GIRLS!!",
+    "catalogNumber": "COCC-17729",
+    "label": "Columbia"
   },
   {
     "id": "release-1503425847",
@@ -6290,7 +6688,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1503425847",
-    "artistName": "鷹富士茄子 (CV: 森下来奈) & 白菊ほたる (CV: 天野聡美)"
+    "artistName": "鷹富士茄子 (CV: 森下来奈) & 白菊ほたる (CV: 天野聡美)",
+    "catalogNumber": "COCC-17706",
+    "label": "Columbia"
   },
   {
     "id": "release-1507330581",
@@ -6369,7 +6769,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1634758974",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17977",
+    "label": "Columbia"
   },
   {
     "id": "release-1431642151",
@@ -6383,7 +6785,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1431642151",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17156",
+    "label": "Columbia"
   },
   {
     "id": "release-1431646629",
@@ -6397,7 +6801,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1431646629",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17155",
+    "label": "Columbia"
   },
   {
     "id": "release-1431711205",
@@ -6411,7 +6817,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1431711205",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17158",
+    "label": "Columbia"
   },
   {
     "id": "release-1508947206",
@@ -6447,7 +6855,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1746219772",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "label": "Columbia"
   },
   {
     "id": "release-1444263550",
@@ -6462,7 +6871,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1444263550",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17062",
+    "label": "Columbia"
   },
   {
     "id": "release-1492856924",
@@ -6478,7 +6889,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1492856924",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17525",
+    "label": "Columbia"
   },
   {
     "id": "release-1525858427",
@@ -6492,7 +6905,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1525858427",
-    "artistName": "高森藍子 (CV: 金子有希) & 道明寺歌鈴 (CV: 新田ひより)"
+    "artistName": "高森藍子 (CV: 金子有希) & 道明寺歌鈴 (CV: 新田ひより)",
+    "catalogNumber": "COCC-17710",
+    "label": "Columbia"
   },
   {
     "id": "release-1527204076",
@@ -6509,7 +6924,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1527204076",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17801",
+    "label": "Columbia"
   },
   {
     "id": "release-1619245425",
@@ -6523,7 +6940,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1619245425",
-    "artistName": "神崎蘭子 (CV: 内田真礼) & 黒埼ちとせ (CV: 佐倉 薫)"
+    "artistName": "神崎蘭子 (CV: 内田真礼) & 黒埼ちとせ (CV: 佐倉 薫)",
+    "catalogNumber": "COCC-17974",
+    "label": "Columbia"
   },
   {
     "id": "release-1847289394",
@@ -6581,7 +7000,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1522816772",
-    "artistName": "荒木比奈 (CV: 田辺留依), 神谷奈緒 (CV: 松井恵理子) & 安部菜々 (CV: 三宅麻理恵)"
+    "artistName": "荒木比奈 (CV: 田辺留依), 神谷奈緒 (CV: 松井恵理子) & 安部菜々 (CV: 三宅麻理恵)",
+    "catalogNumber": "COCC-17709",
+    "label": "Columbia"
   },
   {
     "id": "release-1555396600",
@@ -6611,7 +7032,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1586273946",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17840",
+    "label": "Columbia"
   },
   {
     "id": "release-1440570215",
@@ -6642,7 +7065,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1431716392",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17154",
+    "label": "Columbia"
   },
   {
     "id": "release-1643060573",
@@ -6656,7 +7081,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1643060573",
-    "artistName": "島村卯月 (CV: 大橋彩香), 宮本フレデリカ (CV: 髙野麻美) & 喜多日菜子 (CV: 深川芹亜)"
+    "artistName": "島村卯月 (CV: 大橋彩香), 宮本フレデリカ (CV: 髙野麻美) & 喜多日菜子 (CV: 深川芹亜)",
+    "catalogNumber": "COCC-17978",
+    "label": "Columbia"
   },
   {
     "id": "release-1661492947",
@@ -6679,7 +7106,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1661492947",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-18081",
+    "label": "Columbia"
   },
   {
     "id": "release-1444264092",
@@ -6694,7 +7123,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1444264092",
-    "artistName": "CINDERELLA PROJECT"
+    "artistName": "CINDERELLA PROJECT",
+    "catalogNumber": "COZC-1110",
+    "label": "Columbia"
   },
   {
     "id": "release-1431644394",
@@ -6710,7 +7141,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1431644394",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17143",
+    "label": "Columbia"
   },
   {
     "id": "release-1484036421",
@@ -6726,7 +7159,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1484036421",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17523",
+    "label": "Columbia"
   },
   {
     "id": "release-1613879882",
@@ -6740,7 +7175,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1613879882",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17973",
+    "label": "Columbia"
   },
   {
     "id": "release-1625226170",
@@ -6755,7 +7192,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1625226170",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17975",
+    "label": "Columbia"
   },
   {
     "id": "release-1650326203",
@@ -6769,7 +7208,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1650326203",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17979",
+    "label": "Columbia"
   },
   {
     "id": "release-1444265085",
@@ -6784,7 +7225,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1444265085",
-    "artistName": "THE IDOLM@STER CINDERELLA GIRLS!!"
+    "artistName": "THE IDOLM@STER CINDERELLA GIRLS!!",
+    "catalogNumber": "COCC-17056",
+    "label": "Columbia"
   },
   {
     "id": "release-1431648899",
@@ -6798,7 +7241,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1431648899",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17159",
+    "label": "Columbia"
   },
   {
     "id": "release-1444263746",
@@ -6813,7 +7258,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1444263746",
-    "artistName": "*(Asterisk) [前川みく (CV: 高森奈津美)×多田李衣菜 (CV: 青木瑠璃子)] & なつなな [安部菜々 (CV: 三宅麻理恵)×木村夏樹 (CV: 安野希世乃)]"
+    "artistName": "*(Asterisk) [前川みく (CV: 高森奈津美)×多田李衣菜 (CV: 青木瑠璃子)] & なつなな [安部菜々 (CV: 三宅麻理恵)×木村夏樹 (CV: 安野希世乃)]",
+    "catalogNumber": "COCC-17063",
+    "label": "Columbia"
   },
   {
     "id": "release-1560764759",
@@ -6830,7 +7277,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1560764759",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17804",
+    "label": "Columbia"
   },
   {
     "id": "release-1431646231",
@@ -6844,7 +7293,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1431646231",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17157",
+    "label": "Columbia"
   },
   {
     "id": "release-1444263877",
@@ -6859,7 +7310,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1444263877",
-    "artistName": "new generations [島村卯月 (CV: 大橋彩香)×渋谷凛 (CV: 福原綾香)×本田未央 (CV: 原 紗友里)]"
+    "artistName": "new generations [島村卯月 (CV: 大橋彩香)×渋谷凛 (CV: 福原綾香)×本田未央 (CV: 原 紗友里)]",
+    "catalogNumber": "COCC-17066",
+    "label": "Columbia"
   },
   {
     "id": "release-1479813208",
@@ -6873,7 +7326,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1479813208",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17522",
+    "label": "Columbia"
   },
   {
     "id": "release-1684436436",
@@ -6910,7 +7365,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1444265998",
-    "artistName": "THE IDOLM@STER CINDERELLA GIRLS!!"
+    "artistName": "THE IDOLM@STER CINDERELLA GIRLS!!",
+    "catalogNumber": "COCC-17414",
+    "label": "Columbia"
   },
   {
     "id": "release-1431640768",
@@ -6924,7 +7381,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1431640768",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17150",
+    "label": "Columbia"
   },
   {
     "id": "release-1431643803",
@@ -6940,7 +7399,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1431643803",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17141",
+    "label": "Columbia"
   },
   {
     "id": "release-1431644528",
@@ -6956,7 +7417,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1431644528",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17145",
+    "label": "Columbia"
   },
   {
     "id": "release-1431648024",
@@ -6970,7 +7433,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1431648024",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17153",
+    "label": "Columbia"
   },
   {
     "id": "release-1499069557",
@@ -6986,7 +7451,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1499069557",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17526",
+    "label": "Columbia"
   },
   {
     "id": "release-1537744720",
@@ -7003,7 +7470,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1537744720",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17802",
+    "label": "Columbia"
   },
   {
     "id": "release-1556000315",
@@ -7018,7 +7487,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1556000315",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17874",
+    "label": "Columbia"
   },
   {
     "id": "release-1653540611",
@@ -7032,7 +7503,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1653540611",
-    "artistName": "遊佐こずえ (CV: 花谷麻妃), 双葉杏 (CV: 五十嵐裕美), 多田李衣菜 (CV: 青木瑠璃子) & 木村夏樹 (CV: 安野希世乃)"
+    "artistName": "遊佐こずえ (CV: 花谷麻妃), 双葉杏 (CV: 五十嵐裕美), 多田李衣菜 (CV: 青木瑠璃子) & 木村夏樹 (CV: 安野希世乃)",
+    "catalogNumber": "COCC-17980",
+    "label": "Columbia"
   },
   {
     "id": "release-1671070579",
@@ -7084,7 +7557,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1542156873",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17851",
+    "label": "Columbia"
   },
   {
     "id": "release-1537744003",
@@ -7100,7 +7575,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1537744003",
-    "artistName": "南条光 (CV: 神谷早矢佳) & 小関麗奈 (CV: 長野佑紀)"
+    "artistName": "南条光 (CV: 神谷早矢佳) & 小関麗奈 (CV: 長野佑紀)",
+    "catalogNumber": "COCC-17834",
+    "label": "Columbia"
   },
   {
     "id": "release-1600178625",
@@ -7116,7 +7593,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1600178625",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "COCC-17844",
+    "label": "Columbia"
   },
   {
     "id": "release-1761314262",
@@ -7128,7 +7607,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1761314262",
-    "artistName": "箱崎星梨花 (CV.麻倉もも), 天空橋朋花 (CV.小岩井ことり), 野々原 茜 (CV.小笠原早紀) & 馬場このみ (CV.髙橋ミナミ)"
+    "artistName": "箱崎星梨花 (CV.麻倉もも), 天空橋朋花 (CV.小岩井ことり), 野々原 茜 (CV.小笠原早紀) & 馬場このみ (CV.髙橋ミナミ)",
+    "catalogNumber": "LACM-24612",
+    "label": "Lantis"
   },
   {
     "id": "release-1765058329",
@@ -7140,7 +7621,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1765058329",
-    "artistName": "ヴァリアス・アーティスト"
+    "artistName": "ヴァリアス・アーティスト",
+    "catalogNumber": "LACM-24613",
+    "label": "Lantis"
   },
   {
     "id": "release-1735684885",
@@ -7155,7 +7638,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1735684885",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LCAM-24473",
+    "label": "Lantis"
   },
   {
     "id": "release-1754541276",
@@ -7167,7 +7652,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1754541276",
-    "artistName": "765 MILLION ALLSTARS"
+    "artistName": "765 MILLION ALLSTARS",
+    "catalogNumber": "LACA-25105",
+    "label": "Lantis"
   },
   {
     "id": "release-1792106364",
@@ -7179,7 +7666,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1792106364",
-    "artistName": "エミリー スチュアート (CV.郁原ゆう), 北上麗花 (CV.平山笑美), 春日未来 (CV.山崎はるか) & 北沢志保 (CV.雨宮 天)"
+    "artistName": "エミリー スチュアート (CV.郁原ゆう), 北上麗花 (CV.平山笑美), 春日未来 (CV.山崎はるか) & 北沢志保 (CV.雨宮 天)",
+    "catalogNumber": "LACM-24617",
+    "label": "Lantis"
   },
   {
     "id": "release-1761313626",
@@ -7191,7 +7680,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1761313626",
-    "artistName": "菊地真 (CV: 平田宏美), 如月千早 (CV.今井麻美), 我那覇響 (CV: 沼倉愛美) & 三浦あずさ (CV.たかはし智秋)"
+    "artistName": "菊地真 (CV: 平田宏美), 如月千早 (CV.今井麻美), 我那覇響 (CV: 沼倉愛美) & 三浦あずさ (CV.たかはし智秋)",
+    "catalogNumber": "LACM-24586",
+    "label": "Lantis"
   },
   {
     "id": "release-1728576713",
@@ -7206,7 +7697,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1728576713",
-    "artistName": "MILLIONSTARS Team1st"
+    "artistName": "MILLIONSTARS Team1st",
+    "label": "Lantis"
   },
   {
     "id": "release-1728576032",
@@ -7236,7 +7728,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1751910733",
-    "artistName": "周防桃子 (CV.渡部恵子), 高坂海美 (CV.上田麗奈), 徳川まつり (CV.諏訪彩花) & 豊川風花 (CV.末柄里恵)"
+    "artistName": "周防桃子 (CV.渡部恵子), 高坂海美 (CV.上田麗奈), 徳川まつり (CV.諏訪彩花) & 豊川風花 (CV.末柄里恵)",
+    "catalogNumber": "LACM-24611",
+    "label": "Lantis"
   },
   {
     "id": "release-1751911145",
@@ -7251,7 +7745,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1751911145",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACM-24585",
+    "label": "Lantis"
   },
   {
     "id": "release-1726311997",
@@ -7266,7 +7762,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1726311997",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACM-24472",
+    "label": "Lantis"
   },
   {
     "id": "release-1728576039",
@@ -7281,7 +7779,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1728576039",
-    "artistName": "MILLIONSTARS Team8th"
+    "artistName": "MILLIONSTARS Team8th",
+    "catalogNumber": "LACM-24428",
+    "label": "Lantis"
   },
   {
     "id": "release-1720084555",
@@ -7296,7 +7796,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1720084555",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACM24471B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1728576768",
@@ -7311,7 +7813,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1728576768",
-    "artistName": "MILLIONSTARS Team4th"
+    "artistName": "MILLIONSTARS Team4th",
+    "catalogNumber": "LACM-24424",
+    "label": "Lantis"
   },
   {
     "id": "release-1740697075",
@@ -7326,7 +7830,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1740697075",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACM-24474",
+    "label": "Lantis"
   },
   {
     "id": "release-1734609664",
@@ -7343,7 +7849,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734609664",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACM-24522",
+    "label": "Lantis"
   },
   {
     "id": "release-1728576804",
@@ -7358,7 +7866,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1728576804",
-    "artistName": "MILLIONSTARS Team7th"
+    "artistName": "MILLIONSTARS Team7th",
+    "catalogNumber": "LACM-24427",
+    "label": "Lantis"
   },
   {
     "id": "release-1728576741",
@@ -7373,7 +7883,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1728576741",
-    "artistName": "MILLIONSTARS Team5th"
+    "artistName": "MILLIONSTARS Team5th",
+    "catalogNumber": "LACM-24425",
+    "label": "Lantis"
   },
   {
     "id": "release-1728576642",
@@ -7388,7 +7900,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1728576642",
-    "artistName": "MILLIONSTARS Team6th"
+    "artistName": "MILLIONSTARS Team6th",
+    "label": "Lantis"
   },
   {
     "id": "release-1728576780",
@@ -7403,7 +7916,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1728576780",
-    "artistName": "MILLIONSTARS Team3rd"
+    "artistName": "MILLIONSTARS Team3rd",
+    "label": "Lantis"
   },
   {
     "id": "release-1658757011",
@@ -7431,7 +7945,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1446884172",
-    "artistName": "WINNER"
+    "artistName": "WINNER",
+    "catalogNumber": "[none]",
+    "label": "[no label]"
   },
   {
     "id": "release-1811554707",
@@ -7448,7 +7964,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1811554707",
-    "artistName": "XG"
+    "artistName": "XG",
+    "label": "XGALX"
   },
   {
     "id": "release-1538097341",
@@ -7472,7 +7989,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1538097341",
-    "artistName": "SPYAIR"
+    "artistName": "SPYAIR",
+    "catalogNumber": "ID004"
   },
   {
     "id": "release-1862692564",
@@ -7484,7 +8002,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1862692564",
-    "artistName": "木下ひなた (CV.田村奈央), 矢吹可奈 (CV.木戸衣吹) & 白石 紬 (CV.南 早紀)"
+    "artistName": "木下ひなた (CV.田村奈央), 矢吹可奈 (CV.木戸衣吹) & 白石 紬 (CV.南 早紀)",
+    "catalogNumber": "LACM-24714",
+    "label": "Lantis"
   },
   {
     "id": "release-1828113569",
@@ -7496,7 +8016,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1828113569",
-    "artistName": "横山奈緒 (CV.渡部優衣), 真壁瑞希 (CV.阿部里果), 萩原雪歩 (CV: 浅倉杏美) & 永吉 昴 (CV.斉藤佑圭)"
+    "artistName": "横山奈緒 (CV.渡部優衣), 真壁瑞希 (CV.阿部里果), 萩原雪歩 (CV: 浅倉杏美) & 永吉 昴 (CV.斉藤佑圭)",
+    "catalogNumber": "LACM-24711",
+    "label": "Lantis"
   },
   {
     "id": "release-1718493295",
@@ -7514,7 +8036,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718493295",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15903",
+    "label": "Lantis"
   },
   {
     "id": "release-1718493130",
@@ -7532,7 +8056,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718493130",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15901",
+    "label": "Lantis"
   },
   {
     "id": "release-1717733380",
@@ -7547,7 +8073,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717733380",
-    "artistName": "夜想令嬢 -GRAC&E NOCTURNE-"
+    "artistName": "夜想令嬢 -GRAC&E NOCTURNE-",
+    "catalogNumber": "LACM-14635",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730195",
@@ -7562,7 +8090,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730195",
-    "artistName": "STAR ELEMENTS"
+    "artistName": "STAR ELEMENTS",
+    "catalogNumber": "LACM-14827",
+    "label": "Lantis"
   },
   {
     "id": "release-1717732420",
@@ -7577,7 +8107,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717732420",
-    "artistName": "閃光☆HANABI団"
+    "artistName": "閃光☆HANABI団",
+    "catalogNumber": "LACM-14640",
+    "label": "Lantis"
   },
   {
     "id": "release-1718502576",
@@ -7596,7 +8128,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718502576",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15906",
+    "label": "Lantis"
   },
   {
     "id": "release-1717729962",
@@ -7611,7 +8145,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717729962",
-    "artistName": "Sherry 'n Cherry"
+    "artistName": "Sherry 'n Cherry",
+    "catalogNumber": "LACM-14894",
+    "label": "Lantis"
   },
   {
     "id": "release-1776830408",
@@ -7623,7 +8159,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1776830408",
-    "artistName": "宮尾美也 (CV.桐谷蝶々), 望月杏奈 (CV.夏川椎菜), 舞浜 歩 (CV.戸田めぐみ) & 横山奈緒 (CV.渡部優衣)"
+    "artistName": "宮尾美也 (CV.桐谷蝶々), 望月杏奈 (CV.夏川椎菜), 舞浜 歩 (CV.戸田めぐみ) & 横山奈緒 (CV.渡部優衣)",
+    "catalogNumber": "LACM-24615",
+    "label": "Lantis"
   },
   {
     "id": "release-1718880936",
@@ -7641,7 +8179,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718880936",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15674",
+    "label": "Lantis"
   },
   {
     "id": "release-1717753599",
@@ -7656,7 +8196,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717753599",
-    "artistName": "miraclesonic★expassion"
+    "artistName": "miraclesonic★expassion",
+    "catalogNumber": "LACM-14898",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730369",
@@ -7671,7 +8213,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730369",
-    "artistName": "Charlotte・Charlotte"
+    "artistName": "Charlotte・Charlotte",
+    "catalogNumber": "LACM-14824",
+    "label": "Lantis"
   },
   {
     "id": "release-1717733087",
@@ -7686,7 +8230,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717733087",
-    "artistName": "EScape"
+    "artistName": "EScape",
+    "catalogNumber": "LACM-14638",
+    "label": "Lantis"
   },
   {
     "id": "release-1718674818",
@@ -7704,7 +8250,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718674818",
-    "artistName": "765 MILLION ALLSTARS"
+    "artistName": "765 MILLION ALLSTARS",
+    "catalogNumber": "LACM-24151",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730574",
@@ -7719,7 +8267,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730574",
-    "artistName": "ARCANA"
+    "artistName": "ARCANA",
+    "catalogNumber": "LACM-14895",
+    "label": "Lantis"
   },
   {
     "id": "release-1718676007",
@@ -7780,7 +8330,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718676007",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-9966",
+    "label": "Lantis"
   },
   {
     "id": "release-1718493142",
@@ -7798,7 +8350,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718493142",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15678",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730035",
@@ -7813,7 +8367,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730035",
-    "artistName": "ピコピコプラネッツ"
+    "artistName": "ピコピコプラネッツ",
+    "catalogNumber": "LACM-14826",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730207",
@@ -7828,7 +8384,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730207",
-    "artistName": "フェアリースターズ"
+    "artistName": "フェアリースターズ",
+    "catalogNumber": "LACM-14632",
+    "label": "Lantis"
   },
   {
     "id": "release-1718881135",
@@ -7846,7 +8404,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718881135",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730162",
@@ -7861,7 +8420,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730162",
-    "artistName": "Cleasky"
+    "artistName": "Cleasky",
+    "catalogNumber": "LACM-14636",
+    "label": "Lantis"
   },
   {
     "id": "release-1718492919",
@@ -7880,7 +8441,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718492919",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15902",
+    "label": "Lantis"
   },
   {
     "id": "release-1728576577",
@@ -7900,7 +8463,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1728576577",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACM-24329",
+    "label": "Lantis"
   },
   {
     "id": "release-1717753711",
@@ -7915,7 +8480,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717753711",
-    "artistName": "花咲夜"
+    "artistName": "花咲夜",
+    "catalogNumber": "LACM-14896",
+    "label": "Lantis"
   },
   {
     "id": "release-1718502056",
@@ -7932,7 +8499,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718502056",
-    "artistName": "765 MILLION ALLSTARS"
+    "artistName": "765 MILLION ALLSTARS",
+    "catalogNumber": "LACM-24294",
+    "label": "Lantis"
   },
   {
     "id": "release-1718881268",
@@ -7950,7 +8519,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718881268",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15675",
+    "label": "Lantis"
   },
   {
     "id": "release-1717753904",
@@ -7965,7 +8536,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717753904",
-    "artistName": "ストロベリーポップムーン"
+    "artistName": "ストロベリーポップムーン",
+    "catalogNumber": "LACM-24108",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730198",
@@ -7980,7 +8553,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730198",
-    "artistName": "Jelly PoP Beans"
+    "artistName": "Jelly PoP Beans",
+    "catalogNumber": "LACM-14825",
+    "label": "Lantis"
   },
   {
     "id": "release-1718881302",
@@ -7998,7 +8573,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718881302",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15677",
+    "label": "Lantis"
   },
   {
     "id": "release-1728576422",
@@ -8014,7 +8591,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1728576422",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACM-24236",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730190",
@@ -8029,7 +8608,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730190",
-    "artistName": "Xs"
+    "artistName": "Xs",
+    "label": "Lantis"
   },
   {
     "id": "release-1782021973",
@@ -8041,7 +8621,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1782021973",
-    "artistName": "白石 紬 (CV.南 早紀), 福田のり子 (CV.浜崎奈々), 伊吹 翼 (CV.Machico) & 木下ひなた (CV.田村奈央)"
+    "artistName": "白石 紬 (CV.南 早紀), 福田のり子 (CV.浜崎奈々), 伊吹 翼 (CV.Machico) & 木下ひなた (CV.田村奈央)",
+    "catalogNumber": "LACM-24616",
+    "label": "Lantis"
   },
   {
     "id": "release-1717732573",
@@ -8056,7 +8638,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717732573",
-    "artistName": "プリンセススターズ"
+    "artistName": "プリンセススターズ",
+    "catalogNumber": "LACM-14634",
+    "label": "Lantis"
   },
   {
     "id": "release-1718881433",
@@ -8074,7 +8658,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718881433",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15676",
+    "label": "Lantis"
   },
   {
     "id": "release-1717753518",
@@ -8089,7 +8675,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717753518",
-    "artistName": "chicAAmor"
+    "artistName": "chicAAmor",
+    "catalogNumber": "LACM-14905",
+    "label": "Lantis"
   },
   {
     "id": "release-1717753503",
@@ -8104,7 +8692,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717753503",
-    "artistName": "TIntMe!"
+    "artistName": "TIntMe!",
+    "catalogNumber": "LACM-14903",
+    "label": "Lantis"
   },
   {
     "id": "release-1728576797",
@@ -8121,7 +8711,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1728576797",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACM-24385",
+    "label": "Lantis"
   },
   {
     "id": "release-1717753614",
@@ -8136,7 +8728,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717753614",
-    "artistName": "TRICK&TREAT"
+    "artistName": "TRICK&TREAT",
+    "catalogNumber": "LACM-14904",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730202",
@@ -8151,7 +8745,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730202",
-    "artistName": "りるきゃん ～3 little candy～"
+    "artistName": "りるきゃん ～3 little candy～",
+    "catalogNumber": "LACM-14823",
+    "label": "Lantis"
   },
   {
     "id": "release-1717732429",
@@ -8166,7 +8762,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717732429",
-    "artistName": "エンジェルスターズ"
+    "artistName": "エンジェルスターズ",
+    "catalogNumber": "LACM-14633",
+    "label": "Lantis"
   },
   {
     "id": "release-1717756483",
@@ -8181,7 +8779,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717756483",
-    "artistName": "ダイヤモンドダイバー◇"
+    "artistName": "ダイヤモンドダイバー◇",
+    "catalogNumber": "LACM-14902",
+    "label": "Lantis"
   },
   {
     "id": "release-1787241924",
@@ -8193,7 +8793,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1787241924",
-    "artistName": "四条貴音 (CV: 原 由実), 萩原雪歩 (CV: 浅倉杏美), 天海春香 (CV: 中村繪里子) & 水瀬伊織 (CV.釘宮理恵)"
+    "artistName": "四条貴音 (CV: 原 由実), 萩原雪歩 (CV: 浅倉杏美), 天海春香 (CV: 中村繪里子) & 水瀬伊織 (CV.釘宮理恵)",
+    "catalogNumber": "LACM-24587",
+    "label": "Lantis"
   },
   {
     "id": "release-1717753558",
@@ -8208,7 +8810,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717753558",
-    "artistName": "Fleuranges"
+    "artistName": "Fleuranges",
+    "catalogNumber": "LACM-14899",
+    "label": "Lantis"
   },
   {
     "id": "release-1805056798",
@@ -8220,7 +8824,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1805056798",
-    "artistName": "ヴァリアス・アーティスト"
+    "artistName": "ヴァリアス・アーティスト",
+    "catalogNumber": "LACM-24619",
+    "label": "Lantis"
   },
   {
     "id": "release-1717753838",
@@ -8235,7 +8841,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717753838",
-    "artistName": "ARMooo"
+    "artistName": "ARMooo",
+    "catalogNumber": "LACM-24107",
+    "label": "Lantis"
   },
   {
     "id": "release-1717729954",
@@ -8250,7 +8858,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717729954",
-    "artistName": "ZWEIGLANZ"
+    "artistName": "ZWEIGLANZ",
+    "catalogNumber": "LACM-24004",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730075",
@@ -8265,7 +8875,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730075",
-    "artistName": "トゥインクルリズム"
+    "artistName": "トゥインクルリズム",
+    "catalogNumber": "LACM-14637",
+    "label": "Lantis"
   },
   {
     "id": "release-1717730641",
@@ -8281,7 +8893,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717730641",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACM-24159",
+    "label": "Lantis"
   },
   {
     "id": "release-1797452929",
@@ -8293,7 +8907,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1797452929",
-    "artistName": "桜守歌織 (CV.香里有佐), 大神 環 (CV.稲川英里), ジュリア (CV.愛美) & 中谷 育 (CV.原嶋あかり)"
+    "artistName": "桜守歌織 (CV.香里有佐), 大神 環 (CV.稲川英里), ジュリア (CV.愛美) & 中谷 育 (CV.原嶋あかり)",
+    "catalogNumber": "LACM-24618",
+    "label": "Lantis"
   },
   {
     "id": "release-1770960067",
@@ -8305,7 +8921,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1770960067",
-    "artistName": "ヴァリアス・アーティスト"
+    "artistName": "ヴァリアス・アーティスト",
+    "catalogNumber": "LACM-24614",
+    "label": "Lantis"
   },
   {
     "id": "release-1816679737",
@@ -8317,7 +8935,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1816679737",
-    "artistName": "ヴァリアス・アーティスト"
+    "artistName": "ヴァリアス・アーティスト",
+    "catalogNumber": "LACM-24710",
+    "label": "Lantis"
   },
   {
     "id": "release-1810151224",
@@ -8329,7 +8949,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1810151224",
-    "artistName": "ヴァリアス・アーティスト"
+    "artistName": "ヴァリアス・アーティスト",
+    "catalogNumber": "LACM-24660",
+    "label": "Lantis"
   },
   {
     "id": "release-1856530103",
@@ -8341,7 +8963,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1856530103",
-    "artistName": "ヴァリアス・アーティスト"
+    "artistName": "ヴァリアス・アーティスト",
+    "catalogNumber": "LACM-24802",
+    "label": "Lantis"
   },
   {
     "id": "release-1792106457",
@@ -8365,7 +8989,8 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1842264647",
-    "artistName": "ヴァリアス・アーティスト"
+    "artistName": "ヴァリアス・アーティスト",
+    "label": "Lantis"
   },
   {
     "id": "release-1792108343",
@@ -8377,7 +9002,9 @@
     "trackIds": [],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1792108343",
-    "artistName": "ヴァリアス・アーティスト"
+    "artistName": "ヴァリアス・アーティスト",
+    "catalogNumber": "LACM-24648",
+    "label": "Lantis"
   },
   {
     "id": "release-1718502609",
@@ -8396,7 +9023,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718502609",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15300",
+    "label": "Lantis"
   },
   {
     "id": "release-1718502651",
@@ -8415,7 +9044,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718502651",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15525",
+    "label": "Lantis"
   },
   {
     "id": "release-1718502548",
@@ -8434,7 +9065,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718502548",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15308",
+    "label": "Lantis"
   },
   {
     "id": "release-1718726251",
@@ -8452,7 +9085,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718726251",
-    "artistName": "萩原雪歩 (CV: 浅倉杏美), 周防桃子 (CV.渡部恵子), 二階堂千鶴 (CV.野村香菜子) & ロコ (CV.中村温姫)"
+    "artistName": "萩原雪歩 (CV: 浅倉杏美), 周防桃子 (CV.渡部恵子), 二階堂千鶴 (CV.野村香菜子) & ロコ (CV.中村温姫)",
+    "catalogNumber": "LAXX15322B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1718502636",
@@ -8471,7 +9106,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718502636",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15526",
+    "label": "Lantis"
   },
   {
     "id": "release-1718501903",
@@ -8488,7 +9125,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718501903",
-    "artistName": "765 MILLIONSTARS"
+    "artistName": "765 MILLIONSTARS",
+    "catalogNumber": "LACM-14080",
+    "label": "Lantis"
   },
   {
     "id": "release-1718726315",
@@ -8506,7 +9145,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718726315",
-    "artistName": "三浦あずさ (CV.たかはし智秋), 篠宮可憐 (CV.近藤 唯), 高山紗代子 (CV.駒形友梨) & 福田のり子 (CV.浜崎奈々)"
+    "artistName": "三浦あずさ (CV.たかはし智秋), 篠宮可憐 (CV.近藤 唯), 高山紗代子 (CV.駒形友梨) & 福田のり子 (CV.浜崎奈々)",
+    "catalogNumber": "LAXX15317B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1718726182",
@@ -8524,7 +9165,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718726182",
-    "artistName": "秋月律子 (CV: 若林直美), 木下ひなた (CV.田村奈央), 佐竹美奈子 (CV.大関英里) & 松田亜利沙 (CV.村川梨衣)"
+    "artistName": "秋月律子 (CV: 若林直美), 木下ひなた (CV.田村奈央), 佐竹美奈子 (CV.大関英里) & 松田亜利沙 (CV.村川梨衣)",
+    "catalogNumber": "LAXX15319B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1718501961",
@@ -8541,7 +9184,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718501961",
-    "artistName": "春日未来 (CV.山崎はるか), 最上静香 (CV.田所あずさ), 伊吹 翼 (CV.Machico) & MILLION ALLSTARS"
+    "artistName": "春日未来 (CV.山崎はるか), 最上静香 (CV.田所あずさ), 伊吹 翼 (CV.Machico) & MILLION ALLSTARS",
+    "catalogNumber": "LACM-34411",
+    "label": "Lantis"
   },
   {
     "id": "release-1718726309",
@@ -8559,7 +9204,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718726309",
-    "artistName": "菊地真 (CV: 平田宏美), 双海真美 (CV: 下田麻美), 島原エレナ (CV.角元明日香) & 舞浜 歩 (CV.戸田めぐみ)"
+    "artistName": "菊地真 (CV: 平田宏美), 双海真美 (CV: 下田麻美), 島原エレナ (CV.角元明日香) & 舞浜 歩 (CV.戸田めぐみ)",
+    "catalogNumber": "LAXX15321B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1718502845",
@@ -8578,7 +9225,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718502845",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15323",
+    "label": "Lantis"
   },
   {
     "id": "release-1718726085",
@@ -8596,7 +9245,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1718726085",
-    "artistName": "高槻やよい (CV: 仁後真耶子), 大神 環 (CV.稲川英里), 中谷 育 (CV.原嶋あかり) & 矢吹可奈 (CV.木戸衣吹)"
+    "artistName": "高槻やよい (CV: 仁後真耶子), 大神 環 (CV.稲川英里), 中谷 育 (CV.原嶋あかり) & 矢吹可奈 (CV.木戸衣吹)",
+    "catalogNumber": "LAXX15318B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1717733159",
@@ -8611,7 +9262,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717733159",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACM-14533",
+    "label": "Lantis"
   },
   {
     "id": "release-1717753495",
@@ -8626,7 +9279,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1717753495",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACM-14531",
+    "label": "Lantis"
   },
   {
     "id": "release-1862690961",
@@ -8665,7 +9320,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1776582047",
-    "artistName": "宮尾美也 (CV.桐谷蝶々), 望月杏奈 (CV.夏川椎菜), 舞浜 歩 (CV.戸田めぐみ) & 横山奈緒 (CV.渡部優衣)"
+    "artistName": "宮尾美也 (CV.桐谷蝶々), 望月杏奈 (CV.夏川椎菜), 舞浜 歩 (CV.戸田めぐみ) & 横山奈緒 (CV.渡部優衣)",
+    "catalogNumber": "LACM-24615",
+    "label": "Lantis"
   },
   {
     "id": "release-1797453952",
@@ -8680,7 +9337,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1797453952",
-    "artistName": "桜守歌織 (CV.香里有佐), 大神 環 (CV.稲川英里), ジュリア (CV.愛美) & 中谷 育 (CV.原嶋あかり)"
+    "artistName": "桜守歌織 (CV.香里有佐), 大神 環 (CV.稲川英里), ジュリア (CV.愛美) & 中谷 育 (CV.原嶋あかり)",
+    "catalogNumber": "LACM-24618",
+    "label": "Lantis"
   },
   {
     "id": "release-1856529878",
@@ -8828,7 +9487,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761942",
-    "artistName": "DRAMATIC STARS, 神速一魂 & F-LAGS"
+    "artistName": "DRAMATIC STARS, 神速一魂 & F-LAGS",
+    "label": "Lantis"
   },
   {
     "id": "release-1754514807",
@@ -8871,7 +9531,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761019",
-    "artistName": "神速一魂"
+    "artistName": "神速一魂",
+    "label": "Lantis"
   },
   {
     "id": "release-1731761482",
@@ -8886,7 +9547,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761482",
-    "artistName": "神速一魂"
+    "artistName": "神速一魂",
+    "catalogNumber": "LACM-24036",
+    "label": "Lantis"
   },
   {
     "id": "release-1755674781",
@@ -8914,7 +9577,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760768",
-    "artistName": "神速一魂"
+    "artistName": "神速一魂",
+    "catalogNumber": "LACM-14389",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759984",
@@ -8930,7 +9595,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759984",
-    "artistName": "S.E.M"
+    "artistName": "S.E.M",
+    "catalogNumber": "LACM-14673",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792609",
@@ -8946,7 +9613,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792609",
-    "artistName": "もふもふえん"
+    "artistName": "もふもふえん",
+    "catalogNumber": "LACM-14393",
+    "label": "Lantis"
   },
   {
     "id": "release-1751911676",
@@ -8980,7 +9649,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760679",
-    "artistName": "W"
+    "artistName": "W",
+    "catalogNumber": "LACM-24196",
+    "label": "Lantis"
   },
   {
     "id": "release-1755675603",
@@ -9020,7 +9691,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759797",
-    "artistName": "DRAMATIC STARS"
+    "artistName": "DRAMATIC STARS",
+    "catalogNumber": "LACM-14677",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760781",
@@ -9036,7 +9709,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760781",
-    "artistName": "W"
+    "artistName": "W",
+    "catalogNumber": "LACM-14325",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760894",
@@ -9053,7 +9728,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760894",
-    "artistName": "もふもふえん"
+    "artistName": "もふもふえん",
+    "label": "Lantis"
   },
   {
     "id": "release-1755675187",
@@ -9080,7 +9756,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759310",
-    "artistName": "もふもふえん"
+    "artistName": "もふもふえん",
+    "catalogNumber": "LACM-24031",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759633",
@@ -9095,7 +9773,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759633",
-    "artistName": "W"
+    "artistName": "W",
+    "catalogNumber": "LACM-24039",
+    "label": "Lantis"
   },
   {
     "id": "release-1740697367",
@@ -9129,7 +9809,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759482",
-    "artistName": "神速一魂"
+    "artistName": "神速一魂",
+    "label": "Lantis"
   },
   {
     "id": "release-1740696477",
@@ -9174,7 +9855,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759774",
-    "artistName": "W"
+    "artistName": "W",
+    "catalogNumber": "LACM-14674",
+    "label": "Lantis"
   },
   {
     "id": "release-1677719841",
@@ -9331,7 +10014,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1770961917",
-    "artistName": "DRAMATIC STARS"
+    "artistName": "DRAMATIC STARS",
+    "catalogNumber": "LACA-19091",
+    "label": "Lantis"
   },
   {
     "id": "release-1782023542",
@@ -9507,7 +10192,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760878",
-    "artistName": "Altessimo"
+    "artistName": "Altessimo",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760995",
@@ -9524,7 +10210,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760995",
-    "artistName": "Altessimo, 彩 & High×Joker"
+    "artistName": "Altessimo, 彩 & High×Joker",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792771",
@@ -9542,7 +10229,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792771",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15608",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760974",
@@ -9559,7 +10248,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760974",
-    "artistName": "Beit"
+    "artistName": "Beit",
+    "catalogNumber": "LACM-24197",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760466",
@@ -9574,7 +10265,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760466",
-    "artistName": "FRAME"
+    "artistName": "FRAME",
+    "catalogNumber": "LACM-24041",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792509",
@@ -9592,7 +10285,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792509",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760857",
@@ -9609,7 +10303,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760857",
-    "artistName": "Legenders"
+    "artistName": "Legenders",
+    "catalogNumber": "LACM-24185",
+    "label": "Lantis"
   },
   {
     "id": "release-1735684911",
@@ -9626,7 +10322,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1735684911",
-    "artistName": "THE 虎牙道"
+    "artistName": "THE 虎牙道",
+    "catalogNumber": "LACM-24488",
+    "label": "Lantis"
   },
   {
     "id": "release-1732185865",
@@ -9644,7 +10342,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1732185865",
-    "artistName": "Legenders & C.FIRST"
+    "artistName": "Legenders & C.FIRST",
+    "catalogNumber": "LACM24516B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760883",
@@ -9660,7 +10360,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760883",
-    "artistName": "Jupiter"
+    "artistName": "Jupiter",
+    "label": "Lantis"
   },
   {
     "id": "release-1731793071",
@@ -9676,7 +10377,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731793071",
-    "artistName": "Café Parade"
+    "artistName": "Café Parade",
+    "catalogNumber": "LACM-14390",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760600",
@@ -9693,7 +10396,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760600",
-    "artistName": "High×Joker"
+    "artistName": "High×Joker",
+    "catalogNumber": "LACM-24198",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759393",
@@ -9708,7 +10413,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759393",
-    "artistName": "Legenders"
+    "artistName": "Legenders",
+    "catalogNumber": "LACM-24040",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759560",
@@ -9723,7 +10430,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759560",
-    "artistName": "Café Parade"
+    "artistName": "Café Parade",
+    "catalogNumber": "LACM-24034",
+    "label": "Lantis"
   },
   {
     "id": "release-1731793011",
@@ -9739,7 +10448,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731793011",
-    "artistName": "Legenders"
+    "artistName": "Legenders",
+    "catalogNumber": "LACM-14545",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760364",
@@ -9756,7 +10467,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760364",
-    "artistName": "Café Parade"
+    "artistName": "Café Parade",
+    "catalogNumber": "LACM-24184",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792959",
@@ -9774,7 +10487,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792959",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15607",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792515",
@@ -9792,7 +10507,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792515",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760830",
@@ -9810,7 +10526,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760830",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "label": "Lantis"
   },
   {
     "id": "release-1720084518",
@@ -9827,7 +10544,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1720084518",
-    "artistName": "C.FIRST"
+    "artistName": "C.FIRST",
+    "catalogNumber": "LACM-24481",
+    "label": "Lantis"
   },
   {
     "id": "release-1731793052",
@@ -9843,7 +10562,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731793052",
-    "artistName": "THE 虎牙道"
+    "artistName": "THE 虎牙道",
+    "catalogNumber": "LACM-14392",
+    "label": "Lantis"
   },
   {
     "id": "release-1731761101",
@@ -9858,7 +10579,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761101",
-    "artistName": "THE 虎牙道"
+    "artistName": "THE 虎牙道",
+    "catalogNumber": "LACM-24032",
+    "label": "Lantis"
   },
   {
     "id": "release-1720084235",
@@ -9875,7 +10598,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1720084235",
-    "artistName": "FRAME"
+    "artistName": "FRAME",
+    "catalogNumber": "LACM-24482",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760764",
@@ -9891,7 +10616,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760764",
-    "artistName": "FRAME"
+    "artistName": "FRAME",
+    "catalogNumber": "LACM-14388",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792928",
@@ -9907,7 +10634,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792928",
-    "artistName": "F-LAGS"
+    "artistName": "F-LAGS",
+    "catalogNumber": "LACM-14394",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759786",
@@ -9924,7 +10653,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759786",
-    "artistName": "FRAME"
+    "artistName": "FRAME",
+    "catalogNumber": "LACM-24183",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759771",
@@ -9939,7 +10670,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759771",
-    "artistName": "Altessimo"
+    "artistName": "Altessimo",
+    "catalogNumber": "LACM-24037",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760970",
@@ -9955,7 +10688,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760970",
-    "artistName": "High×Joker"
+    "artistName": "High×Joker",
+    "label": "Lantis"
   },
   {
     "id": "release-1731793127",
@@ -9971,7 +10705,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731793127",
-    "artistName": "Altessimo"
+    "artistName": "Altessimo",
+    "catalogNumber": "LACM-14391",
+    "label": "Lantis"
   },
   {
     "id": "release-1754514996",
@@ -9998,7 +10734,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759831",
-    "artistName": "Jupiter"
+    "artistName": "Jupiter",
+    "catalogNumber": "LACM-24033",
+    "label": "Lantis"
   },
   {
     "id": "release-1794679554",
@@ -10037,7 +10775,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759871",
-    "artistName": "High×Joker"
+    "artistName": "High×Joker",
+    "catalogNumber": "LACM-24038",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760498",
@@ -10054,7 +10794,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760498",
-    "artistName": "Jupiter"
+    "artistName": "Jupiter",
+    "label": "Lantis"
   },
   {
     "id": "release-1732185486",
@@ -10072,7 +10813,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1732185486",
-    "artistName": "Altessimo & 彩"
+    "artistName": "Altessimo & 彩",
+    "catalogNumber": "LACM-24514",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760118",
@@ -10087,7 +10830,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760118",
-    "artistName": "F-LAGS"
+    "artistName": "F-LAGS",
+    "catalogNumber": "LACM-24045",
+    "label": "Lantis"
   },
   {
     "id": "release-1731793159",
@@ -10106,7 +10851,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731793159",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "catalogNumber": "LACA-15606",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760913",
@@ -10124,7 +10871,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760913",
-    "artistName": "F-LAGS"
+    "artistName": "F-LAGS",
+    "catalogNumber": "LACM-24190",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792792",
@@ -10140,7 +10889,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792792",
-    "artistName": "御手洗翔太 (CV.松岡禎丞), 渡辺みのり (CV.高塚智人), 大河タケル (CV.寺島惇太) & 兜 大吾 (CV.浦尾岳大)"
+    "artistName": "御手洗翔太 (CV.松岡禎丞), 渡辺みのり (CV.高塚智人), 大河タケル (CV.寺島惇太) & 兜 大吾 (CV.浦尾岳大)",
+    "catalogNumber": "LACM-14754",
+    "label": "Lantis"
   },
   {
     "id": "release-1726311585",
@@ -10157,7 +10908,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1726311585",
-    "artistName": "Café Parade"
+    "artistName": "Café Parade",
+    "catalogNumber": "LACM24483B00Z",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760871",
@@ -10208,7 +10961,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1730930721",
-    "artistName": "Beit"
+    "artistName": "Beit",
+    "catalogNumber": "LACM-24485",
+    "label": "Lantis"
   },
   {
     "id": "release-1730930002",
@@ -10225,7 +10980,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1730930002",
-    "artistName": "Jupiter"
+    "artistName": "Jupiter",
+    "catalogNumber": "LACM-24486",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760705",
@@ -10242,7 +10999,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760705",
-    "artistName": "THE 虎牙道"
+    "artistName": "THE 虎牙道",
+    "label": "Lantis"
   },
   {
     "id": "release-1731760686",
@@ -10259,7 +11017,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760686",
-    "artistName": "彩"
+    "artistName": "彩",
+    "catalogNumber": "LACM-24186",
+    "label": "Lantis"
   },
   {
     "id": "release-1751911910",
@@ -10291,7 +11051,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731760649",
-    "artistName": "彩"
+    "artistName": "彩",
+    "catalogNumber": "LACM-24044",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759620",
@@ -10307,7 +11069,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759620",
-    "artistName": "桜庭 薫 (CV.内田雄馬), 黒野玄武 (CV.深町寿成) & 九十九一希 (CV.徳武竜也)"
+    "artistName": "桜庭 薫 (CV.内田雄馬), 黒野玄武 (CV.深町寿成) & 九十九一希 (CV.徳武竜也)",
+    "label": "Lantis"
   },
   {
     "id": "release-1782845009",
@@ -10339,7 +11102,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759328",
-    "artistName": "Beit"
+    "artistName": "Beit",
+    "catalogNumber": "LACM-14672",
+    "label": "Lantis"
   },
   {
     "id": "release-1731762382",
@@ -10355,7 +11120,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731762382",
-    "artistName": "彩"
+    "artistName": "彩",
+    "catalogNumber": "LACM-14387",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759324",
@@ -10371,7 +11138,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759324",
-    "artistName": "神谷幸広 (CV.狩野 翔), 山下次郎 (CV.中島ヨシキ) & 古論クリス (CV.駒田 航)"
+    "artistName": "神谷幸広 (CV.狩野 翔), 山下次郎 (CV.中島ヨシキ) & 古論クリス (CV.駒田 航)",
+    "catalogNumber": "LACM-14759",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792935",
@@ -10387,7 +11156,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792935",
-    "artistName": "橘 志狼 (CV.古畑恵介), 硲 道夫 (CV.伊東健人) & 牙崎 漣 (CV.小松昌平)"
+    "artistName": "橘 志狼 (CV.古畑恵介), 硲 道夫 (CV.伊東健人) & 牙崎 漣 (CV.小松昌平)",
+    "catalogNumber": "LACM-14753",
+    "label": "Lantis"
   },
   {
     "id": "release-1746661233",
@@ -10420,7 +11191,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731793032",
-    "artistName": "天道 輝 (CV.仲村宗悟), 握野英雄 (CV.熊谷健太郎), 紅井朱雀 (CV.益山武明) & 葛之葉雨彦 (CV.笠間 淳)"
+    "artistName": "天道 輝 (CV.仲村宗悟), 握野英雄 (CV.熊谷健太郎), 紅井朱雀 (CV.益山武明) & 葛之葉雨彦 (CV.笠間 淳)",
+    "catalogNumber": "LACM-14751",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759428",
@@ -10436,7 +11209,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759428",
-    "artistName": "High×Joker"
+    "artistName": "High×Joker",
+    "catalogNumber": "LACM-14676",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792996",
@@ -10452,7 +11227,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792996",
-    "artistName": "水嶋 咲 (CV.小林大紀), 姫野かのん (CV.村瀬 歩) & 舞田 類 (CV.榎木淳弥)"
+    "artistName": "水嶋 咲 (CV.小林大紀), 姫野かのん (CV.村瀬 歩) & 舞田 類 (CV.榎木淳弥)",
+    "catalogNumber": "LACM-14755",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792797",
@@ -10477,7 +11254,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792797",
-    "artistName": "315 STARS (インテリ Ver.)"
+    "artistName": "315 STARS (インテリ Ver.)",
+    "catalogNumber": "LACA-15773",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759523",
@@ -10493,7 +11272,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759523",
-    "artistName": "鷹城恭二 (CV.梅原裕一郎), 信玄誠司 (CV.増元拓也), 伊瀬谷四季 (CV.野上 翔) & 北村想楽 (CV.汐谷文康)"
+    "artistName": "鷹城恭二 (CV.梅原裕一郎), 信玄誠司 (CV.増元拓也), 伊瀬谷四季 (CV.野上 翔) & 北村想楽 (CV.汐谷文康)",
+    "catalogNumber": "LACM-14763",
+    "label": "Lantis"
   },
   {
     "id": "release-1782844781",
@@ -10526,7 +11307,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731793039",
-    "artistName": "天ヶ瀬冬馬 (CV.寺島拓篤), 猫柳キリオ (CV.山下大輝) & 秋月 涼 (CV.三瓶由布子)"
+    "artistName": "天ヶ瀬冬馬 (CV.寺島拓篤), 猫柳キリオ (CV.山下大輝) & 秋月 涼 (CV.三瓶由布子)",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759583",
@@ -10542,7 +11324,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759583",
-    "artistName": "Jupiter"
+    "artistName": "Jupiter",
+    "catalogNumber": "LACM-14675",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792762",
@@ -10558,7 +11342,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792762",
-    "artistName": "伊集院北斗 (CV.神原大地), 都築 圭 (CV.土岐隼一), 冬美 旬 (CV.永塚拓馬) & アスラン=ベルゼビュートⅡ世 (CV.古川 慎)"
+    "artistName": "伊集院北斗 (CV.神原大地), 都築 圭 (CV.土岐隼一), 冬美 旬 (CV.永塚拓馬) & アスラン=ベルゼビュートⅡ世 (CV.古川 慎)",
+    "catalogNumber": "LACM-14756",
+    "label": "Lantis"
   },
   {
     "id": "release-1731761411",
@@ -10601,7 +11387,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731761411",
-    "artistName": "Various Artists"
+    "artistName": "Various Artists",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792841",
@@ -10617,7 +11404,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792841",
-    "artistName": "ピエール (CV.堀江 瞬), 蒼井享介 (CV.山谷祥生), 清澄九郎 (CV.中田祐矢) & 榊 夏来 (CV.渡辺 紘)"
+    "artistName": "ピエール (CV.堀江 瞬), 蒼井享介 (CV.山谷祥生), 清澄九郎 (CV.中田祐矢) & 榊 夏来 (CV.渡辺 紘)",
+    "catalogNumber": "LACM-14757",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792894",
@@ -10633,7 +11422,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792894",
-    "artistName": "神楽 麗 (CV.永野由祐), 秋山隼人 (CV.千葉翔也), 卯月巻緒 (CV.児玉卓也) & 岡村直央 (CV.矢野奨吾)"
+    "artistName": "神楽 麗 (CV.永野由祐), 秋山隼人 (CV.千葉翔也), 卯月巻緒 (CV.児玉卓也) & 岡村直央 (CV.矢野奨吾)",
+    "catalogNumber": "LACM-14758",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792366",
@@ -10659,7 +11450,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792366",
-    "artistName": "315 STARS (フィジカル Ver.)"
+    "artistName": "315 STARS (フィジカル Ver.)",
+    "catalogNumber": "LACA-15771",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792766",
@@ -10675,7 +11468,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792766",
-    "artistName": "蒼井悠介 (CV.菊池勇成), 木村 龍 (CV.濱 健人) & 若里春名 (CV.白井悠介)"
+    "artistName": "蒼井悠介 (CV.菊池勇成), 木村 龍 (CV.濱 健人) & 若里春名 (CV.白井悠介)",
+    "catalogNumber": "LACM-14752",
+    "label": "Lantis"
   },
   {
     "id": "release-1731792524",
@@ -10700,7 +11495,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731792524",
-    "artistName": "315 STARS (メンタル Ver.)"
+    "artistName": "315 STARS (メンタル Ver.)",
+    "catalogNumber": "LACA-15772",
+    "label": "Lantis"
   },
   {
     "id": "release-1731759250",
@@ -10716,7 +11513,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1731759250",
-    "artistName": "柏木 翼 (CV.八代 拓), 華村翔真 (CV.バレッタ裕), 東雲荘一郎 (CV.天﨑滉平) & 円城寺道流 (CV.濱野大輝)"
+    "artistName": "柏木 翼 (CV.八代 拓), 華村翔真 (CV.バレッタ裕), 東雲荘一郎 (CV.天﨑滉平) & 円城寺道流 (CV.濱野大輝)",
+    "catalogNumber": "LACM-14760",
+    "label": "Lantis"
   },
   {
     "id": "release-1872896302",
@@ -10778,7 +11577,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1872897798",
-    "artistName": "Sonic Heart (and Signal)"
+    "artistName": "Sonic Heart (and Signal)",
+    "catalogNumber": "LACM-24823",
+    "label": "Lantis"
   },
   {
     "id": "release-1764932455",
@@ -10911,7 +11712,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1745451770",
-    "artistName": "シーズ & イルミネーションスターズ"
+    "artistName": "シーズ & イルミネーションスターズ",
+    "catalogNumber": "LACM-24528",
+    "label": "Lantis"
   },
   {
     "id": "release-1737148868",
@@ -10949,7 +11752,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1745447730",
-    "artistName": "シーズ & イルミネーションスターズ"
+    "artistName": "シーズ & イルミネーションスターズ",
+    "label": "Lantis"
   },
   {
     "id": "release-1765060490",
@@ -11041,7 +11845,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552664",
-    "artistName": "放課後クライマックスガールズ"
+    "artistName": "放課後クライマックスガールズ",
+    "catalogNumber": "LACM-14864",
+    "label": "Lantis"
   },
   {
     "id": "release-1734555067",
@@ -11059,7 +11865,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734555067",
-    "artistName": "アンティーカ"
+    "artistName": "アンティーカ",
+    "catalogNumber": "LACM-24253",
+    "label": "Lantis"
   },
   {
     "id": "release-1734550878",
@@ -11077,7 +11885,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734550878",
-    "artistName": "放課後クライマックスガールズ"
+    "artistName": "放課後クライマックスガールズ",
+    "label": "Lantis"
   },
   {
     "id": "release-1797688823",
@@ -11114,7 +11923,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551569",
-    "artistName": "放課後クライマックスガールズ"
+    "artistName": "放課後クライマックスガールズ",
+    "catalogNumber": "LACM-24114",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552566",
@@ -11132,7 +11943,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552566",
-    "artistName": "アルストロメリア"
+    "artistName": "アルストロメリア",
+    "catalogNumber": "LACM-24115",
+    "label": "Lantis"
   },
   {
     "id": "release-1863857652",
@@ -11149,7 +11962,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1863857652",
-    "artistName": "放課後クライマックスガールズ"
+    "artistName": "放課後クライマックスガールズ",
+    "catalogNumber": "LACM34808",
+    "label": "Lantis"
   },
   {
     "id": "release-1868951367",
@@ -11221,7 +12036,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1751457742",
-    "artistName": "放課後クライマックスガールズ"
+    "artistName": "放課後クライマックスガールズ",
+    "catalogNumber": "LACM-24543",
+    "label": "Lantis"
   },
   {
     "id": "release-1755678744",
@@ -11240,7 +12057,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1755678744",
-    "artistName": "アルストロメリア"
+    "artistName": "アルストロメリア",
+    "catalogNumber": "LACM-24544",
+    "label": "Lantis"
   },
   {
     "id": "release-1779610724",
@@ -11259,7 +12078,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1779610724",
-    "artistName": "コメティック"
+    "artistName": "コメティック",
+    "catalogNumber": "LACM-24548",
+    "label": "Lantis"
   },
   {
     "id": "release-1811959601",
@@ -11278,7 +12099,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1811959601",
-    "artistName": "アンティーカ & シーズ"
+    "artistName": "アンティーカ & シーズ",
+    "catalogNumber": "LACM-24701",
+    "label": "Lantis"
   },
   {
     "id": "release-1818074675",
@@ -11297,7 +12120,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1818074675",
-    "artistName": "放課後クライマックスガールズ & ストレイライト"
+    "artistName": "放課後クライマックスガールズ & ストレイライト",
+    "catalogNumber": "LACM-24702",
+    "label": "Lantis"
   },
   {
     "id": "release-1825103169",
@@ -11316,7 +12141,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1825103169",
-    "artistName": "アルストロメリア & コメティック"
+    "artistName": "アルストロメリア & コメティック",
+    "catalogNumber": "LACM-24703",
+    "label": "Lantis"
   },
   {
     "id": "release-1712050539",
@@ -11394,7 +12221,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1712050539",
-    "artistName": "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    "artistName": "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music",
+    "label": "Bandai Namco Game Music"
   },
   {
     "id": "release-1734553225",
@@ -11443,7 +12271,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734553225",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "catalogNumber": "LACA-9872",
+    "label": "Lantis"
   },
   {
     "id": "release-1734559540",
@@ -11484,7 +12314,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734559540",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "catalogNumber": "LACA-9944",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552367",
@@ -11501,7 +12333,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552367",
-    "artistName": "シーズ"
+    "artistName": "シーズ",
+    "catalogNumber": "LACM-24395",
+    "label": "Lantis"
   },
   {
     "id": "release-1739526828",
@@ -11519,7 +12353,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1739526828",
-    "artistName": "小宮果穂 (CV.河野ひより), 黛 冬優子 (CV.幸村恵理) & 和泉愛依 (CV.北原沙弥香)"
+    "artistName": "小宮果穂 (CV.河野ひより), 黛 冬優子 (CV.幸村恵理) & 和泉愛依 (CV.北原沙弥香)",
+    "catalogNumber": "LACM-24532",
+    "label": "Lantis"
   },
   {
     "id": "release-1734551395",
@@ -11537,7 +12373,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551395",
-    "artistName": "ノクチル"
+    "artistName": "ノクチル",
+    "catalogNumber": "LACM-24117",
+    "label": "Lantis"
   },
   {
     "id": "release-1734551461",
@@ -11553,7 +12391,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734551461",
-    "artistName": "イルミネーションスターズ"
+    "artistName": "イルミネーションスターズ",
+    "catalogNumber": "LACM-14782",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552524",
@@ -11571,7 +12411,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552524",
-    "artistName": "イルミネーションスターズ"
+    "artistName": "イルミネーションスターズ",
+    "catalogNumber": "LACM-24252",
+    "label": "Lantis"
   },
   {
     "id": "release-1734552517",
@@ -11589,7 +12431,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1734552517",
-    "artistName": "イルミネーションスターズ"
+    "artistName": "イルミネーションスターズ",
+    "catalogNumber": "LACM-24112",
+    "label": "Lantis"
   },
   {
     "id": "release-1785015324",
@@ -11612,7 +12456,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1785015324",
-    "artistName": "シャイニーカラーズ"
+    "artistName": "シャイニーカラーズ",
+    "catalogNumber": "LACA-25115",
+    "label": "Lantis"
   },
   {
     "id": "release-1867718435",
@@ -11642,7 +12488,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1828135058",
-    "artistName": "初星学園 & Begrazia"
+    "artistName": "初星学園 & Begrazia",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1884849761",
@@ -11672,7 +12520,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1744084121",
-    "artistName": "初星学園 & 花海咲季"
+    "artistName": "初星学園 & 花海咲季",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1825279996",
@@ -11687,7 +12537,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1825279996",
-    "artistName": "初星学園 & 篠澤 広"
+    "artistName": "初星学園 & 篠澤 広",
+    "label": "Preach Records"
   },
   {
     "id": "release-1745495868",
@@ -11702,7 +12553,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1745495868",
-    "artistName": "初星学園 & 月村手毬"
+    "artistName": "初星学園 & 月村手毬",
+    "catalogNumber": "VVXX01326B00Z",
+    "label": "nocturne"
   },
   {
     "id": "release-1756689871",
@@ -11717,7 +12570,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1756689871",
-    "artistName": "初星学園 & 篠澤 広"
+    "artistName": "初星学園 & 篠澤 広",
+    "catalogNumber": "LACM-14436",
+    "label": "Lantis"
   },
   {
     "id": "release-1792161731",
@@ -11747,7 +12602,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1838598041",
-    "artistName": "初星学園 & 姫崎莉波"
+    "artistName": "初星学園 & 姫崎莉波",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1749192448",
@@ -11762,7 +12618,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1749192448",
-    "artistName": "初星学園 & 藤田ことね"
+    "artistName": "初星学園 & 藤田ことね",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1779186189",
@@ -11822,7 +12680,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1864090209",
-    "artistName": "初星学園 & 秦谷美鈴"
+    "artistName": "初星学園 & 秦谷美鈴",
+    "label": "Vol 1 Records"
   },
   {
     "id": "release-1890397510",
@@ -11867,7 +12726,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1801113554",
-    "artistName": "初星学園 & 花海咲季"
+    "artistName": "初星学園 & 花海咲季",
+    "catalogNumber": "533 700-2",
+    "label": "Barclay"
   },
   {
     "id": "release-1744081108",
@@ -11882,7 +12743,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1744081108",
-    "artistName": "初星学園 & 藤田ことね"
+    "artistName": "初星学園 & 藤田ことね",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1854625308",
@@ -11912,7 +12775,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1794236160",
-    "artistName": "初星学園, 花海佑芽, 秦谷美鈴 & 十王星南"
+    "artistName": "初星学園, 花海佑芽, 秦谷美鈴 & 十王星南",
+    "label": "Real World"
   },
   {
     "id": "release-1744080854",
@@ -11927,7 +12791,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1744080854",
-    "artistName": "初星学園 & 有村麻央"
+    "artistName": "初星学園 & 有村麻央",
+    "catalogNumber": "043",
+    "label": "Yura Hatsuki"
   },
   {
     "id": "release-1781597773",
@@ -11942,7 +12808,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1781597773",
-    "artistName": "初星学園, 葛城リーリヤ, 花海佑芽 & 藤田ことね"
+    "artistName": "初星学園, 葛城リーリヤ, 花海佑芽 & 藤田ことね",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1804233322",
@@ -11972,7 +12840,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1807933659",
-    "artistName": "初星学園 & 十王星南"
+    "artistName": "初星学園 & 十王星南",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1878068958",
@@ -12062,7 +12932,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1834297026",
-    "artistName": "初星学園 & 1年1組"
+    "artistName": "初星学園 & 1年1組",
+    "catalogNumber": "PR017386",
+    "label": "Helium-3"
   },
   {
     "id": "release-1782051462",
@@ -12077,7 +12949,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1782051462",
-    "artistName": "初星学園 & 十王星南"
+    "artistName": "初星学園 & 十王星南",
+    "catalogNumber": "KSCL-1634",
+    "label": "Ki/oon"
   },
   {
     "id": "release-1835577915",
@@ -12107,7 +12981,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1857519706",
-    "artistName": "初星学園 & 葛城リーリヤ"
+    "artistName": "初星学園 & 葛城リーリヤ",
+    "catalogNumber": "125213-2",
+    "label": "Pharaon"
   },
   {
     "id": "release-1845254519",
@@ -12182,7 +13058,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1744080991",
-    "artistName": "初星学園"
+    "artistName": "初星学園",
+    "label": "Kaito Shamidaiko"
   },
   {
     "id": "release-1744084517",
@@ -12197,7 +13074,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1744084517",
-    "artistName": "初星学園 & 紫雲清夏"
+    "artistName": "初星学園 & 紫雲清夏",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1810130144",
@@ -12212,7 +13091,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1810130144",
-    "artistName": "初星学園 & 藤田ことね"
+    "artistName": "初星学園 & 藤田ことね",
+    "catalogNumber": "PA00185233",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1744084783",
@@ -12227,7 +13108,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1744084783",
-    "artistName": "初星学園 & 姫崎莉波"
+    "artistName": "初星学園 & 姫崎莉波",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1748507958",
@@ -12242,7 +13125,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1748507958",
-    "artistName": "初星学園 & 花海佑芽"
+    "artistName": "初星学園 & 花海佑芽",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1748944006",
@@ -12272,7 +13157,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1801113348",
-    "artistName": "初星学園 & 月村手毬"
+    "artistName": "初星学園 & 月村手毬",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1801677930",
@@ -12287,7 +13174,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1801677930",
-    "artistName": "初星学園 & 篠澤 広"
+    "artistName": "初星学園 & 篠澤 広",
+    "catalogNumber": "OPAL093",
+    "label": "Opal Tapes"
   },
   {
     "id": "release-1744083834",
@@ -12332,7 +13221,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1804233546",
-    "artistName": "初星学園 & 花海咲季"
+    "artistName": "初星学園 & 花海咲季",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1828134387",
@@ -12347,7 +13238,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1828134387",
-    "artistName": "初星学園, 有村麻央, 紫雲清夏 & 篠澤 広"
+    "artistName": "初星学園, 有村麻央, 紫雲清夏 & 篠澤 広",
+    "label": "Real World"
   },
   {
     "id": "release-1886060899",
@@ -12377,7 +13269,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1766867721",
-    "artistName": "初星学園 & 有村麻央"
+    "artistName": "初星学園 & 有村麻央",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1877010045",
@@ -12422,7 +13316,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1744080614",
-    "artistName": "初星学園 & 倉本千奈"
+    "artistName": "初星学園 & 倉本千奈",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1778161857",
@@ -12437,7 +13333,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1778161857",
-    "artistName": "初星学園 & 紫雲清夏"
+    "artistName": "初星学園 & 紫雲清夏",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1787224878",
@@ -12452,7 +13350,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1787224878",
-    "artistName": "初星学園 & 有村麻央"
+    "artistName": "初星学園 & 有村麻央",
+    "catalogNumber": "AVI 6053",
+    "label": "AVI Records"
   },
   {
     "id": "release-1756689993",
@@ -12467,7 +13367,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1756689993",
-    "artistName": "初星学園 & 葛城リーリヤ"
+    "artistName": "初星学園 & 葛城リーリヤ",
+    "catalogNumber": "AVCD-23281",
+    "label": "avex trax"
   },
   {
     "id": "release-1798879057",
@@ -12482,7 +13384,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1798879057",
-    "artistName": "初星学園 & 姫崎莉波"
+    "artistName": "初星学園 & 姫崎莉波",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1872908237",
@@ -12497,7 +13401,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1872908237",
-    "artistName": "初星学園"
+    "artistName": "初星学園",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1878341598",
@@ -12512,7 +13417,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1878341598",
-    "artistName": "初星学園 & 藤田ことね"
+    "artistName": "初星学園 & 藤田ことね",
+    "label": "RING MUSIC ENTERTAINMENT"
   },
   {
     "id": "release-1801677785",
@@ -12527,7 +13433,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1801677785",
-    "artistName": "初星学園 & 有村麻央"
+    "artistName": "初星学園 & 有村麻央",
+    "catalogNumber": "PCZA-00001",
+    "label": "PONY CANYON"
   },
   {
     "id": "release-1792162132",
@@ -12542,7 +13450,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1792162132",
-    "artistName": "初星学園 & 秦谷美鈴"
+    "artistName": "初星学園 & 秦谷美鈴",
+    "label": "Jahil Records"
   },
   {
     "id": "release-1801113472",
@@ -12572,7 +13481,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1758693536",
-    "artistName": "初星学園 & 倉本千奈"
+    "artistName": "初星学園 & 倉本千奈",
+    "catalogNumber": "21 21792-2",
+    "label": "BASF"
   },
   {
     "id": "release-1872908060",
@@ -12617,7 +13528,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1827429660",
-    "artistName": "初星学園, 花海咲季, 月村手毬 & 藤田ことね"
+    "artistName": "初星学園, 花海咲季, 月村手毬 & 藤田ことね",
+    "label": "Real World"
   },
   {
     "id": "release-1764900712",
@@ -12632,7 +13544,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1764900712",
-    "artistName": "初星学園, 葛城リーリヤ, 倉本千奈 & 姫崎莉波"
+    "artistName": "初星学園, 葛城リーリヤ, 倉本千奈 & 姫崎莉波",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1804233258",
@@ -12662,7 +13576,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1801898823",
-    "artistName": "初星学園 & 葛城リーリヤ"
+    "artistName": "初星学園 & 葛城リーリヤ",
+    "label": "[no label]"
   },
   {
     "id": "release-1801677732",
@@ -12692,7 +13607,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1801898739",
-    "artistName": "初星学園 & 紫雲清夏"
+    "artistName": "初星学園 & 紫雲清夏",
+    "label": "Liquid Sound Design"
   },
   {
     "id": "release-1835577992",
@@ -12707,7 +13623,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1835577992",
-    "artistName": "初星学園 & 1年2組"
+    "artistName": "初星学園 & 1年2組",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1764213998",
@@ -12737,7 +13654,9 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1823132695",
-    "artistName": "初星学園, 花海佑芽, 秦谷美鈴 & 十王星南"
+    "artistName": "初星学園, 花海佑芽, 秦谷美鈴 & 十王星南",
+    "catalogNumber": "[none]",
+    "label": "ASOBINOTES"
   },
   {
     "id": "release-1801899143",
@@ -12797,7 +13716,8 @@
     ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1828135011",
-    "artistName": "初星学園, 葛城リーリヤ, 倉本千奈 & 姫崎莉波"
+    "artistName": "初星学園, 葛城リーリヤ, 倉本千奈 & 姫崎莉波",
+    "label": "Real World"
   },
   {
     "id": "release-1823132762",

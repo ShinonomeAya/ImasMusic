@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
-import { getTrackById, getReleaseById, getTracksBySeries, getAllTracks } from '@/lib/data'
+import { getTrackById, getReleaseById, getTracksBySeries, getAllTracks, getAllArtists } from '@/lib/data'
 import { SERIES_CONFIG } from '@/lib/series'
 import TrackPlayButton from '@/components/TrackPlayButton'
 import FavoriteButton from '@/components/FavoriteButton'
@@ -37,11 +37,18 @@ export default async function TrackPage({ params }: { params: Promise<{ id: stri
     relatedReleases.filter(Boolean).map((r) => [r!.id, r!.coverUrl])
   )
 
-  // Credits 格式化
-  const creditMap: Record<string, string[]> = {}
+  // Credits 格式化（artistId → 名字 + 链接）
+  const artists = await getAllArtists()
+  const artistMap = new Map(artists.map((a) => [a.id, a]))
+
+  const creditMap: Record<string, { id: string; name: string }[]> = {}
   for (const credit of track.credits || []) {
     if (!creditMap[credit.role]) creditMap[credit.role] = []
-    creditMap[credit.role].push(credit.artistId)
+    const artist = artistMap.get(credit.artistId)
+    creditMap[credit.role].push({
+      id: credit.artistId,
+      name: artist?.nameJa || credit.artistId,
+    })
   }
 
   const ROLE_LABELS: Record<string, string> = {
@@ -151,13 +158,23 @@ export default async function TrackPage({ params }: { params: Promise<{ id: stri
             </h3>
             {Object.keys(creditMap).length > 0 ? (
               <div className="flex flex-col gap-4">
-                {Object.entries(creditMap).map(([role, names]) => (
+                {Object.entries(creditMap).map(([role, artists]) => (
                   <div key={role} className="flex justify-between items-baseline border-b pb-3" style={{ borderColor: 'var(--border-default)' }}>
-                    <span className="text-sm" style={{ color: 'var(--text-tertiary)' }}>
+                    <span className="text-sm shrink-0 mr-4" style={{ color: 'var(--text-tertiary)' }}>
                       {ROLE_LABELS[role] || role}
                     </span>
                     <span className="text-sm font-medium text-right" style={{ color: 'var(--text-primary)' }}>
-                      {names.join(', ')}
+                      {artists.map((a, i) => (
+                        <span key={a.id}>
+                          <Link
+                            href={`/artist/${a.id}`}
+                            className="hover:text-terracotta transition-colors"
+                          >
+                            {a.name}
+                          </Link>
+                          {i < artists.length - 1 ? ', ' : ''}
+                        </span>
+                      ))}
                     </span>
                   </div>
                 ))}
@@ -240,6 +257,29 @@ export default async function TrackPage({ params }: { params: Promise<{ id: stri
           )}
         </div>
       </div>
+
+      {/* ── Lyrics ── */}
+      {track.lyrics && (
+        <section className="mb-20 px-4 md:px-0">
+          <h2
+            className="text-subheading font-serif font-medium mb-6 pb-3"
+            style={{ color: 'var(--text-primary)', borderBottom: '1px solid var(--border-default)' }}
+          >
+            歌词
+          </h2>
+          <div
+            className="rounded-very p-6 md:p-8"
+            style={{ backgroundColor: 'var(--bg-surface)', border: '1px solid var(--border-default)' }}
+          >
+            <p
+              className="whitespace-pre-wrap font-serif leading-relaxed text-sm md:text-base"
+              style={{ color: 'var(--text-secondary)' }}
+            >
+              {track.lyrics}
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* ── Related Tracks ── */}
       {relatedTracks.length > 0 && (

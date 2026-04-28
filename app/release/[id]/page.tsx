@@ -73,6 +73,18 @@ export default async function ReleasePage({ params }: { params: Promise<{ id: st
             {release.titleJa}
           </h1>
 
+          {/* Compact Meta Line */}
+          <p className="text-sm mb-6" style={{ color: 'var(--text-tertiary)' }}>
+            {[
+              release.type === 'SINGLE' ? '单曲' : release.type === 'ALBUM' ? '专辑' : release.type === 'EP' ? 'EP' : '合集',
+              release.label,
+              release.catalogNumber,
+              year ? `${year}` : null,
+            ]
+              .filter(Boolean)
+              .join(' · ')}
+          </p>
+
           {/* Meta Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 mb-8">
             {release.releaseDate && (
