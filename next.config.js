@@ -3,6 +3,9 @@ const nextConfig = {
   output: 'export',
   distDir: 'dist',
   cleanDistDir: false,
+  experimental: {
+    turbo: false,
+  },
   images: {
     unoptimized: true,
     remotePatterns: [
