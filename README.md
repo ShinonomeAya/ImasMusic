@@ -2,7 +2,7 @@
 
 > Next.js 15 + TypeScript + Tailwind CSS 构建的 THE IDOLM@STER 系列音乐数据库。暖色编辑风格（Warm Editorial），支持真实音频试听、多企划数据、移动端响应式。
 
-**当前版本：v0.5.0**
+**当前版本：v0.5.1**
 
 **在线地址**：https://master.imas-music.pages.dev（Cloudflare Pages）
 
@@ -23,10 +23,10 @@ npm run type-check
 
 # 4. 生产构建
 npm run build
-# → 输出到 dist/（静态导出，5,193 页面）
+# → 输出到 dist/（静态导出，5,290 页面）
 ```
 
-**当前数据状态**：3,403 tracks + 734 releases + 1,039 artists（344 IDOL + 695 CREATOR，覆盖 765AS / Cinderella / Million Live / SideM / Shiny Colors / Gakuen）
+**当前数据状态**：3,489 tracks + 746 releases + 1,039 artists（344 IDOL + 695 CREATOR，覆盖 765AS / Cinderella / Million Live / SideM / Shiny Colors / Gakuen）
 
 ---
 
@@ -68,11 +68,11 @@ export async function generateStaticParams() {
 
 | 数据项 | 覆盖率 | 说明 |
 |---|---|---|
-| **Credits（作词/作曲/编曲）** | 71% (2,426/3,403) | MusicBrainz 自动抓取，695 CREATOR 已入库 |
-| **歌词** | 47% (1,604/3,403) | Uta-Net 抓取，保留人工数据优先 |
-| **Catalog Number** | 57% (421/734) | MusicBrainz Release 级别 |
-| **Label** | 68% (499/734) | MusicBrainz Release 级别 |
-| **头像（本地）** | 74% (255/344 IDOL) | `public/images/idols/` 静态分发，已脱离外链 |
+| **Credits（作词/作曲/编曲）** | 70% (2,426/3,489) | MusicBrainz 自动抓取，695 CREATOR 已入库 |
+| **歌词** | 46% (1,604/3,489) | Uta-Net 抓取，保留人工数据优先 |
+| **Catalog Number** | 56% (421/746) | MusicBrainz Release 级别 |
+| **Label** | 67% (499/746) | MusicBrainz Release 级别 |
+| **头像（本地）** | 25% (255/1,039) | `public/images/idols/` 静态分发，已脱离外链 |
 | **汉字 nameJa** | 86% (296/344 IDOL) | 从 `imas.gamedbs.jp` 抓取修复 |
 
 **关键脚本位置**（`scripts/pipeline/`）：
@@ -82,6 +82,7 @@ export async function generateStaticParams() {
 - `scrape-lyrics-utanet.ts` / `apply-lyrics-patches.ts` — 歌词流水线
 - `download-portraits.ts` — 外链头像批量下载到 `public/images/idols/`
 - `sync-local-portraits.ts` — 扫描本地图片自动绑定 `artists.json`（**幂等，可反复运行**）
+- `fetch-album-tracks.ts` — 遍历无曲目专辑，从 iTunes 批量抓取歌曲
 
 ### 待办 / 已知问题（下次接手入口）
 
@@ -94,12 +95,13 @@ export async function generateStaticParams() {
 
 #### 🟡 中优
 4. **CREATOR 头像缺失** — 695 位创作者无头像，低优先级
-5. **每月新 CD 更新流程** — 待设计半自动化增量更新（新专辑 → iTunes → MusicBrainz → 合并）
+5. **每月新 CD 更新流程** — 半自动化：`batch-fetch-albums.ts` 抓新专辑 → `fetch-album-tracks.ts` 补曲目
 6. **Spotify 声学特征** — energy/valence/BPM 精确值，需 Client ID/Secret（Phase 9 候选）
 
 #### 🟢 低优 / 技术债
-7. **`next.config.js` `cleanDistDir: false`** — Windows 下 Next.js 15 `dist/trace` 自锁问题的 workaround，升级 Next.js 后可能修复
-8. **Playwright 预存问题** — 3 个移动端测试失败（播放器手势/底部导航），与 Phase 8 修改无关
+7. **Next.js 16 + Cloudflare Pages 文件限制** — Next.js 16 生成 `__next.*.txt` 预加载文件导致静态导出达 ~48K 文件，超出 Cloudflare Pages 20K 限制。已在 CI 中清理 `.txt` 文件后部署（~11K 文件）
+8. **Windows 下 `dist/trace` 文件锁定** — Next.js 构建后 `dist/trace` 被占用无法删除，本地开发需手动杀进程或使用 `dist_new` 目录 workaround
+9. **Playwright 预存问题** — 3 个移动端测试失败（播放器手势/底部导航），与 Phase 8 修改无关
 
 ### 头像管理工作流（重要）
 
@@ -140,7 +142,7 @@ npx tsx scripts/pipeline/sync-local-portraits.ts
 ### 技术栈
 | 层 | 技术 | 用途 |
 |---|---|---|
-| 框架 | Next.js 15 (App Router) | 静态导出（`output: 'export'`） |
+| 框架 | Next.js 16.2 (App Router) | 静态导出（`output: 'export'`） |
 | 语言 | TypeScript 5 (strict) | 类型安全 |
 | 样式 | Tailwind CSS 3.4 | 原子化样式 |
 | 图标 | Lucide React | 图标系统 |
@@ -246,8 +248,8 @@ ImasMusic/
 │   └── index.ts                  # 核心类型: Track/Release/Artist/PlayerState
 │
 ├── data/                         # 静态 JSON 数据
-│   ├── tracks.json               # 曲目数据（3,403 条）
-│   ├── releases.json             # 发行物数据（734 条）
+│   ├── tracks.json               # 曲目数据（3,489 条）
+│   ├── releases.json             # 发行物数据（746 条）
 │   ├── artists.json              # 艺人数据（1,039 条：344 IDOL + 695 CREATOR）
 │   └── seed/                     # 数据导入脚手架
 │       ├── input/                # 输入文件（每行一个查询词）
@@ -591,4 +593,4 @@ npx tsx scripts/pipeline-merge.ts
 
 ---
 
-*最后更新: 2026-04-28 | v0.5.0 — Phase 8 数据管道 + 头像本地化完成。255 张头像已静态分发，89 位 IDOL 待手工补全。5,193 静态页面零错误，Cloudflare Pages 自动部署*
+*最后更新: 2026-05-28 | v0.5.1 — 新增 86 首歌曲 + 12 张专辑（2026 年新曲），Next.js 升级至 16.2，修复 Cloudflare Pages 20K 文件部署限制。5,290 静态页面*

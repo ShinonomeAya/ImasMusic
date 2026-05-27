@@ -1,23 +1,23 @@
 # Phase 8 规划书 — 自动化数据丰满与架构升级
 
-> **版本**: v1.2  
-> **日期**: 2026-04-27  
-> **状态**: 🚧 准备中  
+> **版本**: v1.3  
+> **日期**: 2026-05-28  
+> **状态**: 🚧 进行中（数据抓取已完成，VGMdb 待补充）  
 > **前置条件**: Phase 7（移动端体验）已全部完成并通过 13 项 E2E 测试
 
 ---
 
 ## 0. 战略愿景：告别手动录入，全面走向 API 自动化流水线
 
-当前项目拥有 **3,403 tracks + 734 releases + 344 artists**，核心痛点如下：
+当前项目拥有 **3,489 tracks + 746 releases + 1,039 artists**，核心痛点如下：
 
 | 数据维度 | 当前状态 | 痛点 |
 |---|---|---|
-| Track Credits（作词/作曲/编曲） | 几乎全部为空 `[]` | 3,403 首歌曲纯人工录入不现实 |
-| Track 歌词 | 0/3,403 | 全部缺失 |
-| Release Catalog Number | 几乎全部缺失 | 无法精准关联外部数据库 |
-| Release Label | 几乎全部缺失 | 缺少唱片公司维度 |
-| Artist Portrait | 全部缺失 | 艺人页面只有文字 |
+| Track Credits（作词/作曲/编曲） | 70% (2,426/3,489) | MusicBrainz 已完成，待 VGMdb 补充 Arranger |
+| Track 歌词 | 46% (1,604/3,489) | Uta-Net 已抓取，萌娘百科/Wiki 待推进 |
+| Release Catalog Number | 56% (421/746) | MusicBrainz Release 级别已回填 |
+| Release Label | 67% (499/746) | MusicBrainz Release 级别已回填 |
+| Artist Portrait | 25% (255/1,039) | imas.gamedbs.jp 已抓，SideM/学园待补 |
 | Artist 代表色 | 仅 imasparql 原始值，未 Hex 标准化 | 无法用于 UI 着色 |
 
 **决策确认（2026-04-27）**：

@@ -1,7 +1,7 @@
 # 项目路线图 — 活跃任务总览
 
 > **读取说明**：本文档只包含当前待办与进行中的工作。已完成的阶段见下方「归档区」链接。
-> **最后更新**：2026-04-27
+> **最后更新**：2026-05-28
 
 ---
 
@@ -26,7 +26,7 @@
 > **战略口号：告别手动录入，全面走向 API 自动化流水线。**
 >
 > 在移动端 UI 与交互彻底打磨稳固的基础上，接下来的重心是**数据层自动化扩展**与**长期功能建设**。
-> 3,403 首歌曲的 Credits、734 张专辑的 Catalog Number、344 位艺人的头像——纯人工录入不现实。
+> 3,489 首歌曲的 Credits、746 张专辑的 Catalog Number、1,039 位艺人的头像——纯人工录入不现实。
 > 引入 **MusicBrainz API** 和 **VGMdb** 作为核心自动化数据源，构建本地脚本流水线，在构建前完成数据融合。
 >
 > 详细技术规划见 [`docs/phase8-planning.md`](./phase8-planning.md)。
@@ -39,12 +39,12 @@
 
 | 任务 | 说明 | 状态 | 预估 |
 |---|---|---|---|
-| 8.1a MusicBrainz 基础设施 | 封装 API 客户端（Release-level + Recording-level 两级） | ⏳ 待开始 | 2 天 |
-| 8.1b Release-level 批量打底 | 按 Release 均摊 Credits，回填 Catalog/Label | ⏳ 待开始 | 4 天 |
-| 8.1c Recording-level 精修 | 按 Recording 精确匹配 Credits，track-by-track 验证 | ⏳ 待开始 | 4 天 |
+| 8.1a MusicBrainz 基础设施 | 封装 API 客户端（Release-level + Recording-level 两级） | ✅ 已完成 | 2 天 |
+| 8.1b Release-level 批量打底 | 按 Release 均摊 Credits，回填 Catalog/Label | ✅ 已完成 | 4 天 |
+| 8.1c Recording-level 精修 | 按 Recording 精确匹配 Credits，track-by-track 验证 | ✅ 已完成 | 4 天 |
 | 8.1d VGMdb 补充 + Credits 合并 | 补充缺失的 Arranger，smart merge 写入 tracks.json | ⏳ 待开始 | 3 天 |
 | 8.1e 萌娘百科歌词抓取 | Playwright 批量抓取中文歌词（与 Credits 并行） | ⏳ 待开始 | 4 天 |
-| 8.1f Wiki 歌词提取 + 歌词合并 | 扩展 parse-wiki-dump.ts，合并歌词到 tracks.json | ⏳ 待开始 | 3 天 |
+| 8.1f Wiki 歌词提取 + 歌词合并 | 扩展 parse-wiki-dump.ts，合并歌词到 tracks.json | ✅ 已完成（Uta-Net 替代） | 3 天 |
 
 **验收标准**: Credits ≥ 75% · 歌词 ≥ 30% · Catalog Number ≥ 50% · Label ≥ 30% · 冲突率 ≤ 5%
 
@@ -73,8 +73,20 @@
 | 任务 | 说明 | 状态 |
 |---|---|---|
 | 全量 E2E 回归测试 | Playwright 13 项测试全部通过 | ⏳ 待开始 |
-| 数据质量报告 | Credits/歌词/Catalog/Label/Portrait 各维度覆盖率 | ⏳ 待开始 |
-| README & 文档更新 | 版本号 v0.5.0、数据状态、新功能说明 | ⏳ 待开始 |
+| 数据质量报告 | Credits/歌词/Catalog/Label/Portrait 各维度覆盖率 | ✅ 已更新（README） |
+| README & 文档更新 | 版本号 v0.5.1、数据状态、新功能说明 | ✅ 已完成 |
+
+---
+
+### 🆕 近期新增事项（2026-05-28）
+
+| 任务 | 说明 | 状态 |
+|---|---|---|
+| iTunes 新曲抓取 | `batch-fetch-albums.ts` 新增 12 张专辑，`fetch-album-tracks.ts` 新增 86 首歌曲 | ✅ 已完成 |
+| Next.js 升级 15→16 | 升级至 16.2.6，启用 Turbopack | ✅ 已完成 |
+| PostCSS 版本修复 | 修复 8.5.14 → 8.4.31 版本冲突，CSS 样式恢复正常 | ✅ 已完成 |
+| Cloudflare Pages 20K 限制 | Next.js 16 生成 `.txt` 预加载文件导致 ~48K 文件，CI 中清理后部署 | ✅ 已解决 |
+| 头像覆盖率修复 | 实际 255/1,039 = 25%（非 74%），需补全 | 🔴 待处理 |
 
 ---
 
