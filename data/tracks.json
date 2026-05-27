@@ -74052,5 +74052,1037 @@
     "trackNumber": 2,
     "durationSec": 223,
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/69/d1/a569d169-aff0-3715-6a91-55e97c8c5138/mzaf_3209529025663959043.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889131851",
+    "titleJa": "Ring Ring Ringの魔法",
+    "releaseId": "release-1889131850",
+    "artistIds": [
+      "ザ・ふたりトラベラー"
+    ],
+    "credits": [],
+    "trackNumber": 1,
+    "durationSec": 223,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/bd/dc/c9bddca4-8b72-56c1-b968-af35acd949b9/mzaf_8146374049107957467.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889131852",
+    "titleJa": "街角メランコリー",
+    "releaseId": "release-1889131850",
+    "artistIds": [
+      "ザ・ふたりトラベラー"
+    ],
+    "credits": [],
+    "trackNumber": 2,
+    "durationSec": 261,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/6f/83/096f837d-e338-b529-073f-9def1918ff3a/mzaf_17132525285830434131.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889131853",
+    "titleJa": "Ring Ring Ringの魔法 (Game Size)",
+    "releaseId": "release-1889131850",
+    "artistIds": [
+      "ザ・ふたりトラベラー"
+    ],
+    "credits": [],
+    "trackNumber": 3,
+    "durationSec": 151,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/6e/17/ba6e175d-b271-dcca-85a3-1b82fbf861ab/mzaf_16115030696046137019.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889131854",
+    "titleJa": "街角メランコリー (Game Size)",
+    "releaseId": "release-1889131850",
+    "artistIds": [
+      "ザ・ふたりトラベラー"
+    ],
+    "credits": [],
+    "trackNumber": 4,
+    "durationSec": 120,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f3/3c/be/f33cbe80-0d5c-749c-8075-2a1feefd2a1e/mzaf_9276567632537435153.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889131855",
+    "titleJa": "Ring Ring Ringの魔法 (Off Vocal)",
+    "releaseId": "release-1889131850",
+    "artistIds": [
+      "ザ・ふたりトラベラー"
+    ],
+    "credits": [],
+    "trackNumber": 5,
+    "durationSec": 223,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/9e/89/7c9e8955-f76f-d5d5-81be-f2a7c95858d6/mzaf_4786123224565054429.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889131856",
+    "titleJa": "街角メランコリー (Off Vocal)",
+    "releaseId": "release-1889131850",
+    "artistIds": [
+      "ザ・ふたりトラベラー"
+    ],
+    "credits": [],
+    "trackNumber": 6,
+    "durationSec": 261,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cf/18/a6/cf18a6b4-dff8-b8fd-7770-60c38240b897/mzaf_1076732532498432909.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889730645",
+    "titleJa": "おつかれさまです!(晴の日)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 1,
+    "durationSec": 168,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/28/48/2f28485e-532b-c7b5-d577-60edc92c5c80/mzaf_9502513364664887906.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889730649",
+    "titleJa": "ただいまって言える場所(晴の日)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 2,
+    "durationSec": 197,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/96/76/6c967605-44d8-cbc0-7607-6425027bd178/mzaf_12858909090145758732.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889730651",
+    "titleJa": "朝靄はおはようの香りがする(晴の日)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 3,
+    "durationSec": 170,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/81/b0/2c/81b02c56-0cac-9d79-80af-756bfc1499e0/mzaf_2214435409957921807.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889730848",
+    "titleJa": "はばたきのエントランス",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 4,
+    "durationSec": 170,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/61/76/0f/61760fe7-a4b9-a092-1e1f-b3c2fd281d89/mzaf_15442096969882638311.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889730852",
+    "titleJa": "静寂・予感・確信",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 5,
+    "durationSec": 50,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/ad/45/8bad45a1-c9e6-3952-716e-4a60cbc55f27/mzaf_3714684361430636620.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889730854",
+    "titleJa": "Draw your rainbow!",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 6,
+    "durationSec": 151,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f9/02/1d/f9021d97-08ac-9fc0-12bc-77f252a056b0/mzaf_12833978859455160818.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889730855",
+    "titleJa": "Layered photograph",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 7,
+    "durationSec": 130,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e2/90/a3/e290a35c-ea39-69e1-74b7-87a1eac33e35/mzaf_6937718685762923603.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889730856",
+    "titleJa": "それぞれの扉",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 8,
+    "durationSec": 194,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/16/ad/15/16ad1595-37ea-72e2-d497-367b3dcf9282/mzaf_7821209805973540528.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889730859",
+    "titleJa": "今日の予定は～?",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 9,
+    "durationSec": 187,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/ca/eb/1ecaeb0b-b048-3947-3b50-34a4dde50763/mzaf_1117970385174928866.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731075",
+    "titleJa": "羽ばたく、この一歩から!(サントラMIX)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 10,
+    "durationSec": 272,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/7d/07/077d0797-6a2c-c39e-22f9-0cf6eef6218f/mzaf_8903233832098863304.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731076",
+    "titleJa": "見ていてくださいね!",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 11,
+    "durationSec": 202,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d8/b9/82/d8b982aa-0ba4-fdae-1d45-e857170691a5/mzaf_16370493759570908382.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731082",
+    "titleJa": "輝きを届けるための",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 12,
+    "durationSec": 166,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/e8/ed/4de8edae-073e-2aef-a0f6-4c791ccd0fcf/mzaf_13800633069459341997.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731085",
+    "titleJa": "今、証明せしウタ",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 13,
+    "durationSec": 184,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/b8/44/fcb84457-6533-984d-ee29-7f8015863907/mzaf_14932786958343646016.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731095",
+    "titleJa": "放課後大大大決戦!!!!!",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 14,
+    "durationSec": 145,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/1c/1c/e01c1cd5-3dab-88fa-5f02-3587d1f02b58/mzaf_14363277358612193576.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731099",
+    "titleJa": "ジャーニー・ゴーランド",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 15,
+    "durationSec": 164,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/d9/79/46d979d3-d060-217f-e1ad-82f38c35149e/mzaf_11212688721734993972.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731227",
+    "titleJa": "Stronger!",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 16,
+    "durationSec": 189,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5d/88/9c/5d889c4e-7300-deda-4864-5faf69a1303b/mzaf_15194772764925187793.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731231",
+    "titleJa": "水平線へ、帆を張って。",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 17,
+    "durationSec": 202,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a8/d5/8a/a8d58ace-3ad4-78c5-61a8-c505f5ab52b3/mzaf_2472746942672580452.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731236",
+    "titleJa": "NAILING",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 18,
+    "durationSec": 202,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/73/5a/5b/735a5b72-834c-b771-aed5-3684bcf15bc3/mzaf_15343527530665660229.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731237",
+    "titleJa": "STELLAR≒DISTORTION",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 19,
+    "durationSec": 222,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/94/d0/37/94d03730-ce0c-bcf9-0e79-2d8505a8651c/mzaf_13817505930140066258.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731242",
+    "titleJa": "おつかれさまでした!",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 20,
+    "durationSec": 65,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/b2/15/05b2153b-b5ee-5767-07c8-a1ffc12dc0b6/mzaf_9704015985955833253.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731243",
+    "titleJa": "こころをリボンで結んだら",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 21,
+    "durationSec": 133,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/76/c6/5c/76c65c26-1166-24c7-5be2-a3882089d76e/mzaf_15919634639620612203.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731246",
+    "titleJa": "おつかれさまです!(曇の日)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 22,
+    "durationSec": 168,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/c6/1a/72c61a71-3443-1084-b38b-ddd81c403b6a/mzaf_15758183217036231439.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731247",
+    "titleJa": "おつかれさまです!(雨の日)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 23,
+    "durationSec": 168,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/a6/3c/66a63cde-fa3b-61f5-359a-343ff88b8eae/mzaf_4458912132396562692.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731250",
+    "titleJa": "おつかれさまです!(雪の日)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 24,
+    "durationSec": 168,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b5/71/17b57153-4b2f-0fc4-b7b4-b0f02e156cd5/mzaf_10105595709398556967.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731576",
+    "titleJa": "おつかれさまです!(ストーリー)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 25,
+    "durationSec": 168,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/34/f2/5534f214-4731-1af9-b2fc-31881e6c7f43/mzaf_211087223123064269.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731578",
+    "titleJa": "おつかれさまです!(アイドル)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 26,
+    "durationSec": 168,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/d9/14/8cd91467-06a3-7e49-f327-cc9ddcd1492b/mzaf_9060715522482038442.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731581",
+    "titleJa": "ただいまって言える場所(曇の日)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 27,
+    "durationSec": 197,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dd/80/f2/dd80f286-23b5-71c7-1c5b-47e1c34b7f6d/mzaf_10182648342065981679.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731582",
+    "titleJa": "ただいまって言える場所(雨の日)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 28,
+    "durationSec": 197,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/ef/6b/1fef6b5d-a94f-0ad3-2c47-5a9129f223c4/mzaf_11340739581782150633.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731587",
+    "titleJa": "ただいまって言える場所(雪の日)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 29,
+    "durationSec": 197,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9b/75/21/9b7521f3-9c68-6fe6-8db5-4f46e1ab86cb/mzaf_3006811703860824399.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731590",
+    "titleJa": "ただいまって言える場所(ストーリー)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 30,
+    "durationSec": 197,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/05/22/46/05224634-543d-033a-78f9-12709aa53404/mzaf_451462111394701696.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731596",
+    "titleJa": "ただいまって言える場所(アイドル)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 31,
+    "durationSec": 197,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/59/69/17596960-057b-82c7-3bcc-4999d509e33a/mzaf_12609595991832571801.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731793",
+    "titleJa": "朝靄はおはようの香りがする(曇の日)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 32,
+    "durationSec": 170,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5d/4d/6d/5d4d6db0-5c53-df6c-9f45-9bbd175231a2/mzaf_6778024470089767097.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731811",
+    "titleJa": "朝靄はおはようの香りがする(雨の日)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 33,
+    "durationSec": 170,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/14/78/a01478e6-f77f-0455-4060-dfe59aa52742/mzaf_4026925633215721880.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731878",
+    "titleJa": "朝靄はおはようの香りがする(雪の日)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 34,
+    "durationSec": 170,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/41/bd/8c41bd14-cce7-9f5a-ef3b-cdabf7810ebb/mzaf_15393930280295547896.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731887",
+    "titleJa": "朝靄はおはようの香りがする(ストーリー)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 35,
+    "durationSec": 170,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/7d/f3/cb7df3ff-cdf1-62cb-6c80-164a83b2f04b/mzaf_7742498556855888788.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731892",
+    "titleJa": "朝靄はおはようの香りがする(アイドル)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 36,
+    "durationSec": 170,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/97/45/c3974519-faca-9059-2ece-6f987f8f75cd/mzaf_11274523017726279072.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731896",
+    "titleJa": "聞こえる1.2.3.4",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 37,
+    "durationSec": 263,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/5b/3c/7b5b3c5f-b659-7251-8611-eeb4de08fe11/mzaf_3066652732017316140.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731901",
+    "titleJa": "弾けて!ハートビート",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 38,
+    "durationSec": 85,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7f/3b/f9/7f3bf97a-1c34-2bb9-0ca5-d5289788d526/mzaf_11605992804824266238.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731969",
+    "titleJa": "ステップ→アップ↑の予感♪",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 39,
+    "durationSec": 75,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/0c/bc/710cbc6e-0cad-d6d0-5dd4-d2e73bb39488/mzaf_44189435386108009.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731971",
+    "titleJa": "今日できたことに◎",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 40,
+    "durationSec": 73,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/f2/18/b3f218d1-1ec6-bb9a-20ef-cbd5bd7bd891/mzaf_12368052738272229387.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731973",
+    "titleJa": "追い風と非日常",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 41,
+    "durationSec": 112,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/51/72/15/517215c8-aedf-53c1-dbf0-04a069479194/mzaf_8183830819087393068.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731977",
+    "titleJa": "Shiny Song Result",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 42,
+    "durationSec": 76,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/8c/d0/6a8cd0a3-1763-49d1-f705-667c77455670/mzaf_8917940248101844557.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731983",
+    "titleJa": "Cool Prism Result",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 43,
+    "durationSec": 73,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/41/81/6e/41816ec6-4fe4-888a-0620-d5180bcace24/mzaf_16566664444441528138.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731989",
+    "titleJa": "高みの空を望む",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 44,
+    "durationSec": 218,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/c9/7d/3fc97dfa-6efd-9e23-fc0b-b085774fc69e/mzaf_10272130798009997869.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889731993",
+    "titleJa": "SP/schematic",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 45,
+    "durationSec": 53,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/24/92/622492b3-7b38-a8d9-1317-a46ce5ee5a60/mzaf_9161743163889442426.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889732205",
+    "titleJa": "トレースビート・イミテーションステップ",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 46,
+    "durationSec": 74,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/e3/a9/9ae3a91e-30ba-fdbc-d5c3-8b435401d3af/mzaf_2546567243278776863.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889732209",
+    "titleJa": "Town (シャニソンversion)",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 47,
+    "durationSec": 162,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ee/c0/e0/eec0e064-73ef-8ca8-469c-d66957a97962/mzaf_16780563165575465677.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889732214",
+    "titleJa": "アワスト配信用BGM1",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 48,
+    "durationSec": 200,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/36/4b/0d/364b0ded-1272-7bbd-85ad-5b83080d71d2/mzaf_7659433673611644034.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889732223",
+    "titleJa": "283デイズ",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 49,
+    "durationSec": 160,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/38/c2/79/38c27905-d721-538e-25e7-1dea7fe355cb/mzaf_13081784122977024402.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1889732227",
+    "titleJa": "まろやかタイム",
+    "releaseId": "release-1889730644",
+    "artistIds": [
+      "THE IDOLM@STER SHINY COLORS & Bandai Namco Game Music"
+    ],
+    "credits": [],
+    "trackNumber": 50,
+    "durationSec": 165,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/0f/c3/050fc3ab-cb13-07d0-b972-dac108f4929d/mzaf_15295965479860142537.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1809911170",
+    "titleJa": "Numberless",
+    "releaseId": "release-1809911169",
+    "artistIds": [
+      "大石泉 (CV: 大木咲絵子)"
+    ],
+    "credits": [],
+    "trackNumber": 1,
+    "durationSec": 251,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/af/ee/2aafee38-c899-dd07-455f-df0b68e2c2e2/mzaf_16296260593621209966.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1809911171",
+    "titleJa": "ドラマ「もーっと目指せ! シンデレラNo.1! -大石泉編-」",
+    "releaseId": "release-1809911169",
+    "artistIds": [
+      "大石泉 (CV: 大木咲絵子) & ライラ (CV: 市ノ瀬加那)"
+    ],
+    "credits": [],
+    "trackNumber": 2,
+    "durationSec": 1219,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8c/f5/3a/8cf53a6e-bfe6-d7b8-0311-ed15407e51b0/mzaf_4294006822484632291.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1809911172",
+    "titleJa": "Numberless (オリジナル・カラオケ)",
+    "releaseId": "release-1809911169",
+    "artistIds": [
+      "大石泉 (CV: 大木咲絵子)"
+    ],
+    "credits": [],
+    "trackNumber": 3,
+    "durationSec": 253,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7d/6b/73/7d6b73d2-7a8f-9d76-ba91-f5febef8b6c3/mzaf_5443243964917737971.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1809911173",
+    "titleJa": "ボーナス・トラック",
+    "releaseId": "release-1809911169",
+    "artistIds": [
+      "大石泉 (CV: 大木咲絵子)"
+    ],
+    "credits": [],
+    "trackNumber": 4,
+    "durationSec": 85,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/a7/db/e5a7db5e-dc90-2f11-9fcf-43c11cde8a13/mzaf_3366149138157622593.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1809911174",
+    "titleJa": "メサイア",
+    "releaseId": "release-1809911169",
+    "artistIds": [
+      "望月聖 (CV: 原 涼子)"
+    ],
+    "credits": [],
+    "trackNumber": 1,
+    "durationSec": 410,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dc/50/6c/dc506c1a-318f-4769-d8b5-1b5d33aa37bd/mzaf_13610429583790857513.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1809911175",
+    "titleJa": "ドラマ「もーっと目指せ! シンデレラNo.1! -望月聖編-」",
+    "releaseId": "release-1809911169",
+    "artistIds": [
+      "望月聖 (CV: 原 涼子) & 大石泉 (CV: 大木咲絵子)"
+    ],
+    "credits": [],
+    "trackNumber": 2,
+    "durationSec": 1191,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/f9/8b/19f98be4-a52c-b537-15c3-6ad9d43863dc/mzaf_9992438328427931672.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1809911177",
+    "titleJa": "メサイア (オリジナル・カラオケ)",
+    "releaseId": "release-1809911169",
+    "artistIds": [
+      "望月聖 (CV: 原 涼子)"
+    ],
+    "credits": [],
+    "trackNumber": 3,
+    "durationSec": 412,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/fe/78/3efe7850-1d71-90eb-6e1c-17c6f5dd0f35/mzaf_11308886655061989706.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1809911178",
+    "titleJa": "ボーナス・トラック",
+    "releaseId": "release-1809911169",
+    "artistIds": [
+      "望月聖 (CV: 原 涼子)"
+    ],
+    "credits": [],
+    "trackNumber": 4,
+    "durationSec": 109,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d4/9c/23/d49c2337-860e-56df-8df9-fc781ee4a514/mzaf_11538857500798728726.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1809911179",
+    "titleJa": "千夜一夜 (Alf Layla wa Layla)",
+    "releaseId": "release-1809911169",
+    "artistIds": [
+      "ライラ (CV: 市ノ瀬加那)"
+    ],
+    "credits": [],
+    "trackNumber": 1,
+    "durationSec": 267,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/61/ef/53/61ef53ca-4d0a-8cb4-97f5-53e83a5bfae2/mzaf_3433227652335684331.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1809911450",
+    "titleJa": "ドラマ「もーっと目指せ! シンデレラNo.1! -ライラ編-」",
+    "releaseId": "release-1809911169",
+    "artistIds": [
+      "ライラ (CV: 市ノ瀬加那) & 望月聖 (CV: 原 涼子)"
+    ],
+    "credits": [],
+    "trackNumber": 2,
+    "durationSec": 1230,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/1f/6e/291f6e81-7c47-2f75-468a-0fef00f9b750/mzaf_12815083802069756738.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1809911451",
+    "titleJa": "千夜一夜 (Alf Layla wa Layla) [オリジナル・カラオケ]",
+    "releaseId": "release-1809911169",
+    "artistIds": [
+      "ライラ (CV: 市ノ瀬加那)"
+    ],
+    "credits": [],
+    "trackNumber": 3,
+    "durationSec": 268,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/9b/27/7e9b27fd-d6d8-a3bc-446d-cb75d18c0c87/mzaf_259834785553761249.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1809911452",
+    "titleJa": "ボーナス・トラック",
+    "releaseId": "release-1809911169",
+    "artistIds": [
+      "ライラ (CV: 市ノ瀬加那)"
+    ],
+    "credits": [],
+    "trackNumber": 4,
+    "durationSec": 90,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/8a/6d/5b8a6d40-c425-e500-905d-e30750d06ffd/mzaf_4694499427803678116.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1888119174",
+    "titleJa": "Packing Her Favorite",
+    "releaseId": "release-1888119173",
+    "artistIds": [
+      "久川颯 (CV: 長江里加)"
+    ],
+    "credits": [],
+    "trackNumber": 1,
+    "durationSec": 249,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c0/f3/f6/c0f3f6b9-b282-2fe0-3d09-537e3621a5ac/mzaf_13603462818090073834.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1888119175",
+    "titleJa": "ドラマ「もーっと目指せ! シンデレラNo.1! -久川颯編-」",
+    "releaseId": "release-1888119173",
+    "artistIds": [
+      "久川颯 (CV: 長江里加) & ナターリア (CV: 生田 輝)"
+    ],
+    "credits": [],
+    "trackNumber": 2,
+    "durationSec": 1089,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/fa/44/59fa44e8-1b27-c934-5c9d-6ea1ecb8d8ef/mzaf_9797037229627297751.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1888119176",
+    "titleJa": "Packing Her Favorite (オリジナル・カラオケ)",
+    "releaseId": "release-1888119173",
+    "artistIds": [
+      "久川颯 (CV: 長江里加)"
+    ],
+    "credits": [],
+    "trackNumber": 3,
+    "durationSec": 251,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8a/64/aa/8a64aa78-8a9b-28a8-7655-bf9c1985ece1/mzaf_13681022811043276069.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1888119177",
+    "titleJa": "ボーナス・トラック",
+    "releaseId": "release-1888119173",
+    "artistIds": [
+      "久川颯 (CV: 長江里加)"
+    ],
+    "credits": [],
+    "trackNumber": 4,
+    "durationSec": 92,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/75/43/9875433b-4d20-4e9c-167b-9c75a6b21e07/mzaf_7700237344842138733.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1862692169",
+    "titleJa": "Date.today",
+    "releaseId": "release-1862692168",
+    "artistIds": [
+      "W"
+    ],
+    "credits": [],
+    "trackNumber": 1,
+    "durationSec": 201,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/8b/7a/678b7a22-96b6-15b7-18e8-752aa9e0ed68/mzaf_15842126922625683425.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1862692170",
+    "titleJa": "Date.today (蒼井悠介 ソロVer.)",
+    "releaseId": "release-1862692168",
+    "artistIds": [
+      "蒼井悠介 (CV.菊池勇成)"
+    ],
+    "credits": [],
+    "trackNumber": 2,
+    "durationSec": 201,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/11/ca/3f/11ca3f75-5a2b-f6f2-6439-fc61c385c663/mzaf_12232048890701001154.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1862692171",
+    "titleJa": "Date.today (蒼井享介 ソロVer.)",
+    "releaseId": "release-1862692168",
+    "artistIds": [
+      "蒼井享介 (CV.山谷祥生)"
+    ],
+    "credits": [],
+    "trackNumber": 3,
+    "durationSec": 202,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/77/42/cc7742c5-5842-c561-2c08-550099ddf5cf/mzaf_5550771338367683861.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1862692172",
+    "titleJa": "Date.today (Off Vocal)",
+    "releaseId": "release-1862692168",
+    "artistIds": [
+      "W"
+    ],
+    "credits": [],
+    "trackNumber": 4,
+    "durationSec": 200,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/02/ae/9902aea6-7bb8-f449-921c-8a1a2697d9f5/mzaf_2211859930262909847.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1761316226",
+    "titleJa": "Cyber Parkour",
+    "releaseId": "release-1761316223",
+    "artistIds": [
+      "ストレイライト"
+    ],
+    "credits": [],
+    "trackNumber": 1,
+    "durationSec": 243,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/24/f9/29/24f92900-dbb8-66b7-650e-8f53734fff36/mzaf_10287205900019840392.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1761316230",
+    "titleJa": "LIVE LIVE LIVE!",
+    "releaseId": "release-1761316223",
+    "artistIds": [
+      "ストレイライト"
+    ],
+    "credits": [],
+    "trackNumber": 2,
+    "durationSec": 253,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/90/30/73/90307344-c242-c1b0-cb72-b3a76003d636/mzaf_2447655816008288797.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1761316231",
+    "titleJa": "Migratory Echoes (ストレイライト Ver.)",
+    "releaseId": "release-1761316223",
+    "artistIds": [
+      "ストレイライト"
+    ],
+    "credits": [],
+    "trackNumber": 3,
+    "durationSec": 253,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/40/e2/ed40e2c7-b6cf-2928-4cf8-2350905473e2/mzaf_2245422599380143723.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1761316232",
+    "titleJa": "Cyber Parkour (Off Vocal)",
+    "releaseId": "release-1761316223",
+    "artistIds": [
+      "ストレイライト"
+    ],
+    "credits": [],
+    "trackNumber": 4,
+    "durationSec": 243,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/3a/bc/503abce7-657f-9e84-1f0c-78d7278cfcb6/mzaf_1777851510765797298.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1761316233",
+    "titleJa": "LIVE LIVE LIVE! (Off Vocal)",
+    "releaseId": "release-1761316223",
+    "artistIds": [
+      "ストレイライト"
+    ],
+    "credits": [],
+    "trackNumber": 5,
+    "durationSec": 253,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/82/92/348292f5-22de-6bba-f912-817a07aa16e3/mzaf_311303215440383469.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1761316234",
+    "titleJa": "Migratory Echoes (ストレイライト Ver.) [Off Vocal]",
+    "releaseId": "release-1761316223",
+    "artistIds": [
+      "ストレイライト"
+    ],
+    "credits": [],
+    "trackNumber": 6,
+    "durationSec": 253,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/6f/08/e96f08b0-c39a-90b6-5cf0-c9a26b487101/mzaf_7067987641964980316.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-6763449153",
+    "titleJa": "VEIL",
+    "releaseId": "release-1895321418",
+    "artistIds": [
+      "初星学園 & 秦谷美鈴"
+    ],
+    "credits": [],
+    "trackNumber": 1,
+    "durationSec": 217,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/23/63/10/23631007-0775-f460-5ed9-9edd7c9a862d/mzaf_10024560741678348056.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-6763449156",
+    "titleJa": "VEIL [Instrumental]",
+    "releaseId": "release-1895321418",
+    "artistIds": [
+      "初星学園 & 秦谷美鈴"
+    ],
+    "credits": [],
+    "trackNumber": 2,
+    "durationSec": 217,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9b/a2/64/9ba26444-d12e-02cd-17e3-9c4698f268d4/mzaf_9155789495930534636.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1784648580",
+    "titleJa": "メクルメ",
+    "releaseId": "release-1784648407",
+    "artistIds": [
+      "初星学園 & 篠澤 広"
+    ],
+    "credits": [],
+    "trackNumber": 1,
+    "durationSec": 197,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/68/26/116826a3-365d-464d-16e4-8c4186a4e603/mzaf_654237685606433575.plus.aac.p.m4a"
+  },
+  {
+    "id": "track-1784648583",
+    "titleJa": "メクルメ [Instrumental]",
+    "releaseId": "release-1784648407",
+    "artistIds": [
+      "初星学園 & 篠澤 広"
+    ],
+    "credits": [],
+    "trackNumber": 2,
+    "durationSec": 197,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/91/c3/9f91c396-d37f-4db6-84e1-1f72ab1276ed/mzaf_15370642651988218456.plus.aac.p.m4a"
   }
 ]
