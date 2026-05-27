@@ -25,6 +25,14 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Remove prefetch .txt files to stay under 20K limit
+        run: |
+          echo "Before cleanup: $(find dist -type f | wc -l) files"
+          find dist -name '__next.*.txt' -delete
+          find dist -name '__next.*.track' -delete
+          find dist -name '__next.*.track.txt' -delete
+          echo "After cleanup: $(find dist -type f | wc -l) files"
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
