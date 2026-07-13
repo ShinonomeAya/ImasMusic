@@ -13,12 +13,22 @@ async function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
-async function fetchAlbumTracks(collectionId: number): Promise<any[]> {
+async function fetchAlbumTracks(collectionId: number, title: string): Promise<any[]> {
   const url = `${ITUNES_LOOKUP}?id=${collectionId}&entity=song&country=jp&lang=ja_jp`
   const res = await fetch(url, { headers: { Accept: 'application/json' } })
   if (!res.ok) throw new Error(`HTTP ${res.status}`)
   const data = await res.json()
-  return (data.results || []).filter((r: any) => r.wrapperType === 'track' || r.kind === 'song')
+  const songs = (data.results || []).filter((r: any) => r.wrapperType === 'track' || r.kind === 'song')
+  if (songs.length > 0) return songs
+
+  // 某些新发行物的 lookup 只返回 collection，需要用歌曲搜索补回曲目。
+  const searchUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(title)}&media=music&entity=song&country=jp&limit=200&lang=ja_jp`
+  const searchRes = await fetch(searchUrl, { headers: { Accept: 'application/json' } })
+  if (!searchRes.ok) throw new Error(`HTTP ${searchRes.status}`)
+  const searchData = await searchRes.json()
+  return (searchData.results || []).filter(
+    (r: any) => (r.wrapperType === 'track' || r.kind === 'song') && r.collectionId === collectionId
+  )
 }
 
 async function main() {
@@ -48,7 +58,7 @@ async function main() {
     const progress = `[${i + 1}/${emptyReleases.length}]`
 
     try {
-      const songs = await fetchAlbumTracks(collectionId)
+      const songs = await fetchAlbumTracks(collectionId, release.titleJa)
 
       if (songs.length === 0) {
         console.log(`${progress} ⚠️  无曲目: ${release.titleJa.slice(0, 50)}`)

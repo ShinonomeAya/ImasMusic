@@ -452,7 +452,23 @@
     "series": "sidem",
     "releaseDate": "2020-03-06T12:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/36/06/13/3606134d-2858-dd32-1205-1d1f65a0ebce/195533020967.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1810150748",
+      "track-1810150737",
+      "track-1810150739",
+      "track-1810150747",
+      "track-1810150741",
+      "track-1810150745",
+      "track-1810150743",
+      "track-1810150744",
+      "track-1810150742",
+      "track-1810150736",
+      "track-1810150749",
+      "track-1810150746",
+      "track-1810150735",
+      "track-1810150738",
+      "track-1810150740"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1810150734",
     "artistName": "315 ALLSTARS",
@@ -1020,7 +1036,14 @@
     "series": "shinycolors",
     "releaseDate": "2024-11-13T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2a/61/10/2a61101e-b83a-746b-1390-7a1aa196424c/195533004066.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1773459014",
+      "track-1773459018",
+      "track-1773459011",
+      "track-1773459012",
+      "track-1773459016",
+      "track-1773459017"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1773459010",
     "artistName": "シーズ",
@@ -1058,7 +1081,14 @@
     "series": "shinycolors",
     "releaseDate": "2024-12-11T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/da/55/f5/da55f5df-a270-bbe5-4d87-d5b5c6c2a418/195533004141.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1779614261",
+      "track-1779614264",
+      "track-1779614259",
+      "track-1779614260",
+      "track-1779614262",
+      "track-1779614263"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1779614258",
     "artistName": "コメティック",
@@ -1072,7 +1102,14 @@
     "series": "shinycolors",
     "releaseDate": "2025-06-04T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2d/03/99/2d03990e-0f9f-12de-e769-3118d59cb1ba/195533020974.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1811957895",
+      "track-1811957893",
+      "track-1811957894",
+      "track-1811957896",
+      "track-1811957898",
+      "track-1811957897"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1811957892",
     "artistName": "アンティーカ & シーズ",
@@ -1086,7 +1123,26 @@
     "series": "sidem",
     "releaseDate": "2024-12-11T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8d/47/f4/8d47f49c-d7e7-2ca7-baa3-89fc751947ea/195533004158.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1779611028",
+      "track-1779611209",
+      "track-1779611027",
+      "track-1779611213",
+      "track-1779611210",
+      "track-1779611026",
+      "track-1779611215",
+      "track-1779611214",
+      "track-1779611025",
+      "track-1779611211",
+      "track-1779611216",
+      "track-1779611021",
+      "track-1779611212",
+      "track-1779611023",
+      "track-1779611219",
+      "track-1779611217",
+      "track-1779611221",
+      "track-1779611222"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1779611008",
     "artistName": "Beit"
@@ -1232,7 +1288,26 @@
     "series": "sidem",
     "releaseDate": "2024-10-30T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/22/02/b82202ca-7d84-6cdb-7d1c-a98e02ce071c/195533003830.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1770957570",
+      "track-1770957580",
+      "track-1770957579",
+      "track-1770957577",
+      "track-1770957576",
+      "track-1770957574",
+      "track-1770957573",
+      "track-1770957571",
+      "track-1770957569",
+      "track-1770957575",
+      "track-1770957572",
+      "track-1770957567",
+      "track-1770957568",
+      "track-1770957585",
+      "track-1770957583",
+      "track-1770957586",
+      "track-1770957581",
+      "track-1770957582"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1770957566",
     "artistName": "DRAMATIC STARS",
@@ -1356,7 +1431,21 @@
     "series": "sidem",
     "releaseDate": "2025-05-28T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e9/15/04/e91504eb-632b-3320-52d1-0d1ee6b93ae5/195533020950.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1810150983",
+      "track-1810150979",
+      "track-1810150982",
+      "track-1810150980",
+      "track-1810150981",
+      "track-1810150989",
+      "track-1810150984",
+      "track-1810150978",
+      "track-1810150985",
+      "track-1810150977",
+      "track-1810150986",
+      "track-1810150987",
+      "track-1810150988"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1810150976",
     "artistName": "C.FIRST"
@@ -1368,7 +1457,26 @@
     "series": "sidem",
     "releaseDate": "2025-04-02T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/44/0a/c2440abf-2374-088a-a4a9-13aa7ee8fd64/195533020851.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1798974126",
+      "track-1798974128",
+      "track-1798974124",
+      "track-1798974120",
+      "track-1798974122",
+      "track-1798974125",
+      "track-1798974121",
+      "track-1798974119",
+      "track-1798974130",
+      "track-1798974123",
+      "track-1798974127",
+      "track-1798974118",
+      "track-1798974131",
+      "track-1798974117",
+      "track-1798974133",
+      "track-1798974135",
+      "track-1798974134",
+      "track-1798974132"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1798974116",
     "artistName": "S.E.M"
@@ -1404,7 +1512,14 @@
     "series": "shinycolors",
     "releaseDate": "2024-09-11T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f2/ff/eb/f2ffeb5f-7cb1-2d38-2e5b-af68d1097bf9/195533003717.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1761313725",
+      "track-1761313721",
+      "track-1761313723",
+      "track-1761313726",
+      "track-1761313727",
+      "track-1761313969"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1761313720",
     "artistName": "ストレイライト",
@@ -1520,7 +1635,14 @@
     "series": "shinycolors",
     "releaseDate": "2025-07-02T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/50/3f/cd/503fcd45-0942-f32d-8df6-952d4feeaf26/195533021056.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1818073118",
+      "track-1818073119",
+      "track-1818073121",
+      "track-1818073123",
+      "track-1818073120",
+      "track-1818073124"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1818073109",
     "artistName": "放課後クライマックスガールズ & ストレイライト",
@@ -1600,7 +1722,26 @@
     "series": "sidem",
     "releaseDate": "2024-11-13T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/6a/bc/c86abc30-0553-7137-29a9-47f6008d0c09/195533004073.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1773460175",
+      "track-1773460181",
+      "track-1773460176",
+      "track-1773460174",
+      "track-1773460184",
+      "track-1773460178",
+      "track-1773460180",
+      "track-1773460179",
+      "track-1773460183",
+      "track-1773460177",
+      "track-1773460182",
+      "track-1773460185",
+      "track-1773460173",
+      "track-1773460171",
+      "track-1773460187",
+      "track-1773460186",
+      "track-1773460188",
+      "track-1773460219"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1773460170",
     "artistName": "Jupiter",
@@ -1614,7 +1755,25 @@
     "series": "sidem",
     "releaseDate": "2025-05-14T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/4c/0c/c74c0cbb-cc3b-1c4c-568e-eeace889ea04/195533020899.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1807462555",
+      "track-1807462553",
+      "track-1807462552",
+      "track-1807462398",
+      "track-1807462551",
+      "track-1807462550",
+      "track-1807462556",
+      "track-1807462554",
+      "track-1807462557",
+      "track-1807462399",
+      "track-1807462558",
+      "track-1807462396",
+      "track-1807462397",
+      "track-1807462561",
+      "track-1807462563",
+      "track-1807462559",
+      "track-1807462564"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1807462395",
     "artistName": "Legenders"
@@ -1626,7 +1785,14 @@
     "series": "shinycolors",
     "releaseDate": "2025-09-10T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/20/6c/b4/206cb467-612e-6944-cfdc-3f7cbd4b4f1d/195533021278.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1830421553",
+      "track-1830421557",
+      "track-1830421558",
+      "track-1830421560",
+      "track-1830421556",
+      "track-1830421559"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1830421551",
     "artistName": "イルミネーションスターズ & ノクチル",
@@ -1640,7 +1806,14 @@
     "series": "shinycolors",
     "releaseDate": "2024-08-07T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/59/ff/5a/59ff5a9b-3fbb-9920-60b6-5114a2ae3ec6/195533003571.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1755675673",
+      "track-1755675671",
+      "track-1755675672",
+      "track-1755675674",
+      "track-1755675675",
+      "track-1755675676"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1755675670",
     "artistName": "アルストロメリア",
@@ -1876,7 +2049,14 @@
     "series": "shinycolors",
     "releaseDate": "2024-10-09T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2f/63/70/2f637067-7195-dc0a-932d-d8585c985d50/195533003823.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1766923297",
+      "track-1766923301",
+      "track-1766923295",
+      "track-1766923296",
+      "track-1766923298",
+      "track-1766923299"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1766923294",
     "artistName": "ノクチル",
@@ -2110,7 +2290,25 @@
     "series": "sidem",
     "releaseDate": "2025-04-16T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/17/8d/56/178d567c-06c4-1f35-54ae-d0c7dad8e738/195533020868.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1802595967",
+      "track-1802595968",
+      "track-1802595973",
+      "track-1802595964",
+      "track-1802595966",
+      "track-1802595970",
+      "track-1802595971",
+      "track-1802595974",
+      "track-1802595972",
+      "track-1802595969",
+      "track-1802595975",
+      "track-1802595962",
+      "track-1802595963",
+      "track-1802595976",
+      "track-1802595979",
+      "track-1802595977",
+      "track-1802595978"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1802595961",
     "artistName": "THE 虎牙道"
@@ -2140,7 +2338,24 @@
     "series": "sidem",
     "releaseDate": "2024-11-27T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/76/1b/df/761bdfd3-621b-b625-442b-434ddaaaeda7/195533004080.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1776862289",
+      "track-1776862282",
+      "track-1776862294",
+      "track-1776862283",
+      "track-1776862288",
+      "track-1776862290",
+      "track-1776862292",
+      "track-1776862285",
+      "track-1776862287",
+      "track-1776862284",
+      "track-1776862286",
+      "track-1776862293",
+      "track-1776862281",
+      "track-1776862280",
+      "track-1776862295",
+      "track-1776862296"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1776862279",
     "artistName": "Altessimo"
@@ -2353,7 +2568,18 @@
     "series": "shinycolors",
     "releaseDate": "2025-01-22T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/23/cd/50/23cd50fd-e328-1ff8-f985-7d50b8aed9df/195533004707.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1785014683",
+      "track-1785014674",
+      "track-1785014675",
+      "track-1785014682",
+      "track-1785014681",
+      "track-1785014680",
+      "track-1785014677",
+      "track-1785014679",
+      "track-1785014678",
+      "track-1785014676"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1785014673",
     "artistName": "シャイニーカラーズ",
@@ -2422,7 +2648,14 @@
     "series": "shinycolors",
     "releaseDate": "2024-07-10T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5e/e4/7c/5ee47c21-26ce-f9c2-6515-00ba33fa2e44/195533002895.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1751451253",
+      "track-1751451257",
+      "track-1751451241",
+      "track-1751451252",
+      "track-1751451255",
+      "track-1751451256"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1751451017",
     "artistName": "放課後クライマックスガールズ",
@@ -2528,7 +2761,25 @@
     "series": "sidem",
     "releaseDate": "2025-01-08T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e5/fa/b1/e5fab131-a9bb-4b1b-f9af-0b7668b3f1e1/195533004431.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1783510940",
+      "track-1783510942",
+      "track-1783510943",
+      "track-1783510574",
+      "track-1783510939",
+      "track-1783510576",
+      "track-1783510578",
+      "track-1783510572",
+      "track-1783510573",
+      "track-1783510941",
+      "track-1783510944",
+      "track-1783510570",
+      "track-1783510571",
+      "track-1783510946",
+      "track-1783510947",
+      "track-1783510945",
+      "track-1783510948"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1783510569",
     "artistName": "FRAME"
@@ -2563,7 +2814,13 @@
     "series": "sidem",
     "releaseDate": "2025-06-11T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/01/62/80/01628045-e3f3-64fe-720d-528c56389dbd/195533020998.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1814018210",
+      "track-1814018211",
+      "track-1814018213",
+      "track-1814018212",
+      "track-1814018214"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1814018209",
     "artistName": "315 ALLSTARS"
@@ -2774,7 +3031,14 @@
     "series": "shinycolors",
     "releaseDate": "2025-01-22T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f1/c9/76/f1c9765f-b6e5-aed7-c1e0-2adff57e7c46/195533004691.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1785014638",
+      "track-1785014636",
+      "track-1785014637",
+      "track-1785014639",
+      "track-1785014641",
+      "track-1785014640"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1785014635",
     "artistName": "イルミネーションスターズ",
@@ -3048,7 +3312,27 @@
     "series": "sidem",
     "releaseDate": "2025-03-05T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/36/14/68/36146886-ecc5-9b7b-e214-3c64b60979ab/195533004875.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1793304181",
+      "track-1793304184",
+      "track-1793304192",
+      "track-1793304189",
+      "track-1793304179",
+      "track-1793304190",
+      "track-1793304187",
+      "track-1793304188",
+      "track-1793304186",
+      "track-1793304183",
+      "track-1793304185",
+      "track-1793304182",
+      "track-1793304180",
+      "track-1793304194",
+      "track-1793304196",
+      "track-1793304195",
+      "track-1793304193",
+      "track-1793304198",
+      "track-1793304197"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1793304178",
     "artistName": "Café Parade",
@@ -3184,7 +3468,25 @@
     "series": "sidem",
     "releaseDate": "2025-03-19T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/33/e9/44/33e944f3-b0ba-7647-7a17-1c7cb3e6b2c8/195533016540.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1796804146",
+      "track-1796804456",
+      "track-1796804457",
+      "track-1796804452",
+      "track-1796804449",
+      "track-1796804145",
+      "track-1796804148",
+      "track-1796804144",
+      "track-1796804451",
+      "track-1796804450",
+      "track-1796804455",
+      "track-1796804143",
+      "track-1796804454",
+      "track-1796804147",
+      "track-1796804458",
+      "track-1796804460",
+      "track-1796804459"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1796804142",
     "artistName": "もふもふえん"
@@ -3350,7 +3652,25 @@
     "series": "sidem",
     "releaseDate": "2024-12-25T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/99/49/37/99493708-20bc-4c6f-f991-04ade2672163/195533004165.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1782022242",
+      "track-1782022246",
+      "track-1782022238",
+      "track-1782022241",
+      "track-1782022239",
+      "track-1782022250",
+      "track-1782022243",
+      "track-1782022244",
+      "track-1782022240",
+      "track-1782022247",
+      "track-1782022248",
+      "track-1782022245",
+      "track-1782022236",
+      "track-1782022254",
+      "track-1782022251",
+      "track-1782022253",
+      "track-1782022252"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1782022224",
     "artistName": "W"
@@ -3685,7 +4005,14 @@
     "series": "million",
     "releaseDate": "2025-07-30T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b4/f2/03/b4f203b8-31d6-745e-a0dd-cf795d09b01b/195533021124.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1823808552",
+      "track-1823808797",
+      "track-1823808553",
+      "track-1823808798",
+      "track-1823808794",
+      "track-1823808796"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1823808551",
     "artistName": "765 MILLION ALLSTARS",
@@ -4134,7 +4461,28 @@
     "series": "sidem",
     "releaseDate": "2025-02-05T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/34/6b/3d/346b3d65-d5e1-bfca-ecd2-83897dcdc214/195533004813.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1789045420",
+      "track-1789045406",
+      "track-1789045412",
+      "track-1789045409",
+      "track-1789045408",
+      "track-1789045413",
+      "track-1789045419",
+      "track-1789045411",
+      "track-1789045410",
+      "track-1789045418",
+      "track-1789045415",
+      "track-1789045414",
+      "track-1789045416",
+      "track-1789045407",
+      "track-1789045422",
+      "track-1789045423",
+      "track-1789045492",
+      "track-1789045424",
+      "track-1789045421",
+      "track-1789045426"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1789045405",
     "artistName": "High×Joker"
@@ -4146,7 +4494,24 @@
     "series": "sidem",
     "releaseDate": "2025-02-19T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/20/01/2f/20012fd1-b2d1-73df-8838-dae5156f3c31/195533004820.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1791032675",
+      "track-1791032684",
+      "track-1791032678",
+      "track-1791032679",
+      "track-1791032673",
+      "track-1791032681",
+      "track-1791032672",
+      "track-1791032682",
+      "track-1791032683",
+      "track-1791032677",
+      "track-1791032674",
+      "track-1791032676",
+      "track-1791032680",
+      "track-1791032687",
+      "track-1791032686",
+      "track-1791032685"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1791032671",
     "artistName": "神速一魂"
@@ -4158,7 +4523,25 @@
     "series": "sidem",
     "releaseDate": "2025-04-30T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/12/2b/21/122b2116-ad06-639f-2e58-0affa64f9c63/195533020875.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1805570930",
+      "track-1805570744",
+      "track-1805570741",
+      "track-1805570745",
+      "track-1805570747",
+      "track-1805570740",
+      "track-1805570749",
+      "track-1805570737",
+      "track-1805570733",
+      "track-1805570736",
+      "track-1805570742",
+      "track-1805570748",
+      "track-1805570739",
+      "track-1805570935",
+      "track-1805570932",
+      "track-1805570931",
+      "track-1805570934"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1805570732",
     "artistName": "F-LAGS"
@@ -4659,7 +5042,10 @@
     "series": "million",
     "releaseDate": "2025-09-24T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/98/0f/39/980f3981-747a-1f86-f161-183f8b9c9d9e/195533021285.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1834710449",
+      "track-1834710452"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1834710445",
     "artistName": "百瀬莉緒 (CV.山口立花子), 宮尾美也 (CV.桐谷蝶々), 星井美希 (CV.長谷川明子) & ジュリア (CV.愛美)",
@@ -5007,7 +5393,10 @@
     "series": "million",
     "releaseDate": "2025-11-26T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/ca/2f/75ca2f7a-1924-db03-a256-e28f59c29ce3/195533021575.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1848034189",
+      "track-1848034190"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1848034188",
     "artistName": "望月杏奈 (CV.夏川椎菜), 七尾百合子 (CV.伊藤美来), 双海亜美 (CV: 下田麻美) & 春日未来 (CV.山崎はるか)",
@@ -5323,7 +5712,10 @@
     "series": "million",
     "releaseDate": "2026-02-25T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/03/37/45/0337453a-c5a4-106d-c4fd-c4352d64b108/195533021735.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1871344200",
+      "track-1871344203"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1871344199",
     "artistName": "高山紗代子 (CV.駒形友梨), 野々原 茜 (CV.小笠原早紀) & 所 恵美 (CV.藤井ゆきよ)",
@@ -7604,7 +7996,10 @@
     "series": "million",
     "releaseDate": "2024-08-28T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/72/10/b1/7210b15a-d6d7-6b8c-e831-e5cd57042d6c/195533003694.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1761314263",
+      "track-1761314264"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1761314262",
     "artistName": "箱崎星梨花 (CV.麻倉もも), 天空橋朋花 (CV.小岩井ことり), 野々原 茜 (CV.小笠原早紀) & 馬場このみ (CV.髙橋ミナミ)",
@@ -7618,7 +8013,10 @@
     "series": "million",
     "releaseDate": "2024-09-25T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/1c/3e/a31c3e02-4b59-7385-5fdf-54464b36e7e5/195533003816.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1765058330",
+      "track-1765058331"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1765058329",
     "artistName": "ヴァリアス・アーティスト",
@@ -7649,7 +8047,14 @@
     "series": "million",
     "releaseDate": "2024-07-31T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4c/34/9e/4c349ea2-225a-6854-ad53-259192ccb892/195533003557.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1754541280",
+      "track-1754541286",
+      "track-1754541319",
+      "track-1754541288",
+      "track-1754541320",
+      "track-1754541287"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1754541276",
     "artistName": "765 MILLION ALLSTARS",
@@ -7663,7 +8068,10 @@
     "series": "million",
     "releaseDate": "2025-02-26T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/87/54/53/875453ae-d12b-7947-05e7-284b97203be0/195533004851.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1792106365",
+      "track-1792106366"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1792106364",
     "artistName": "エミリー スチュアート (CV.郁原ゆう), 北上麗花 (CV.平山笑美), 春日未来 (CV.山崎はるか) & 北沢志保 (CV.雨宮 天)",
@@ -7677,7 +8085,10 @@
     "series": "million",
     "releaseDate": "2024-08-28T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/ce/7f/a3ce7f37-37b8-95d1-e116-2933877b2ae6/195533003700.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1761313627",
+      "track-1761313628"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1761313626",
     "artistName": "菊地真 (CV: 平田宏美), 如月千早 (CV.今井麻美), 我那覇響 (CV: 沼倉愛美) & 三浦あずさ (CV.たかはし智秋)",
@@ -7999,7 +8410,10 @@
     "series": "million",
     "releaseDate": "2026-01-28T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/11/1f/46/111f4660-02cb-ec45-d7cd-5e6e231067fe/195533021711.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1862692565",
+      "track-1862692566"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1862692564",
     "artistName": "木下ひなた (CV.田村奈央), 矢吹可奈 (CV.木戸衣吹) & 白石 紬 (CV.南 早紀)",
@@ -8013,7 +8427,10 @@
     "series": "million",
     "releaseDate": "2025-08-27T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f3/6e/a4/f36ea421-7b7e-ecaa-39ab-dd28c902e90d/195533021216.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1828113574",
+      "track-1828113578"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1828113569",
     "artistName": "横山奈緒 (CV.渡部優衣), 真壁瑞希 (CV.阿部里果), 萩原雪歩 (CV: 浅倉杏美) & 永吉 昴 (CV.斉藤佑圭)",
@@ -8156,7 +8573,10 @@
     "series": "million",
     "releaseDate": "2024-11-27T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0e/97/d1/0e97d164-0cf8-3e09-6de2-6242a1dcde7e/195533004097.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1776830409",
+      "track-1776830410"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1776830408",
     "artistName": "宮尾美也 (CV.桐谷蝶々), 望月杏奈 (CV.夏川椎菜), 舞浜 歩 (CV.戸田めぐみ) & 横山奈緒 (CV.渡部優衣)",
@@ -8618,7 +9038,10 @@
     "series": "million",
     "releaseDate": "2024-12-25T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b3/28/93/b32893f1-5a55-2929-8053-c42257adf79a/195533004271.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1782021974",
+      "track-1782021975"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1782021973",
     "artistName": "白石 紬 (CV.南 早紀), 福田のり子 (CV.浜崎奈々), 伊吹 翼 (CV.Machico) & 木下ひなた (CV.田村奈央)",
@@ -8790,7 +9213,10 @@
     "series": "million",
     "releaseDate": "2025-01-29T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/81/da/53/81da5398-0c59-c69a-64eb-eecf88997f44/195533004776.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1787241925",
+      "track-1787241926"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1787241924",
     "artistName": "四条貴音 (CV: 原 由実), 萩原雪歩 (CV: 浅倉杏美), 天海春香 (CV: 中村繪里子) & 水瀬伊織 (CV.釘宮理恵)",
@@ -8821,7 +9247,10 @@
     "series": "million",
     "releaseDate": "2025-04-30T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/91/71/499171e1-3b91-581b-879b-e345bdb3fdc2/195533020882.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1805056799",
+      "track-1805056800"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1805056798",
     "artistName": "ヴァリアス・アーティスト",
@@ -8904,7 +9333,10 @@
     "series": "million",
     "releaseDate": "2025-03-26T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9f/64/8d/9f648ddb-fa59-78c7-0f06-18d10abbf8ef/195533014683.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1797452930",
+      "track-1797452931"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1797452929",
     "artistName": "桜守歌織 (CV.香里有佐), 大神 環 (CV.稲川英里), ジュリア (CV.愛美) & 中谷 育 (CV.原嶋あかり)",
@@ -8918,7 +9350,10 @@
     "series": "million",
     "releaseDate": "2024-10-30T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/16/cf/bf/16cfbfaf-b35d-ef41-b130-e60eeb7d0955/195533003847.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1770960068",
+      "track-1770960069"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1770960067",
     "artistName": "ヴァリアス・アーティスト",
@@ -8932,7 +9367,10 @@
     "series": "million",
     "releaseDate": "2025-06-25T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/7c/49/6f7c4941-9039-1dca-6f2b-bdea0a0fac9b/195533021049.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1816679738",
+      "track-1816679739"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1816679737",
     "artistName": "ヴァリアス・アーティスト",
@@ -8946,7 +9384,10 @@
     "series": "million",
     "releaseDate": "2025-05-28T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/c4/86/38c486b9-4672-d49e-2f3f-c7b74d0eedc7/195533020929.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1810151230",
+      "track-1810151362"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1810151224",
     "artistName": "ヴァリアス・アーティスト",
@@ -8960,7 +9401,10 @@
     "series": "million",
     "releaseDate": "2026-01-07T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9c/28/96/9c2896eb-a5a2-0962-29ff-32f159146fa5/195533021643.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1856530375",
+      "track-1856530377"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1856530103",
     "artistName": "ヴァリアス・アーティスト",
@@ -8974,7 +9418,12 @@
     "series": "million",
     "releaseDate": "2025-02-26T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/06/2a/73/062a7382-a712-3b5b-c961-f3a5e516f063/195533004844.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1792106458",
+      "track-1792106461",
+      "track-1792106462",
+      "track-1792106463"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1792106457",
     "artistName": "ヴァリアス・アーティスト"
@@ -8986,7 +9435,10 @@
     "series": "million",
     "releaseDate": "2025-10-29T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9a/b6/24/9ab624e2-255f-246a-fd3b-379c2b34e552/195533021520.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1842264648",
+      "track-1842264649"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1842264647",
     "artistName": "ヴァリアス・アーティスト",
@@ -8999,7 +9451,13 @@
     "series": "million",
     "releaseDate": "2025-02-26T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6e/52/a0/6e52a01e-96c3-13a6-379f-e7800fa96bb7/195533004837.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1792108344",
+      "track-1792108345",
+      "track-1792108346",
+      "track-1792108347",
+      "track-1792108348"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1792108343",
     "artistName": "ヴァリアス・アーティスト",
@@ -9290,7 +9748,10 @@
     "series": "sidem",
     "releaseDate": "2026-01-28T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d4/c7/29/d4c7299a-b517-c147-f6a9-f34e78a3a676/4540774747368.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1862690962",
+      "track-1862690963"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1862690961",
     "artistName": "W"
@@ -9302,7 +9763,10 @@
     "series": "sidem",
     "releaseDate": "2026-02-25T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c0/c9/96/c0c996ad-756a-5f10-4a81-3c98c271ab5e/4540774747658.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1871067948",
+      "track-1871067949"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1871067947",
     "artistName": "DRAMATIC STARS"
@@ -9348,7 +9812,10 @@
     "series": "sidem",
     "releaseDate": "2026-01-07T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ba/4b/65/ba4b6571-7b23-7d85-457c-d5c4517c85fe/4540774747092.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1856529879",
+      "track-1856529880"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1856529878",
     "artistName": "神楽 麗 (CV.永野由祐), 渡辺みのり (CV.高塚智人), アスラン=ベルゼビュートⅡ世 (CV.古川 慎) & 秋月 涼 (CV.三瓶由布子)"
@@ -9360,7 +9827,10 @@
     "series": "sidem",
     "releaseDate": "2025-11-01T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e1/75/c6/e175c642-9325-a651-45e0-b3831613c458/4540774746026.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1836324789",
+      "track-1836324790"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1836324788",
     "artistName": "天ヶ瀬冬馬 (CV.寺島拓篤), 握野英雄 (CV.熊谷健太郎), 卯月巻緒 (CV.児玉卓也) & 牙崎 漣 (CV.小松昌平)"
@@ -9372,7 +9842,10 @@
     "series": "sidem",
     "releaseDate": "2025-11-05T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d6/0b/cf/d60bcf09-8cee-d0ea-df15-3429bba34aa5/4540774746583.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1843564768",
+      "track-1843564769"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1843564766",
     "artistName": "鷹城恭二 (CV.梅原裕一郎), 華村翔真 (CV.バレッタ裕), 古論クリス (CV.駒田 航) & 天峰 秀 (CV.伊瀬結陸)"
@@ -9401,7 +9874,12 @@
     "series": "sidem",
     "releaseDate": "2025-08-06T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/21/c5/fd/21c5fd16-52dd-74fc-8250-9cf69677533a/195533021186.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1825102050",
+      "track-1825102048",
+      "track-1825102049",
+      "track-1825102051"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1825102047",
     "artistName": "Jupiter & F-LAGS"
@@ -9413,7 +9891,12 @@
     "series": "sidem",
     "releaseDate": "2025-08-06T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/92/de/6c92deaf-c7c5-e9e2-0e0c-0d914f40b40d/195533021179.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1825102183",
+      "track-1825102185",
+      "track-1825102184",
+      "track-1825102186"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1825102182",
     "artistName": "Jupiter & F-LAGS"
@@ -9425,7 +9908,10 @@
     "series": "sidem",
     "releaseDate": "2025-12-03T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d7/40/65/d74065fe-61f8-e80d-19d5-e697e8048989/4540774746712.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1849595562",
+      "track-1849595565"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1849595411",
     "artistName": "伊集院北斗 (CV.神原大地), 桜庭 薫 (CV.内田雄馬), 榊 夏来 (CV.渡辺 紘) & 葛之葉雨彦 (CV.笠間 淳)"
@@ -9455,7 +9941,12 @@
     "series": "sidem",
     "releaseDate": "2025-08-06T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/42/d8/09/42d809a5-b07f-722a-89d4-0ce533a191ef/195533021155.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1825101568",
+      "track-1825101567",
+      "track-1825101569",
+      "track-1825101570"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1825101566",
     "artistName": "FRAME & もふもふえん"
@@ -9467,7 +9958,12 @@
     "series": "sidem",
     "releaseDate": "2025-08-06T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3f/f1/66/3ff166dc-c04a-c6db-5c75-5d384c771e5c/195533021162.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1825102526",
+      "track-1825102523",
+      "track-1825102525",
+      "track-1825102527"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1825102521",
     "artistName": "FRAME & もふもふえん"
@@ -9497,7 +9993,12 @@
     "series": "sidem",
     "releaseDate": "2024-07-31T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bc/00/e7/bc00e756-e7b7-e822-bc0d-a6487020e9b2/195533003496.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1754514810",
+      "track-1754514808",
+      "track-1754514809",
+      "track-1754514811"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1754514807",
     "artistName": "S.E.M"
@@ -9509,7 +10010,10 @@
     "series": "sidem",
     "releaseDate": "2025-11-26T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/66/63/d2/6663d2c4-9e36-70d5-67f2-7209eebf048a/4540774746699.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1848033708",
+      "track-1848033709"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1848033707",
     "artistName": "S.E.M"
@@ -9558,7 +10062,12 @@
     "series": "sidem",
     "releaseDate": "2024-08-07T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/10/55/30/105530c7-a5e7-5c75-a75d-32b89bffa60e/195533003656.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1755674790",
+      "track-1755674789",
+      "track-1755674788",
+      "track-1755674791"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1755674781",
     "artistName": "W & THE 虎牙道"
@@ -9660,7 +10169,12 @@
     "series": "sidem",
     "releaseDate": "2024-08-07T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/20/96/25/20962527-e3bc-23b4-33bd-27a862bbb5ec/195533003601.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1755675605",
+      "track-1755675607",
+      "track-1755675604",
+      "track-1755675609"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1755675603",
     "artistName": "Beit & 神速一魂"
@@ -9672,7 +10186,12 @@
     "series": "sidem",
     "releaseDate": "2024-08-07T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a1/32/9c/a1329cb9-8365-7cd3-8bd1-cea0b270f9c6/195533003649.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1755676882",
+      "track-1755676884",
+      "track-1755676883",
+      "track-1755676885"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1755676880",
     "artistName": "W & THE 虎牙道"
@@ -9738,7 +10257,12 @@
     "series": "sidem",
     "releaseDate": "2024-08-07T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/3e/ea/673eea22-ec04-3fc3-892a-a0a4b7d24b41/195533003625.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1755675190",
+      "track-1755675188",
+      "track-1755675189",
+      "track-1755675191"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1755675187",
     "artistName": "Beit & 神速一魂"
@@ -9836,7 +10360,10 @@
     "series": "sidem",
     "releaseDate": "2025-12-24T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e1/06/26/e1062608-fd34-1564-5434-d440375d22ac/4540774747054.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1854332818",
+      "track-1854332822"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1854332817",
     "artistName": "神速一魂"
@@ -9890,7 +10417,25 @@
     "series": "sidem",
     "releaseDate": "2025-01-22T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/77/91/27/77912765-f827-e3fa-4863-c3900510100b/195533004288.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1786301581",
+      "track-1786301580",
+      "track-1786301584",
+      "track-1786301583",
+      "track-1786301578",
+      "track-1786301588",
+      "track-1786301589",
+      "track-1786301577",
+      "track-1786301587",
+      "track-1786301585",
+      "track-1786301582",
+      "track-1786301586",
+      "track-1786301579",
+      "track-1786301575",
+      "track-1786301590",
+      "track-1786301592",
+      "track-1786301591"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1786301571",
     "artistName": "彩"
@@ -10716,7 +11261,12 @@
     "series": "sidem",
     "releaseDate": "2024-07-31T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f0/3d/aff03dd6-69ec-0e1e-589f-52d5c233f33f/195533003533.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1754514998",
+      "track-1754514997",
+      "track-1754515000",
+      "track-1754515002"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1754514996",
     "artistName": "Legenders"
@@ -10745,7 +11295,12 @@
     "series": "sidem",
     "releaseDate": "2025-03-12T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d9/4b/15/d94b15e7-4802-44a3-f61b-1a8f8f9cbf77/195533004905.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1794679558",
+      "track-1794679557",
+      "track-1794679555",
+      "track-1794679559"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1794679554",
     "artistName": "High×Joker & Café Parade"
@@ -10757,7 +11312,12 @@
     "series": "sidem",
     "releaseDate": "2025-03-12T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/61/da/2861da12-e56b-de8c-5e71-4434e5813f46/195533004899.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1794680610",
+      "track-1794680609",
+      "track-1794680611",
+      "track-1794680612"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1794680608",
     "artistName": "High×Joker & Café Parade"
@@ -11524,7 +12084,10 @@
     "series": "sidem",
     "releaseDate": "2026-03-04T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/c0/67/28c067a1-57e2-0cb6-e9f0-29fac482cce3/4540774748044.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1872896303",
+      "track-1872896304"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1872896302",
     "artistName": "信玄誠司 (CV.増元拓也), 東雲荘一郎 (CV.天﨑滉平), 九十九一希 (CV.比留間俊哉) & 花園百々人 (CV.宮﨑雅也)"
@@ -11536,7 +12099,10 @@
     "series": "sidem",
     "releaseDate": "2026-02-04T08:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9c/81/f4/9c81f473-5903-9020-0558-53d673d920f3/4540774747405.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1866490493",
+      "track-1866490494"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1866490492",
     "artistName": "木村 龍 (CV.濱 健人), 清澄九郎 (CV.中田祐矢), 岡村直央 (CV.矢野奨吾) & 舞田 類 (CV.榎木淳弥)"
@@ -13910,7 +14476,13 @@
     "series": "million",
     "releaseDate": "2026-04-01T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/69/bc/49/69bc49f9-958a-83cc-2013-90dfb50a0418/195533021827.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1881490028",
+      "track-1881490032",
+      "track-1881490029",
+      "track-1881490031",
+      "track-1881490030"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1881490027",
     "artistName": "ヴァリアス・アーティスト"
@@ -13922,7 +14494,10 @@
     "series": "million",
     "releaseDate": "2026-03-25T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f6/b8/91/f6b89190-f856-7868-4c58-6e66801d676b/195533021780.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1878313592",
+      "track-1878313593"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1878313591",
     "artistName": "ヴァリアス・アーティスト"
@@ -13951,7 +14526,10 @@
     "series": "sidem",
     "releaseDate": "2026-03-25T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/5b/f0/b35bf03d-96f8-fa2d-80df-bf22bcbe9cd1/4540774748167.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1878313346",
+      "track-1878313347"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1878313345",
     "artistName": "Altessimo"
@@ -13963,7 +14541,10 @@
     "series": "sidem",
     "releaseDate": "2026-04-01T07:00:00Z",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1d/3c/ee/1d3cee97-c44c-b6ab-1a77-571ab2b75af4/4540774748211.png/600x600bb.jpg",
-    "trackIds": [],
+    "trackIds": [
+      "track-1881490057",
+      "track-1881490058"
+    ],
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1881490056",
     "artistName": "ピエール (CV.堀江 瞬), 伊瀬谷四季 (CV.野上 翔), 紅井朱雀 (CV.益山武明) & 北村想楽 (CV.汐谷文康)"
@@ -14016,5 +14597,427 @@
     "format": "CD",
     "appleMusicUrl": "https://music.apple.com/jp/album/1784648407",
     "artistName": "初星学園 & 篠澤 広"
+  },
+  {
+    "id": "release-6783203361",
+    "type": "ALBUM",
+    "titleJa": "The Idolm@ster 20th Anniversary Piano Collection",
+    "series": "765",
+    "releaseDate": "2026-07-09T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ec/af/82/ecaf82af-886b-939a-4f0c-c178f7edee75/PA00217241_1_248322_jacket.jpg/600x600bb.jpg",
+    "trackIds": [
+      "track-6783203969",
+      "track-6783208213",
+      "track-6783207791",
+      "track-6783208216",
+      "track-6783204738",
+      "track-6783203365",
+      "track-6783204689",
+      "track-6783208227",
+      "track-6783205981",
+      "track-6783203377",
+      "track-6783206733",
+      "track-6783209006",
+      "track-6783205627",
+      "track-6783205162",
+      "track-6783203970",
+      "track-6783207247",
+      "track-6783208228",
+      "track-6783205165",
+      "track-6783208769",
+      "track-6783207248",
+      "track-6783208220",
+      "track-6783204706",
+      "track-6783204387",
+      "track-6783203367",
+      "track-6783207249",
+      "track-6783207074",
+      "track-6783207779",
+      "track-6783207252",
+      "track-6783204404",
+      "track-6783208624",
+      "track-6783203369",
+      "track-6783205971",
+      "track-6783205615",
+      "track-6783206401",
+      "track-6783205460",
+      "track-6783208209",
+      "track-6783206413",
+      "track-6783205183",
+      "track-6783208626",
+      "track-6783207254",
+      "track-6783207772",
+      "track-6783205178",
+      "track-6783208984",
+      "track-6783206404",
+      "track-6783207597",
+      "track-6783203382",
+      "track-6783203372",
+      "track-6783208224",
+      "track-6783207600",
+      "track-6783207604",
+      "track-6783208208",
+      "track-6783204256",
+      "track-6783203984",
+      "track-6783204759",
+      "track-6783204760",
+      "track-6783204246",
+      "track-6783207771",
+      "track-6783205170",
+      "track-6783208771",
+      "track-6783206727",
+      "track-6783205992",
+      "track-6783204739",
+      "track-6783203373",
+      "track-6783205621",
+      "track-6783204737",
+      "track-6783206391",
+      "track-6783205974",
+      "track-6783204763",
+      "track-6783203383",
+      "track-6783207075",
+      "track-6783205975",
+      "track-6783207589",
+      "track-6783204692",
+      "track-6783207787",
+      "track-6783207777",
+      "track-6783208205",
+      "track-6783204756",
+      "track-6783204380",
+      "track-6783206405",
+      "track-6783205984",
+      "track-6783205988",
+      "track-6783205468",
+      "track-6783205163",
+      "track-6783203963",
+      "track-6783206739",
+      "track-6783207788",
+      "track-6783208772",
+      "track-6783206740",
+      "track-6783204741",
+      "track-6783205473",
+      "track-6783207070",
+      "track-6783205609",
+      "track-6783204742",
+      "track-6783208770",
+      "track-6783206397",
+      "track-6783204238",
+      "track-6783205623",
+      "track-6783205987",
+      "track-6783206410",
+      "track-6783205486",
+      "track-6783203375",
+      "track-6783205479",
+      "track-6783203966",
+      "track-6783205166",
+      "track-6783206738",
+      "track-6783207231",
+      "track-6783206732",
+      "track-6783206746",
+      "track-6783208226",
+      "track-6783207242",
+      "track-6783203975",
+      "track-6783204251",
+      "track-6783203968",
+      "track-6783203384",
+      "track-6783208997",
+      "track-6783208229",
+      "track-6783204398",
+      "track-6783205631",
+      "track-6783204397"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/6783203361",
+    "artistName": "THE IDOLM@STER Series & Bandai Namco Game Music"
+  },
+  {
+    "id": "release-6764758058",
+    "type": "EP",
+    "titleJa": "THE IDOLM@STER SHINY COLORS Song for Prism 散花-sanka- / 紅花-benibana- - EP",
+    "series": "shinycolors",
+    "releaseDate": "2026-06-03T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0c/60/2a/0c602a0d-59aa-99b1-ddfb-a654d277b972/4540774748969.png/600x600bb.jpg",
+    "trackIds": [
+      "track-6764758059",
+      "track-6764758060",
+      "track-6764758061",
+      "track-6764758272",
+      "track-6764758273",
+      "track-6764758274"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/6764758058",
+    "artistName": "彼岸流"
+  },
+  {
+    "id": "release-6775439370",
+    "type": "EP",
+    "titleJa": "THE IDOLM@STER SHINY COLORS Song for Prism Tokyo自由系*ガール / My time - EP",
+    "series": "shinycolors",
+    "releaseDate": "2026-07-01T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d3/56/2f/d3562f8d-abf4-8630-524f-c3004395c9e1/4540774749577.png/600x600bb.jpg",
+    "trackIds": [
+      "track-6775439372",
+      "track-6775439373",
+      "track-6775439374",
+      "track-6775439375",
+      "track-6775439376",
+      "track-6775439377"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/6775439370",
+    "artistName": "No 1 feel alone"
+  },
+  {
+    "id": "release-6768541151",
+    "type": "SINGLE",
+    "titleJa": "Cinderella No. 1 - Single",
+    "series": "cinderella",
+    "releaseDate": "2026-05-27T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cb/98/a0/cb98a047-8121-8bcc-578b-09c66a4fe196/COKM-46346.jpg/600x600bb.jpg",
+    "trackIds": [
+      "track-6768541152"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/6768541151",
+    "artistName": "安部菜々 (CV: 三宅麻理恵), 神崎蘭子 (CV: 内田真礼) & イヴ・サンタクロース (CV: 松永あかね)"
+  },
+  {
+    "id": "release-1889131185",
+    "type": "SINGLE",
+    "titleJa": "THE IDOLM@STER SideM ～P@SSION CHALLENGE We are 315!～ MONTHLY THEME SONG 06 THE 虎牙道 - Single",
+    "series": "sidem",
+    "releaseDate": "2026-04-29T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c0/ec/98/c0ec98bf-5703-020b-50bf-a66e9e509868/4540774748587.png/600x600bb.jpg",
+    "trackIds": [
+      "track-1889131187",
+      "track-1889131189"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1889131185",
+    "artistName": "THE 虎牙道"
+  },
+  {
+    "id": "release-6781517869",
+    "type": "ALBUM",
+    "titleJa": "The Idolm@ster Cinderella Master Number One! Cinderella No. 1 & Rose: Kinjirareta Ai",
+    "series": "cinderella",
+    "releaseDate": "2026-07-01T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f9/a1/5e/f9a15eb6-7328-4c63-3dc6-ff71d4090019/COKM-46635.jpg/600x600bb.jpg",
+    "trackIds": [
+      "track-6781517870",
+      "track-6781517871",
+      "track-6781517872",
+      "track-6781517873",
+      "track-6781517874",
+      "track-6781517875",
+      "track-6781517876",
+      "track-6781517877",
+      "track-6781517878",
+      "track-6781517879",
+      "track-6781517881",
+      "track-6781517882",
+      "track-6781517884",
+      "track-6781517885",
+      "track-6781517886",
+      "track-6781517887"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/6781517869",
+    "artistName": "Various Artists"
+  },
+  {
+    "id": "release-1888118049",
+    "type": "EP",
+    "titleJa": "The Idolm@ster Cinderella Master 054 Shin Sato - EP",
+    "series": "cinderella",
+    "releaseDate": "2019-05-15T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/16/68/36/166836d1-c636-08cd-641a-0194bd2d8933/COKM-46508.jpg/600x600bb.jpg",
+    "trackIds": [
+      "track-1888118050",
+      "track-1888118051",
+      "track-1888118052",
+      "track-1888118053"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1888118049",
+    "artistName": "佐藤心 (CV: 花守ゆみり)"
+  },
+  {
+    "id": "release-1871343988",
+    "type": "SINGLE",
+    "titleJa": "THE IDOLM@STER MILLION BATTLE OF THE@TER 05 Texting you - Single",
+    "series": "million",
+    "releaseDate": "2026-02-25T08:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/31/ba/96/31ba96bf-b93e-11d7-9159-6a658b307aa6/4540774247158.png/600x600bb.jpg",
+    "trackIds": [
+      "track-1871343989",
+      "track-1871343990"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1871343988",
+    "artistName": "高山紗代子 (CV.駒形友梨), 野々原 茜 (CV.小笠原早紀) & 所 恵美 (CV.藤井ゆきよ)"
+  },
+  {
+    "id": "release-1895005561",
+    "type": "SINGLE",
+    "titleJa": "THE IDOLM@STER MILLION BATTLE OF THE@TER 07 Fairy Daysは絶え間ない - Single",
+    "series": "million",
+    "releaseDate": "2026-05-27T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/10/7f/16/107f1688-6231-6673-6891-dd2bfd9bba71/195533021896.png/600x600bb.jpg",
+    "trackIds": [
+      "track-6762775898",
+      "track-6762775899"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1895005561",
+    "artistName": "ヴァリアス・アーティスト"
+  },
+  {
+    "id": "release-1889131524",
+    "type": "SINGLE",
+    "titleJa": "THE IDOLM@STER MILLION BATTLE OF THE@TER 06 Especially Angel♡ - Single",
+    "series": "million",
+    "releaseDate": "2026-04-29T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f7/30/0b/f7300bd9-ba79-81d9-9fe3-ce9cea09e0c7/195533021889.png/600x600bb.jpg",
+    "trackIds": [
+      "track-1889131525",
+      "track-1889131526"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1889131524",
+    "artistName": "ヴァリアス・アーティスト"
+  },
+  {
+    "id": "release-1890083394",
+    "type": "SINGLE",
+    "titleJa": "THE IDOLM@STER SideM TRANSCENDENT T@LES 08 - Single",
+    "series": "sidem",
+    "releaseDate": "2026-05-06T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/24/58/8a/24588a01-86f4-58cf-cf3e-621ecc543854/4540774748594.png/600x600bb.jpg",
+    "trackIds": [
+      "track-1890083395",
+      "track-1890083396"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1890083394",
+    "artistName": "柏木 翼 (CV.八代 拓), 都築 圭 (CV.土岐隼一), 神谷幸広 (CV.狩野 翔) & 兜 大吾 (CV.浦尾岳大)"
+  },
+  {
+    "id": "release-1895005764",
+    "type": "SINGLE",
+    "titleJa": "THE IDOLM@STER SideM ～P@SSION CHALLENGE We are 315!～ MONTHLY THEME SONG 07 FRAME - Single",
+    "series": "sidem",
+    "releaseDate": "2026-05-27T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/35/eb/2e/35eb2e4f-0a7b-973c-e40f-e35a191c5b78/4540774748952.png/600x600bb.jpg",
+    "trackIds": [
+      "track-6762776166",
+      "track-6762776167"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1895005764",
+    "artistName": "FRAME"
+  },
+  {
+    "id": "release-1895905433",
+    "type": "SINGLE",
+    "titleJa": "THE IDOLM@STER SideM TRANSCENDENT T@LES 09 - Single",
+    "series": "sidem",
+    "releaseDate": "2026-06-03T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/57/95/18/5795189b-40f1-b8f1-ae57-c419ba53cfd0/4540774748976.png/600x600bb.jpg",
+    "trackIds": [
+      "track-6764757604",
+      "track-6764757605"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/1895905433",
+    "artistName": "蒼井悠介 (CV.菊池勇成), 冬美 旬 (CV.永塚拓馬), 姫野かのん (CV.村瀬 歩) & 山下次郎 (CV.中島ヨシキ)"
+  },
+  {
+    "id": "release-6767490578",
+    "type": "SINGLE",
+    "titleJa": "Garakuta Road - Single",
+    "series": "gakuen",
+    "releaseDate": "2026-05-16T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/41/df/44/41df44ef-476f-7d0a-bfa4-21f73738c853/PA00218612_0_246017_jacket.jpg/600x600bb.jpg",
+    "trackIds": [
+      "track-6767490584",
+      "track-6767490587"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/6767490578",
+    "artistName": "初星学園"
+  },
+  {
+    "id": "release-6770774438",
+    "type": "ALBUM",
+    "titleJa": "Hatsuboshi Gakuen Remix Album 「Recollection」Vol.1",
+    "series": "gakuen",
+    "releaseDate": "2026-05-25T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cd/bb/3c/cdbb3c80-40d2-1d1b-5669-55fcb145af2d/PA00218890_0_246429_jacket.jpg/600x600bb.jpg",
+    "trackIds": [
+      "track-6770774443",
+      "track-6770774448",
+      "track-6770774709",
+      "track-6770774716",
+      "track-6770774720",
+      "track-6770774824",
+      "track-6770774835",
+      "track-6770774934",
+      "track-6770774940",
+      "track-6770774944",
+      "track-6770774952",
+      "track-6770774959",
+      "track-6770775175",
+      "track-6770775179"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/6770774438",
+    "artistName": "初星学園"
+  },
+  {
+    "id": "release-6776533418",
+    "type": "SINGLE",
+    "titleJa": "Sugar Flavor - Single",
+    "series": "gakuen",
+    "releaseDate": "2026-06-16T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/22/52/5d22528d-d39d-ebae-5366-4adbd4e1e86d/PA00220366_0_247792_jacket.jpg/600x600bb.jpg",
+    "trackIds": [
+      "track-6776533430",
+      "track-6776533435"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/6776533418",
+    "artistName": "初星学園, 有村麻央 & 姫崎莉波"
+  },
+  {
+    "id": "release-6769257837",
+    "type": "SINGLE",
+    "titleJa": "Sanpunhan No Sousei - Single",
+    "series": "gakuen",
+    "releaseDate": "2026-05-18T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a2/11/28/a21128bc-72d4-4333-fa3c-f98f24ba36bd/PA00218613_0_246304_jacket.jpg/600x600bb.jpg",
+    "trackIds": [
+      "track-6769257842",
+      "track-6769257843"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/6769257837",
+    "artistName": "初星学園 & 雨夜 燕"
+  },
+  {
+    "id": "release-6768846907",
+    "type": "SINGLE",
+    "titleJa": "My Stage - Single",
+    "series": "gakuen",
+    "releaseDate": "2026-05-20T07:00:00Z",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/02/d0/59/02d059f6-299c-970b-8c9e-1df718168513/PA00218614_0_246176_jacket.jpg/600x600bb.jpg",
+    "trackIds": [
+      "track-6768846911",
+      "track-6768846913"
+    ],
+    "format": "CD",
+    "appleMusicUrl": "https://music.apple.com/jp/album/6768846907",
+    "artistName": "初星学園 & 雨夜 燕"
   }
 ]
